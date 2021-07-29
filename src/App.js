@@ -9,11 +9,11 @@ class App extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/Editor/Team">
-                        <TeamPage />
-                    </Route>
-                    <Route exact path="/">
+                    <Route path="/">
                         <HomePage />
+                    </Route>
+                    <Route path="/Team">
+                        <TeamPage />
                     </Route>
                 </Switch>
             </Router>

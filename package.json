@@ -16,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "node ./scripts/build-non-split.js",
+    "deploy": "npm run build && ./scripts/deploy.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
