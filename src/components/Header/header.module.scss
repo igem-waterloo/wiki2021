@@ -1,0 +1,42 @@
+.header_container {
+    width: 230px;
+    // height: 100%;
+    border-right: 2px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    background: #23242D;
+    // position: absolute;
+    // left: 0;
+    // z-index: -1;
+    // max-height: 1000px;
+    // overflow: scroll;
+}
+
+.logo_img {
+    height: 103px;
+    width: 167px;
+    margin: 60px 30px;
+}
+
+.links_div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    margin: 20px 0px;
+    width: 120px;
+}
+
+.link_text {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
