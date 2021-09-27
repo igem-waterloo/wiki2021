@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+
+.accessibility-tool .fixed {
+    background-color: black !important;
+    color: white !important;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    width: 205px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 999;
+}
+  
+.accessibility-tool .same {
+    padding: 8px !important;
+}
+
+.accessibility-tool .toolbar-title, .accessibility-tool .arrow {
+    text-align: center !important;
+    margin: 0px 0px !important;
+    color: white !important;
+    font-size: 19px !important;
+    line-height: 20px !important;
+}
+
+.words {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 17px !important;
+}
+
+.accessibility-tool .shortcut {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    color: #C2C0FF !important;
+    font-size: 11px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+}
+
+.accessibility-tool .toolbar-read,  .accessibility-tool .toolbar-size {
+    width: 93%; 
+    margin: auto; 
+    border: solid #fff;
+    border-width: 3px !important;
+    border-radius: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 3px 5px !important;
+}
+
+.large-icon-btn {
+    padding: 0.5rem 0.5rem;
+}
+
+.toolbar-read:after, .toolbar-size:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#pause:hover, #play:hover, #restart:hover, #minus:hover, #plus:hover {
+    cursor: pointer; 
+}
