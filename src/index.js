@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-alert("JS code worked!")
+// alert("JS code worked!")
 ReactDOM.render(
     <App />,
   document.getElementById('root')
