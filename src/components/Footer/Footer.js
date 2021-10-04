@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <div className={styles.footer_container}>
-                <img src="./iGEM_logo.png" className={styles.igem_img}></img>
+                <img src="https://2021.igem.org/wiki/images/f/f8/T--Waterloo--igemLogo.png" className={styles.igem_img}></img>
                 <div className={styles.projects_div}>
                     <span className={styles.heading_text}>Projects</span>
                     <Link to="/description" className={styles.link}>
