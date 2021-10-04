@@ -11,6 +11,7 @@ body, html {
   bottom: 0;
 } */
 
+<<<<<<< HEAD
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -87,6 +88,10 @@ body, html {
 #pause:hover, #play:hover, #restart:hover, #minus:hover, #plus:hover {
     cursor: pointer; 
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> members-page
 /* .header {
   position: absolute;
   right: 0;
@@ -99,3 +104,7 @@ body, html {
   bottom:40px;
   overflow-y:auto;
 } */
+<<<<<<< HEAD
+=======
+>>>>>>> af23ec7b8a87136bef40716e8b1451ba3e9514ff
+>>>>>>> members-page
