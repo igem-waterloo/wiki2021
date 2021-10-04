@@ -1,0 +1,31 @@
+.page_heading {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+.text_heading {
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--header-color);
+    border-bottom: 7px solid #E88A5F;
+}
+
+.description {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--font-color);
+    margin-top: 30px;
+}
+
+.page_heading_colored {
+    font-size: 70px;
+    font-weight: 600;
+    background-color: #f3ec78;
+    background: var(--colored-header-color);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
