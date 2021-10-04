@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <div className={styles.header_container}>
-                <img src="./NeuroDetech.png" className={styles.logo_img}></img>
+                <img src="https://2021.igem.org/wiki/images/6/6d/T--Waterloo--neuroDetech.png" className={styles.logo_img}></img>
                 <div className={styles.links_div}>
                 <Link to="/" className={styles.link}>
                     <span className={styles.link_text}>Home</span>
