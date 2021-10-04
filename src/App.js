@@ -15,14 +15,12 @@ class App extends Component {
                 <div style={{display: 'flex', flexDirection: 'row'}}>
                 <Header />
                 <Switch>
-                    {/* <Route exact path="/">
+                    <Route path="/">
                         <HomePage />
                     </Route>
                     <Route path="/team">
                         <TeamPage />
-                    </Route> */}
-                    <Route exact path="/" component={withRouter(HomePage)} />
-                    <Route exact path="/Team" component={withRouter(TeamPage)} />
+                    </Route>
                 </Switch>
                 </div>
                 <div>

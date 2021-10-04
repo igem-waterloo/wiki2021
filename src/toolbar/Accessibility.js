@@ -6,11 +6,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CloseButton from 'react-bootstrap/CloseButton';
 import Collapse from 'react-bootstrap/Collapse';
-import { PauseFill, PlayFill, ArrowCounterclockwise } from 'react-bootstrap-icons';
+import { Pause, Play, ArrowCounterclockwise, PlusLg, DashLg } from 'react-bootstrap-icons';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Accessibility() {
+function Accessibility({changeFontSizeMult}) {
     const [visibility, setVisibility] = useState(false);
     const [arrow, setArrow] = useState("▲");
 
@@ -21,8 +21,16 @@ function Accessibility() {
             setArrow("▼");
         }
         setVisibility(!visibility);
-        
     }
+
+    const increaseSize = () => {
+        changeFontSizeMult(0.25);
+    }
+
+    const decreaseSize = () => {
+        changeFontSizeMult(-0.25);
+    }
+
     return (
         <div class="accessibility-tool">
             <div class="fixed">
@@ -43,10 +51,10 @@ function Accessibility() {
                                 <Col xs="3">
                                     <ButtonGroup style={{marginRight: "5px"}}>
                                         <Button size="sm" variant="light" onClick={() => {}}>
-                                            <PauseFill size={13}/>
+                                            <Pause size={13}/>
                                         </Button>
                                         <Button size="sm" variant="light">
-                                            <PlayFill size={13}/>
+                                            <Play size={13}/>
                                         </Button>
                                     </ButtonGroup>
                                 </Col>
@@ -63,25 +71,25 @@ function Accessibility() {
                                 </Col>
                             </Row>
                         </Container>
-                    
-                    <div class="toolbar-size">
-                        <div class="words">
-                            <h2>Font Size</h2>
-                            <div class="shortcut">Ctrl/Cmd + Alt + [</div>
-                            <div class="shortcut">Ctrl/Cmd + Alt + ]</div>
-                        </div>
-                        <div class="size-area">
-                            <svg width="53" height="26" viewBox="0 0 53 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="53" height="26" rx="13" fill="white"/>
-                                <path d="M40.0732 8.16895L40.0732 13L40.0732 17.8311" stroke="black" stroke-width="2"/>
-                                <line x1="35" y1="13" x2="45" y2="13" stroke="black" stroke-width="2"/>
-                                <line x1="9" y1="13" x2="19" y2="13" stroke="black" stroke-width="2"/>
-                                <line x1="26.5" y1="2.10751e-08" x2="26.5" y2="26" stroke="black"/>
-                                <rect id="minus" width="26.5" height="26" fill="white" fill-opacity="0"/>
-                                <rect id="plus" width="26.5" height="26" x="26.5" y="0" fill="white" fill-opacity="0"/>
-                            </svg>
-                        </div>
-                    </div>
+                        <Container class="toolbar-size">
+                            <Row>
+                                <Col xs="7">
+                                    <h1 class="words">Font Size</h1>
+                                    <p class="shortcut">Ctrl/Cmd + Alt + [</p>
+                                    <p class="shortcut">Ctrl/Cmd + Alt + ]</p>
+                                </Col>
+                                <Col xs="3">
+                                    <ButtonGroup style={{marginRight: "5px"}}>
+                                        <Button size="sm" variant="light" onClick={() => decreaseSize()}>
+                                            <DashLg size={13}/>
+                                        </Button>
+                                        <Button size="sm" variant="light" onClick={() => increaseSize()}>
+                                            <PlusLg size={13}/>
+                                        </Button>
+                                    </ButtonGroup>
+                                </Col>
+                            </Row>
+                        </Container>
                     </div>
                 </Collapse>
             </div>
