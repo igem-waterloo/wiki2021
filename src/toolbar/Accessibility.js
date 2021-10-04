@@ -7,15 +7,13 @@ import Col from 'react-bootstrap/Col';
 import CloseButton from 'react-bootstrap/CloseButton';
 import Collapse from 'react-bootstrap/Collapse';
 import { Pause, Play, ArrowCounterclockwise, PlusLg, DashLg, Sun, MoonFill } from 'react-bootstrap-icons';
-import '../App.css';
+import styles from './accessibility.module.scss';
 import { setTheme } from '../utils/themes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Accessibility({changeFontSizeMult, setLightMode}) {
     const [visibility, setVisibility] = useState(false);
     const [arrow, setArrow] = useState("▲");
-    const [mode, setMode] = useState("dark");
-    let theme = localStorage.getItem('theme');
 
     const toggleVisibility = () => {
         if (visibility) {
@@ -43,84 +41,82 @@ function Accessibility({changeFontSizeMult, setLightMode}) {
     }
 
     return (
-        <div className="accessibility-tool">
-            <div className="fixed">
-                <div className="same">
-                    <CloseButton style={{color: "white", fontSize: "15px" }} 
-                        onClick={() => toggleVisibility()}>{arrow}</CloseButton>
-                    <h1 className="toolbar-title"> Accessibility </h1>
-                    <div className="shortcut">Ctrl/Cmd + Shift + A</div>
-                </div>
-                <Collapse in={visibility}>
-                    <div>
-                        <Container className="toolbar-options">
-                            <Row>
-                                <Col xs="7">
-                                <h1 className="words">Read Aloud</h1>
-                                    <p className="shortcut">Ctrl/Cmd+Shift+L</p>
-                                </Col>
-                                <Col xs="3">
-                                    <ButtonGroup style={{marginRight: "5px"}}>
-                                        <Button size="sm" variant="light" onClick={() => {}}>
-                                            <Pause size={13}/>
-                                        </Button>
-                                        <Button size="sm" variant="light">
-                                            <Play size={13}/>
-                                        </Button>
-                                    </ButtonGroup>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col xs="7">
-                                <h1 className="words">Restart</h1>
-                                    <p className="shortcut">Ctrl/Cmd+Shift+R</p>
-                                </Col>
-                                <Col xs="3">
-                                        <Button variant="light">
-                                            <ArrowCounterclockwise size={16}/>
-                                        </Button>
-                                </Col>
-                            </Row>
-                        </Container>
-                        <Container className="toolbar-options">
-                            <Row>
-                                <Col xs="7">
-                                    <h1 className="words">Font Size</h1>
-                                    <p className="shortcut">Ctrl/Cmd + Alt + [ Ctrl/Cmd + Alt + ]</p>
-                                </Col>
-                                <Col xs="3">
-                                    <ButtonGroup style={{marginRight: "5px"}}>
-                                        <Button size="sm" variant="light" onClick={() => decreaseSize()}>
-                                            <DashLg size={13}/>
-                                        </Button>
-                                        <Button size="sm" variant="light" onClick={() => increaseSize()}>
-                                            <PlusLg size={13}/>
-                                        </Button>
-                                    </ButtonGroup>
-                                </Col>
-                            </Row>
-                        </Container>
-                        <Container className="toolbar-options">
-                            <Row>
-                                <Col xs="7">
-                                    <h1 className="words">Color Mode</h1>
-                                    <p className="shortcut">Ctrl/Cmd + Alt + [ Ctrl/Cmd + Alt + ]</p>
-                                </Col>
-                                <Col xs="3">
-                                    <ButtonGroup style={{marginRight: "5px"}}>
-                                        <Button size="sm" variant="light" onClick={() => changeMode(true)}>
-                                            <Sun size={13}/>
-                                        </Button>
-                                        <Button size="sm" variant="light" onClick={() => changeMode(false)}>
-                                            <MoonFill size={13}/>
-                                        </Button>
-                                    </ButtonGroup>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </div>
-                </Collapse>
+        <div className={styles.fixed}>
+            <div className={styles.same}>
+                <CloseButton style={{color: "white", fontSize: "15px" }} 
+                    onClick={() => toggleVisibility()}>{arrow}</CloseButton>
+                <h1 className={styles.toolbar_title}>Accessibility</h1>
+                <div className={styles.shortcut}>Ctrl/Cmd + Shift + A</div>
             </div>
+            <Collapse in={visibility}>
+                <div>
+                    <Container className={styles.toolbar_options}>
+                        <Row>
+                            <Col xs="7">
+                            <h1 className={styles.words}>Read Aloud</h1>
+                                <p className={styles.shortcut}>Ctrl/Cmd+Shift+P</p>
+                            </Col>
+                            <Col xs="3">
+                                <ButtonGroup style={{marginRight: "5px"}}>
+                                    <Button size="sm" variant="light" onClick={() => {}}>
+                                        <Pause size={13}/>
+                                    </Button>
+                                    <Button size="sm" variant="light">
+                                        <Play size={13}/>
+                                    </Button>
+                                </ButtonGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs="7">
+                            <h1 className={styles.words}>Restart</h1>
+                                <p className={styles.shortcut}>Ctrl/Cmd+Shift+R</p>
+                            </Col>
+                            <Col xs="3">
+                                    <Button variant="light">
+                                        <ArrowCounterclockwise size={16}/>
+                                    </Button>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container className={styles.toolbar_options}>
+                        <Row>
+                            <Col xs="7">
+                                <h1 className={styles.words}>Font Size</h1>
+                                <p className={styles.shortcut}>Ctrl/Cmd + Alt + [ Ctrl/Cmd + Alt + ]</p>
+                            </Col>
+                            <Col xs="3">
+                                <ButtonGroup style={{marginRight: "5px"}}>
+                                    <Button size="sm" variant="light" onClick={() => decreaseSize()}>
+                                        <DashLg size={13}/>
+                                    </Button>
+                                    <Button size="sm" variant="light" onClick={() => increaseSize()}>
+                                        <PlusLg size={13}/>
+                                    </Button>
+                                </ButtonGroup>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container className={styles.toolbar_options}>
+                        <Row>
+                            <Col xs="7">
+                                <h2 className={styles.words}>Change Mode</h2>
+                                <p className={styles.shortcut}>Ctrl/Cmd + Alt + L Ctrl/Cmd + Alt + ]</p>
+                            </Col>
+                            <Col xs="3">
+                                <ButtonGroup style={{marginRight: "5px"}}>
+                                    <Button size="sm" variant="light" onClick={() => changeMode(true)}>
+                                        <Sun size={13}/>
+                                    </Button>
+                                    <Button size="sm" variant="light" onClick={() => changeMode(false)}>
+                                        <MoonFill size={13}/>
+                                    </Button>
+                                </ButtonGroup>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </Collapse>
         </div>
     );
 

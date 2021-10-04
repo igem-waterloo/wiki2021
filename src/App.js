@@ -30,16 +30,16 @@ function App() {
                 <div style={{display: 'flex', flexDirection: 'row'}}>
                 <Header />
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path="/Team:Waterloo">
                         <Engineering />
                     </Route>
-                    <Route exact path="/team">
+                    <Route exact path="/Team:Waterloo/team">
                         <HomePage />
                     </Route>
-                    <Route exact path="/project/description">
+                    <Route exact path="/Team:Waterloo/project/description">
                         <ProjectDescription />
                     </Route>
-                    <Route exact path="/project/engineering">
+                    <Route exact path="/Team:Waterloo/project/engineering">
                         <Engineering />
                     </Route>
                 </Switch>
