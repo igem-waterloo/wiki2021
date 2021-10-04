@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import TeamPage from "./pages/TeamPage";
 import HomePage from "./pages/HomePage/HomePage";
@@ -6,27 +6,40 @@ import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import styles from './App.css';
+import Accessibility from './toolbar/Accessibility';
+import { keepTheme } from "./utils/themes.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends Component {
-    render() {
-        return (
-            <div className="App" style={{background: '#23242D'}}>
+function App() {
+    const [fontSizeMult, setFontSizeMult] = useState(1);
+
+    useEffect(() => {
+        keepTheme();
+    });
+
+    const changeFontSizeMult = (newMult) => {
+        console.log(fontSizeMult);
+        if (fontSizeMult > 0.5 && fontSizeMult < 1.5) {
+            setFontSizeMult(fontSizeMult + newMult);
+        }
+    }
+
+    return (
+        <div className="App">
             <Router>
                 <div style={{display: 'flex', flexDirection: 'row'}}>
                 <Header />
                 <Switch>
-                    <Route path="/">
+                    <Route exact path="/">
                         <Engineering />
                     </Route>
-                    <Route path="/team">
-                        <TeamPage />
+                    <Route exact path="/team">
+                        <HomePage />
                     </Route>
-                    <Route path="/project/description">
+                    <Route exact path="/project/description">
                         <ProjectDescription />
                     </Route>
-                    <Route path="/project/engineering">
+                    <Route exact path="/project/engineering">
                         <Engineering />
                     </Route>
                 </Switch>
@@ -35,9 +48,9 @@ class App extends Component {
                 <Footer />
                 </div>
             </Router>
-            </div>
-          );
-    }
+            <Accessibility changeFontSizeMult={changeFontSizeMult}></Accessibility>
+        </div>
+    );
 }
 
 export default App;

@@ -6,13 +6,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CloseButton from 'react-bootstrap/CloseButton';
 import Collapse from 'react-bootstrap/Collapse';
-import { Pause, Play, ArrowCounterclockwise, PlusLg, DashLg } from 'react-bootstrap-icons';
+import { Pause, Play, ArrowCounterclockwise, PlusLg, DashLg, Sun, MoonFill } from 'react-bootstrap-icons';
 import '../App.css';
+import { setTheme } from '../utils/themes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Accessibility({changeFontSizeMult}) {
+function Accessibility({changeFontSizeMult, setLightMode}) {
     const [visibility, setVisibility] = useState(false);
     const [arrow, setArrow] = useState("▲");
+    const [mode, setMode] = useState("dark");
+    let theme = localStorage.getItem('theme');
 
     const toggleVisibility = () => {
         if (visibility) {
@@ -31,22 +34,30 @@ function Accessibility({changeFontSizeMult}) {
         changeFontSizeMult(-0.25);
     }
 
+    const changeMode = (lightMode) => {
+        if (lightMode && localStorage.getItem("theme") === "theme-dark") {
+            setTheme("theme-light");
+        } else if (!lightMode && localStorage.getItem("theme") === "theme-light"){
+            setTheme("theme-dark");
+        }
+    }
+
     return (
-        <div class="accessibility-tool">
-            <div class="fixed">
-                <div class="same">
+        <div className="accessibility-tool">
+            <div className="fixed">
+                <div className="same">
                     <CloseButton style={{color: "white", fontSize: "15px" }} 
                         onClick={() => toggleVisibility()}>{arrow}</CloseButton>
-                    <h1 class="toolbar-title"> Accessibility </h1>
-                    <div class="shortcut">Ctrl/Cmd + Shift + A</div>
+                    <h1 className="toolbar-title"> Accessibility </h1>
+                    <div className="shortcut">Ctrl/Cmd + Shift + A</div>
                 </div>
                 <Collapse in={visibility}>
                     <div>
-                        <Container class="toolbar-read">
+                        <Container className="toolbar-options">
                             <Row>
                                 <Col xs="7">
-                                <h1 class="words">Read Aloud</h1>
-                                    <p class="shortcut">Ctrl/Cmd+Shift+L</p>
+                                <h1 className="words">Read Aloud</h1>
+                                    <p className="shortcut">Ctrl/Cmd+Shift+L</p>
                                 </Col>
                                 <Col xs="3">
                                     <ButtonGroup style={{marginRight: "5px"}}>
@@ -61,8 +72,8 @@ function Accessibility({changeFontSizeMult}) {
                             </Row>
                             <Row>
                                 <Col xs="7">
-                                <h1 class="words">Restart</h1>
-                                    <p class="shortcut">Ctrl/Cmd+Shift+R</p>
+                                <h1 className="words">Restart</h1>
+                                    <p className="shortcut">Ctrl/Cmd+Shift+R</p>
                                 </Col>
                                 <Col xs="3">
                                         <Button variant="light">
@@ -71,12 +82,11 @@ function Accessibility({changeFontSizeMult}) {
                                 </Col>
                             </Row>
                         </Container>
-                        <Container class="toolbar-size">
+                        <Container className="toolbar-options">
                             <Row>
                                 <Col xs="7">
-                                    <h1 class="words">Font Size</h1>
-                                    <p class="shortcut">Ctrl/Cmd + Alt + [</p>
-                                    <p class="shortcut">Ctrl/Cmd + Alt + ]</p>
+                                    <h1 className="words">Font Size</h1>
+                                    <p className="shortcut">Ctrl/Cmd + Alt + [ Ctrl/Cmd + Alt + ]</p>
                                 </Col>
                                 <Col xs="3">
                                     <ButtonGroup style={{marginRight: "5px"}}>
@@ -85,6 +95,24 @@ function Accessibility({changeFontSizeMult}) {
                                         </Button>
                                         <Button size="sm" variant="light" onClick={() => increaseSize()}>
                                             <PlusLg size={13}/>
+                                        </Button>
+                                    </ButtonGroup>
+                                </Col>
+                            </Row>
+                        </Container>
+                        <Container className="toolbar-options">
+                            <Row>
+                                <Col xs="7">
+                                    <h1 className="words">Color Mode</h1>
+                                    <p className="shortcut">Ctrl/Cmd + Alt + [ Ctrl/Cmd + Alt + ]</p>
+                                </Col>
+                                <Col xs="3">
+                                    <ButtonGroup style={{marginRight: "5px"}}>
+                                        <Button size="sm" variant="light" onClick={() => changeMode(true)}>
+                                            <Sun size={13}/>
+                                        </Button>
+                                        <Button size="sm" variant="light" onClick={() => changeMode(false)}>
+                                            <MoonFill size={13}/>
                                         </Button>
                                     </ButtonGroup>
                                 </Col>

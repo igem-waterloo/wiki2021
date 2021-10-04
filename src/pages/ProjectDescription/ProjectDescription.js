@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import styles from './projectdescription.module.scss';
+import overallStyles from '../overall.module.scss';
 
 class ProjectDescription extends Component {
     render() {
         return (
             <div className={styles.container}>
                 <div className={styles.text_div}>
-                    <span className={styles.page_heading}>Project Description</span>
+                    <span className={overallStyles.page_heading}>Project Description</span>
                     {/* <br className={styles.title_bottom} /> */}
                 </div>
                 <div className={styles.img_header}>
