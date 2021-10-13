@@ -8,10 +8,10 @@ import CloseButton from 'react-bootstrap/CloseButton';
 import Collapse from 'react-bootstrap/Collapse';
 import { Pause, Play, ArrowCounterclockwise, PlusLg, DashLg, Sun, MoonFill } from 'react-bootstrap-icons';
 import styles from './accessibility.module.scss';
-import { setTheme } from '../utils/themes';
+import { setTheme, changeFontSize } from '../utils/themes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Accessibility({changeFontSizeMult, setLightMode}) {
+function Accessibility({change}) {
     const [visibility, setVisibility] = useState(false);
     const [arrow, setArrow] = useState("▲");
 
@@ -24,12 +24,16 @@ function Accessibility({changeFontSizeMult, setLightMode}) {
         setVisibility(!visibility);
     }
 
-    const increaseSize = () => {
-        changeFontSizeMult(0.25);
-    }
-
-    const decreaseSize = () => {
-        changeFontSizeMult(-0.25);
+    const changeSize = (increase) => {
+        let currentMult = localStorage.getItem("multiplier");
+        currentMult = parseFloat(currentMult);
+        if (increase && currentMult < 1.5) {
+            currentMult += 0.25;
+            changeFontSize(currentMult);
+        } else if (!increase && currentMult > 0.5) {
+            currentMult -= 0.25;
+            changeFontSize(currentMult);
+        }
     }
 
     const changeMode = (lightMode) => {
@@ -45,7 +49,7 @@ function Accessibility({changeFontSizeMult, setLightMode}) {
             <div className={styles.same}>
                 <CloseButton style={{color: "white", fontSize: "15px" }} 
                     onClick={() => toggleVisibility()}>{arrow}</CloseButton>
-                <h1 className={styles.toolbar_title}>Accessibility</h1>
+                <div className={styles.toolbar_title}>Accessibility</div>
                 <div className={styles.shortcut}>Ctrl/Cmd + Shift + A</div>
             </div>
             <Collapse in={visibility}>
@@ -53,7 +57,7 @@ function Accessibility({changeFontSizeMult, setLightMode}) {
                     <Container className={styles.toolbar_options}>
                         <Row>
                             <Col xs="7">
-                            <h1 className={styles.words}>Read Aloud</h1>
+                            <div className={styles.words}>Read Aloud</div>
                                 <p className={styles.shortcut}>Ctrl/Cmd+Shift+P</p>
                             </Col>
                             <Col xs="3">
@@ -69,12 +73,12 @@ function Accessibility({changeFontSizeMult, setLightMode}) {
                         </Row>
                         <Row>
                             <Col xs="7">
-                            <h1 className={styles.words}>Restart</h1>
+                            <div className={styles.words}>Restart</div>
                                 <p className={styles.shortcut}>Ctrl/Cmd+Shift+R</p>
                             </Col>
                             <Col xs="3">
                                     <Button variant="light">
-                                        <ArrowCounterclockwise size={16}/>
+                                        <ArrowCounterclockwise size={13}/>
                                     </Button>
                             </Col>
                         </Row>
@@ -82,15 +86,15 @@ function Accessibility({changeFontSizeMult, setLightMode}) {
                     <Container className={styles.toolbar_options}>
                         <Row>
                             <Col xs="7">
-                                <h1 className={styles.words}>Font Size</h1>
+                                <div className={styles.words}>Font Size</div>
                                 <p className={styles.shortcut}>Ctrl/Cmd + Alt + [ Ctrl/Cmd + Alt + ]</p>
                             </Col>
                             <Col xs="3">
                                 <ButtonGroup style={{marginRight: "5px"}}>
-                                    <Button size="sm" variant="light" onClick={() => decreaseSize()}>
+                                    <Button size="sm" variant="light" onClick={() => changeSize(false)}>
                                         <DashLg size={13}/>
                                     </Button>
-                                    <Button size="sm" variant="light" onClick={() => increaseSize()}>
+                                    <Button size="sm" variant="light" onClick={() => changeSize(true)}>
                                         <PlusLg size={13}/>
                                     </Button>
                                 </ButtonGroup>
@@ -100,7 +104,7 @@ function Accessibility({changeFontSizeMult, setLightMode}) {
                     <Container className={styles.toolbar_options}>
                         <Row>
                             <Col xs="7">
-                                <h2 className={styles.words}>Change Mode</h2>
+                                <div className={styles.words}>Change Mode</div>
                                 <p className={styles.shortcut}>Ctrl/Cmd + Alt + L Ctrl/Cmd + Alt + ]</p>
                             </Col>
                             <Col xs="3">

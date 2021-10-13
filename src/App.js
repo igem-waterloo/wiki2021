@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import TeamPage from "./pages/TeamPage";
 import HomePage from "./pages/HomePage/HomePage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Accessibility from './toolbar/Accessibility';
-import { keepTheme } from "./utils/themes.js";
+import { keepTheme, keepSize } from "./utils/themes.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -15,6 +14,7 @@ function App() {
 
     useEffect(() => {
         keepTheme();
+        keepSize();
     });
 
     const changeFontSizeMult = (newMult) => {
@@ -33,13 +33,13 @@ function App() {
                     <Route exact path="/Team:Waterloo">
                         <Engineering />
                     </Route>
-                    <Route exact path="/Team:Waterloo/team">
+                    <Route exact path="/Team:Waterloo/Team">
                         <HomePage />
                     </Route>
-                    <Route exact path="/Team:Waterloo/project/description">
+                    <Route exact path="/Team:Waterloo/Description">
                         <ProjectDescription />
                     </Route>
-                    <Route exact path="/Team:Waterloo/project/engineering">
+                    <Route exact path="/Team:Waterloo/Engineering">
                         <Engineering />
                     </Route>
                 </Switch>
