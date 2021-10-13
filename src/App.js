@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
+import TeamPage from "./pages/TeamPage/TeamPage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
 import Footer from "./components/Footer/Footer";
@@ -34,7 +34,7 @@ function App() {
                         <Engineering />
                     </Route>
                     <Route exact path="/Team:Waterloo/Team">
-                        <HomePage />
+                        <TeamPage />
                     </Route>
                     <Route exact path="/Team:Waterloo/Description">
                         <ProjectDescription />
