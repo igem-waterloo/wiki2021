@@ -18,7 +18,10 @@
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-    border-bottom: 7px solid var(--colored-header-color);
+    -webkit-border-image: var(--colored-header-color) 1;
+    border-image: var(--colored-header-color) 1;
+    border-bottom: 6px solid transparent;
+    padding-bottom: 10px;
     line-height: 105px;
     margin-left: 15px;
 }

@@ -28,19 +28,13 @@
 a:link {
     text-decoration: none;
     color: white;
+    margin: 2px 0px;
+    font-size: var(--footer-link-size);
 }  
 
-.link {
-    margin: 2px 0px;
-}
-
-.link_text {
-    font-size: 16px;
-    color: white;
-}
 
 .heading_text {
-    font-size: 18px;
+    font-size: var(--footer-header-size);
     color: white;
     border-bottom: 5px solid #E88A5F;
     margin-bottom: 10px;

@@ -2,6 +2,8 @@ html {
     --page-header-size: 70px;
     --text-header-size: 45px;
     --description-size: 30px;
+    --footer-header-size: 18px;
+    --footer-link-size: 16px;
 }
 
 .theme-light {

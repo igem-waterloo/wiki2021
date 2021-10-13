@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import overallStyles from '../overall.module.scss';
-import styles from './homepage.module.scss';
+import styles from './teampage.module.scss';
 import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
