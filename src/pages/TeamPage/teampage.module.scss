@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 80px;
+    margin-bottom: 300px;
+}
+
+.banner_heading {
+    font-size: 90px;
+    font-weight: 600;
+    color: white;
+}
+
+.carousel {
+    background: #34394B;
+    border-radius: 60px;
+    // width: 1100px;
+    // height: 570px;
+    vertical-align: middle;
+}
+
+.carousel_slide {
+    align-items: center;
+    vertical-align: middle;
+    margin: 50px 0px;
+}
+
+.img_div {
+    // width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.team_label {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    border-bottom: 7px solid #E88A5F;
+    margin: 30px 0px;
+}
+
+.button_lbl {
+    height: 150px;
+    width: 350px;
+    vertical-align: center;
+    background: #34394B;
+    font-size: var(--description-size);
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    margin-right: 20px;
+
+    &:hover {
+        background: #5258F0;
+        transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    }
+}
+
