@@ -50,17 +50,17 @@ class HomePage extends Component {
                     <span className={overallStyles.text_heading}>Team</span>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <Link to="/lab&design">
+                    <Link to="/Engineering">
                         <button className={styles.button_lbl}>Lab & Design</button>
                     </Link>
-                    <Link to="/humanpractices">
+                    <Link to="/Human_Practices">
                         <button className={styles.button_lbl}>Human Practices</button>
                     </Link>
-                    <Link to="/">
+                    <Link to="">
                         <button className={styles.button_lbl}>Wiki</button>
                     </Link>
                 </div>
-                <Link to="/math" style={{marginTop: '50px'}}>
+                <Link to="/Model" style={{marginTop: '50px'}}>
                         <button className={styles.button_lbl}>Math & Modelling</button>
                 </Link>
             </div>

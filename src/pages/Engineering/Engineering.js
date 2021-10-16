@@ -7,7 +7,7 @@ import ProteinDesign from './ProteinDesign';
 import FusionDesign from './FusionDesign';
 import References from './References';
 
-const tabs = ['Protein Design', 'Fusion Design', 'Process Design', 'References'];
+const tabs = ['Protein Optimization', 'Fusion Design', 'Process Design', 'References'];
 
 const Engineering = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -39,7 +39,7 @@ const Engineering = () => {
                     ))}
                 </div>
                 <div>
-                { active === 'Protein Design' && (
+                { active === 'Protein Optimization' && (
                     <ProteinDesign></ProteinDesign>
                 )}
                 { active === 'Fusion Design' && (

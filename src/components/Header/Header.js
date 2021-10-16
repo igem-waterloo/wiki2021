@@ -162,6 +162,7 @@ class Header extends Component {
                         <span className={styles.url_text}>Safety</span>
                     </Link>
                 }
+                </div>
             </div>
         )
     }

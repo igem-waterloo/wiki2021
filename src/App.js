@@ -9,6 +9,7 @@ import Sticky from 'react-stickynode';
 import StickyBox from "react-sticky-box";
 import styles from './App.css';
 import Accessibility from './toolbar/Accessibility';
+import ScrollToTop from "./scrollToTop/scrollToTop";
 import { keepTheme, keepSize } from "./utils/themes.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -53,6 +54,7 @@ function App() {
                 <Footer />
                 </div>
             </Router>
+            <ScrollToTop />
             <Accessibility changeFontSizeMult={changeFontSizeMult}></Accessibility>
         </div>
     );

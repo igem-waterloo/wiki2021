@@ -1,0 +1,32 @@
+.scroll_to_top {
+    position: fixed;
+    background-color: black;
+    animation: fadeIn 700ms ease-in-out 1s both;
+    cursor: pointer;
+    bottom: 77px;
+    right: 30px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.button_div {
+    color: white;
+}
+
+.arrow_button {
+    width: 45px;
+    height: 45px;
+}
+
+.arrow_button:hover {
+    cursor: pointer;
+}
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
