@@ -6,7 +6,7 @@
     background: #34394B;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-    // position: absolute;
+    position: relative;
     bottom: 0;
 }
 
@@ -25,13 +25,19 @@
     margin-right: 30px;
 }
 
-a:link {
+.link {
     text-decoration: none;
     color: white;
     margin: 2px 0px;
     font-size: var(--footer-link-size);
 }  
 
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
 
 .heading_text {
     font-size: var(--footer-header-size);
