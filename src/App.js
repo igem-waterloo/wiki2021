@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
@@ -28,24 +29,24 @@ function App() {
         <div className="App">
             <Router>
                 <div style={{display: 'flex', flexDirection: 'row'}}>
-                <Header />
-                <Switch>
-                    <Route exact path="/Team:Waterloo">
-                        <Engineering />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Team">
-                        <TeamPage />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Description">
-                        <ProjectDescription />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Engineering">
-                        <Engineering />
-                    </Route>
-                </Switch>
+                    <Header />
+                    <Switch>
+                        <Route exact path="/Team:Waterloo">
+                            <HomePage />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Team">
+                            <TeamPage />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Description">
+                            <ProjectDescription />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Engineering">
+                            <Engineering />
+                        </Route>
+                    </Switch>
                 </div>
                 <div>
-                <Footer />
+                    <Footer />
                 </div>
             </Router>
             <Accessibility changeFontSizeMult={changeFontSizeMult}></Accessibility>

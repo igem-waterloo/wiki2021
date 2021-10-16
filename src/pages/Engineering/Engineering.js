@@ -6,7 +6,7 @@ class Engineering extends Component {
     render() {
         return (
             <div className={styles.container}>
-                <div className={styles.header_div}>
+                <div className={styles.heading_div}>
                     <div className={styles.title}>
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Engineering.</div>
