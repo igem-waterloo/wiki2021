@@ -47,7 +47,9 @@ class Header extends Component {
         console.log("Current URL: ", current_url);
         return (
             <div className={styles.header_container}>
-                <img src="https://2021.igem.org/wiki/images/6/6d/T--Waterloo--neuroDetech.png" className={styles.logo_img}></img>
+                <Link to="/Team:Waterloo">
+                    <img src="https://2021.igem.org/wiki/images/6/6d/T--Waterloo--neuroDetech.png" className={styles.logo_img}/>
+                </Link>
                 <div className={styles.links_div}>
                     { current_url === "Home" ? 
                         <Link to="/Team:Waterloo" className={styles.link}>

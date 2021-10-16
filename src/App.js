@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
@@ -50,7 +51,7 @@ function App() {
                 </Switch>
                 </div>
                 <div>
-                <Footer />
+                    <Footer />
                 </div>
             </Router>
             <Accessibility changeFontSizeMult={changeFontSizeMult}></Accessibility>

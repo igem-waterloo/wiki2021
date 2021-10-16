@@ -1,17 +1,21 @@
 html {
-    --page-header-size: 70px;
-    --text-header-size: 45px;
-    --description-size: 30px;
-    --footer-header-size: 18px;
+    --page-heading-size: 50px;
+    --text-heading-size: 35px;
+    --description-size: 15px;
+    --footer-heading-size: 18px;
     --footer-link-size: 16px;
+    --main-page-heading-desc-size: 15px;
+    --main-page-sub-heading-size: 30px;
+    --main-page-description-size: 20px;
 }
 
 .theme-light {
     --background-color: #FFFFFF;
+    --main-page-background-color: #FFFFFF;
     --sidebar-color: #F8F8FF;
     --font-color: #2F2F2F;
-    --header-color: #4B56B3;
-    --colored-header-color: var(--header-color);
+    --heading-color: #4B56B3;
+    --colored-heading-color: var(--heading-color);
     padding-top: 0px;
     padding-bottom: 0px;
     height: 100%;
@@ -20,10 +24,11 @@ html {
 
 .theme-dark {
     --background-color: #23242D;
-    --sidebar-color: var(--background-color);
+    --main-page-background-color: linear-gradient(178.24deg, #171C44 2.73%, #383099 61.99%, #2950B7 106.85%);
+    --sidebar-color: #23242D;
     --font-color: #FFFFFF;
-    --header-color: #F9E3AB;
-    --colored-header-color: linear-gradient(91.19deg, #F9E3AB 3.66%, #F5C592 25.2%, #EF928C 54.71%, #9293F7 93.59%);
+    --heading-color: #F9E3AB;
+    --colored-heading-color: linear-gradient(91.19deg, #F9E3AB 3.66%, #F5C592 25.2%, #EF928C 54.71%, #9293F7 93.59%);
     padding-top: 0px;
     padding-bottom: 0px;
     height: 100%;
@@ -36,4 +41,5 @@ html, #root {
     height: 100%;
     margin-top: -50px;
     margin-bottom: -50px;
+    font-family: 'Poppins', sans-serif;
 }
