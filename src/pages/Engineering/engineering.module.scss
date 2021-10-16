@@ -21,18 +21,6 @@
     margin: auto 0;
 }
 
-.page_heading {
-    font-size: 70px;
-    font-weight: 500;
-    color: white;
-    // height: 100px;
-    // line-height: 100px;
-    // border-bottom: 7px solid #E88A5F;
-    // padding-bottom: 15px;
-    // text-align: center;
-    // vertical-align: middle;
-}
-
 .illustration {
     width: 600px;
     height: 450px;
@@ -42,21 +30,6 @@
 
 .text_div {
     margin: 0 40px;
-}
-
-.text_heading {
-    font-size: 45px;
-    font-weight: 500;
-    color: white;
-    border-bottom: 7px solid #E88A5F;
-    padding-bottom: 10px;
-}
-
-.description {
-    font-size: 30px;
-    font-weight: 500;
-    color: white;
-    margin-top: 40px;
 }
 
 .sections_div {
@@ -85,7 +58,7 @@
 }
 
 .section_text {
-    font-size: 30px;
+    font-size: var(--description-size);
     font-weight: 400;
     color: white;
     text-align: center;

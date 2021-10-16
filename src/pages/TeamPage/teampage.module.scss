@@ -6,13 +6,6 @@
     margin-bottom: 300px;
 }
 
-.page_heading {
-    font-size: 50px;
-    font-weight: 500;
-    color: white;
-    border-bottom: 7px solid #E88A5F;
-}
-
 .banner_heading {
     font-size: 90px;
     font-weight: 600;
@@ -54,7 +47,7 @@
     width: 350px;
     vertical-align: center;
     background: #34394B;
-    font-size: 35px;
+    font-size: var(--description-size);
     font-weight: 500;
     color: white;
     border: none;

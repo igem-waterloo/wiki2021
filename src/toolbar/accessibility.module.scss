@@ -1,0 +1,62 @@
+.fixed {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    z-index: 999;
+}
+  
+.same {
+    padding: 8px;
+}
+
+.toolbar_title, .arrow {
+    text-align: center ;
+    margin: 0px 0px;
+    color: white;
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.words {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: 470;
+    font-size: 14px;
+}
+
+.shortcut {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    color: #C2C0FF;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.toolbar_options {
+    width: 93%; 
+    margin: auto; 
+    border: solid black;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.large_icon_btn {
+    padding: 0.5rem 0.5rem;
+}
+
+.toolbar_read:after, .toolbar_size:after {
+    content: "";
+    display: table;
+    clear: both;
+}

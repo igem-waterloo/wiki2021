@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Button from 'react-bootstrap/Button';
-import styles from './homepage.module.scss';
+import overallStyles from '../overall.module.scss';
+import styles from './teampage.module.scss';
 import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
@@ -9,10 +9,10 @@ class HomePage extends Component {
         return (
             <div className={styles.container}>
                 <div>
-                    <span className={styles.page_heading}>Team Members</span>
+                    <span className={overallStyles.text_heading}>Team Members</span>
                 </div>
                 <div style={{margin: '30px 0px'}}>
-                    <span className={styles.banner_heading}>Who We Are</span>
+                    <span className={overallStyles.page_heading}>Who We Are</span>
                 </div>
                 <div>
                 <Carousel className={styles.carousel} indicators={false} interval={null}>
@@ -47,7 +47,7 @@ class HomePage extends Component {
                 </Carousel>
                 </div>
                 <div style={{margin: '50px 0px'}}>
-                    <span className={styles.team_label}>Team</span>
+                    <span className={overallStyles.text_heading}>Team</span>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                     <Link to="/lab&design">

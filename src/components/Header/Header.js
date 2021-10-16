@@ -6,32 +6,32 @@ import Dropdown from './Dropdown';
 class Header extends Component {
     render() {
         let title = window.location.pathname;
-        title = title.replace('/', '');
+        title = title.replace('/Team:Waterloo/', '');
         console.log("Title: ", title);
 
         let urls_list = [
             {
-                main_url: "project",
+                main_url: "Project",
                 sub_urls: ["Description", "Engineering", "Model", "Measurement", "Implementation", "Proof_Of_Concept"]
             },
             {
-                main_url: "home",
+                main_url: "Home",
                 sub_urls: [""]
             },
             {
-                main_url: "parts",
-                sub_urls: ["Parts", "Contribution", "improvement"]
+                main_url: "Parts",
+                sub_urls: ["Parts", "Contribution", "Improvement"]
             },
             {
-                main_url: "human",
+                main_url: "Human",
                 sub_urls: ["Human_Practices", "Education", "Inclusion"]
             },
             {
-                main_url: "team",
+                main_url: "Team",
                 sub_urls: ["Team", "Attributions", "Collaborations"]
             },
             {
-                main_url: "safety",
+                main_url: "Safety",
                 sub_urls: ["Safety"]
             }
         ]
@@ -47,122 +47,121 @@ class Header extends Component {
         console.log("Current URL: ", current_url);
         return (
             <div className={styles.header_container}>
-                <img src="./NeuroDetech.png" className={styles.logo_img}></img>
+                <img src="https://2021.igem.org/wiki/images/6/6d/T--Waterloo--neuroDetech.png" className={styles.logo_img}></img>
                 <div className={styles.links_div}>
-                { current_url === "home" ? 
-                    <Link to="/" className={styles.link}>
+                { current_url === "Home" ? 
+                    <Link to="/Team:Waterloo" className={styles.link}>
                         <Dropdown open title="Home">
                         </Dropdown>
                     </Link>
                     :
-                    <Link to="/" className={styles.link}>
+                    <Link to="/Team:Waterloo" className={styles.link}>
                         <span className={styles.url_text}>Home</span>
                     </Link>
                 }
-                { current_url === "project" ?
-                    <Link to="/Description" className={styles.link}>
+                { current_url === "Project" ?
+                    <Link to="/Team:Waterloo/Description" className={styles.link}>
                     <Dropdown open={true} title="Project">
                         <div className={styles.inner_links_div}>
-                            <Link to="/Description" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Description" className={styles.sub_link}>
                                 <span className={styles.link_text}>Description</span>
                             </Link>
-                            <Link to="/Engineering" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Engineering" className={styles.sub_link}>
                                 <span className={styles.link_text}>Engineering</span>
                             </Link>
-                            <Link to="/Model" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Model" className={styles.sub_link}>
                                 <span className={styles.link_text}>Model</span>
                             </Link>
-                            <Link to="/Measurement" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Measurement" className={styles.sub_link}>
                                 <span className={styles.link_text}>Measurement</span>
                             </Link>
-                            <Link to="/Implementation" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Implementation" className={styles.sub_link}>
                                 <span className={styles.link_text}>Implementation</span>
                             </Link>
-                            <Link to="/Proof_Of_Concept" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Proof_Of_Concept" className={styles.sub_link}>
                                 <span className={styles.link_text}>Proof of Concept</span>
                             </Link>
                         </div>
                     </Dropdown>
                     </Link>
                     :
-                    <Link to="/Description" className={styles.link}>
+                    <Link to="/Team:Waterloo/Description" className={styles.link}>
                         <span className={styles.url_text}>Project</span>
                     </Link>
                 }
-                { current_url === "human" ?
-                    <Link to="/Human_Practices" className={styles.link}>
+                { current_url === "Human_Practices" ?
+                    <Link to="/Team:Waterloo/Human_Practices" className={styles.link}>
                     <Dropdown open={true} title="Human Practices">
                         <div className={styles.inner_links_div}>
-                            <Link to="/Human_Practices" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Human_Practices" className={styles.sub_link}>
                                 <span className={styles.link_text}>Human Practices</span>
                             </Link>
-                            <Link to="/Education" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Education" className={styles.sub_link}>
                                 <span className={styles.link_text}>Education</span>
                             </Link>
-                            <Link to="/Inclusion" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Inclusion" className={styles.sub_link}>
                                 <span className={styles.link_text}>Inclusion</span>
                             </Link>
                         </div>
                     </Dropdown>
                     </Link>
                     :
-                    <Link to="/Human_Practices" className={styles.link}>
+                    <Link to="/Team:Waterloo/Human_Practices" className={styles.link}>
                         <span className={styles.url_text}>Human Practices</span>
                     </Link>
                 }
-                { current_url === "parts" ?
-                    <Link to="/Parts" className={styles.link}>
+                { current_url === "Parts" ?
+                    <Link to="/Team:Waterloo/Parts" className={styles.link}>
                     <Dropdown open title="Parts">
                         <div className={styles.inner_links_div}>
-                            <Link to="/Parts" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Parts" className={styles.sub_link}>
                                 <span className={styles.link_text}>Parts</span>
                             </Link>
-                            <Link to="/Contribution" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Contribution" className={styles.sub_link}>
                                 <span className={styles.link_text}>Contribution</span>
                             </Link>
-                            <Link to="/Improvement" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Improvement" className={styles.sub_link}>
                                 <span className={styles.link_text}>Improvement</span>
                             </Link>
                         </div>
                     </Dropdown>
                     </Link>
                     :
-                    <Link to="/Parts" className={styles.link}>
+                    <Link to="/Team:Waterloo/Parts" className={styles.link}>
                         <span className={styles.url_text}>Parts</span>
                     </Link>
                 }
-                { current_url === "team" ?
-                    <Link to="/Team" className={styles.link}>
+                { current_url === "Team" ?
+                    <Link to="/Team:Waterloo/Team" className={styles.link}>
                     <Dropdown open title="Team">
                         <div className={styles.inner_links_div}>
-                            <Link to="/Team" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Team" className={styles.sub_link}>
                                 <span className={styles.link_text}>Members</span>
                             </Link>
-                            <Link to="/Attributions" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Attributions" className={styles.sub_link}>
                                 <span className={styles.link_text}>Attributions</span>
                             </Link>
-                            <Link to="/Collaborations" className={styles.sub_link}>
+                            <Link to="/Team:Waterloo/Collaborations" className={styles.sub_link}>
                                 <span className={styles.link_text}>Collaborations</span>
                             </Link>
                         </div>
                     </Dropdown>
                     </Link>
                     :
-                    <Link to="/Team" className={styles.link}>
+                    <Link to="/Team:Waterloo/Team" className={styles.link}>
                         <span className={styles.url_text}>Team</span>
                     </Link>
                 }
-                { current_url === "safety" ?
-                    <Link to="/Safety" className={styles.link}>
+                { current_url === "Safety" ?
+                    <Link to="/Team:Waterloo/Safety" className={styles.link}>
                     <Dropdown open title="Safety">
                     </Dropdown>
                     </Link>
                     :
-                    <Link to="/Safety" className={styles.link}>
+                    <Link to="/Team:Waterloo/Safety" className={styles.link}>
                         <span className={styles.url_text}>Safety</span>
                     </Link>
                 }
-                </div>
             </div>
         )
     }
