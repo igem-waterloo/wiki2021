@@ -1,9 +1,16 @@
-import React, { Component } from 'react';
+
+import React, { Component, useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './engineering.module.scss';
+import ProcessDesign from './ProcessDesign';
+import ProteinDesign from './ProteinDesign';
+import FusionDesign from './FusionDesign';
+import References from './References';
 
-class Engineering extends Component {
-    render() {
+const tabs = ['Protein Design', 'Fusion Design', 'Process Design', 'References'];
+
+const Engineering = () => {
+        const [active, setActive] = useState(tabs[0]);
         return (
             <div className={styles.container}>
                 <div className={styles.header_div}>
@@ -20,34 +27,34 @@ class Engineering extends Component {
                     </div>
                 </div>
                 <div className={styles.sections_div}>
-                    <div className={styles.sections}>
-                        <div className={styles.section_img}></div>
-                        <div className={styles.section_text}>
-                            Protein Design
+                    {tabs.map(tab => (
+                        <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
+                            <div className={styles.sections}>
+                            <div className={styles.section_img}></div>
+                            <div className={styles.section_text}>
+                                {tab}
+                            </div>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.sections}>
-                        <div className={styles.section_img}></div>
-                        <div className={styles.section_text}>
-                            Fusion Design
-                        </div>
-                    </div>
-                    <div className={styles.sections}>
-                        <div className={styles.section_img}></div>
-                        <div className={styles.section_text}>
-                            Process Design
-                        </div>
-                    </div>
-                    <div className={styles.sections}>
-                        <div className={styles.section_img}></div>
-                        <div className={styles.section_text}>
-                            References
-                        </div>
-                    </div>
+                    ))}
                 </div>
+                <div>
+                { active === 'Protein Design' && (
+                    <ProteinDesign></ProteinDesign>
+                )}
+                { active === 'Fusion Design' && (
+                    <FusionDesign></FusionDesign>
+                )}
+                { active === 'Process Design' && (
+                    <ProcessDesign></ProcessDesign>
+                )}
+                { active === 'References' && (
+                    <References></References>
+                )}
+                </div>
+                {/* <p style={{color: 'white'}}> Your payment selection: {active} </p> */}
             </div>
         )
-    }
 }
 
 export default Engineering;
