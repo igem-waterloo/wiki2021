@@ -7,7 +7,9 @@ class CurrentDiagnosis extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Understanding the Current Diagnosis Pipeline in Canada</span>
+                    <span className={overallStyles.text_heading}>
+                        Understanding the Current ADHD Diagnosis Process in Canada
+                    </span>
                 </div>
                 <div>
                     <div className={overallStyles.illustration}></div>
@@ -26,7 +28,7 @@ class CurrentDiagnosis extends Component {
                     </div>
                 </div>
                 <div className={overallStyles.description}>
-                    For instance, between the medical professionals that were consulted, the assessment process ranged from a total of 4 to 20 hours, with some medical professionals having assessments that spanned over multiple days. Although it appeared to be common practice to assess for and rule out other disorders that may be contributing to ADHD-like symptoms, the methods were not consistent among the medical professionals. While psychologist assessors used standardized checklists to assess patients for learning disabilities and cognitive skills, our discussions with Vera Roncon, a clinical psychologist from Mt Pleasant Therapy Centre, informed us that some assessors also requested bloodwork to rule out factors such as thyroid dysfunction (2021). In addition, by discussing with Dr. Megan Smith, a clinical child and school psychologist, it was determined that other less common tests also include sleep studies (2021).                 
+                    For instance, between the medical professionals that were consulted, the assessment process ranged from a total of 4 to 20 hours, with some medical professionals having assessments that spanned over multiple days. Although it appeared to be common practice to assess for and rule out other disorders that may be contributing to ADHD-like symptoms, the methods were not consistent among the medical professionals. While psychologist assessors used standardized checklists to assess patients for learning disabilities and cognitive skills, our discussions with Vera Roncon, a clinical psychologist from Mt Pleasant Therapy Centre, informed us that some assessors also requested bloodwork to rule out factors such as thyroid dysfunction (2021). In addition, by discussing with Dr. Megan Smith, a clinical child and school psychologist, it was determined that other less common tests also include sleep studies (2021). 
                 </div>
                 <div className={overallStyles.description}>
                     Through the research conducted, it became evident to the team that the current processes and tests in place were mainly qualitative, thus creating the need for NeuroDetech- a quantitative test to aid in ADHD diagnosis.
@@ -53,8 +55,7 @@ class CurrentDiagnosis extends Component {
                     </div>
                 </div>
                 <div className={overallStyles.figure_div}>
-                    {/* <img src="https://2021.igem.org/wiki/images/d/d9/T--Waterloo--PrescreenPipeline.png" alt="Prescreen Pipeline" className={styles.pipeline_img}/> */}
-                    <div>WAITING FOR IMAGE</div>
+                    <img src="https://2021.igem.org/wiki/images/6/6d/T--Waterloo--LabTestingPipeline.png" alt="Lab Testing Pipeline" className={styles.pipeline_img}/>
                     <div className={overallStyles.figure_text}>
                         Figure 3. The proposed ADHD diagnosis procedure with the NeuroDetech test implemented with the other lab tests. 
                     </div>

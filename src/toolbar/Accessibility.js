@@ -4,7 +4,6 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CloseButton from 'react-bootstrap/CloseButton';
 import Collapse from 'react-bootstrap/Collapse';
 import { Pause, Play, ArrowCounterclockwise, PlusLg, DashLg, Sun, MoonFill } from 'react-bootstrap-icons';
 import styles from './accessibility.module.scss';
@@ -50,8 +49,9 @@ function Accessibility() {
             <div className={styles.fixed}>
                 <ScrollToTop />
                 <div className={styles.same}>
-                    <CloseButton style={{color: "white", fontSize: "15px" }} 
-                        onClick={() => toggleVisibility()}>{arrow}</CloseButton>
+                    <button className={styles.close_button} onClick={() => toggleVisibility()}>
+                        {arrow}
+                    </button>
                     <div className={styles.toolbar_title}>Accessibility</div>
                     <div className={styles.shortcut}>Ctrl/Cmd + Shift + A</div>
                 </div>

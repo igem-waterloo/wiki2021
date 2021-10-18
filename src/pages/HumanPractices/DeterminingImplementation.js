@@ -23,12 +23,12 @@ class DeterminingImplementation extends Component {
                     Under the aforementioned conditions, it would be difficult to implement an in-vivo approach; associated ethical concerns are too ambiguous and complex to analyze through the lens of integrated human practices. As a result, an in-vitro solution should be considered, as it would be easier to implement within the time frame of approximately 8 months, and with heightened lab restrictions due to the COVID-19 pandemic. The in-vitro approach was executed to aid in developing our diagnostic test using creativity and literature reviews of existing protocols.
                 </div>
                 <div className={overallStyles.description}>
-                    With the final stance being in-vitro testing, determining the implementation of the tool was one of the main discussions our team had. This discussion revolved around implementing our tool either <b>a)</b> a prescreening device or <b>b)</b> an additional step in a series of standard tests required by a primary healthcare provider. These ‘lab testing days’ are requested to benchmark an individual’s physiological conditions prior to diagnosis with blood work, urine analysis, etc. . 
+                    With the final stance being in-vitro testing, determining the implementation of the tool was one of the main discussions our team had. This discussion revolved around implementing our tool either <b>a)</b> a prescreening device or <b>b)</b> an additional step in a series of standard tests required by a primary healthcare provider. These ‘lab testing days’ are requested to benchmark an individual’s physiological conditions prior to diagnosis with blood work, urine analysis, etc.  
                 </div>
                 <div className={overallStyles.figure_div}>
                     <img src="https://2021.igem.org/wiki/images/c/c5/T--Waterloo--InVitroInVivo.png" alt="In Vitro In Vivo testing" className={styles.vitro_vivo_img}/>
                     <div className={overallStyles.figure_text}>
-                        figure ????????: (NfERnOv2, 2011)
+                        (Digital art image courtesy of NfERnOv2, 2011)
                     </div>
                 </div>
                 <div className={overallStyles.description}>

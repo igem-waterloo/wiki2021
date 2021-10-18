@@ -11,10 +11,6 @@ const tabs = ['Protein Design', 'Fusion Design', 'Process Design', 'References']
 
 const Engineering = () => {
         const [active, setActive] = useState(tabs[0]);
-
-        useLayoutEffect(() => {
-            window.scrollTo(0, 0)
-        });
         
         return (
             <div className={styles.container}>

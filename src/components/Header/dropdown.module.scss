@@ -6,28 +6,34 @@
 
 .header {
     display: flex;
-    flex-direction: row;
     border: 2px solid #E88A5F;
     border-radius: 25px;
     margin-right: 10px;
     justify-content: center;
     padding: 0 10px;
-    width: 90%;
-    margin-left: -20px;
+    width: max-content;
+    margin-left: -8.6%;
 }
 
 .title {
-    color: white;
+    display: block;
+    color: var(--font-color);
     font-weight: 500;
-    font-size: 30px;
-    // border-bottom: 7px solid #E88A5F;
-    // padding-bottom: 10px;
+    font-size: var(--footer-link-size);
     margin-right: 10px;
 }
 
-.button {
-    color: #E88A5F;
-    margin: auto 0;
+.close_button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.close_button {
+    display: inherit;
+    color: var(--font-color);
+    background-color: transparent;
+    font-size: 15px;
+    border: 0;
 }
 
 .arrow_button {
@@ -38,9 +44,3 @@
 .arrow_button:hover {
     cursor: pointer;
 }
-
-// .text {
-//     color: white;
-//     font-weight: normal;
-//     font-size: 30px;
-// }

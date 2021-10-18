@@ -12,6 +12,18 @@
     z-index: 999;
 }
   
+.close_button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.close_button {
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    border: 0;
+}
+
 .same {
     padding: 8px;
 }

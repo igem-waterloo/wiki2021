@@ -4,11 +4,6 @@
     display: flex;
     flex-direction: column;
     background: var(--sidebar-color);
-    // position: absolute;
-    // left: 0;
-    // z-index: -1;
-    // max-height: 1000px;
-    // overflow: scroll;
 }
 
 .logo_img {
@@ -21,7 +16,7 @@
     display: flex;
     flex-direction: column;
     // margin-top: 100px;
-    margin-left: 40px;
+    margin-left: 15%;
 }
 
 a:link {
@@ -36,13 +31,13 @@ a:link {
 }
 
 .link_text {
-    font-size: var(--main-page-description-size);
+    font-size: var(--footer-link-size);
     font-weight: 400;
     color: var(--font-color);
 }
 
 .url_text {
-    font-size: var(--description-size);
+    font-size: var(--footer-link-size);
     font-weight: 500;
     color: var(--font-color);
 }
@@ -55,6 +50,7 @@ a:link {
 
 .sub_link {
     // margin: 10px 10px 0 20px;
+    
     border-bottom: 1px solid #E5E5E5;
     padding-bottom: 10px;
     padding-top: 10px;

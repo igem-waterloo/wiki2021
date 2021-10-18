@@ -5,14 +5,11 @@ import styles from './humanpractices.module.scss';
 import CurrentDiagnosis from './CurrentDiagnosis';
 import DeterminingImplementation from './DeterminingImplementation';
 import CareersEvent from './CareersEvent';
+import References from './References';
 
 const HumanPractices = () => {
-    const tabs = ['Understanding Current Diagnosis Process', 'Determining Implementation', 'Careers Event', 'References'];
+    const tabs = ['Project Values', 'Understanding Current Diagnosis Process', 'Determining Implementation', 'References'];
     const [active, setActive] = useState(tabs[0]);
-
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
 
     return (
             <div className={styles.container}>
@@ -49,16 +46,16 @@ const HumanPractices = () => {
                 </div>
                     <div>
                     { active === tabs[0] && (
-                        <CurrentDiagnosis></CurrentDiagnosis>
+                        <CurrentDiagnosis/>
                     )}
                     { active === tabs[1] && (
-                        <DeterminingImplementation></DeterminingImplementation>
+                        <CurrentDiagnosis/>
                     )}
                     { active === tabs[2] && (
-                        <CareersEvent></CareersEvent>
+                        <DeterminingImplementation/>
                     )}
                     { active === tabs[3] && (
-                        <CurrentDiagnosis></CurrentDiagnosis>
+                        <References/>
                     )}
                     </div>
             </div>
