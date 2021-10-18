@@ -1,11 +1,12 @@
 
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './humanpractices.module.scss';
+import ProjectValues from './ProjectValues';
 import CurrentDiagnosis from './CurrentDiagnosis';
 import DeterminingImplementation from './DeterminingImplementation';
-import CareersEvent from './CareersEvent';
 import References from './References';
+import CareersEvent from './CareersEvent';
 
 const HumanPractices = () => {
     const tabs = ['Project Values', 'Understanding Current Diagnosis Process', 'Determining Implementation', 'References'];
@@ -46,7 +47,7 @@ const HumanPractices = () => {
                 </div>
                     <div>
                     { active === tabs[0] && (
-                        <CurrentDiagnosis/>
+                        <ProjectValues/>
                     )}
                     { active === tabs[1] && (
                         <CurrentDiagnosis/>
