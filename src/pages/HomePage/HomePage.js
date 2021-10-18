@@ -30,7 +30,7 @@ class HomePage extends Component {
                     </div>
                 </div>
                 <div className={styles.center_content_div}>
-                    <div className={styles.intro_text}>
+                    <div className={styles.intro_text} style={{maxWidth: "75%"}}>
                         Attention-Deficit/Hyperactivity Disorder, or ADHD, is a neurodevelopmental disorder characterized either by <b>inattentiveness</b> and <b>an inability to focus</b>, or <b>restlessness</b> and <b>impulsive decision-making</b>
                     </div>
                 </div>
@@ -42,21 +42,17 @@ class HomePage extends Component {
                         <img src="https://2021.igem.org/wiki/images/3/3c/T--Waterloo--school.png" alt="School" className={styles.categories_img}/>
                         <div className={styles.categories_text}>School</div>
                     </ScrollAnimation>
-                    <ScrollAnimation delay={800}
-                        animateIn='fadeInRight'
-                        className={styles.categories}>
+                    <ScrollAnimation delay={800} animateIn='fadeInRight' className={styles.categories}>
                         <img src="https://2021.igem.org/wiki/images/1/14/T--Waterloo--work.png" alt="Work" className={styles.categories_img}/>
                         <div className={styles.categories_text}>Work</div>
                     </ScrollAnimation>
-                    <ScrollAnimation delay={1600}
-                        animateIn='fadeInRight'
-                        className={styles.categories}>
-                        <img src="https://2021.igem.org/wiki/images/7/76/T--Waterloo--relationships.png" alt="Relationships" className={styles.categories_img}/>
-                        <div className={styles.categories_text}>Relationships</div>
+                    <ScrollAnimation delay={1600} animateIn='fadeInRight' className={styles.categories}>
+                            <img src="https://2021.igem.org/wiki/images/7/76/T--Waterloo--relationships.png" alt="Relationships" className={styles.categories_img}/>
+                            <div className={styles.categories_text}>Relationships</div>
                     </ScrollAnimation>
                 </div>
                 <div className={styles.center_content_div}>
-                    <div className={styles.intro_text}>
+                    <div className={styles.intro_text} style={{maxWidth: "50%"}}>
                         A 2017 study by the <b>World Health Organization</b> showed that the prevalence of ADHD is
                     </div>
                     <div className={styles.categories}>
@@ -68,10 +64,12 @@ class HomePage extends Component {
                                     -
                                     {isVisible ? <CountUp end={4} duration={0.5}/> : 0}
                                     %
+                                    <div className={styles.count_up_text}>in adults</div>
                                 </div>
                                 <div className={styles.count_up_div}>
                                     {isVisible ? <CountUp end={10} duration={1}/> : 0}
                                     %
+                                    <div className={styles.count_up_text}>in children</div>
                                 </div>
                             </div>
                             )}
@@ -79,23 +77,25 @@ class HomePage extends Component {
                     </div>
                 </div>
                 <div className={styles.center_content_div}>
-                    <div className={styles.intro_text}>
+                    <div className={styles.intro_text} style={{maxWidth: "50%"}}>
                         Current ADHD diagnosis procedures require a series of <b>psychological assessments</b> conducted and interpreted by healthcare professionals.
                     </div>
                     <div className="mt-5"></div>
-                    <div className={styles.intro_text}>
-                        Which can be influenced by the patient's <b>gender</b>, <b>race</b> and <b>culture</b>
+                    <div className={styles.intro_text} style={{maxWidth: "50%", paddingTop: "3%"}}>
+                        Which can be influenced by the patient's <b>gender</b>, <b>race</b> and <b>culture</b>.
                     </div>
                 </div>
-                <div className={styles.heading_div}>
+                <div className={styles.heading_div} style={{marginTop: "-5%"}}>
                     <div className={styles.pie_chart_text}>
-                        Gender biases are especially prevalent, with males being <b>3 times</b> more likely to be diagnosed than females
+                        Gender biases are especially prevalent, with males being <b>3 times</b> more likely to be diagnosed than females.
                     </div>
                     <img src="https://2021.igem.org/wiki/images/3/3f/T--Waterloo--pieChart.png" alt="Pie Chart" className={styles.pie_chart_img}/>
                 </div>
                 <div className={styles.goal_background_div}>
+                    <div className={styles.goal_background}>
                     <div className={styles.goal_text}>
                         The goal of <b>NeuroDetech</b> is to create a quantitative tool to aid the diagnosis of ADHD and reduce the margin of bias.
+                    </div>
                     </div>
                 </div>
                 <div className={styles.heading_div}>
@@ -105,10 +105,41 @@ class HomePage extends Component {
                     <img src="https://2021.igem.org/wiki/images/9/93/T--Waterloo--lightbulb.png" alt="Lightbulb" className={styles.lightbulb_img}/>
                 </div>
                 <div className={styles.heading_div}>
-                    <div className={styles.biomarkers_text}>
-                        How do we reduce bias in ADHD diagnoses?
+                    <img src="https://2021.igem.org/wiki/images/0/02/T--Waterloo--biomarkers.png" alt="Biomarkers" className={styles.biomarkers_img}/>
+                    <div className={styles.pie_chart_text}>
+                        ADHD can be correlated to a statistically significant <b>lack or surplus</b> of specific biomarkers.
                     </div>
-                    <img src="https://2021.igem.org/wiki/images/0/02/T--Waterloo--biomarkers.png" alt="Biomarkers" className={styles.lightbulb_img}/>
+                </div>
+                <div className={styles.center_content_div}>
+                    <div className={styles.intro_text} style={{maxWidth: "75%"}}>
+                    By quantifying the concentration of these biomarkers in urine, a non-invasive assessment of the risk of having ADHD can be provided.
+
+                    </div>
+                </div>
+                <div className={styles.center_content_div}>
+                    <div className={styles.discover_text}>
+                        Let’s <div style={{ display: "inline", color: "var(--main-page-numbers-color)"}}>discover</div> more!
+                    </div>
+                </div>
+                <div className={styles.icons_div} style={{marginLeft: "15%", marginRight: "auto"}}>
+                    <Link to="/Team:Waterloo/Engineering" className={styles.icons}>
+                        <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-engineering-icon)"}}/>
+                        <div className={styles.icons_text}>Engineering</div>
+                    </Link>
+                    <Link to="/Team:Waterloo/Human_Practices" className={styles.icons}>
+                        <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-human-practices-icon)"}}/>
+                        <div className={styles.icons_text}>Human Practices</div>
+                    </Link>
+                </div>
+                <div className={styles.icons_div} style={{marginLeft: "auto", marginRight: "25%"}}>
+                    <Link to="/Team:Waterloo/Parts" className={styles.icons}>
+                        <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-parts-icon)"}}/>
+                        <div className={styles.icons_text}>Parts</div>
+                    </Link>
+                    <Link to="/Team:Waterloo/Project_Description" className={styles.icons}>
+                        <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-project-description-icon)"}}/>
+                        <div className={styles.icons_text} >Project Description</div>
+                    </Link>
                 </div>
             </div>
         )

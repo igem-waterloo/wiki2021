@@ -4,12 +4,14 @@ import HomePage from "./pages/HomePage/HomePage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
+import HumanPractices from "./pages/HumanPractices/HumanPractices";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Sticky from 'react-stickynode';
 import StickyBox from "react-sticky-box";
 import styles from './App.css';
 import Accessibility from './toolbar/Accessibility';
+import ScrollToTop from "./utils/scrollToTop";
 import { keepTheme, keepSize } from "./utils/themes.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -48,13 +50,17 @@ function App() {
                     <Route exact path="/Team:Waterloo/Engineering">
                         <Engineering />
                     </Route>
+                    <Route exact path="/Team:Waterloo/Human_Practices">
+                        <HumanPractices />
+                    </Route>
                 </Switch>
                 </div>
                 <div>
                     <Footer />
                 </div>
             </Router>
-            <Accessibility changeFontSizeMult={changeFontSizeMult}></Accessibility>
+            <ScrollToTop />
+            <Accessibility></Accessibility>
         </div>
     );
 }
