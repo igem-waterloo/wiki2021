@@ -7,7 +7,7 @@ class CareersEvent extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Determining Implementation</span>
+                    <span className={overallStyles.text_heading}>Careers Event</span>
                 </div>
                 <div className={styles.promo_div}>
                     <img src="https://2021.igem.org/wiki/images/9/92/T--Waterloo--CareersInSynBioIGPromo.png" alt="Careers in SynBio IG Promo" className={styles.promo_img}/>

@@ -1,10 +1,11 @@
 .scroll_to_top {
-    position: fixed;
+    position: absolute;
+    float: right;
     background-color: black;
     animation: fadeIn 700ms ease-in-out 1s both;
     cursor: pointer;
-    bottom: 77px;
-    right: 30px;
+    bottom: 100%;
+    right: 0;
     border-radius: 10px;
     z-index: 1000;
 }
