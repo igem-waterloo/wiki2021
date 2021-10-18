@@ -13,28 +13,26 @@ const Engineering = () => {
         const [active, setActive] = useState(tabs[0]);
         
         return (
-            <div className={styles.container}>
-                <div className={styles.heading_div}>
-                    <div className={styles.title}>
+            <div className={overallStyles.container}>
+                <div className={overallStyles.heading_div}>
+                    <div className={overallStyles.title}>
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Engineering.</div>
                     </div>
-                    <div className={styles.illustration}></div>
+                    <div className={overallStyles.illustration}></div>
                 </div>
-                <div>
-                    <div className={overallStyles.text_div}>
-                        <span className={overallStyles.text_heading}>Overview</span>
-                    </div>
+                <div className={overallStyles.text_div}>
+                    <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
                         Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder. Current diagnosis procedures require qualitative psychological tests, thus diagnoses are subject to clinician bias. NeuroDetech aims to create a quantitative tool to aid ADHD diagnosis and reduce the margin of bias.
                     </div>
                 </div>
-                <div className={styles.sections_div}>
+                <div className={overallStyles.sections_div}>
                     {tabs.map(tab => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
-                            <div className={styles.sections}>
-                            <div className={styles.section_img}></div>
-                            <div className={styles.section_text}>
+                            <div className={overallStyles.sections}>
+                            <div className={overallStyles.section_img}></div>
+                            <div className={overallStyles.section_text}>
                                 {tab}
                             </div>
                             </div>

@@ -13,9 +13,9 @@ const HumanPractices = () => {
     const [active, setActive] = useState(tabs[0]);
 
     return (
-            <div className={styles.container}>
-                <div className={styles.heading_div}>
-                    <div className={styles.title}>
+            <div className={overallStyles.container}>
+                <div className={overallStyles.heading_div}>
+                    <div className={overallStyles.title}>
                         <div className={overallStyles.page_heading}>
                             NeuroDetech
                         </div>
@@ -23,9 +23,9 @@ const HumanPractices = () => {
                             Human Practices.
                         </div>
                     </div>
-                    <div className={styles.illustration}></div>
+                    <div className={overallStyles.illustration}></div>
                 </div>
-                <div className={styles.text_div}>
+                <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>
                         Overview
                     </span>
@@ -33,12 +33,12 @@ const HumanPractices = () => {
                         to be determined, and also the tab names
                     </div>
                 </div>
-                <div className={styles.sections_div}>
+                <div className={overallStyles.sections_div}>
                     {tabs.map(tab => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
-                            <div className={styles.sections}>
-                            <div className={styles.section_img}></div>
-                            <div className={styles.section_text}>
+                            <div className={overallStyles.sections}>
+                            <div className={overallStyles.section_img}></div>
+                            <div className={overallStyles.section_text}>
                                 {tab}
                             </div>
                             </div>

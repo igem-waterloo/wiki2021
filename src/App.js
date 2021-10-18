@@ -5,6 +5,7 @@ import TeamPage from "./pages/TeamPage/TeamPage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
 import HumanPractices from "./pages/HumanPractices/HumanPractices";
+import Finance from "./pages/Finance/Finance";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Sticky from 'react-stickynode';
@@ -34,28 +35,29 @@ function App() {
         <div className="App">
             <Router>
                 <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
-                    <StickyBox style={{zIndex: "5", position: "relative"}}>
-                        <Header />
-                    </StickyBox>
-                    <div style={{borderLeft: '2px solid #E5E5E5'}}>
-                        <Switch>
-                            <Route exact path="/Team:Waterloo">
-                                <HomePage style={{borderLeft: '2px solid #E5E5E5'}} />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Team">
-                                <TeamPage />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Description">
-                                <ProjectDescription />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Engineering">
-                                <Engineering />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Human_Practices">
-                                <HumanPractices />
-                            </Route>
-                        </Switch>
-                    </div>
+                <StickyBox style={{zIndex: "5", position: "relative"}}>
+                    <Header />
+                </StickyBox>
+                <Switch>
+                    <Route exact path="/Team:Waterloo">
+                        <HomePage/>
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Team">
+                        <TeamPage />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Description">
+                        <ProjectDescription />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Engineering">
+                        <Engineering />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Human_Practices">
+                        <HumanPractices />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Finance">
+                        <Finance />
+                    </Route>
+                </Switch>
                 </div>
                 <div>
                     <Footer />
