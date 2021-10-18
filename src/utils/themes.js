@@ -10,12 +10,13 @@ function changeFontSize(multiplier) {
     localStorage.setItem('multiplier', multiplier);
     let basePage = 50;
     let baseText = 35;
-    let baseDesc = 15;
+    let baseDesc = 17;
     let baseFooterHeader = 18;
     let baseFooterLink = 16;
     let mainHeadingDesc = 15;
     let mainSubHeading = 30;
-    let mainDesc = 20;
+    let mainDesc = 25;
+    let mainNumbers = 80;
     basePage *= multiplier;
     baseText *= multiplier;
     baseDesc *= multiplier;
@@ -24,6 +25,7 @@ function changeFontSize(multiplier) {
     mainHeadingDesc *= multiplier;
     mainSubHeading *= multiplier;
     mainDesc *= multiplier;
+    mainNumbers *= multiplier;
     basePage = basePage.toString() + "px";
     baseText = baseText.toString() + "px";
     baseDesc = baseDesc.toString() + "px";
@@ -32,6 +34,7 @@ function changeFontSize(multiplier) {
     mainHeadingDesc = mainHeadingDesc.toString() + "px";
     mainSubHeading = mainSubHeading.toString() + "px";
     mainDesc = mainDesc.toString() + "px";
+    mainNumbers = mainNumbers.toString() + "px";
     document.documentElement.style.setProperty("--page-heading-size", basePage);
     document.documentElement.style.setProperty("--text-heading-size", baseText);
     document.documentElement.style.setProperty("--description-size", baseDesc);
@@ -40,6 +43,7 @@ function changeFontSize(multiplier) {
     document.documentElement.style.setProperty("--main-page-heading-desc-size", mainHeadingDesc);
     document.documentElement.style.setProperty("--main-page-sub-heading-size", mainSubHeading);
     document.documentElement.style.setProperty("--main-page-description-size", mainDesc);
+    document.documentElement.style.setProperty("--main-page-numbers-size", mainNumbers);
 }
 
 function keepSize() {
