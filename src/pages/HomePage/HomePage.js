@@ -8,6 +8,10 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 class HomePage extends Component {
     
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return (
             <div className={styles.container}>

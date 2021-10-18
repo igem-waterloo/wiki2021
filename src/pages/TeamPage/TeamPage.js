@@ -4,7 +4,11 @@ import overallStyles from '../overall.module.scss';
 import styles from './teampage.module.scss';
 import { Link } from 'react-router-dom';
 
-class HomePage extends Component {
+class TeamPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div className={styles.container}>
@@ -68,4 +72,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default TeamPage;

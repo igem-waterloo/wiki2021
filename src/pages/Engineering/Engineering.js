@@ -1,5 +1,5 @@
 
-import React, { Component, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './engineering.module.scss';
 import ProcessDesign from './ProcessDesign';
@@ -11,6 +11,11 @@ const tabs = ['Protein Design', 'Fusion Design', 'Process Design', 'References']
 
 const Engineering = () => {
         const [active, setActive] = useState(tabs[0]);
+
+        useLayoutEffect(() => {
+            window.scrollTo(0, 0)
+        });
+        
         return (
             <div className={styles.container}>
                 <div className={styles.heading_div}>

@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './humanpractices.module.scss';
 import CurrentDiagnosis from './CurrentDiagnosis';
@@ -9,6 +9,11 @@ import CareersEvent from './CareersEvent';
 const HumanPractices = () => {
     const tabs = ['Understanding Current Diagnosis Process', 'Determining Implementation', 'Careers Event', 'References'];
     const [active, setActive] = useState(tabs[0]);
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
             <div className={styles.container}>
                 <div className={styles.heading_div}>
