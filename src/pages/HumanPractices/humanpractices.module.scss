@@ -28,6 +28,10 @@
     border-radius: 60px;
 }
 
+.text_div {
+    margin: 0 40px;
+}
+
 .sections_div {
     display: flex;
     justify-content: space-evenly;
@@ -58,5 +62,7 @@
     font-weight: 400;
     color: white;
     text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
     margin-top: 20px;
 }

@@ -1,16 +1,29 @@
 .fixed {
     background-color: black;
-    color: white;
+    color: #ffffff;
     font-size: 10px;
+    font-weight: 200;
     position: fixed;
-    bottom: 0px;
-    right: 30px;
-    width: 200px;
+    bottom: 0;
+    right: 2%;
+    width: 15%;
     height: auto;
     border-radius: 15px;
     z-index: 999;
 }
   
+.close_button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.close_button {
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    border: 0;
+}
+
 .same {
     padding: 8px;
 }
@@ -35,10 +48,11 @@
 .shortcut {
     margin-top: 0px;
     margin-left: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 3%;
     color: #C2C0FF;
     font-size: 10px;
-    line-height: 10px;
+    font-weight: 200;
+    line-height: 105%;
     text-align: center;
 }
 
@@ -48,7 +62,7 @@
     border: solid black;
     border-width: 1px;
     border-radius: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 3%;
 }
 
 .large_icon_btn {

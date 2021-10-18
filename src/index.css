@@ -1,17 +1,28 @@
 html {
-    --page-header-size: 70px;
-    --text-header-size: 45px;
-    --description-size: 30px;
-    --footer-header-size: 18px;
+    --page-heading-size: 50px;
+    --text-heading-size: 35px;
+    --description-size: 17px;
+    --footer-heading-size: 18px;
     --footer-link-size: 16px;
+    --main-page-heading-desc-size: 15px;
+    --main-page-sub-heading-size: 30px;
+    --main-page-description-size: 25px;
+    --main-page-numbers-size: 80px;
 }
 
 .theme-light {
     --background-color: #FFFFFF;
+    --main-page-background-color: #FFFFFF;
     --sidebar-color: #F8F8FF;
     --font-color: #2F2F2F;
-    --header-color: #4B56B3;
-    --colored-header-color: var(--header-color);
+    --heading-color: #4B56B3;
+    --colored-heading-color: var(--heading-color);
+    --main-page-numbers-color: #5258F0;
+    --main-page-title-background: url(https://2021.igem.org/wiki/images/6/65/T--Waterloo--mainTitleBackgroundLight.png);
+    --main-page-engineering-icon: url(https://2021.igem.org/wiki/images/2/21/T--Waterloo--engineeringIconLight.png);
+    --main-page-human-practices-icon: url(https://2021.igem.org/wiki/images/1/1c/T--Waterloo--humanPracticesIconLight.png);
+    --main-page-parts-icon: url(https://2021.igem.org/wiki/images/4/4d/T--Waterloo--partsIconLight.png);
+    --main-page-project-description-icon: url(https://2021.igem.org/wiki/images/4/4f/T--Waterloo--projectDescriptionIconLight.png);
     padding-top: 0px;
     padding-bottom: 0px;
     height: 100%;
@@ -20,10 +31,17 @@ html {
 
 .theme-dark {
     --background-color: #23242D;
-    --sidebar-color: var(--background-color);
+    --main-page-background-color: linear-gradient(178.24deg, #171C44 2.73%, #383099 61.99%, #2950B7 106.85%);
+    --sidebar-color: #23242D;
     --font-color: #FFFFFF;
-    --header-color: #F9E3AB;
-    --colored-header-color: linear-gradient(91.19deg, #F9E3AB 3.66%, #F5C592 25.2%, #EF928C 54.71%, #9293F7 93.59%);
+    --heading-color: #F9E3AB;
+    --colored-heading-color: linear-gradient(91.19deg, #F9E3AB 3.66%, #F5C592 25.2%, #EF928C 54.71%, #9293F7 93.59%);
+    --main-page-numbers-color: #5FDFE8;
+    --main-page-title-background: url(https://2021.igem.org/wiki/images/1/1a/T--Waterloo--mainTitleBackground.png);
+    --main-page-engineering-icon: url(https://2021.igem.org/wiki/images/6/6e/T--Waterloo--engineeringIconDark.png);
+    --main-page-human-practices-icon: url(https://2021.igem.org/wiki/images/1/11/T--Waterloo--humanPracticesIconDark.png);
+    --main-page-parts-icon: url(https://2021.igem.org/wiki/images/c/cb/T--Waterloo--partsIconDark.png);
+    --main-page-project-description-icon: url(https://2021.igem.org/wiki/images/a/a5/T--Waterloo--projectDescriptionIconDark.png);
     padding-top: 0px;
     padding-bottom: 0px;
     height: 100%;
@@ -36,4 +54,5 @@ html, #root {
     height: 100%;
     margin-top: -50px;
     margin-bottom: -50px;
+    font-family: 'Poppins', sans-serif;
 }

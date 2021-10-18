@@ -3,6 +3,11 @@ import styles from './projectdescription.module.scss';
 import overallStyles from '../overall.module.scss';
 
 class ProjectDescription extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return (
             <div className={styles.container}>

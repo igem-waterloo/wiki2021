@@ -8,26 +8,42 @@ function setTheme(themeName) {
 function changeFontSize(multiplier) {
     // edit this with new font size variables so the accessbility toolbar can change the size
     localStorage.setItem('multiplier', multiplier);
-    let basePage = 70;
-    let baseText = 45;
-    let baseDesc = 30;
+    let basePage = 50;
+    let baseText = 35;
+    let baseDesc = 17;
     let baseFooterHeader = 18;
     let baseFooterLink = 16;
+    let mainHeadingDesc = 15;
+    let mainSubHeading = 30;
+    let mainDesc = 25;
+    let mainNumbers = 80;
     basePage *= multiplier;
     baseText *= multiplier;
     baseDesc *= multiplier;
     baseFooterHeader *= multiplier;
     baseFooterLink *= multiplier;
+    mainHeadingDesc *= multiplier;
+    mainSubHeading *= multiplier;
+    mainDesc *= multiplier;
+    mainNumbers *= multiplier;
     basePage = basePage.toString() + "px";
     baseText = baseText.toString() + "px";
     baseDesc = baseDesc.toString() + "px";
     baseFooterHeader = baseFooterHeader.toString() + "px";
     baseFooterLink = baseFooterLink.toString() + "px";
-    document.documentElement.style.setProperty("--page-header-size", basePage);
-    document.documentElement.style.setProperty("--text-header-size", baseText);
+    mainHeadingDesc = mainHeadingDesc.toString() + "px";
+    mainSubHeading = mainSubHeading.toString() + "px";
+    mainDesc = mainDesc.toString() + "px";
+    mainNumbers = mainNumbers.toString() + "px";
+    document.documentElement.style.setProperty("--page-heading-size", basePage);
+    document.documentElement.style.setProperty("--text-heading-size", baseText);
     document.documentElement.style.setProperty("--description-size", baseDesc);
-    document.documentElement.style.setProperty("--footer-header-size", baseFooterHeader);
+    document.documentElement.style.setProperty("--footer-heading-size", baseFooterHeader);
     document.documentElement.style.setProperty("--footer-link-size", baseFooterLink);
+    document.documentElement.style.setProperty("--main-page-heading-desc-size", mainHeadingDesc);
+    document.documentElement.style.setProperty("--main-page-sub-heading-size", mainSubHeading);
+    document.documentElement.style.setProperty("--main-page-description-size", mainDesc);
+    document.documentElement.style.setProperty("--main-page-numbers-size", mainNumbers);
 }
 
 function keepSize() {

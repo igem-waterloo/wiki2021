@@ -4,7 +4,11 @@ import overallStyles from '../overall.module.scss';
 import styles from './teampage.module.scss';
 import { Link } from 'react-router-dom';
 
-class HomePage extends Component {
+class TeamPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div className={styles.container}>
@@ -50,17 +54,17 @@ class HomePage extends Component {
                     <span className={overallStyles.text_heading}>Team</span>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <Link to="/lab&design">
+                    <Link to="/Team:Waterloo/Engineering">
                         <button className={styles.button_lbl}>Lab & Design</button>
                     </Link>
-                    <Link to="/humanpractices">
+                    <Link to="/Team:Waterloo/Human_Practices">
                         <button className={styles.button_lbl}>Human Practices</button>
                     </Link>
-                    <Link to="/">
+                    <Link to="/Team:Waterloo">
                         <button className={styles.button_lbl}>Wiki</button>
                     </Link>
                 </div>
-                <Link to="/math" style={{marginTop: '50px'}}>
+                <Link to="/Team:Waterloo/Model" style={{marginTop: '50px'}}>
                         <button className={styles.button_lbl}>Math & Modelling</button>
                 </Link>
             </div>
@@ -68,4 +72,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default TeamPage;

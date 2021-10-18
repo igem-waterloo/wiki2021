@@ -1,5 +1,5 @@
 
-import React, { Component, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './engineering.module.scss';
 import ProcessDesign from './ProcessDesign';
@@ -7,21 +7,24 @@ import ProteinDesign from './ProteinDesign';
 import FusionDesign from './FusionDesign';
 import References from './References';
 
-const tabs = ['Protein Design', 'Fusion Design', 'Process Design', 'References'];
+const tabs = ['Protein Optimization', 'Fusion Design', 'Process Design', 'References'];
 
 const Engineering = () => {
         const [active, setActive] = useState(tabs[0]);
+        
         return (
             <div className={styles.container}>
-                <div className={styles.header_div}>
+                <div className={styles.heading_div}>
                     <div className={styles.title}>
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Engineering.</div>
                     </div>
                     <div className={styles.illustration}></div>
                 </div>
-                <div className={styles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                <div>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>Overview</span>
+                    </div>
                     <div className={overallStyles.description}>
                         Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder. Current diagnosis procedures require qualitative psychological tests, thus diagnoses are subject to clinician bias. NeuroDetech aims to create a quantitative tool to aid ADHD diagnosis and reduce the margin of bias.
                     </div>
@@ -39,7 +42,7 @@ const Engineering = () => {
                     ))}
                 </div>
                 <div>
-                { active === 'Protein Design' && (
+                { active === 'Protein Optimization' && (
                     <ProteinDesign></ProteinDesign>
                 )}
                 { active === 'Fusion Design' && (

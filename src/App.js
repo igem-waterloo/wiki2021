@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
+import HumanPractices from "./pages/HumanPractices/HumanPractices";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Sticky from 'react-stickynode';
 import StickyBox from "react-sticky-box";
 import styles from './App.css';
 import Accessibility from './toolbar/Accessibility';
+import ScrollToTop from "./scrollToTop/scrollToTop";
 import { keepTheme, keepSize } from "./utils/themes.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,29 +34,38 @@ function App() {
         <div className="App">
             <Router>
                 <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
-                <StickyBox>
-                    <Header />
-                </StickyBox>
-                <Switch>
-                    <Route exact path="/Team:Waterloo">
-                        <Engineering />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Team">
-                        <TeamPage />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Description">
-                        <ProjectDescription />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Engineering">
-                        <Engineering />
-                    </Route>
-                </Switch>
+                    <StickyBox style={{zIndex: "5", position: "relative"}}>
+                        <Header />
+                    </StickyBox>
+                    <div style={{borderLeft: '2px solid #E5E5E5'}}>
+                        <Switch>
+                            <Route exact path="/Team:Waterloo">
+                                <HomePage style={{borderLeft: '2px solid #E5E5E5'}} />
+                            </Route>
+                            <Route exact path="/Team:Waterloo/Team">
+                                <TeamPage />
+                            </Route>
+                            <Route exact path="/Team:Waterloo/Description">
+                                <ProjectDescription />
+                            </Route>
+                            <Route exact path="/Team:Waterloo/Engineering">
+                                <Engineering />
+                            </Route>
+                            <Route exact path="/Team:Waterloo/Human_Practices">
+                                <HumanPractices />
+                            </Route>
+                        </Switch>
+                    </div>
                 </div>
                 <div>
-                <Footer />
+                    <Footer />
                 </div>
             </Router>
-            <Accessibility changeFontSizeMult={changeFontSizeMult}></Accessibility>
+            <div>
+            
+            <Accessibility/>
+            </div>
+            
         </div>
     );
 }

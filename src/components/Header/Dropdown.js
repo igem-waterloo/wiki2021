@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from './dropdown.module.scss';
-import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import Collapse from 'react-bootstrap/Collapse';
 
 const Dropdown = ({ open, children, title }) => {
   const [isOpen, setIsOpen] = useState(open);
-
-  const handleFilterOpening = () => {
-    setIsOpen((prev) => !prev);
-  };
+  const [arrow, setArrow] = useState("▲");
 
   let dropdownArrow = true;
 
@@ -16,34 +12,29 @@ const Dropdown = ({ open, children, title }) => {
     dropdownArrow = false;
   }
 
-  return (
-    <>
-      <div className={styles.container}>
-        <div>
-          <div className={styles.header}>
-            <div className={styles.title}>{title}</div>
-            {dropdownArrow &&
-              <div className={styles.button} onClick={handleFilterOpening}>
-                {!isOpen ? (
-                    <FontAwesomeIcon className={styles.arrow_button} icon={faAngleUp} />
-                ) : ( 
-                  <FontAwesomeIcon className={styles.arrow_button} icon={faAngleDown} />
-                )}
-              </div>
-            }
-          </div>
-        </div>
+  const toggleVisibility = () => {
+      if (isOpen) {
+          setArrow("▼");
+      } else {
+          setArrow("▲");
+      }
+      setIsOpen(!isOpen);
+  }
 
-        <div className={styles.inner_div}>
-            <div>
-                {isOpen && 
-                    <div>{children}</div>
-                }
+  return (
+        <div className={styles.container}>
+            <div className={styles.header}>
+                <button className={styles.close_button} onClick={() => toggleVisibility()}>
+                    <div className={styles.title}>{title}</div>
+                    <div style={{marginTop: "2%"}}>{dropdownArrow && arrow}</div>
+                </button>
             </div>
+            <Collapse in={isOpen}>
+                    <div>{children}</div>
+                </Collapse>
+            
         </div>
-      </div>
-    </>
-  );
+    )
 };
 
 export default Dropdown;

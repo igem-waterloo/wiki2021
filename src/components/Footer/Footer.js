@@ -8,7 +8,7 @@ class Footer extends Component {
             <div className={styles.footer_container}>
                 <img src="https://2021.igem.org/wiki/images/f/f8/T--Waterloo--igemLogo.png" className={styles.igem_img}></img>
                 <div className={styles.projects_div}>
-                    <span className={styles.heading_text}>Projects</span>
+                    <span className={styles.heading_text}>Project</span>
                     <Link to="/Team:Waterloo/Description" className={styles.link}>
                         <span className={styles.link_text}>Description</span>
                     </Link>
@@ -17,9 +17,6 @@ class Footer extends Component {
                     </Link>
                     <Link to="/Team:Waterloo/Model" className={styles.link}>
                         <span className={styles.link_text}>Model</span>
-                    </Link>
-                    <Link to="/Team:Waterloo/Measurement" className={styles.link}>
-                        <span className={styles.link_text}>Measurement</span>
                     </Link>
                     <Link to="/Team:Waterloo/Implementation" className={styles.link}>
                         <span className={styles.link_text}>Implementation</span>
@@ -48,7 +45,7 @@ class Footer extends Component {
                     <Link to="/Team:Waterloo/Education" className={styles.link}>
                         <span className={styles.link_text}>Education</span>
                     </Link>
-                    <Link to="/Team:Waterloo/Excellence" className={styles.link}>
+                    <Link to="/Team:Waterloo/Finance" className={styles.link}>
                         <span className={styles.link_text}>Excellence</span>
                     </Link>
                 </div>
