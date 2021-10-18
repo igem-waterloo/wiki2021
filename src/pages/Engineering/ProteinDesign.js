@@ -33,7 +33,7 @@ class ProteinDesign extends Component {
                         
                         Thus, to avoid errors in identifying the binding residues, a Chimera function was used to identify all residues within a distance of 5 Å from the PEA ligand on the file with no Ca 2+ ligand present. This distance was deemed appropriate in the work of Gao and Skolnick (2012), which stated that the median minimum distance between the heavy atoms of the proteins interfaces and the ligands was 4.2 Å. It should be noted that while residue 40 (His) was within the 5 Å distance it was not taken as a binding pocket residue since it was located on a different part of the protein entirely. It appears that the part of the protein to which the residue was attached merely folds in the direction of PEA.
                     </div>
-                    <img src="https://2021.igem.org/wiki/images/f/f8/T--Waterloo--Binding_Pocket_1UTM.png" className={styles.design_img}></img>
+                    <img src="https://2021.igem.org/wiki/images/a/a2/T--Waterloo--Binding_pocket_1UTM.png" className={styles.design_img}></img>
                     <div className={styles.text_div}>
                         <span className={styles.sub_div_heading}>Rational Design: Observation and Verification with Chimera</span>
                     </div>
@@ -57,6 +57,63 @@ class ProteinDesign extends Component {
                         <p>We then assessed the Rosetta scores for the biochemically-chosen single mutations to ensure they were reasonably stable. A mix of these and the mutations with the best Rosetta scores were then passed to Rosetta to produce double mutations.</p>
 
                         <p>Finally, the top double mutation pairs were combined to make the multi-mutated protein candidates. These top candidates were later assessed by other more computationally intensive software such as GROMACS and AutoDock Vina to calculate interaction energy and binding energy.</p>
+                        
+                        <table style={{margin: auto}}>
+<thead>
+<tr>
+<th>Score (REU)</th>
+<th>Mutation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-322.402</td>
+<td>Original</td>
+</tr>
+<tr>
+<td>-344.859</td>
+<td>A205T</td>
+</tr>
+<tr>
+<td>-344.706</td>
+<td>I81N</td>
+</tr>
+<tr>
+<td>-344.222</td>
+<td>I81H</td>
+</tr>
+<tr>
+<td>-343.811</td>
+<td>I81W</td>
+</tr>
+<tr>
+<td>-343.794</td>
+<td>I81R</td>
+</tr>
+<tr>
+<td>-343.771</td>
+<td>I81K</td>
+</tr>
+<tr>
+<td>-343.657</td>
+<td>I81Y</td>
+</tr>
+<tr>
+<td>-343.647</td>
+<td>A205C</td>
+</tr>
+<tr>
+<td>-343.253</td>
+<td>I81F</td>
+</tr>
+<tr>
+<td>-343.191</td>
+<td>I81Q</td>
+</tr>
+</tbody>
+</table>
+
+
                     </div>
                     
                     {/* <div className={styles.first_section}>

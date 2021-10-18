@@ -38,7 +38,7 @@ function App() {
                 </StickyBox>
                 <Switch>
                     <Route exact path="/Team:Waterloo">
-                        <Engineering />
+                        <HomePage />
                     </Route>
                     <Route exact path="/Team:Waterloo/Team">
                         <TeamPage />
