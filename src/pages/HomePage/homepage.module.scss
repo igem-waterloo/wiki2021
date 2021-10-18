@@ -10,14 +10,17 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 60px 0;
-    margin-left: 30px;
+    padding-left: 7%;
+    padding-top: 7%;
 }
 
 .main_heading_text {
     font-size: var(--page-heading-size);
     font-weight: 500;
     color: var(--font-color);
-    line-height: 105px;
+    line-height: 160%;
+    max-width: 90%;
+    padding-top: 10%;
 }
 
 .heading_desc_text {
@@ -28,8 +31,21 @@
     font-weight: 400;
     display: flex;
     flex-direction: row;
-    line-height: 37px;
+    line-height: 170%;
+    max-width: 70%;
     justify-content: space-around;
+}
+
+.title::before {
+    position: absolute;
+    background-image: url(https://2021.igem.org/wiki/images/1/1a/T--Waterloo--mainTitleBackground.png);
+    content: " ";
+    margin-top: -15%;
+    width: 100%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
 }
 
 .title {
@@ -37,6 +53,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto 0;
+    position: relative;
 }
 
 .header_img_div {
@@ -73,16 +90,18 @@
 
 .center_content_div {
     text-align: center;
-    margin: 4em;
+    margin: 3em;
 }
 
 .intro_text {
+    text-align: center;
     font-size: var(--main-page-description-size);
     font-weight: 400;
     color: var(--font-color);
 }
 
 .categories_intro_text {
+    text-align: center;
     font-weight: 400;
     font-size: var(--main-page-sub-heading-size);
     color: var(--font-color);
@@ -91,7 +110,6 @@
 .categories {
     vertical-align: top;
     display: inline-block;
-    margin: 1.7em;
 }
 
 .categories_img {
@@ -103,4 +121,81 @@
     font-size: var(--main-page-sub-heading-size);
     font-weight: 500;
     color: var(--font-color);
+}
+
+.count_up_div {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: var(--main-page-numbers-size);
+    font-weight: 600;
+    color: var(--main-page-numbers-color);
+}
+
+.pie_chart_img {
+    width: 300px;
+    height: 300px;
+    margin-right: 2em;
+}
+
+.pie_chart_text {
+    font-size: var(--main-page-description-size);
+    font-weight: 400;
+    color: var(--font-color);
+    margin-top: 4em;
+    margin-left: 3em;
+    line-height: 2em;
+    max-width: 20em;
+}
+
+.goal_background_div::before {
+    position: absolute;
+    background-image: url(https://2021.igem.org/wiki/images/5/52/T--Waterloo--goalBackground.png);
+    content: " ";
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 85%;
+    height: 180%;
+    margin-top: -15%;
+    margin-left: -5%;
+}
+
+.goal_background_div {
+    height: 35em;
+}
+
+.goal_text {
+    font-size: var(--text-heading-size);
+    font-weight: 400;
+    max-width: 20em;
+    color: var(--font-color);
+    line-height: 3em;
+    margin-top: 3em;
+    margin-left: 5em;
+    position: relative;
+}
+
+.question_text {
+    font-size: var(--text-heading-size);
+    font-weight: 400;
+    color: var(--font-color);
+    margin-top: 2.5em;
+    margin-left: 3em;
+    line-height: 2em;
+    max-width: 15em;
+}
+
+.lightbulb_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 60px 0;
+    margin-left: 30px;
+}
+
+.lightbulb_img {
+    width: 210px;
+    height: 280px;
+    margin-right: 3em;
 }
