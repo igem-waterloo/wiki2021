@@ -32,12 +32,12 @@ function App() {
         <div className="App">
             <Router>
                 <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
-                <StickyBox>
+                <StickyBox style={{zIndex: "5", position: "relative"}}>
                     <Header />
                 </StickyBox>
                 <Switch>
                     <Route exact path="/Team:Waterloo">
-                        <Engineering />
+                        <HomePage/>
                     </Route>
                     <Route exact path="/Team:Waterloo/Team">
                         <TeamPage />

@@ -12,7 +12,7 @@ class Header extends Component {
         let urls_list = [
             {
                 main_url: "Project",
-                sub_urls: ["Description", "Engineering", "Model", "Measurement", "Implementation", "Proof_Of_Concept"]
+                sub_urls: ["Description", "Engineering", "Model", "Implementation", "Proof_Of_Concept"]
             },
             {
                 main_url: "Home",
@@ -73,9 +73,6 @@ class Header extends Component {
                                 </Link>
                                 <Link to="/Team:Waterloo/Model" className={styles.sub_link}>
                                     <span className={styles.link_text}>Model</span>
-                                </Link>
-                                <Link to="/Team:Waterloo/Measurement" className={styles.sub_link}>
-                                    <span className={styles.link_text}>Measurement</span>
                                 </Link>
                                 <Link to="/Team:Waterloo/Implementation" className={styles.sub_link}>
                                     <span className={styles.link_text}>Implementation</span>
