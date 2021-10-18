@@ -11,7 +11,7 @@ import styles from './accessibility.module.scss';
 import { setTheme, changeFontSize } from '../utils/themes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Accessibility({change}) {
+function Accessibility() {
     const [visibility, setVisibility] = useState(false);
     const [arrow, setArrow] = useState("▲");
 

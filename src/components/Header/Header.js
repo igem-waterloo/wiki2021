@@ -23,7 +23,7 @@ class Header extends Component {
                 sub_urls: ["Parts", "Contribution", "Improvement"]
             },
             {
-                main_url: "Human",
+                main_url: "Human_Practices",
                 sub_urls: ["Human_Practices", "Education", "Inclusion"]
             },
             {
