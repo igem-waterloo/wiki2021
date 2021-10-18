@@ -21,8 +21,10 @@ const Engineering = () => {
                     </div>
                     <div className={styles.illustration}></div>
                 </div>
-                <div className={styles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                <div>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>Overview</span>
+                    </div>
                     <div className={overallStyles.description}>
                         Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder. Current diagnosis procedures require qualitative psychological tests, thus diagnoses are subject to clinician bias. NeuroDetech aims to create a quantitative tool to aid ADHD diagnosis and reduce the margin of bias.
                     </div>

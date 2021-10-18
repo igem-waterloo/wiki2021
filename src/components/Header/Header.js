@@ -13,6 +13,9 @@ function Header() {
     useEffect(() => {
         console.log('Location changed', location.pathname);
         let newLocation = location.pathname.replace('/Team:Waterloo/', '');
+        if (newLocation === "/Team:Waterloo") {
+            newLocation = "";
+        }
         setCurrentUrl(newLocation);
 
         const urls_list = [
@@ -57,7 +60,7 @@ function Header() {
             <div className={styles.links_div}>
                 { currentUrl === "Home" ? 
                     <Link to="/Team:Waterloo" className={styles.link}>
-                        <Dropdown open title="Home">
+                        <Dropdown open={true} title="Home">
                         </Dropdown>
                     </Link>
                     :

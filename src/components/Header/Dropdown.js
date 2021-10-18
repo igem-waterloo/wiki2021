@@ -6,6 +6,12 @@ const Dropdown = ({ open, children, title }) => {
   const [isOpen, setIsOpen] = useState(open);
   const [arrow, setArrow] = useState("▲");
 
+  let dropdownArrow = true;
+
+  if (title === "Home" || title === "Safety") {
+    dropdownArrow = false;
+  }
+
   const toggleVisibility = () => {
       if (isOpen) {
           setArrow("▼");
@@ -20,7 +26,7 @@ const Dropdown = ({ open, children, title }) => {
             <div className={styles.header}>
                 <button className={styles.close_button} onClick={() => toggleVisibility()}>
                     <div className={styles.title}>{title}</div>
-                    <div style={{marginTop: "2%"}}>{arrow}</div>
+                    <div style={{marginTop: "2%"}}>{dropdownArrow && arrow}</div>
                 </button>
             </div>
             <Collapse in={isOpen}>

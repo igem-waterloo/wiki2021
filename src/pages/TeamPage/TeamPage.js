@@ -54,17 +54,17 @@ class TeamPage extends Component {
                     <span className={overallStyles.text_heading}>Team</span>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <Link to="/Engineering">
+                    <Link to="/Team:Waterloo/Engineering">
                         <button className={styles.button_lbl}>Lab & Design</button>
                     </Link>
-                    <Link to="/Human_Practices">
+                    <Link to="/Team:Waterloo/Human_Practices">
                         <button className={styles.button_lbl}>Human Practices</button>
                     </Link>
-                    <Link to="">
+                    <Link to="/Team:Waterloo">
                         <button className={styles.button_lbl}>Wiki</button>
                     </Link>
                 </div>
-                <Link to="/Model" style={{marginTop: '50px'}}>
+                <Link to="/Team:Waterloo/Model" style={{marginTop: '50px'}}>
                         <button className={styles.button_lbl}>Math & Modelling</button>
                 </Link>
             </div>
