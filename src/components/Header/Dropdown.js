@@ -4,13 +4,13 @@ import Collapse from 'react-bootstrap/Collapse';
 
 const Dropdown = ({ open, children, title }) => {
   const [isOpen, setIsOpen] = useState(open);
-  const [arrow, setArrow] = useState("▼");
+  const [arrow, setArrow] = useState("▲");
 
   const toggleVisibility = () => {
       if (isOpen) {
-          setArrow("▲");
-      } else {
           setArrow("▼");
+      } else {
+          setArrow("▲");
       }
       setIsOpen(!isOpen);
   }

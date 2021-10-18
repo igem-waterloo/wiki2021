@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    // margin: 10px 0;
 }
 
 .header {
@@ -23,6 +22,10 @@
     margin-right: 10px;
 }
 
+.close_button:hover {
+    text-decoration: none;
+}
+
 .close_button:focus {
     outline: none;
     box-shadow: none;
@@ -34,13 +37,4 @@
     background-color: transparent;
     font-size: 15px;
     border: 0;
-}
-
-.arrow_button {
-    width: 15px;
-    height: 25px;
-}
-
-.arrow_button:hover {
-    cursor: pointer;
 }

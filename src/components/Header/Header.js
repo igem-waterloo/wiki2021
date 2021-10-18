@@ -102,8 +102,8 @@ function Header() {
                             <Link to="/Team:Waterloo/Education" className={styles.sub_link}>
                                 <span className={styles.link_text}>Education</span>
                             </Link>
-                            <Link to="/Team:Waterloo/Inclusion" className={styles.sub_link}>
-                                <span className={styles.link_text}>Inclusion</span>
+                            <Link to="/Team:Waterloo/Inclusivity" className={styles.sub_link}>
+                                <span className={styles.link_text}>Inclusivity</span>
                             </Link>
                         </div>
                     </Dropdown>

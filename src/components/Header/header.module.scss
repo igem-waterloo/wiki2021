@@ -15,19 +15,20 @@
 .links_div {
     display: flex;
     flex-direction: column;
-    // margin-top: 100px;
     margin-left: 15%;
+}
+
+a:link:hover {
+    text-decoration: none;
 }
 
 a:link {
     text-decoration: none;
-    
 }
 
 .link {
     margin: 15px 0px;
     color: var(--font-color);
-    // width: 150px;
 }
 
 .link_text {
