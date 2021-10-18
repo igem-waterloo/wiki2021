@@ -5,6 +5,7 @@ import TeamPage from "./pages/TeamPage/TeamPage";
 import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
 import Engineering from './pages/Engineering/Engineering';
 import HumanPractices from "./pages/HumanPractices/HumanPractices";
+import Finance from "./pages/Finance/Finance";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Sticky from 'react-stickynode';
@@ -51,6 +52,9 @@ function App() {
                     </Route>
                     <Route exact path="/Team:Waterloo/Human_Practices">
                         <HumanPractices />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Finance">
+                        <Finance />
                     </Route>
                 </Switch>
                 </div>

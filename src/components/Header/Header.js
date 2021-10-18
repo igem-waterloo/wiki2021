@@ -39,6 +39,10 @@ function Header() {
             {
                 main_url: "Safety",
                 sub_urls: ["Safety"]
+            },
+            {
+                main_url: "Finance",
+                sub_urls: ["Finance"]
             }
         ];
 
@@ -163,6 +167,16 @@ function Header() {
                     :
                     <Link to="/Team:Waterloo/Safety" className={styles.link}>
                         <span className={styles.url_text}>Safety</span>
+                    </Link>
+                }
+                { currentUrl === "Finance" ?
+                    <Link to="/Team:Waterloo/Finance" className={styles.link}>
+                    <Dropdown open title="Finance">
+                    </Dropdown>
+                    </Link>
+                    :
+                    <Link to="/Team:Waterloo/Finance" className={styles.link}>
+                        <span className={styles.url_text}>Finance</span>
                     </Link>
                 }
             </div>
