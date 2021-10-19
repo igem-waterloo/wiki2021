@@ -97,31 +97,6 @@ function Header() {
                         <span className={styles.url_text}>Project</span>
                     </Link>
                 }
-                { currentUrl === "Human_Practices" ?
-                    <Dropdown open={true} title="Human Practices">
-                        <div className={styles.inner_links_div}>
-                            <Link to="/Team:Waterloo/Human_Practices" className={styles.link}>
-                            <span className={styles.link_text}>Human Practices</span>
-                            </Link>
-                            <Link to="/Team:Waterloo/Communication" className={styles.link}>
-                                <span className={styles.link_text}>Communication</span>
-                            </Link>
-                            <Link to="/Team:Waterloo/Education" className={styles.link}>
-                                <span className={styles.link_text}>Education</span>
-                            </Link>
-                            <Link to="/Team:Waterloo/Finance" className={styles.link}>
-                                <span className={styles.link_text}>Finance</span>
-                            </Link>
-                            <Link to="/Team:Waterloo/Hardware" className={styles.link}>
-                                <span className={styles.link_text}>Hardware</span>
-                            </Link>
-                        </div>
-                    </Dropdown>
-                    :
-                    <Link to="/Team:Waterloo/Human_Practices" className={styles.link}>
-                        <span className={styles.url_text}>Human Practices</span>
-                    </Link>
-                }
                 { currentUrl === "Parts" ?
                     <Dropdown open title="Parts">
                         <div className={styles.inner_links_div}>
@@ -136,6 +111,34 @@ function Header() {
                     :
                     <Link to="/Team:Waterloo/Parts" className={styles.link}>
                         <span className={styles.url_text}>Parts</span>
+                    </Link>
+                }
+                { currentUrl === "Human_Practices" ?
+                    <Dropdown open={true} title="Human Practices">
+                        <div className={styles.inner_links_div}>
+                            <Link to="/Team:Waterloo/Human_Practices" className={styles.sub_link}>
+                            <span className={styles.link_text}>Human Practices</span>
+                            </Link>
+                            <Link to="/Team:Waterloo/Communication" className={styles.sub_link}>
+                                <span className={styles.link_text}>Communication</span>
+                            </Link>
+                            <Link to="/Team:Waterloo/Education" className={styles.sub_link}>
+                                <span className={styles.link_text}>Education</span>
+                            </Link>
+                            <Link to="/Team:Waterloo/Finance" className={styles.sub_link}>
+                                <span className={styles.link_text}>Finance</span>
+                            </Link>
+                            <Link to="/Team:Waterloo/Hardware" className={styles.sub_link}>
+                                <span className={styles.link_text}>Hardware</span>
+                            </Link>
+                            <Link to="/Team:Waterloo/Safety" className={styles.link}>
+                                <span className={styles.url_text}>Safety</span>
+                            </Link>
+                        </div>
+                    </Dropdown>
+                    :
+                    <Link to="/Team:Waterloo/Human_Practices" className={styles.link}>
+                        <span className={styles.url_text}>Human Practices</span>
                     </Link>
                 }
                 { currentUrl === "Team" ?
@@ -155,18 +158,6 @@ function Header() {
                     :
                     <Link to="/Team:Waterloo/Team" className={styles.link}>
                         <span className={styles.url_text}>Team</span>
-                    </Link>
-                }
-                <Link to="/Team:Waterloo/Safety" className={styles.link}>
-                    <span className={styles.url_text}>Safety</span>
-                </Link>
-                { currentUrl === "Finance" ?
-                    <Link to="/Team:Waterloo/Finance" className={headerStyle.header} style={{margin: "15px 0px"}}>
-                        <div className={headerStyle.title}>Finance</div>
-                    </Link>
-                    :
-                    <Link to="/Team:Waterloo/Finance" className={styles.link}>
-                        <span className={styles.url_text}>Finance</span>
                     </Link>
                 }
             </div>
