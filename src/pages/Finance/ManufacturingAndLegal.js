@@ -12,7 +12,6 @@ class ManufacturingAndLegal extends Component {
                 </div>
                 <div>
                     <div className={overallStyles.illustration}></div>
-                    {/* <img></img> */}
                 </div>
                 <div className={overallStyles.description}>
                     The initial goal for our project was to create a device that would aid in the diagnosis of ADHD. During project development, we realized we needed to have an understanding of the current diagnosis procedures for ADHD in Canada, so that we could successfully develop a product that would have the potential for real-life implementation.
