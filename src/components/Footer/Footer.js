@@ -27,9 +27,6 @@ class Footer extends Component {
                 </div>
                 <div className={styles.projects_div}>
                 <span className={styles.heading_text}>Parts</span>
-                    <Link to="/Team:Waterloo/Parts" className={styles.link}>
-                        <span className={styles.link_text}>Parts</span>
-                    </Link>
                     <Link to="/Team:Waterloo/Contribution" className={styles.link}>
                         <span className={styles.link_text}>Contribution</span>
                     </Link>
@@ -42,16 +39,25 @@ class Footer extends Component {
                     <Link to="/Team:Waterloo/Human_Practices" className={styles.link}>
                         <span className={styles.link_text}>Human Practices</span>
                     </Link>
+                    <Link to="/Team:Waterloo/Communication" className={styles.link}>
+                        <span className={styles.link_text}>Communication</span>
+                    </Link>
                     <Link to="/Team:Waterloo/Education" className={styles.link}>
                         <span className={styles.link_text}>Education</span>
                     </Link>
                     <Link to="/Team:Waterloo/Finance" className={styles.link}>
-                        <span className={styles.link_text}>Excellence</span>
+                        <span className={styles.link_text}>Finance</span>
+                    </Link>
+                    <Link to="/Team:Waterloo/Hardware" className={styles.link}>
+                        <span className={styles.link_text}>Hardware</span>
+                    </Link>
+                    <Link to="/Team:Waterloo/Safety" className={styles.link}>
+                        <span className={styles.url_text}>Safety</span>
                     </Link>
                 </div>
                 <div className={styles.projects_div}>
                 <span className={styles.heading_text}>Team</span>
-                    <Link to="/Team:Waterloo/Members" className={styles.link}>
+                    <Link to="/Team:Waterloo/Team" className={styles.link}>
                         <span className={styles.link_text}>Members</span>
                     </Link>
                     <Link to="/Team:Waterloo/Attributions" className={styles.link}>
