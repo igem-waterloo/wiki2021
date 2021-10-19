@@ -49,7 +49,7 @@ function App() {
                         <Attributions />
                     </Route>
                     <Route exact path="/Team:Waterloo/Collaborations">
-                        <Communication />
+                        <Collaborations />
                     </Route>
                     <Route exact path="/Team:Waterloo/Communication">
                         <Communication />
