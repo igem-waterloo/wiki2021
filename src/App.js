@@ -11,7 +11,6 @@ import Finance from "./pages/Finance/Finance";
 import Hardware from "./pages/Hardware/Hardware";
 import HomePage from "./pages/HomePage/HomePage";
 import HumanPractices from "./pages/HumanPractices/HumanPractices";
-<<<<<<< HEAD
 import Implementation from "./pages/Implementation/Implementation";
 import Improvement from "./pages/Improvement/Improvement";
 import Model from "./pages/Model/Model";
@@ -20,9 +19,6 @@ import ProofOfConcept from "./pages/ProofOfConcept/ProofOfConcept";
 import Safety from "./pages/Safety/Safety";
 import TeamPage from "./pages/TeamPage/TeamPage";
 // utils
-=======
-import Finance from "./pages/Finance/Finance";
->>>>>>> 0fad2a8637f754ae2c9240dcfbaa92500d9986b0
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import StickyBox from "react-sticky-box";

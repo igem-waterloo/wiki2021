@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
-import styles from './manufacturingandlegal.module.scss';
->>>>>>> 0fad2a8637f754ae2c9240dcfbaa92500d9986b0
 import overallStyles from "../overall.module.scss";
 
 class ManufacturingAndLegal extends Component {
