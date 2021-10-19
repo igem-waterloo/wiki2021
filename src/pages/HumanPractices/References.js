@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from './determiningimplementation.module.scss';
 import overallStyles from "../overall.module.scss";
 
 class References extends Component {
