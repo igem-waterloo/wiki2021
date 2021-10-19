@@ -8,9 +8,9 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 class HomePage extends Component {
     
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
+    // componentDidMount() {
+    //     window.scrollTo(0, 0);
+    // }
     
     render() {
         return (
@@ -18,10 +18,7 @@ class HomePage extends Component {
                 <div className={styles.heading_div}>
                     <div className={styles.title}>
                         <div className={styles.main_heading_text}>
-                            Reducing the Bias in ADHD Diagnoses
-                        </div>
-                        <div className={styles.heading_desc_text}>
-                            NeuroDetech consists of a microfluidic capillary flow assay (MCFA) lab chip.
+                            <b>NeuroDetech</b>: Reducing the Bias in ADHD Diagnoses
                         </div>
                         <div className='mt-3'>
                             <Link to="/Team:Waterloo/Description" className={styles.project_button_link}>
@@ -40,7 +37,7 @@ class HomePage extends Component {
                 </div>
                 <div className={styles.center_content_div}>
                     <div className={styles.categories_intro_text}>
-                        Impact aspects of an individual's life such as:
+                        Impacts aspects of an individual's life such as:
                     </div>
                     <ScrollAnimation animateIn='fadeInRight' className={styles.categories}>
                         <img src="https://2021.igem.org/wiki/images/3/3c/T--Waterloo--school.png" alt="School" className={styles.categories_img}/>
@@ -120,26 +117,22 @@ class HomePage extends Component {
 
                     </div>
                 </div>
-                <div className={styles.center_content_div}>
+                <div className={styles.center_content_div} style={{marginBottom: "3%"}}>
                     <div className={styles.discover_text}>
-                        Let’s <div style={{ display: "inline", color: "var(--main-page-numbers-color)"}}>discover</div> more!
+                        Click below to learn more: 
                     </div>
                 </div>
-                <div className={styles.icons_div} style={{marginLeft: "15%", marginRight: "auto"}}>
-                    <Link to="/Team:Waterloo/Engineering" className={styles.icons}>
+                <div className={styles.icons_div}>
+                    <Link to="/Team:Waterloo/Engineering" className={styles.icons} style={{ marginLeft: "-30%", marginRight: "30%"}}>
                         <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-engineering-icon)"}}/>
                         <div className={styles.icons_text}>Engineering</div>
                     </Link>
-                    <Link to="/Team:Waterloo/Human_Practices" className={styles.icons}>
+                    <Link to="/Team:Waterloo/Human_Practices" className={styles.icons} style={{ marginLeft: "30%", marginRight: "-30%"}}>
                         <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-human-practices-icon)"}}/>
                         <div className={styles.icons_text}>Human Practices</div>
                     </Link>
                 </div>
-                <div className={styles.icons_div} style={{marginLeft: "auto", marginRight: "25%"}}>
-                    <Link to="/Team:Waterloo/Parts" className={styles.icons}>
-                        <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-parts-icon)"}}/>
-                        <div className={styles.icons_text}>Parts</div>
-                    </Link>
+                <div className={styles.icons_div}>
                     <Link to="/Team:Waterloo/Project_Description" className={styles.icons}>
                         <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-project-description-icon)"}}/>
                         <div className={styles.icons_text} >Project Description</div>
