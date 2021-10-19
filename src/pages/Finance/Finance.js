@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import overallStyles from '../overall.module.scss';
 import PotentialCost from './PotentialCost';
 import ManufacturingAndLegal from './ManufacturingAndLegal';
