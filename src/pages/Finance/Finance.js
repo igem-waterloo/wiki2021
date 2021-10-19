@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import PotentialCost from './PotentialCost';
@@ -6,6 +7,15 @@ import ManufacturingAndLegal from './ManufacturingAndLegal';
 import References from './References';
 
 const tabs = ['Potential Cost to Patients', 'Manufacturing and Legal Considerations', 'References'];
+=======
+import React, { useLayoutEffect, useState } from 'react';
+import overallStyles from '../overall.module.scss';
+import styles from './finance.module.scss';
+import PotentialCost from './PotentialCost';
+import ManufacturingAndLegal from './ManufacturingAndLegal';
+
+const tabs = ['Potential Cost to Patients', 'Manufacturing and Legal Considerations'];
+>>>>>>> 0fad2a8637f754ae2c9240dcfbaa92500d9986b0
 
 const Finance = () => {
         const [active, setActive] = useState(tabs[0]);
