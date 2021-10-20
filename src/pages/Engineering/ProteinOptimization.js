@@ -96,6 +96,7 @@ class ProteinOptimization extends Component {
                         <p>Top 10 Rosetta Scores for 1UTM single mutations and the original protein score are listed in the table below. Please check the full top 50 scores on the spreadsheet <a href='https://docs.google.com/spreadsheets/u/1/d/1r_Wf-dGtYojBKM7i1tRiwdZFUIioxGey/edit' target="_blank"><span className={styles.link}>here</span></a>. For this and all following score tables, the mutations are written in the format “Original Amino Acid|Residue Number|New Amino Acid”.</p>
 
                         <p>
+                        <div className={overallStyles.figure_div}>
                         <Table bordered className={overallStyles.table}>
                             <thead>
                                 <tr>
@@ -150,6 +151,7 @@ class ProteinOptimization extends Component {
                                 </tr>
                             </tbody>
                         </Table>
+                        </div>
                         </p>
 
                         <p>However, our main goal for our newly designed protein is to increase its ability to bind to the analyte which is PEA. Therefore we must look at the mutations made near the binding pocket residues. Those residues are 169, 170, 171, 172, 175, 189, 190, 191,192,194, 195, 202, 203, and 204. These mutations should have a stronger impact on 1UTM’s binding affinity with PEA, thus are analyzed in more detail. The mutations that are considered for each residue are listed in the spreadsheet <a href='https://docs.google.com/spreadsheets/u/1/d/1r_Wf-dGtYojBKM7i1tRiwdZFUIioxGey/edit' target="_blank"><span className={styles.link}>here</span></a>.</p>
@@ -203,6 +205,7 @@ class ProteinOptimization extends Component {
                         <p>Top 15 1UTM Multi-Mutations are listed in the table below. Full tables of modified 1UTM scores are also uploaded <a href='https://docs.google.com/spreadsheets/u/1/d/1r_Wf-dGtYojBKM7i1tRiwdZFUIioxGey/edit' target="_blank"><span className={styles.link}>here</span></a>.</p>
 
                         <p>
+                        <div className={overallStyles.figure_div}>
                         <Table bordered className={overallStyles.table}>
                             <thead>
                                 <tr>
@@ -321,6 +324,7 @@ class ProteinOptimization extends Component {
                                 </tr>
                             </tbody>
                         </Table>
+                        </div>
                         </p>
                     </div>
                     <div className={styles.text_div}>
@@ -336,6 +340,7 @@ class ProteinOptimization extends Component {
                         <p>The top 10 lowest scoring proteins are given in the following table. The original score for un-mutated streptavidin with biotin was -104.826 REU. Full top 50 mutations are recorded <a href='https://docs.google.com/spreadsheets/u/1/d/1SgsB72_eUh2hm3cXvlslBUDv0N5JtfM7/edit' target="_blank"><span className={styles.link}>here</span></a>.</p>
 
                         <p>
+                        <div className={overallStyles.figure_div}>
                         <Table bordered className={overallStyles.table}>
                             <thead>
                                 <tr>
@@ -390,6 +395,7 @@ class ProteinOptimization extends Component {
                                 </tr>
                             </tbody>
                         </Table>
+                        </div>
                         </p>
 
                         <p>We also took a closer look at the binding pocket residues for streptavidin which are residues 12, 16, 32, 34, 36, 72, 74 and 92. The mutations that scored higher than the original protein for each binding pocket residue are further analyzed and recorded <a href='https://docs.google.com/spreadsheets/u/1/d/1SgsB72_eUh2hm3cXvlslBUDv0N5JtfM7/edit' target="_blank"><span className={styles.link}>here</span></a>.</p>
@@ -401,6 +407,7 @@ class ProteinOptimization extends Component {
                         <p>From the heat map, the strongest double mutations were chosen and then combined with other less strong mutations as well as a few of the top 50 single mutations to generate triple and quadruple mutations. This list was also passed into Rosetta to generate the PDB files and scores. The scores for the 12 suggested triple, quadruple, quintuple and sextuple mutations for streptavidin are listed below.</p>
 
                         <p>
+                        <div className={overallStyles.figure_div}>
                         <Table bordered className={overallStyles.table}>
                             <thead>
                                 <tr>
@@ -523,6 +530,7 @@ class ProteinOptimization extends Component {
                                 </tr>
                             </tbody>
                         </Table>
+                        </div>
                         </p>
 
                         <p>Based on Rosetta scores, the best designed protein consisted of the 3 mutations, T74C, N12A, Y52F.</p>
@@ -540,6 +548,7 @@ class ProteinOptimization extends Component {
 
                         <div className={overallStyles.figure_text}>1UTM-PEA Docking Scores</div>
                         <p>
+                        <div className={overallStyles.figure_div}>
                         <Table bordered className={overallStyles.table}>
                             <thead>
                                 <tr>
@@ -682,12 +691,14 @@ class ProteinOptimization extends Component {
                                 </tr>
                                 </tbody>
                         </Table>
+                        </div>
                         </p>
 
                         <p>A similar energy conformer analysis using the above-mentioned automated approach using a Python script was implemented for mutation candidates generated by Rosetta on the monomeric streptavidin-biotin complex. The lowest scoring multi-mutant streptavidin proteins yielded an energy score of -7.4 kcal/mole.</p>
                         
                         <div className={overallStyles.figure_text}>Streptavidin-Biotin Docking Scores</div>
                         <p>
+                        <div className={overallStyles.figure_div}>
                         <Table bordered className={overallStyles.table}>
                             <thead>
                                 <tr>
@@ -829,6 +840,7 @@ class ProteinOptimization extends Component {
                                 </tr>
                             </tbody>
                         </Table>
+                        </div>
                         </p>
                     </div>
                 </Collapsible>

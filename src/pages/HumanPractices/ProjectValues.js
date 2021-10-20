@@ -10,10 +10,6 @@ class CurrentDiagnosis extends Component {
                         Project Values
                     </span>
                 </div>
-                <div>
-                    <div className={overallStyles.illustration}></div>
-                    {/* <img></img> */}
-                </div>
                 <div className={overallStyles.description}>
                     TBD                
                 </div>
