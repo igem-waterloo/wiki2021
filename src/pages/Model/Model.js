@@ -1,7 +1,9 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import HardwareModelling from './HardwareModelling';
 import Microfluidic from './Microfludic';
+import ProteinOptimization from './ProteinOptimization';
 
 const tabs = ['Microfluidic Chip Modelling', 'Hardware Design Modelling', 'Protein Optimization Modelling', "References"];
 
@@ -38,13 +40,13 @@ const Model = () => {
                     { active === tabs[0] && (
                         <Microfluidic/>
                     )}
-                    {/* 
                     { active === tabs[1] && (
-                        <ManufacturingAndLegal/>
+                        <HardwareModelling/>
                     )}
+                    
                     { active === tabs[2] && (
-                        <References/>
-                    )} */}
+                        <ProteinOptimization/>
+                    )}
                 </div>
             </div>
         )
