@@ -27,16 +27,16 @@
 
 .link {
     text-decoration: none;
-    color: white;
+    color: white !important;
     margin: 2px 0px;
     font-size: var(--footer-link-size);
 
     a:visited {
-        color: white;
+        color: white !important;
     }
 
     a:link {
-        color: white;
+        color: white !important;
     }
 
 }  
