@@ -122,6 +122,15 @@
     margin-top: 5%;
 }
 
+.subheading {
+    font-size: var(--main-page-description-size);
+    font-weight: 500;
+    color: var(--heading-color);
+    border-bottom: 0.2em solid #E88A5F;
+    width: max-content;
+    padding-top: 4%;
+}
+
 .figure_div {
     vertical-align: top;
     display: inline-block;
@@ -143,4 +152,12 @@
     color: var(--font-color);
     margin: 0 auto;
     line-height: 170%;
+}
+
+a.text_link:visited {
+    color: var(--links-color) !important;
+
+    a:link {
+        text-decoration: underline;
+    }
 }

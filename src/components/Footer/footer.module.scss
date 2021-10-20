@@ -27,17 +27,19 @@
 
 .link {
     text-decoration: none;
-    color: white;
+    color: white !important;
     margin: 2px 0px;
     font-size: var(--footer-link-size);
-}  
 
-a:link {
-    color: white;
-}
-a:visited {
-    color: white;
-}
+    a:visited {
+        color: white !important;
+    }
+
+    a:link {
+        color: white !important;
+    }
+
+}  
 
 .heading_text {
     font-size: var(--footer-header-size);

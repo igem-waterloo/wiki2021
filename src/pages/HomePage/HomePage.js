@@ -133,7 +133,7 @@ class HomePage extends Component {
                     </Link>
                 </div>
                 <div className={styles.icons_div}>
-                    <Link to="/Team:Waterloo/Project_Description" className={styles.icons}>
+                    <Link to="/Team:Waterloo/Description" className={styles.icons}>
                         <div className={styles.icons_img} style={{backgroundImage: "var(--main-page-project-description-icon)"}}/>
                         <div className={styles.icons_text} >Project Description</div>
                     </Link>

@@ -1,8 +1,12 @@
 
 import React, { useState } from 'react';
+import CareersSynBio from './CareersSynBio';
+import InstagramOutreach from './InstagramOutreach';
+import ColoringBook from './ColoringBook';
+import References from './References';
 import overallStyles from '../overall.module.scss';
 
-const tabs = ['Tab 1', 'Tab 2', 'References'];
+const tabs = ["Careers in Synthetic Biology", "Instagram Outreach ", "Biology Concepts Colouring Book", "References"];
 
 const Communication = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -18,10 +22,7 @@ const Communication = () => {
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
-                    </div>
-                    <div className={overallStyles.description}>
-                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                        Fundamental to any advancement of synthetic biology as an emerging field is public engagement through education. Ideal circumstances would have permitted collaboration with targeted demographics through workshops, conferences, and studies, as has been done in previous years. Unfortunately, these events were not possible to facilitate  in the 2021 competition season, given jurisdictional health restrictions due to COVID-19. Despite these limitations, the need for community involvement cannot be compromised. As such, education and outreach was approached differently with the aid of digital communication platforms, with an emphasis on the following three categories: professional opportunities in synthetic biology, social media, and educational resource development.
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
@@ -37,15 +38,18 @@ const Communication = () => {
                     ))}
                 </div>
                 <div>
-                    {/* { active === tabs[0] && (
-                        <PotentialCost/>
+                    { active === tabs[0] && (
+                        <CareersSynBio/>
                     )}
                     { active === tabs[1] && (
-                        <ManufacturingAndLegal/>
+                        <InstagramOutreach/>
                     )}
                     { active === tabs[2] && (
+                        <ColoringBook/>
+                    )}
+                    { active === tabs[3] && (
                         <References/>
-                    )} */}
+                    )}
                 </div>
             </div>
         )

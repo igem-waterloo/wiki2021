@@ -4,16 +4,5 @@
     color: var(--font-color);
     margin: 0 auto;
     line-height: 170%;
-}
-
-.crop {
-    width: 50%;
-    height: 15em;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.cost_img {
-    margin-left: -55%;
-    margin-top: -7%
+    table-layout: fixed;
 }

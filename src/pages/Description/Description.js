@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import styles from './projectdescription.module.scss';
+import styles from './description.module.scss';
 import overallStyles from '../overall.module.scss';
 
-class ProjectDescription extends Component {
+class Description extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -10,13 +10,13 @@ class ProjectDescription extends Component {
     
     render() {
         return (
-            <div className={styles.container}>
-                <div className={styles.text_div}>
+            <div className={overallStyles.container}>
+                <div className={overallStyles.text_div}>
                     <span className={overallStyles.page_heading}>Project Description</span>
                     {/* <br className={styles.title_bottom} /> */}
                 </div>
                 <div className={styles.img_header}>
-                    <img src="./Project/description_header.png"></img>
+                    <img src="https://2021.igem.org/wiki/images/a/a4/T--Waterloo--projectDescription.png"></img>
                 </div>
                 <div className={styles.text_div}>
                     <span className={styles.page_heading}>Overview</span>
@@ -39,4 +39,4 @@ class ProjectDescription extends Component {
     }
 }
 
-export default ProjectDescription;
+export default Description;

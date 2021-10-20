@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 // import { Link } from 'react-router-dom';
-import styles from './references.module.scss';
+import styles from './fusiondesign.module.scss';
 import Collapsible from '../../utils/Collapsible';
 
-class References extends Component {
+class FusionDesign extends Component {
     render() {
         return (
             <div className={styles.container}>
                 <div className={styles.text_div}>
-                    <span className={styles.text_heading}>References</span>
+                    <span className={styles.text_heading}>Fusion Design</span>
                 </div>
                 <div>
                     <div className={styles.illustration}></div>
@@ -54,4 +54,4 @@ class References extends Component {
     }
 }
 
-export default References;
+export default FusionDesign;
