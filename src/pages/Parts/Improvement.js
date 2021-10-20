@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import overallStyles from "../overall.module.scss";
+import styles from "./improvement.module.scss";
 
 class Improvement extends Component {
     render() {
@@ -36,7 +37,7 @@ class Improvement extends Component {
                     </div>
                 </div>
                 <div className={overallStyles.figure_div}>
-                <img src="https://2021.igem.org/wiki/images/a/a4/T--Waterloo--mSA2%2B.png" alt="mSA2+"/>
+                <img src="https://2021.igem.org/wiki/images/a/a4/T--Waterloo--mSA2%2B.png" alt="mSA2+" className={styles.msa2_img}/>
                 </div>
             </div>
         )

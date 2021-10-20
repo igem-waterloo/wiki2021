@@ -11,30 +11,26 @@ const Collapsible = ({ open, children, title }) => {
   };
 
   return (
-    <>
-      <div className={styles.container}>
-        <div>
-          <div className={styles.header}>
-            <div className={styles.title}>{title}</div>
-            <div className={styles.button} onClick={handleFilterOpening}>
-              {!isOpen ? (
-                  <FontAwesomeIcon className={styles.arrow_button} icon={faAngleRight} />
-              ) : ( 
-                <FontAwesomeIcon className={styles.arrow_button} icon={faAngleDown} />
-              )}
+        <div className={styles.container}>
+            <div className={styles.header}>
+                <div className={styles.title}>
+                    {title}
+                </div>
+                <div className={styles.button} onClick={handleFilterOpening}>
+                    {!isOpen ? (
+                        <FontAwesomeIcon className={styles.arrow_button} icon={faAngleRight} />
+                    ) : ( 
+                        <FontAwesomeIcon className={styles.arrow_button} icon={faAngleDown} />
+                    )}
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div className={styles.inner_div}>
-            <div>
+            <div className={styles.inner_div}>
                 {isOpen && 
-                    <div style={{margin: '50px 0px', display: "flex", flexDirection: "column"}}>{children}</div>
+                    <div style={{display: "flex", flexDirection: "column"}}>
+                        {children}</div>
                 }
             </div>
         </div>
-      </div>
-    </>
   );
 };
 

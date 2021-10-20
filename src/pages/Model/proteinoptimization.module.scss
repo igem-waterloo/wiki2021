@@ -4,15 +4,23 @@
     color: var(--font-color);
     margin: 0 auto;
     line-height: 170%;
+    width: max-content !important;
+    
+}
+
+.mutation_img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 .crop {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.cost_img {
-    margin-left: -55%;
-    margin-top: -7%
+.heatmap_img {
+    width: 150%;
+    margin-left: -40%;
 }
