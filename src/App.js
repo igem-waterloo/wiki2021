@@ -12,9 +12,10 @@ import Hardware from "./pages/Hardware/Hardware";
 import HomePage from "./pages/HomePage/HomePage";
 import HumanPractices from "./pages/HumanPractices/HumanPractices";
 import Implementation from "./pages/Implementation/Implementation";
-import Improvement from "./pages/Improvement/Improvement";
+import Inclusivity from "./pages/Inclusivity/Inclusivity";
 import Model from "./pages/Model/Model";
-import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
+import Parts from "./pages/Parts/Parts";
+import Description from "./pages/Description/Description"
 import ProofOfConcept from "./pages/ProofOfConcept/ProofOfConcept";
 import Safety from "./pages/Safety/Safety";
 import TeamPage from "./pages/TeamPage/TeamPage";
@@ -58,7 +59,7 @@ function App() {
                         <Contribution />
                     </Route>
                     <Route exact path="/Team:Waterloo/Description">
-                        <ProjectDescription />
+                        <Description />
                     </Route>
                     <Route exact path="/Team:Waterloo/Education">
                         <Education />
@@ -78,11 +79,14 @@ function App() {
                     <Route exact path="/Team:Waterloo/Implementation">
                         <Implementation />
                     </Route>
-                    <Route exact path="/Team:Waterloo/Improvement">
-                        <Improvement />
+                    <Route exact path="/Team:Waterloo/Inclusivity">
+                        <Inclusivity />
                     </Route>
                     <Route exact path="/Team:Waterloo/Model">
                         <Model />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Parts">
+                        <Parts />
                     </Route>
                     <Route exact path="/Team:Waterloo/Proof_Of_Concept">
                         <ProofOfConcept />
@@ -93,7 +97,6 @@ function App() {
                     <Route exact path="/Team:Waterloo/Team">
                         <TeamPage />
                     </Route>
-                    
                 </Switch>
                 </div>
                 <div>

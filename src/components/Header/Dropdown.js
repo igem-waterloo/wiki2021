@@ -31,8 +31,7 @@ const Dropdown = ({ open, children, title }) => {
             </div>
             <Collapse in={isOpen}>
                     <div>{children}</div>
-                </Collapse>
-            
+            </Collapse>
         </div>
     )
 };

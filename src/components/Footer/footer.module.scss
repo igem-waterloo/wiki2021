@@ -30,14 +30,16 @@
     color: white;
     margin: 2px 0px;
     font-size: var(--footer-link-size);
-}  
 
-a:link {
-    color: white;
-}
-a:visited {
-    color: white;
-}
+    a:visited {
+        color: white;
+    }
+
+    a:link {
+        color: white;
+    }
+
+}  
 
 .heading_text {
     font-size: var(--footer-header-size);
