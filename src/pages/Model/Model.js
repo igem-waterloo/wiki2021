@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import Microfluidic from './Microfludic';
 
-const tabs = ['Tab 1', 'Tab 2', 'References'];
+const tabs = ['Microfluidic Chip Modelling', 'Hardware Design Modelling', 'Protein Optimization Modelling', "References"];
 
 const Model = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -18,10 +19,7 @@ const Model = () => {
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
-                    </div>
-                    <div className={overallStyles.description}>
-                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                        Various models have been built during the year. The following sections present the construction and analysis on various models including: microfluidic chip modelling, hardware design modelling, and protein optimization modelling. 
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
@@ -37,9 +35,10 @@ const Model = () => {
                     ))}
                 </div>
                 <div>
-                    {/* { active === tabs[0] && (
-                        <PotentialCost/>
+                    { active === tabs[0] && (
+                        <Microfluidic/>
                     )}
+                    {/* 
                     { active === tabs[1] && (
                         <ManufacturingAndLegal/>
                     )}

@@ -119,6 +119,15 @@
     margin-top: 20px;
 }
 
+.subheading {
+    font-size: var(--main-page-description-size);
+    font-weight: 500;
+    color: var(--heading-color);
+    border-bottom: 0.2em solid #E88A5F;
+    width: max-content;
+    padding-top: 4%;
+}
+
 .figure_div {
     vertical-align: top;
     display: inline-block;
