@@ -133,3 +133,9 @@
     color: var(--font-color);
     text-align: center;
 }
+
+.text_link {
+    a:link {
+        text-decoration: underline;
+    }
+}

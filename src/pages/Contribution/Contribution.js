@@ -1,11 +1,8 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import overallStyles from '../overall.module.scss';
 
-const tabs = ['Tab 1', 'Tab 2', 'References'];
-
 const Contribution = () => {
-        const [active, setActive] = useState(tabs[0]);
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.heading_div}>
@@ -16,36 +13,30 @@ const Contribution = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
+                        To meet bronze medal #4, we added documentation to the bottom of parts pages,&nbsp;
+                        <a className={overallStyles.text_link} href="http://parts.igem.org/Part:BBa_K2926001" target="_blank" rel="noreferrer">
+                                BBa_K2926001 
+                        </a>   
+                        &nbsp; and &nbsp;
+                        <a className={overallStyles.text_link} href="http://parts.igem.org/Part:BBa_K1615022" target="_blank" rel="noreferrer">
+                            BBa_K1615022
+                        </a>   
                     </div>
                     <div className={overallStyles.description}>
-                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                        Part&nbsp;
+                        <a className={overallStyles.text_link} href="http://parts.igem.org/Part:BBa_K2926001" target="_blank" rel="noreferrer">
+                            BBa_K2926001 
+                        </a>
+                        &nbsp;is Cas13a from *Leptotrichia buccalis*. In contributing to this part, we added our findings from the literature regarding the usage of Cas13a, with a focus on its nonspecific RNase activity that is crucial for sensitive RNA detection methods such as SATORI. On that note, we also added documentation regarding the use of Cas13a in diagnostic and quantification contexts (such as detection of SARS-CoV-2 RNA and our project, NeuroDetech), which is another important application of CRISPR-Cas systems.
                     </div>
-                </div>
-                <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
-                        <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
-                            <div className={overallStyles.sections}>
-                            <div className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div>
-                    {/* { active === tabs[0] && (
-                        <PotentialCost/>
-                    )}
-                    { active === tabs[1] && (
-                        <ManufacturingAndLegal/>
-                    )}
-                    { active === tabs[2] && (
-                        <References/>
-                    )} */}
+                    <div className={overallStyles.description}>
+                        Part&nbsp;
+                        <a className={overallStyles.text_link} href="http://parts.igem.org/Part:BBa_K1615022" target="_blank" rel="noreferrer">
+                            BBa_K1615022 
+                        </a>
+                        &nbsp;is monoamine oxidase A, which was one of the initial ADHD biomarkers that we considered (and later decided to rule out). With that said, the literature research used to inform this decision included information on the structure, function, and stability of monoamine oxidase A. Thus, in contributing to this part, we aimed to utilize this literature research to characterize the structure, function, and stability of this part more thoroughly.
+                    </div>
                 </div>
             </div>
         )
