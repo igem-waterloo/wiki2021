@@ -3,11 +3,11 @@ import React, { useLayoutEffect, useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './engineering.module.scss';
 import ProcessDesign from './ProcessDesign';
-import ProteinDesign from './ProteinDesign';
+import ProteinOptimization from './ProteinOptimization';
 import FusionDesign from './FusionDesign';
 import References from './References';
 
-const tabs = ['Protein Optimization', 'Fusion Design', 'Process Design', 'References'];
+const tabs = ['Microfluidic Chip Design', 'Biomarker Detection: Fusion Protein Design', 'Protein Optimization', 'Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System', 'Optical Detector and Application Development', 'References'];
 
 const Engineering = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -26,29 +26,35 @@ const Engineering = () => {
                         <span className={overallStyles.text_heading}>Overview</span>
                     </div>
                     <div className={overallStyles.description}>
-                        Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder. Current diagnosis procedures require qualitative psychological tests, thus diagnoses are subject to clinician bias. NeuroDetech aims to create a quantitative tool to aid ADHD diagnosis and reduce the margin of bias.
+                        The engineering design cycle was used numerous times to facilitate the design of the key components of NeuroDetech, where an engineering design cycle often led into another distinct but related cycle. Firstly, an engineering design cycle was used in the design, CAD modelling, and fluid dynamics testing of the microfluidic assay chip (Microfluidic Chip Design). After finalizing the design of the microfluidic assay, it then became necessary to use the engineering design cycle to design the fusion protein for biomolecule detection (Biomarker Detection: Fusion Protein Design, which leads into Protein Optimization), a CRISPR-Cas system for gene marker detection (Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System), and the optical detector/app used for signal interpretation and quantification (Optical Detector and Application Development).
                     </div>
                 </div>
                 <div className={styles.sections_div}>
                     {tabs.map(tab => (
-                        <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
+                        <div key={tab} active={active === tab} onClick={() => setActive(tab)} className={styles.section_block}>
                             <div className={styles.sections}>
-                            <div className={styles.section_img}></div>
-                            <div className={styles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={styles.section_img}></div>
+                                <div className={styles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}
                 </div>
                 <div>
-                { active === 'Protein Optimization' && (
-                    <ProteinDesign></ProteinDesign>
+                { active === 'Microfluidic Chip Design' && (
+                    <ProteinOptimization></ProteinOptimization>
                 )}
-                { active === 'Fusion Design' && (
+                { active === 'Biomarker Detection: Fusion Protein Design' && (
+                    <ProteinOptimization></ProteinOptimization>
+                )}
+                { active === 'Protein Optimization' && (
+                    <ProteinOptimization></ProteinOptimization>
+                )}
+                { active === 'Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System' && (
                     <FusionDesign></FusionDesign>
                 )}
-                { active === 'Process Design' && (
+                { active === 'Optical Detector and Application Development' && (
                     <ProcessDesign></ProcessDesign>
                 )}
                 { active === 'References' && (

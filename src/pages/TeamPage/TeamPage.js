@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import ImageModal from './ImageModal';
 import overallStyles from '../overall.module.scss';
 import styles from './teampage.module.scss';
 import { Link } from 'react-router-dom';
@@ -22,30 +23,30 @@ class TeamPage extends Component {
                 <Carousel className={styles.carousel} indicators={false} interval={null}>
                     <Carousel.Item className={styles.carousel_slide}>
                         <div className={styles.img_div}>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            {/* <img src='./headshot.png'></img> */}
                         </div>
                         <div className={styles.img_div}>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            {/* <img src='./headshot.png'></img> */}
                         </div>
                     </Carousel.Item>
                     <Carousel.Item className={styles.carousel_slide}>
                         <div className={styles.img_div}>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            {/* <img src='./headshot.png'></img> */}
                         </div>
                         <div className={styles.img_div}>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
-                            <img src='./headshot.png'></img>
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            <ImageModal source='./headshot.png' name='Harshit Manchanda' />
+                            {/* <img src='./headshot.png'></img> */}
                         </div>
                     </Carousel.Item>
                 </Carousel>

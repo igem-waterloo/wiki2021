@@ -31,7 +31,12 @@
 .sections_div {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 80px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.section_block {
+    padding: 20px 0;
 }
 
 .sections {
@@ -58,5 +63,5 @@
     font-weight: 400;
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5%;
 }

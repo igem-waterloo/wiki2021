@@ -15,8 +15,8 @@
 .carousel {
     background: #34394B;
     border-radius: 60px;
-    // width: 1100px;
-    // height: 570px;
+    width: 100%;
+    height: 570px;
     vertical-align: middle;
 }
 
@@ -31,7 +31,7 @@
     display: flex;
     margin: auto;
     justify-content: space-around;
-    margin: 20px 0px;
+    margin: 20px 50px;
 }
 
 .team_label {

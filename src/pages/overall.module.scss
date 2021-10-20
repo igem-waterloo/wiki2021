@@ -44,6 +44,8 @@
     margin-top: 3%;
     max-width: 90%;
     line-height: 170%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 // for sections: 
@@ -79,4 +81,12 @@
     font-weight: 500;
     color: var(--font-color);
     text-align: center;
+}
+
+.table, td, th {
+    font-size: var(--description-size);
+    font-weight: 500;
+    color: var(--font-color);
+    margin: 0 auto;
+    line-height: 170%;
 }
