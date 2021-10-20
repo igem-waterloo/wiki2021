@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import overallStyles from "../overall.module.scss";
-import styles from "./improvements.module.scss";
 
 class Improvement extends Component {
     render() {

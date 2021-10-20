@@ -134,7 +134,9 @@
     text-align: center;
 }
 
-.text_link {
+a.text_link:visited {
+    color: var(--links-color) !important;
+
     a:link {
         text-decoration: underline;
     }
