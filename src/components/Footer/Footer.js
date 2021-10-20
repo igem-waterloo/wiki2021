@@ -27,11 +27,11 @@ class Footer extends Component {
                 </div>
                 <div className={styles.projects_div}>
                 <span className={styles.heading_text}>Parts</span>
+                    <Link to="/Team:Waterloo/Parts" className={styles.link}>
+                        <span className={styles.link_text}>Parts</span>
+                    </Link>
                     <Link to="/Team:Waterloo/Contribution" className={styles.link}>
                         <span className={styles.link_text}>Contribution</span>
-                    </Link>
-                    <Link to="/Team:Waterloo/Improvement" className={styles.link}>
-                        <span className={styles.link_text}>Improvement</span>
                     </Link>
                 </div>
                 <div className={styles.projects_div}>

@@ -100,11 +100,11 @@ function Header() {
                 { currentUrl === "Parts" ?
                     <Dropdown open title="Parts">
                         <div className={styles.inner_links_div}>
+                            <Link to="/Team:Waterloo/Parts" className={styles.sub_link}>
+                                <span className={styles.link_text}>Parts</span>
+                            </Link>
                             <Link to="/Team:Waterloo/Contribution" className={styles.sub_link}>
                                 <span className={styles.link_text}>Contribution</span>
-                            </Link>
-                            <Link to="/Team:Waterloo/Improvement" className={styles.sub_link}>
-                                <span className={styles.link_text}>Improvement</span>
                             </Link>
                         </div>
                     </Dropdown>
