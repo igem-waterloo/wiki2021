@@ -1,22 +1,21 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 2% 0;
 }
 
 .header {
     display: flex;
     flex-direction: row;
-    margin: 0 40px;
+    margin: 0 3.5%;
 }
 
 .title {
-    color: white;
+    color: var(--heading-color);
     font-weight: 500;
-    font-size: 40px;
-    border-bottom: 7px solid #E88A5F;
-    padding-bottom: 10px;
-    margin-right: 30px;
+    font-size: var(--main-page-sub-heading-size);
+    border-bottom: 4px solid #E88A5F;
+    margin-right: 1%;
 }
 
 .button {
