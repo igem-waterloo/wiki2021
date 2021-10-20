@@ -81,11 +81,14 @@ function Header() {
                             <Link to="/Team:Waterloo/Engineering" className={styles.sub_link}>
                                 <span className={styles.link_text}>Engineering</span>
                             </Link>
-                            <Link to="/Team:Waterloo/Model" className={styles.sub_link}>
-                                <span className={styles.link_text}>Model</span>
+                            <Link to="/Team:Waterloo/Hardware" className={styles.sub_link}>
+                                <span className={styles.link_text}>Hardware</span>
                             </Link>
                             <Link to="/Team:Waterloo/Implementation" className={styles.sub_link}>
                                 <span className={styles.link_text}>Implementation</span>
+                            </Link>
+                            <Link to="/Team:Waterloo/Model" className={styles.sub_link}>
+                                <span className={styles.link_text}>Model</span>
                             </Link>
                             <Link to="/Team:Waterloo/Proof_Of_Concept" className={styles.sub_link}>
                                 <span className={styles.link_text}>Proof of Concept</span>
@@ -127,9 +130,6 @@ function Header() {
                             </Link>
                             <Link to="/Team:Waterloo/Finance" className={styles.sub_link}>
                                 <span className={styles.link_text}>Finance</span>
-                            </Link>
-                            <Link to="/Team:Waterloo/Hardware" className={styles.sub_link}>
-                                <span className={styles.link_text}>Hardware</span>
                             </Link>
                             <Link to="/Team:Waterloo/Safety" className={styles.link}>
                                 <span className={styles.url_text}>Safety</span>
