@@ -43,10 +43,9 @@ class PotentialCost extends Component {
                     Table 1 displays a sum of the potential costs that an individual undergoing the ADHD assessment may have to pay. The sum in the table varies, as standardized testing and time of cost may be an additional cost to the initial clinical assessment depending on the severity of ADHD, according to stakeholder feedback. The standardized testing cost refers to the cost of a neurocognitive test or psychodiagnostic test. The time cost refers to the time given up from an individual’s workplace. The average time of the cost was derived from expert stakeholder information.
                 </div>
                 <div className={overallStyles.figure_div}>
-                    <div className={overallStyles.description}>
-                        IMAGE TBD
+                    <div className={styles.crop}>
+                    <img src="https://2021.igem.org/wiki/images/4/41/T--Waterloo--Finance.png" alt="Cost Factors" className={styles.cost_img}/>
                     </div>
-                    {/* <img src="https://2021.igem.org/wiki/images/2/24/T--Waterloo--CurrentPipeline.png" alt="Current Pipeline" className={styles.pipeline_img}/> */}
                     <div className={overallStyles.figure_text}>
                         Figure 1: Cost factors of ADHD diagnosis (Created in BioRender)
                     </div>
