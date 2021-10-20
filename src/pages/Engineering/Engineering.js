@@ -2,9 +2,11 @@
 import React, { useLayoutEffect, useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './engineering.module.scss';
-import ProcessDesign from './ProcessDesign';
+import Microfluidic from './Microfluidic';
+import Biomarker from './Biomarker';
 import ProteinOptimization from './ProteinOptimization';
-import FusionDesign from './FusionDesign';
+import GeneMarker from './GeneMarker';
+import ProcessDesign from './ProcessDesign';
 import References from './References';
 
 const tabs = ['Microfluidic Chip Design', 'Biomarker Detection: Fusion Protein Design', 'Protein Optimization', 'Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System', 'Optical Detector and Application Development', 'References'];
@@ -24,7 +26,7 @@ const Engineering = () => {
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        The engineering design cycle was used numerous times to facilitate the design of the key components of NeuroDetech, where an engineering design cycle often led into another distinct but related cycle. Firstly, an engineering design cycle was used in the design, CAD modelling, and fluid dynamics testing of the microfluidic assay chip (Microfluidic Chip Design). After finalizing the design of the microfluidic assay, it then became necessary to use the engineering design cycle to design the fusion protein for biomolecule detection (Biomarker Detection: Fusion Protein Design, which leads into Protein Optimization), a CRISPR-Cas system for gene marker detection (Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System), and the optical detector/app used for signal interpretation and quantification (Optical Detector and Application Development).
+                        <p>The engineering design cycle was used numerous times to facilitate the design of the key components of NeuroDetech, where an engineering design cycle often led into another distinct but related cycle. Firstly, an engineering design cycle was used in the design, CAD modelling, and fluid dynamics testing of the microfluidic assay chip (Microfluidic Chip Design). After finalizing the design of the microfluidic assay, it then became necessary to use the engineering design cycle to design the fusion protein for biomolecule detection (Biomarker Detection: Fusion Protein Design, which leads into Protein Optimization), a CRISPR-Cas system for gene marker detection (Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System), and the optical detector/app used for signal interpretation and quantification (Optical Detector and Application Development).</p>
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
@@ -41,16 +43,16 @@ const Engineering = () => {
                 </div>
                 <div>
                 { active === 'Microfluidic Chip Design' && (
-                    <ProteinOptimization></ProteinOptimization>
+                    <Microfluidic></Microfluidic>
                 )}
                 { active === 'Biomarker Detection: Fusion Protein Design' && (
-                    <ProteinOptimization></ProteinOptimization>
+                    <Biomarker></Biomarker>
                 )}
                 { active === 'Protein Optimization' && (
                     <ProteinOptimization></ProteinOptimization>
                 )}
                 { active === 'Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System' && (
-                    <FusionDesign></FusionDesign>
+                    <GeneMarker></GeneMarker>
                 )}
                 { active === 'Optical Detector and Application Development' && (
                     <ProcessDesign></ProcessDesign>

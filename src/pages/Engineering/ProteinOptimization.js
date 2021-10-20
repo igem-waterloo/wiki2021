@@ -75,12 +75,12 @@ class ProteinOptimization extends Component {
                         <p>The outcome of running this protocol is a list of new PDB files, which are then passed onto a scoring protocol. The way that Rosetta determines a score for each mutated protein is by using a weighted average of different energies that it calculates, such as repulsive, attractive and hydrogen bond energies. The lower the Rosetta score, the more stable the protein is, thus the goal is to design the protein to have a lower score compared to the original protein.</p>
 
                         <span className={styles.list_heading}>Workflow for Mutating Proteins</span>
-                        <ul className={overallStyles.description}>
+                        <ol className={overallStyles.description}>
                             <li>Obtain the 1UTM PDB file from the protein data bank.</li>
                             <li>Run a python script to “clean” the PDB file. This removes all the headers and descriptions from the PDB file and leaves it with only the amino acids and the ligand.</li>
                             <li>Use Rosetta’s Point Mutant Scan protocol to generate all the possible single mutations for 1UTM.</li>
                             <li>Score each new mutated protein using Rosetta’s scoring protocol to quantify the mutation and perform further analysis and verification.</li>
-                        </ul>
+                        </ol>
 
                         <p style={{marginTop: 20}}>Since the point mutant scan protocol and the scoring protocol employ the Monte Carlo method, a high performance computer was used to be able to support the computational power that is needed to generate all the random combinations. We used the Graham cluster from Compute Canada to utilize the Rosetta Software.</p>
                     </div>
@@ -192,12 +192,12 @@ class ProteinOptimization extends Component {
                         <p>The top 15 1UTM multi-mutations will be further considered and analyzed using other tools like Auto-dock Vina and Gromacs. However, the best scoring designed protein based on Rosetta scores is a tie between four triple mutations, which are</p>
                         
                         <p>
-                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                        <ol className={overallStyles.description} style={{marginTop: 0}}>
                             <li>Y204F C195D S190T</li>
                             <li>Y204F C195E S190T</li>
                             <li>Y204F C195F S190T</li>
                             <li>Y204F C195Y S190T</li>
-                        </ul>
+                        </ol>
                         </p>
 
                         <p>They all have a score of -368.553 REU.</p>
@@ -854,12 +854,12 @@ class ProteinOptimization extends Component {
                         <p>The best scoring designed protein for 1UTM based on Rosetta scores is a tie between four triple mutations, which are</p>
 
                         <p>
-                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                        <ol className={overallStyles.description} style={{marginTop: 0}}>
                             <li>Y204F C195D S190T</li>
                             <li>Y204F C195E S190T</li>
                             <li>Y204F C195F S190T</li>
                             <li>Y204F C195Y S190T</li>
-                        </ul>
+                        </ol>
                         </p>
                     </div>
                     <div className={styles.text_div}>

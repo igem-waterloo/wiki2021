@@ -41,60 +41,62 @@ function App() {
                 <StickyBox style={{zIndex: "5", position: "relative"}}>
                     <Header />
                 </StickyBox>
-                <Switch>
-                    <Route exact path="/Team:Waterloo">
-                        <HomePage/>
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Attributions">
-                        <Attributions />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Collaborations">
-                        <Collaborations />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Communication">
-                        <Communication />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Contribution">
-                        <Contribution />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Description">
-                        <ProjectDescription />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Education">
-                        <Education />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Engineering">
-                        <Engineering />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Finance">
-                        <Finance />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Hardware">
-                        <Hardware />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Human_Practices">
-                        <HumanPractices />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Implementation">
-                        <Implementation />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Improvement">
-                        <Improvement />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Model">
-                        <Model />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Proof_Of_Concept">
-                        <ProofOfConcept />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Safety">
-                        <Safety />
-                    </Route>
-                    <Route exact path="/Team:Waterloo/Team">
-                        <TeamPage />
-                    </Route>
-                    
-                </Switch>
+                <div style={{borderLeft: '2px solid #E5E5E5'}}>
+                    <Switch>
+                        <Route exact path="/Team:Waterloo">
+                            <HomePage/>
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Attributions">
+                            <Attributions />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Collaborations">
+                            <Collaborations />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Communication">
+                            <Communication />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Contribution">
+                            <Contribution />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Description">
+                            <ProjectDescription />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Education">
+                            <Education />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Engineering">
+                            <Engineering />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Finance">
+                            <Finance />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Hardware">
+                            <Hardware />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Human_Practices">
+                            <HumanPractices />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Implementation">
+                            <Implementation />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Improvement">
+                            <Improvement />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Model">
+                            <Model />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Proof_Of_Concept">
+                            <ProofOfConcept />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Safety">
+                            <Safety />
+                        </Route>
+                        <Route exact path="/Team:Waterloo/Team">
+                            <TeamPage />
+                        </Route>
+                        
+                    </Switch>
+                </div>
                 </div>
                 <div>
                     <Footer />
