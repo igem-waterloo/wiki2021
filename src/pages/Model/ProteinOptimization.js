@@ -141,13 +141,13 @@ class ProteinOptimization extends Component {
                         <div className={overallStyles.figure_div}>
                             <img src="https://2021.igem.org/wiki/images/1/19/T--Waterloo--1UTM_mutation_overlap_1b.png" alt="1UTM Mutation Overlap 1b" className={styles.mutation_img}/>
                             <div className={overallStyles.figure_text}>
-                                Figure 2: a) 1UTM Original 170 Residue
+                                1UTM Original 170 Residue
                             </div>
                         </div>
                         <div className={overallStyles.figure_div}>
                             <img src="https://2021.igem.org/wiki/images/0/09/T--Waterloo--1UTM_mutation_overlap_2.png" alt="1UTM Mutation Overlap 2" className={styles.mutation_img}/>
                             <div className={overallStyles.figure_text}>
-                                Figure 2: b) 1UTM Mutated 170 Residue 
+                                1UTM Mutated 170 Residue 
                             </div>
                         </div>
                         <div className={overallStyles.description}>
@@ -165,7 +165,7 @@ class ProteinOptimization extends Component {
                         <div className={overallStyles.figure_div}>
                             <img src="https://2021.igem.org/wiki/images/e/ea/T--Waterloo--1UTM_double_heatmap.png" alt="1UTM Double Mutations Heatmap" className={styles.mutation_img}/>
                             <div className={overallStyles.figure_text}>
-                                Figure 3: Heat Map of 1UTM Double Mutations
+                                Heat Map of 1UTM Double Mutations
                             </div>
                         </div>
                         <div className={overallStyles.description}>
@@ -407,7 +407,7 @@ class ProteinOptimization extends Component {
                         <div className={overallStyles.figure_div} style={{width: "100%"}}>
                             <img src="https://2021.igem.org/wiki/images/4/40/T--Waterloo--strep-heatmap.png" alt="Strep Heatmap" className={styles.mutation_img}/>
                             <div className={overallStyles.figure_text}>
-                                Figure 4: Heat Map of Monomeric Streptavidin Double Mutations                            
+                                Heat Map of Monomeric Streptavidin Double Mutations                            
                             </div>
                         </div>
                         <div className={overallStyles.description}>
