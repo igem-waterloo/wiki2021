@@ -2,11 +2,6 @@ ul {
     list-style-type: "-";
   }
 
-.link {
-    color: #0d6efd;
-    text-decoration: underline;
-}
-
 .text_div {
     margin: 0 40px;
 }
@@ -27,14 +22,6 @@ ul {
 }
 
 .list_heading {
-    font-size: 25px;
-    color: var(--heading-color);
-    font-weight: 500;
-    border-bottom: 7px solid #E88A5F;
-    padding-bottom: 10px;
-}
-
-.sub_heading {
     font-size: 25px;
     color: var(--heading-color);
     font-weight: 500;

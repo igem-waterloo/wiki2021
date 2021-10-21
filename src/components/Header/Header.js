@@ -22,7 +22,7 @@ function Header() {
         const urls_list = [
             {
                 main_url: "Project",
-                sub_urls: ["Description", "Engineering", "Model", "Implementation", "Proof_Of_Concept"]
+                sub_urls: ["Description", "Engineering", "Model", "Implementation", "Proof_Of_Concept", "Hardware"]
             },
             {
                 main_url: "Home",
@@ -34,7 +34,7 @@ function Header() {
             },
             {
                 main_url: "Human_Practices",
-                sub_urls: ["Human_Practices", "Communication", "Education", "Inclusion", "Hardware", "Safety"]
+                sub_urls: ["Human_Practices", "Communication", "Education", "Inclusion", "Safety"]
             },
             {
                 main_url: "Team",

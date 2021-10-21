@@ -1,21 +1,6 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    // justify-content: space-around;
-}
-
-.text_div {
-    margin: 0 40px;
-}
-
-.text_heading {
-    font-size: 45px;
-    font-weight: 500;
-    color: white;
-    border-bottom: 7px solid #E88A5F;
-    padding-bottom: 10px;
-}
+ul {
+    list-style-type: "-";
+  }
 
 .illustration {
     width: 90%;
@@ -23,13 +8,6 @@
     background: #C4C4C4;
     border-radius: 60px 60px 0 60px;
     margin: 60px 40px;
-}
-
-.description {
-    font-size: 30px;
-    font-weight: 500;
-    color: white;
-    margin: 0 40px;
 }
 
 .first_section {

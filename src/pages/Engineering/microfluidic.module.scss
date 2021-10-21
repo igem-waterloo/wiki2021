@@ -2,15 +2,6 @@ ul {
     list-style-type: "-";
   }
 
-.link {
-    color: #0d6efd;
-    text-decoration: underline;
-}
-
-.text_div {
-    margin: 0 40px;
-}
-
 .illustration {
     width: 90%;
     height: 450px;
@@ -34,18 +25,11 @@ ul {
     padding-bottom: 10px;
 }
 
-.sub_heading {
-    font-size: 25px;
-    color: var(--heading-color);
-    font-weight: 500;
-    border-bottom: 7px solid #E88A5F;
-    padding-bottom: 10px;
-}
-
 .sub_sub_heading {
     font-size: 20px;
-    color: var(--heading-color);
     font-weight: 500;
-    border-bottom: 7px solid #E88A5F;
-    padding-bottom: 10px;
+    color: var(--heading-color);
+    border-bottom: 0.2em solid #E88A5F;
+    width: max-content;
+    padding-top: 4%;
 }

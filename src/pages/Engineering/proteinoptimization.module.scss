@@ -1,12 +1,3 @@
-.link {
-    color: #0d6efd;
-    text-decoration: underline;
-}
-
-.text_div {
-    margin: 0 40px;
-}
-
 .illustration {
     width: 90%;
     height: 450px;
@@ -16,21 +7,14 @@
 }
 
 .design_img {
-    margin: 40px;
+    margin: auto;
+    margin-left: 5%;
     width: 90%;
     height: 90%;
     border-radius: 30px;
 }
 
 .list_heading {
-    font-size: 25px;
-    color: var(--heading-color);
-    font-weight: 500;
-    border-bottom: 7px solid #E88A5F;
-    padding-bottom: 10px;
-}
-
-.sub_heading {
     font-size: 25px;
     color: var(--heading-color);
     font-weight: 500;

@@ -6,7 +6,7 @@ import Microfluidic from './Microfluidic';
 import Biomarker from './Biomarker';
 import ProteinOptimization from './ProteinOptimization';
 import GeneMarker from './GeneMarker';
-import ProcessDesign from './ProcessDesign';
+import OpticalDetector from './OpticalDetector';
 import References from './References';
 
 const tabs = ['Microfluidic Chip Design', 'Biomarker Detection: Fusion Protein Design', 'Protein Optimization', 'Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System', 'Optical Detector and Application Development', 'References'];
@@ -55,7 +55,7 @@ const Engineering = () => {
                     <GeneMarker></GeneMarker>
                 )}
                 { active === 'Optical Detector and Application Development' && (
-                    <ProcessDesign></ProcessDesign>
+                    <OpticalDetector></OpticalDetector>
                 )}
                 { active === 'References' && (
                     <References></References>

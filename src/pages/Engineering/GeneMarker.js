@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import styles from './genemarker.module.scss';
 import overallStyles from '../overall.module.scss';
-import Collapsible from './Collapsible';
-import { Table } from 'react-bootstrap';
+import Collapsible from '../../utils/Collapsible';
 
 class GeneMarker extends Component {
     render() {
@@ -11,256 +10,244 @@ class GeneMarker extends Component {
                 <div className={overallStyles.text_div} style={{marginBottom: 40}}>
                     <span className={overallStyles.text_heading} style={{paddingBottom: 0}}>Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System</span>
                 </div>
-                {/* <div>
-                    <div className={styles.illustration}></div>
-                </div> */}
-                {/* <div className={overallStyles.description}>
-                    <p>To increase efficiency and accuracy of the detection of target biomarker concentration, we decided to improve the binding affinity and stability of the parts of the fusion proteins - trypsin for binding PEA and monomeric streptavidin for biotin. Protein modelling and improved redesign results are detailed in this section.</p>
-                </div> */}
                 <Collapsible open title="Design">
-                    <div className={styles.text_div}>
+                    <div className={overallStyles.text_div}>
                         <span className={overallStyles.text_heading}>Rationale for Switching to Detection of Genetic Markers</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>When initially considering how to approach developing an ADHD diagnosis tool that was noninvasive, we decided that detection of a urinary ADHD-associated biomarker would be viable for our purposes. From here, we needed to explore the literature to answer the following questions:</p>
+                        <p>Attention deficit hyperactivity disorder (ADHD) is a common yet complex neurological disorder, and while PEA was (serendipitously) a suitable biomarker for a diagnostic application, continuing on the path of biomarkers was not feasible. First of all, there is much conflicting and limited recent evidence of urinary biomarker variances within ADHD patients, and furthermore, genetic markers are generally better candidates for diagnostics given the genetic nature of ADHD (Faraone et al., 2014). Firstly, biomarkers such as 5-HIAA, MHPG, NPY, DBH, and HVA are indeed relevant to ADHD (Faraone et al., 2014), but conflicting evidence and limited case studies makes it difficult to use for diagnostics. As an example, a paper from <em>Biology Psychiatry</em> observed a decrease in urinary MHPG in patients with ADHD, but a more recent paper from <em>Molecular Chemistry</em> <em>Neuropathology</em> observed no such variances (Shekim et al., 1983 & Baker et al., 1993). Due to much conflicting evidence, diagnostics using biomarkers became a recurring issue. Secondly, genetic markers are strong candidates for detecting ADHD (Faraone et al., 2014). Genes of the dopaminergic and serotonergic systems (particularly <em>DAT1, DRD4, DBH, SNAP25, CHRNA4</em>, and <em>TPH-2</em>) make for good candidates, and there is recent evidence linking their genetic behaviour to ADHD (Zhang et al., 2012). Alongside this, CRISPR-Cas13 methods of quantifying RNA, particularly the SATORI method, makes diagnostics possible without the need for prior amplification (Shinoda et al., 2021). With the literature pointing us away from biomarkers and towards genetic markers, we decided to adapt our microfluidic assay for the quantification of genetic markers - specifically, the detection of ADHD-associated mutations present in mRNA.</p>
+                    </div>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>Review of RNA Stability in a Diagnostic Context</span>
+                    </div>
+                    <div className={overallStyles.description}>
+                        <p>When initially considering an mRNA detection system, we were quite worried about the stability of mRNA - would it be even possible to quantify mRNA in urine? To address this concern, we looked into the literature to determine the following:</p>
                         
                         <p>
                         <ul className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>What urinary ADHD-associated biomarker should we choose to detect?</li>
-                            <li>What binding molecule should we use to bind/detect our chosen ADHD-associated biomarker? What considerations are there for the design of our chosen binding molecule?</li>
-                            <li>How would we design our binding molecule to produce a signal in response to detection of the ADHD-associated biomarker?</li>
+                            <li>What RNases are present in urine that would need to be inactivated for our system to work?</li>
+                            <li>Do any successful urinary mRNA quantification methods exist in literature?</li>
                         </ul>
                         </p>
 
-                        <p>In this Design section, our considerations and answers to these “big picture questions” will be discussed</p>
+                        <p>In this section, we will review our findings from the literature, and also discuss the experience of one of our lab members with mRNA quantification using a lateral flow assay.</p>
+
+                        <p>Ribonucleases (RNases) belong to a large class of enzymes, ubiquitous across both bacterial and eukaryotic organisms (Eun, 1996). Found in nearly all mammalian tissues and fluids, they are critical to a number of processes such as digestion, RNA metabolism, RNA processing and serve an integral role in protection against infection (Eun, 1996; Gotte & Menegazzi, 2019). Most human secretary RNases serve vital to anti-inflammatory, antibacterial and antiviral actions, catalysing the degradation of foreign intracellular RNA, DNA:RNA hybrids and dsRNA as indicators of infection (Gotte & Menegazzi, 2019). For this reason, an initial concern of using urinary RNA as a source to detect ADHD-associated mutations was the risk of RNase activity compromising RNA integrity (Becknell et al., 2019).</p>
+
+                        <p>The functionality of our device in the detection of ADHD-associated mutations is contingent on RNA being stable in a biological sample from the point of collection to the point at which the sample reaches the test chamber. While literature on use of urine as a source of RNA suggests that proper sample storage conditions circumvent these concerns, we did not have the opportunity to test this given our lack of lab access. One of our lab members, however, has had extensive experience working with RNA in the context of COVID-19 diagnostics from saliva.</p>
+
+                        <p>The company at which she worked, aimed to detect SARS-CoV2 RNA from saliva samples in an analogous lateral-flow assay microfluidic chip, while also incorporating detection of human RNA as a control for RNA stability. The results that our lab member collected highly supported the use of biological samples as a source of RNA, despite the risk of RNase activity potentially compromising the RNA quality. The use of RNase inhibitors during sample collection was sufficient in protecting the RNA, providing a reliable signal for the human RNA control at the test point. The significance of proper sample storage was further tested in negative controls lacking the RNase inhibitor. Absence of the inhibitor yielded consistently negative results in detecting the human RNA control gene, demonstrating that the RNase inhibitor was necessary in stabilizing RNA in saliva. Similar efforts of SARS-CoV2 RNA detection in saliva using the same methods of detection have been reported with success since then (Aoki et al., 2021; Lalli et al., 2021).</p>
+
+                        <p>In addition to the personal experience of our lab member, numerous literature sources suggest that despite the general instability of RNA, absolute and relative methods of mRNA quantification in urine are viable, given careful handling and storage of RNA samples as well as proper inactivation of RNases. This literature is summarized below: <br></br>Seo et al. (2017) successfully performed RT-qPCR to quantify the mRNA of three genes associated with kidney transplant rejection. To ensure stability of the RNA, they added their urine samples to RNAlater, an RNA inhibitor cocktail, and stored these samples at -80˚C (Seo et al., 2017). Sample-to-sample variation in measured mRNA concentrations could be circumvented by normalizing the absolute quantity of mRNA to the quantity of a constitutively expressed housekeeping gene (Seo et al., 2017). Note that this is a common practice for mRNA quantification in general, not just in urine samples.</p>
+
+                        <p>Bradley et al. (2019) were also successful in extracting and quantifying mRNA by RT-qPCR across multiple RNA extraction kits. Under clinical settings, urine samples cannot always be processed immediately or stored under -80°C conditions, making RNA degradation a concern for clinical processing. To test the efficacy of RNA extraction under clinical settings, the RNA samples were processed using centrifugation, filtration, and aliquoting methods under clinical settings (Bradley et al., 2019). With the use of RNAlater, the subsequent RNA extractions were successful in isolating RNA for quantification by RT-qPCR (Bradley et al., 2019).</p>
+                        
+                        <p>Overall, from the personal experience of our lab member, replicated results in the field, and literature supporting the viability of RNA quantification in urine, we found it safe to state that detection of RNA in urine would be achievable for our purposes in a microfluidic assay.</p>
                     </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Selection of a Target ADHD-Associated Biomarker</span>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>Overview of CRISPR-Cas Design</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>Selection of an optimal ADHD biomarker hinged on the following key characteristics:</p>
-                        
-                        <p>
-                        <ul className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>The biomarker should be collected via a non-invasive sample (e.g. urine, sweat, saliva).</li>
-                            <li>It should be present in an appreciable quantity in the sample.</li>
-                            <li>It should have well-defined numerical values of statistical data present in literature.</li>
-                            <li>It should have a discernible diagnostic window relative to healthy individuals.</li>
-                        </ul>
-                        </p>
-
-                        <p>While several sources report a link between ADHD and impaired regulation of brain catecholamines, quantifying these catecholamines in a non-invasive manner would be challenging for a number of reasons (Pliszka et al. 1996; Biederman 2005; Oades et al. 2005). Due to their rapid metabolism and trace levels in biological samples, analytes such as norepinephrine or dopamine would not be strong candidates to measure (Feres et al., 2014). Therefore, it was more feasible to investigate precursors or derivatives of norepinephrine or dopamine as markers of their imbalance rather than measuring the catecholamine concentrations themselves.</p>
-
-                        <p>Various biomarkers that showed evidence of imbalances of the noradrenergic or dopaminergic systems were mostly found in blood, requiring a more invasive collection method and thus less ideal for an affordable point of care diagnostic tool. Additional biomarker candidates were excluded from consideration due to insufficient evidence supporting a specific linkage to ADHD as opposed to other behavioural disorders. These eliminated analytes included neuropeptide Y, homovanillic acid (HVA), monoamine oxidase, 3-methoxy-4-hydroxyphenylglycol (MHPG) and 5-hydroxyindoleacetic acid (5-HIAA) (Faraone et al., 2014; Gerra et al., 2007; Jayamohananan et al., 2019).</p>
-
-                        <p>Scassellati et al., (2012) published an extensive review of promising biomarkers of ADHD to be used in diagnostics. One such marker was phenylethylamine (PEA), a stimulant for the release of dopamine. Meta-analysis of PEA-ADHD data reports significantly lower urinary PEA levels in ADHD patients versus controls based on three unique studies (Baker et al., 1991; Kusaga et al., 2002; Zametkin et al., 1984). One such study also showed evidence of lowered PEA levels being associated with symptoms of inattentiveness (Baker et al., 1991). Kusaga et al., (2002) investigated PEA alongside MHPG, HVA and 5-HIAA, comparing against individuals with an autistic disorder as a disease control. PEA was the only tested analyte in the study that showed significant differences relative to negative and disease controls.</p>
-
-                        <p>Given the consistent literature support of PEA as a viable marker linked to ADHD, readily available data and quantifiable numbers, and its presence in a relatively non-invasive biological sample, it was determined to be the strongest candidate to use as a biomarker in our detection device.</p>
-
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_heading}>Human Physiology of PEA</span>
-                        </div>
-
-                        <p>PEA is a small molecule most known for its role as a neurotransmitter implicated in psychological disorders such as ADHD, depression, and schizophrenia (Irsfeld, Spadafore & Pruess, 2014). PEA is most commonly found as a trace amine in the brain of mammals, justified by its high solubility within plasma and permeability across the blood-brain barrier. In this context, it mainly functions as an inhibitor of dopamine and serotonin transporters by binding to the TAAR1 protein. As a result, PEA supplements are commonly administered as antidepressants (Sabelli, Fink, Fawcett & Tom, 1996).</p>
-                    </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Selection of a PEA-Binding Molecule</span>
-                    </div>
-                    <div className={overallStyles.description}>
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_heading}>Consideration of Aptamers for PEA-Binding</span>
-                        </div>
-
-                        <p>Aptamers are single-stranded oligonucleotides or oligopeptides that bind to target molecules, and are generally between 20 and 60 units in length (Keefe et al., 2010). For aptamers consisting of nucleotides, both DNA and RNA sequences can be used. RNA aptamers offer greater structural diversity and thus more flexibility in terms of potential targets, but simultaneously suffer from lower stability, especially under high temperatures and alkaline conditions (Thiel & Giangrande, 2009). Aptamers can be found naturally in the form of riboswitches, but are more commonly engineered for a specific target. The relatively simple design and engineering process geared towards a wide range of analytes, including proteins, antibiotics, organophosphates and various low molecular weight compounds (Ilgu & Nilsen-Hamilton, 2016), has made aptamers a popular choice for molecular biologists.</p>
-
-                        <p>In terms of the procedure for aptamer engineering, SELEX (Systematic Evolution of Ligands by EXponential enrichment) is an iterative method for selecting the aptamers with optimal binding to the analyte. The process starts with a randomized library of nucleotide sequences, otherwise known as the initial oligonucleotide pool, which is flanked by primer regions (Zhuo et al., 2017). This then allows for amplification via PCR (for DNA) or reverse transcription-PCR (for RNA) to build up a synthetic library, which is incubated with the target molecule. Next, a selection round is performed by separating the target-bound sequences from unbound sequences (Zhuo et al., 2017), followed by amplification of the former via PCR (for DNA) or reverse transcription-PCR (for RNA). This new enriched library pool is then used for the next screening round, and the process is repeated while steadily increasing the stringency of the selection process until only a select few high-affinity aptamers are left. This generally takes around 5-15 rounds (Zhuo et al., 2017). The high-affinity aptamers are then analyzed in detail for optimal design.</p>
-                        
-                        <p>The key design aspect of aptamers centers on the stem-loop/hairpin folding structure (Sabri et al., 2020), which is the functional part of the aptamer that specifically binds to the target molecules. As such, computational methods have been developed to aid with the modelling of aptamer structures from primary sequences specifically by first predicting the secondary stem-loop structure (Hu et al., 2021), which can be carried out by various classes of computational software based on their underlying logic. Commonly used tools include RNAfold and Mfold (currently amalgamated into UNAfold), which are based on minimizing the free energy; CentroidFold, which is based on multiple sequence alignment; Vfold, which makes use of RNA motif-based loop entropies, and RNAstructure, which has several complicated underlying structure prediction methods, including maximum expected accuracy, stochastic sampling, exhaustive traceback and pseudoknot prediction. Next, the equivalent tertiary RNA structure is synthesized using generally fragment-based computational methods, such as RNAComposer, 3dRNA, Vfold3D or simRNA, which generally involve dividing the input secondary structure into fragments, including the helices and loops, then assembling the corresponding 3D templates, and finally applying energy minimization to the overall structure. The developed computational tools mainly focus on RNA structure modelling, and so if necessary, the output can be converted it back into the corresponding DNA structure by directly replacing uracil residues with thymine in the RNA structure .pdb file in PyMOL and fixing the distance of each H atom with the “fix hydrogen” mode. For evaluating the strength of binding to the target, various docking tools may be used, including Autodock, ZDOCK, HADDOCK, PatchDock or MolSoft, followed by molecular dynamics simulations and binding affinity estimations in AMBER or VMD.</p>
-
-                        <p>A variant on aptamers is the molecular beacon, which is a cDNA hairpin structure with a fluorophore at one end and a quencher at the other end, with the quencher stopping the fluorophore from creating a signal in its natural state (Tyagi & Kramer, 2012). However, in the presence of the analyte, the stem and loop will open to bind to the analyte, and the quencher is no longer able to quench the fluorophore, so the fluorophore creates a fluorescent signal. Molecular beacons generally consist of 15-30 base pairs in the loop region for binding to the target analyte, which can be nucleic acid sequences, toxins, proteins, and so on, as well as 4-6 base pairs at the double stranded stem (Tyagi & Kramer, 2012). Their high specificity and selectivity in binding has enabled a wide range of functionality in messenger RNA detection, intercellular imaging, protein and small molecule analysis, biosensors, biochip development, single nucleotide polymorphism and gene expression studies. Due to the similarity in structure, the process of engineering molecular beacons is practically identical to that of aptamers.</p>
-
-                        <p>Despite how well-developed and widely-applied the SELEX method is, it depends rather heavily on lab work. The outlined <em>in silico</em> selection of aptamers cannot act as a full replacement for the <em>in vitro</em> process, given that computational methods only provide theoretical structures and binding affinities that may not approximate the true values even remotely. Any mathematical model has its exceptions and inaccuracies, and thus in general, <em>in silico</em> work is done to narrow down the possible sequences for the SELEX method from a large starting pool. For instance, Chushak and Stone proposed a method that takes around $2.5\times 10^8$ sequences and selects $10^3$ to $10^4$ of them with potentially high binding affinity to the target molecule, and these selected sequences are then passed along for further screening in the lab (Chushak & Stone, 2009).</p>
-
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_heading}>Decision to Pursue a Protein-Based Detection Method</span>
-                        </div>
-
-                        <p>Unfortunately, given our complete lack of lab access due to the COVID-19 situation, in addition to our aversion for proposing an aptamer part based on purely computational structure modelling and binding affinity evaluations, we ultimately decided against aptamer design in favour of engineering existing proteins. Even so, we have documented our aptamer research in summary here in the hopes that it may be of use to any future projects considering aptamers as a potential solution.</p>
-                    </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Overview of PEA-Binding Fusion Protein Design</span>
-                    </div>
-                    <div className={overallStyles.description}>
-                        <p>As mentioned, we decided to pursue a protein-based detection method. Specifically, in order to facilitate both detection of PEA as well as signal production, we decided to design a fusion protein to be the PEA-binding molecule. One domain of the fusion protein would consist of a PEA-binding protein domain, while the other domain of the fusion protein would consist of a chemiluminescent enzyme, which could react with a chemiluminescent substrate to produce a signal. PEA would be conjugated to the test chamber of the microfluidic assay (using the small molecule conjugation method discussed in the Design section of the Chip Design engineering cycle). This effectively allows for quantification of the amount of urinary PEA by quantification of the number of binding molecules that bind to the PEA in the test chamber. As well, in order to facilitate a signal at the control chamber, the fusion protein would also be biotinylated; by conjugating streptavidin to the control chamber, fusion proteins could be “caught” at the control chamber, thereby producing a signal.</p>
-                        
-                        <p>Overall, the flow of events of the microfluidic assay chip (with respect to PEA detection) would be as follows:</p>
-
-                        <p>
-                        <ol className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>After applying the urine sample to the microfluidic assay chip, the fusion protein binds to any PEA in the sample.</li>
-                            <li>Then, the sample travels to the test chamber, where any fusion proteins with open binding sites will bind to the PEA conjugated to the test chamber.</li>
-                            <li>Any other fusion proteins will travel to the control chamber; since they are biotinylated, they will be bound by the streptavidin conjugated to the control chamber.</li>
-                            <li>Then, the chemiluminescent substrate is released to the test and control chambers, allowing a signal to be produced in each chamber.</li>
-                        </ol>
-                        </p>
-
-                        <p>In the test chamber, the higher the signal, the lower the amount of PEA in the urine sample, which would correspond to a higher risk of ADHD.</p>
-
-                        <p>With the above in mind, the design of the microfluidic assay for the detection of biomarkers (such as PEA) would be as follows:</p>
-
-                        <div className={overallStyles.figure_div} style={{marginBottom: 30}}>
-                            <img src="https://2021.igem.org/wiki/images/5/52/T--Waterloo--MCFAoverviewPEA.png" className={styles.design_img} style={{borderRadius: 20}}></img>
-                            <div className={overallStyles.figure_text}>Figure __:  Diagram of the microfluidic assay designed to detect urinary biomarkers (i.e. PEA).</div>
-                        </div>
-
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_heading}>Selection of a PEA-Binding Protein Domain</span>
-                        </div>
-
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_sub_heading}>Criteria for a Protein Domain Suitable for Use in a Fusion Protein</span>
-                        </div>
-
-                        <p>To ensure that the diagnostic test is as accurate as possible, the protein must have a high binding affinity for PEA in urine, and preferably only PEA, considering the array of constituents typically present in urine (Boulton & Milward, 1971). Selecting a monomeric protein that is not naturally localized within the cell membrane is also preferable to ensure proper folding of the selected domain as part of a fusion protein, as well as proper binding of PEA when incorporated into the fusion protein (Urbina et al., 2019). It was also necessary to ensure that the protein folding of the selected domain would not be altered if folding were to occur as part of the formation of a recombinant protein. Candidates that demonstrated an inability to bind without the presence of multiple subunits were excluded, as they were unlikely to be stable and functional in the aqueous environment of our assay. Integral membrane proteins were similarly excluded as their conformational state is dependent on the preservation of a membrane-embedded hydrophobic region, incompatible with our assay’s aqueous format (Marinko et al., 2019).</p>
-
-                        <p>The sequence of the protein must be known to enable the use of engineering tools for development, testing, and validation, namely 3D modelling, docking, and dynamics simulations. The protein must also be stable in the environment where binding is expected to take place; specifically, the protein must demonstrate stability under conditions similar to human urine. In addition, not only is the stability of the protein important, but it also must be uninhibited by the conditions of urine. That is, in order to be considered viable for use in processing urine samples, it had to be demonstrated that the pH, temperature, and salinity of standard human urine would not interfere with normal functionality of the binding domain. Finally, the catalytic activity of the protein must be removed without compromising the protein’s ability to bind to its substrate.</p>
-
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_sub_heading}>PEA-Binding Protein Candidates</span>
-                        </div>
-
-                        <p>Proteins that were considered for their reported interaction with PEA included VMAT2, FeaR, TAAR1, TAAR4, TynA, and 1UTM (Eiden & Weihe, 2011; Lindemann et al., 2005; Murakawa et al., 2015; Zeng & Spiro, 2013; Zucchi et al., 2006). Using the criteria outlined above, the following proteins were ruled out:</p>
+                        <p>Initially, to allow for generation of a quantifiable signal, we considered constructing a Cas-HRP fusion protein, similarly to the PEA-binding fusion protein. However, we realized that a simpler method that is commonly used in literature is to utilize the inherent RNase activity of CRISPR-Cas systems to cleave a fluorophore and quencher, thereby producing fluorescence. In effect, the design of the microfluidic assay for gene marker detection remains very similar to that for PEA detection; the only changes include the following:</p>
 
                         <p>
                         <ul className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>VMAT2 is non-specific to PEA, and binds a multitude of urinary biogenic amines (Eiden & Weihe, 2011).</li>
-                            <li>FeaR is a transcription factor regulating PEA levels but does not bind PEA itself, making it unsuitable for PEA quantification ( Lindemann et al., 2005).</li>
-                            <li>TAAR1 and TAAR4 are transmembrane G protein coupled receptors (GPCRs) that are very unlikely to be stable in an aqueous diagnostic context and are thus inadmissible (Murakawa et al., 2015; Zeng & Spiro, 2013).</li>
-                            <li>TynA is a dimer, and its stability and ability to bind PEA in a fusion protein was uncertain (Zucchi et al., 2006).</li>
+                            <li>Instead of the chemiluminescent substrate, a fluorophore and quencher would be used, linked by ssRNA.</li>
+                            <li>Instead of a fusion protein, a simple CRISPR-Cas complex would be used. The Cas protein should be biotinylated to allow for a signal to be produced at the control chamber.</li>
+                            <li>At the test chamber, the target mRNA should be conjugated (instead of PEA).</li>
+                            <li>At the control chamber, in addition to conjugated streptavidin, a known sample of the target mRNA (not conjugated) should also be lyophilized in order to activate the RNase activity of any CRISPR-Cas that binds to the control chamber.</li>
                         </ul>
                         </p>
 
-                        <p>From this assessment of the protein candidates, the most optimal PEA-binding protein for use in our microfluidic assay was selected as 1UTM, a monomeric trypsin derived from <em>Salmo salar</em>, with a dissociation constant (Kd) of 0.000972 (RCSB PDB, n.d.).</p>
+                        <p>This design is able to detect specific ADHD-associated mutations present in the target mRNA. If the target mRNA (containing the mutation) in the urine is detected and bound by the CRISPR-Cas complex, then less CRISPR-Cas complexes with “open binding sites” are available to bind to the mRNA conjugated to the test chamber, resulting in a lower signal. Overall, if the signal is a certain threshold level lower than the signal for an individual without ADHD, then the person is deemed to have the mutation.</p>
 
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_heading}>Selection of a Chemiluminescent Enzyme Domain</span>
-                        </div>
-
-                        <p>The method of detection selected for quantification of the marker analyte PEA in urine was based on the chemiluminescence produced by the interaction of horseradish peroxidase (HRP) and Amplex Red. HRP is a commonly used enzyme to catalyze chemiluminescent reactions, with multiple candidate substrates such as Luminol, Acridan or Amplex Red (Ghosh et al., 2020; Heo et al., 2021; Osman et al., 2000). Compared to other prevalent enzymes utilized in chemiluminescence detection, such as alkaline phosphatase, horseradish peroxidase was a smaller protein candidate (44 kDa), reported to be stable in neutral pH, and when directly evaluated against alkaline phosphatase, exhibited greater detection sensitivity (Beyzavi et al., 19987; Chattopadhyay et al., 2000). There are multiple examples of HRP specifically being used for measuring analyte concentrations in urine samples, suggesting this to be a reliable method of detection for our purposes (Chang et al., 2017; Eamudomkarn et al., 2018).</p>
-
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_heading}>Selection of a Chemiluminescent Substrate for HRP</span>
-                        </div>
-
-                        <p>Several chemiluminescent substrates for HRP were considered, including Acridan, a compound that emits light when oxidized in the presence of HRP (Roda, 2011). Unfortunately, there was insufficient data on the chemiluminescent properties of pure Acridan, particularly an expected value for a ratio of concentration to chemiluminescence. Without this knowledge, and without lab access to determine the relationship between concentration and chemiluminescence, we would not be able to confidently interpret the resulting chemiluminescent signal.</p>
-
-                        <p>Instead, a compound known as Amplex Red was explored as an option. Amplex Red has definitive values for excitation and emission maxima provided by ThermoFisher Scientific, and has been found to oxidize in the presence of HRP, forming a red-fluorescent product known as resorufin (ThermoFisher Scientific, n.d.).</p>
-
-                        <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={styles.sub_heading}>Protein Biotinylation</span>
-                        </div>
-
-                        <p>The biotin-streptavidin complex system has one of the highest specificities and affinities for non-covalent binding observed in nature (Wilchek et al., 2006), and is exploited in our design for the detection of proteins. In particular, this requires biotinylation, which is the process of attaching biotin (a small molecule) to some target protein or other macromolecule, so that the biotinylated analyte may be recognized and bound to streptavidin (a protein) (Kay et al., 2009). Recall that in our microfluidic assay, our fusion protein is biotinylated to allow streptavidin (conjugated to the control chamber) to bind, thereby eliciting a signal at the control chamber.</p>
-
-                        <p>Typically in designing fusion proteins, biotinylation of the fusion protein is preferred to fusion with streptavidin, since biotin is smaller in size than globular proteins, which allows for the minimization of steric interference and the conjugation of multiple biotin molecules to a single protein for signal amplification. When designing a fusion protein, reducing the size of the fusion is advantageous to prevent instability and aggregation, making biotinylation of a fusion protein preferable over adding another protein domain. In addition, biotin has a valeric acid side chain, which can be easily derivatized and conjugated to reactive structures without affecting its avidin-binding function (Kay et al., 2009). This feature allows for the incorporation of many biotinylation reagents that target specific functional groups or residues, including primary amines, sulfhydryls, carboxyls and carbohydrates, without inactivating the target macromolecule.</p>
-
-                        <p>Biotinylation is most commonly performed through chemical means, although it can also occur through enzymatic approaches. Enzymatic methods generally require the co-expression of bacterial biotin ligase and an exogenously expressed protein of interest that is modified to carry a biotin acceptor peptide, which provides a more uniform biotinylation than chemical methods and can be cell compartment specific (Cull & Schatz, 2000). Chemical methods, on the other hand, provide much greater flexibility in the type of biotinylation needed. This is especially preferred to enzymatic methods when specific functional groups such as carbonyls, carboxyls, primary amines or sulfhydryls are targeted (Chapman-Smith & Cronan Jr, 1999).</p>
-
-                        <p>For our purposes, it suffices to biotinylate the protein at any residue, and so the enzymatic method was used by fusing the protein at its C-terminus to the AviTag or the Acceptor Peptide (Cull & Schatz, 2000), a 15-amino acid peptide (GLNDIFEAQKIEWHE). The protein is then incubated with BirA in the presence of biotin and ATP, which allows for biotinylation to occur at the C-terminus.</p>
+                        <p>With the above in mind, the design of the microfluidic assay for the detection of gene markers would be as follows:</p>
                     </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Fusion Protein Linker Design</span>
+                    <div className={overallStyles.figure_div} style={{marginBottom: 30}}>
+                        <img src="https://2021.igem.org/wiki/images/0/02/T--Waterloo--MCFAoverviewCRISPR.png" className={styles.design_img} style={{borderRadius: 20}}></img>
+                        <div className={overallStyles.figure_text}>Diagram of the microfluidic assay designed to detect gene markers (ADHD-associated mRNA mutations).</div>
+                    </div>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>The Big Picture</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>Linkers are amino acid sequences that fuse two or more protein domains together - in this case, 1UTM and HRP. The design of linkers is vital to fusion protein functionality, since inappropriate linkers may lead to misfolding of the fusion proteins, low yield in protein production, or impaired bioactivity (Chen et al., 2013). Linkers are generally classified into 3 categories by structure: flexible linkers, rigid linkers, and in vivo cleavable linkers. Flexible linkers are usually used when the joined domains require a certain degree of movement or interaction. They are generally composed of small, non-polar (e.g. Gly) or polar (e.g. Ser or Thr) amino acids, where the small size of these residues provides flexibility, and allows for mobility of the connected functional domains (Argos, 1990). The incorporation of Ser or Thr can maintain the stability of the linker in aqueous solutions by forming hydrogen bonds with the water molecules, and therefore reduces the unfavorable interaction between the linker and the protein moieties. The most commonly used flexible linkers have sequences consisting primarily of stretches of Gly and Ser residues, known as a GS linker. One of the most widely used flexible linkers has sequence (Gly-Gly-Gly-Gly-Ser)<sub>n</sub>. Varying the copy number n allows for different lengths of the GS linker to be constructed, so that appropriate separation of the functional domains or necessary inter-domain interactions can be achieved.
-The lack of rigidity of flexible linkers, however, can sometimes result in poor expression yields or loss of biological activity, due to an inefficient separation of the protein domains or insufficient reduction of their interference with each other. In these situations, rigid linkers have been successfully applied to keep a fixed distance between the domains and to maintain their independent functions. Alpha helix-forming linkers with the sequence of (EAAAK)<sub>n</sub> have been applied to the construction of many recombinant fusion proteins (Amet et al., 2008), where n generally takes on values between 2 and 5. The alpha helical conformation is exhibited by many natural linkers, with it having a rigid and stable structure, due to intra-segment hydrogen bonds and a closely packed backbone (Aurora et al., 1997). Therefore, the stiff alpha-helical linkers may act as rigid spacers between protein domains. Another type of rigid linker has a Pro-rich sequence, (XP)<sub>n</sub>, with X designating any amino acid, preferably Ala, Lys, or Glu. The incorporation of Pro in non-helical linkers can increase the stiffness, and allows for effective separation of the protein domains.</p>
+                        <p>With the above design considerations in mind, the outstanding questions to be answered for the design of an mRNA-quantifying CRISPR-Cas system include the following:</p>
 
-                        <p>Cleavable linkers are less relevant to our discussion, since we require the fusion protein to function as a unit. For the sake of completion, cleavable linkers are linkers that allow for the release of free functional domains in vivo. They are oligopeptides without the versatility of crosslinking agents, and are designed to be cleaved under specific conditions such as the presence of reducing reagents or proteases in the <em>in vivo</em> environment. Cleavable linkers may reduce steric hindrance, improve bioactivity, or achieve independent actions/metabolism of individual domains of recombinant fusion proteins after linker cleavage.</p>
+                        <p>
+                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                            <li>What specific genes (and by extension, their ADHD-associated mutations) should be detected?</li>
+                            <li>What Cas protein should be used? Would we need to adapt the Cas protein to our system in any way?</li>
+                            <li>How should we design the CRISPR guide RNA sequences?</li>
+                        </ul>
+                        </p>
+
+                        <p>In the following sections, our considerations and answers to these “big picture questions” will be discussed.</p>
+
+                        <div style={{margin: '20px 0 40px 0'}}>
+                            <span className={overallStyles.subheading}>Selection of ADHD-associated genes to be quantified by mRNA transcript detection</span>
+                        </div>
+
+                        <p>ADHD is often comorbid with other psychological disorders, such as schizophrenia, depression, anxiety, and bipolar disorder, to name a few. In a similar sense, biomarkers and gene markers associated with ADHD can often be associated with other psychological disorders as well. In order to reduce the likelihood that our microfluidic assay system produces false positive results associated with other psychological disorders, we aimed to detect multiple ADHD-associated gene markers. In selecting the most viable gene candidates, we conducted literature research into the following ADHD-associated genes. We favoured genes whose ADHD-associated mutations would also be present in their corresponding mRNA transcripts; that is, mutations in the promoter region or introns were ruled out. We also favoured genes whose ADHD-associated mutations were well-characterized and had known sequences. As well, variable number of tandem repeat mutations (VNTRs) were ruled out, as these would not be easily detected by hybridization.</p>
+
+                        <p>In searching the literature for suitable gene markers, we considered the following genes:</p>
+
+                        <p><em>DBH</em> codes for dopamine beta-hydroxylase, which catalyzes the conversion of dopamine into norepinephrine. However, the major ADHD-associated mutations for DBH occur within introns, making it impossible to detect these mutations in the corresponding mRNA transcript (Roman et al., 2002).</p>
+
+                        <p><em>MAOA</em> codes for monoamine oxidase A, a mitochondrial enzyme which degrades monoamines such as serotonin, norepinephrine and dopamine (known ADHD-associated biomarkers). However, the major ADHD-associated mutations for MAOA occurred within the promoter region or introns, making it impossible to detect these mutations in the corresponding mRNA transcript. As well, differential expression of MAOA between males and females made it unfavourable for universal use (Rommelse et al., 2008).</p>
+
+                        <p><em>GRIN2A</em> codes for a subunit of the NMDA receptor complex, which is implicated in memory and learning. However, it is not certain whether there truly is an association between ADHD and GRIN2A; thus it was ruled out (Adams et al., 2004).</p>
+
+                        <p><em>DRD4</em> codes for a major dopamine receptor. A predictable 7-repeat VNTR is associated with ADHD (this is different from VNTRs where the number of repeats is not predictable). Notably, 7-repeat VNTR alleles containing missense mutations led to an observed three-fold increase in likelihood of hyperactivity (Tovo-Rodrigues et al., 2013). This makes sense, as a lack of DRD4 functionality in the DRD4 dopamine receptor would lead to an inability to bind dopamine; with dopamine being an ADHD biomarker, the association between ADHD and the DRD4 missense mutations makes sense (Tovo-Rodrigues et al., 2013). Thus, targeting these missense mutations within the 7-repeat region could be a viable strategy. Specifically, the following missense mutations are viable targets:</p>
                         
-                        <p>Keeping the above considerations in mind, we decided that a polar, flexible, and medium-sized linker would be best for our purposes, as this would allow for proper separation of protein domains in aqueous solution, without the risk of linker-domain interactions (namely, hydrophobic interactions) that might compromise the conformation of the domains. The flexibility and length of the linker would allow each domain to function effectively, without risk of steric hindrance between domains (especially around the active sites of each domain). The amino acid sequence of the chosen linker is as follows:</p>
+                        <p>
+                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                            <li>A single base deletion of cytosine in VNTR motif 3</li>
+                            <li>A single base deletion of cytosine in VNTR motif 1</li>
+                        </ul>
+                        </p>
 
-                        <p>N’-SGSTSTSTSTSGS-C’</p>
-                   </div>
+                        <p><em>HTR1B</em> codes for 5-hydroxytryptamine receptor 1B, and polymorphisms in HTR1B have been implicated in ADHD; however, it is only implicated in some ADHD subtypes and thus is not a good universal indicator of ADHD (Ickowicz et al., 2006).</p>
+
+                        <p><em>TPH-2</em> codes for tryptophan hydroxylase, which is involved in the synthesis of serotonin, an ADHD-associated biomarker. Multiple SNPs in TPH-2 are statistically significant with regard to ADHD association, including the ones listed below. However, these SNPs are intronic, making them unsuitable for detection in mRNA.</p>
+
+                        <p>
+                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                            <li>rs1843809-T allele</li>
+                            <li>rs1386497-A allele</li>
+                            <li>rs1386493-C allele</li>
+                        </ul>
+                        </p>
+
+                        <p><em>CHRNA4</em> codes for a nicotinic acetylcholine receptor, where the following SNP mutations were found to be ADHD-associated (Lee et al., 2007). However, these SNPs are intronic, making them unsuitable for detection in mRNA.</p>
+
+                        <p>
+                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                            <li>rs2273505-G allele</li>
+                            <li>rs3787141-T allele</li>
+                        </ul>
+                        </p>
+
+                        <p><em>SNAP25</em> codes for a presynaptic membrane protein involved in the regulation of neurotransmitter release. The SNP T1065T&gt;G is known to be ADHD-associated (Faraone &amp; Mick, 2010). This SNP occurs in the 3′ untranslated region and is thus present and detectable in mRNA.</p>
+
+                        <p>Of the above mutations, the ADHD-associated genes that we chose to detect using our microfluidic assay included the following:</p>
+
+                        <p>
+                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                            <li><em>DRD4</em></li>
+                            <li><em>SNAP25</em></li>
+                        </ul>
+                        </p>
+
+                        <p>To detect the ADHD-associated genes selected above, we decided to utilize a CRISPR-Cas-based system. CRISPR-Cas would allow for sensitive detection of mRNA, with enough specificity to distinguish single nucleotide polymorphisms (SNPs) (Shinoda et al., 2021). As a result, mutations associated with ADHD could be quantified, even SNP mutations. The following describes the design considerations of employing a CRISPR-based system in a microfluidic assay.</p>
+
+                        <div style={{margin: '20px 0 40px 0'}}>
+                            <span className={overallStyles.subheading}>Selection of Cas protein</span>
+                        </div>
+
+                        <p>CRISPR Cas systems involve a Cas protein and a CRISPR guide RNA (gRNA); the Cas protein exhibits endonuclease activity when bound to its guide RNA. In selecting the appropriate Cas protein for detection of urinary mRNA, it is important to consider the distinctions between the Cas proteins - specifically, their targets:</p>
+
+                        <p>
+                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                            <li>CRISPR-Cas9 cleaves double-stranded DNA (dsDNA), creating blunt ends. It cleaves a single, specific target (Koonin & Makarova, 2019).</li>
+                            <li>CRISPR-Cas12 cleaves double-stranded DNA (dsDNA), creating sticky (staggered) ends. It cleaves and remains bound to its target. When bound, it also exhibits nonspecific nuclease activity, indiscriminately cleaving DNA other than the target (Koonin & Makarova, 2019).</li>
+                            <li>CRISPR-Cas13 cleaves single-stranded RNA (ssRNA). Similarly to Cas12, it cleaves its target and remains bound, and will also exhibit nonspecific nuclease activity, indiscriminately cleaving ssRNA other than the target (Koonin & Makarova, 2019).</li>
+                        </ul>
+                        </p>
+
+                        <p>Due to the ability of CRISPR-Cas13 to target ssRNA, such as mRNA transcripts, we chose to utilize a Cas13-based system.</p>
+
+                        <p>There are several relatively well-characterized Cas13 proteins that originate from different species of the <em>Leptotrichia</em> genus, such as Cas13a from <em>L. wadei, L. buccalis</em>, and <em>L. shahii</em>. Of these Cas13a variants, <em>L. shahii</em> was the earliest discovered; however, diagnostics tools have favoured <em>L. wadei</em> and <em>L. buccalis</em> for their increased analyte sensitivity. In fact, Fozouni et al. (2020) utilized Cas13a from <em>L. buccalis</em> to detect SAR-CoV-2 RNA, favouring the <em>L. buccalis</em> variant as it had the highest sensitivity compared to the other Cas13a variants (Fozouni et al., 2020). Inspired by this, we decided to adapt Cas13a from <em>L. buccalis</em> (henceforth referred to as LbuCas13a) for the detection of ADHD-associated mRNA transcripts in our microfluidic assay.</p>
+
+                        <p>Overall, Cas13a from <em>L. buccalis</em> was chosen for the detection of ADHD-associated mRNA.</p>
+
+                        <div style={{margin: '20px 0 40px 0'}}>
+                            <span className={overallStyles.subheading}>Adaptation of LbuCas13a for use in a microfluidic assay</span>
+                        </div>
+
+                        <p>Recall that the microfluidic assay consists of a test chamber and control chamber. The analyte of interest (in this case, the target ADHD-associated mutant mRNA transcript) is covalently conjugated to the test chamber. This would allow LbuCas13a to bind to these conjugated target mRNA transcripts, thereby activating LbuCas13a’s nonspecific RNAse activity.</p>
+
+                        <p>To utilize this nonspecific RNAse activity to produce fluorescence, we decided to use a fluorophore/quencher system, connected via an RNA linker. When the fluorophore is in close proximity to the quencher, the fluorophore is “quenched” by the quencher and does not produce fluorescence. However, when the fluorophore is separated from the quencher, the fluorophore produces fluorescence. The nonspecific RNAse activity of LbuCas13 (when bound to the target mRNA transcript) cleaves any surrounding RNA, including the RNA linker between the fluorophore and quencher. Ultimately, this allows for the production of fluorescence upon detection of the target mRNA, even for small quantities of mRNA.</p>
+
+                        <p>The control chamber contains covalently conjugated streptavidin. In order to allow Cas13 to bind at the control chamber, LbuCas13a must be biotinylated, which would facilitate a strong biotin-streptavidin interaction at the control chamber. Biotinylation of LbuCas13a would be facilitated in the same manner as biotinylation of 1UTM, the PEA-binding protein.</p>
+
+                        <div style={{margin: '20px 0 40px 0'}}>
+                            <span className={overallStyles.subheading}>Design of CRISPR guide RNA sequences</span>
+                        </div>
+
+                        <p>CRISPR guide RNA consists of a stem sequence that forms a hairpin loop and is recognized by the Cas protein. In the case of LbuCas13a, Fozouni et al. (2020) suggests that the following 30-nucleotide sequence is appropriate as a stem sequence for the CRISPR guide RNA (Fozouni et al., 2020): <br></br>5′-GACCACCCCAAAAAUGAAGGGGACUAAAAC-3′</p>
+
+                        <p>This stem sequence would be added to the 5′ end of a recognition sequence. This recognition sequence would be complementary to the target mRNA of interest, allowing for target mRNA binding by the CRISPR-Cas13 system.</p>
+
+                        <p>Recall that the ADHD-associated genes whose mRNA transcripts would be detected include the following:</p>
+
+                        <p>
+                        <ul className={overallStyles.description} style={{marginTop: 0}}>
+                            <li><em>DRD4</em></li>
+                            <li><em>SNAP25</em></li>
+                        </ul>
+                        </p>
+
+                        <p>The sequences of the ADHD-associated mutations for each gene were obtained from the papers describing the association of each gene with ADHD (the papers referenced can be seen with the guide RNA sequences below). These sequences were translated to RNA sequences by replacing all thymine residues with uracil, and converted to the complementary sequence for use as a CRISPR recognition sequence. Then, the stem sequence was appended to the 5′ end of each recognition sequence. Listed below are the guide RNA sequences for each ADHD-associated gene:</p>
+
+                        <p><em>DRD4</em> missense deletion in VNTR motif 3 (recognition sequence obtained from Tovo-Rodrigues et al., 2013): <br></br>5′-GACCACCCCAAAAAUGAAGGGGACUAAAACGGCGCGGGCCGGAGGGGGGCCUGGGGACGCCGGG-3′ <br></br>This sequence was used to create a new BioBrick Part: <a href="http://parts.igem.org/Part:BBa_K3843005" target="_blank">BBa_K3843006</a></p>
+
+                        <p><em>DRD4</em> missense deletion in VNTR motif 1 (recognition sequence obtained from Tovo-Rodrigues et al., 2013): <br></br>5′-GACCACCCCAAAAAUGAAGGGGACUAAAACGCGCGGGGCGGAGGGGGUCCUGGGGACGCCGGGG-3′ <br></br>This sequence was used to create a new BioBrick Part: <a href="http://parts.igem.org/Part:BBa_K3843005" target="_blank">BBa_K3843008</a></p>
+
+                        <p><em>SNAP25</em> SNP T1065T&gt;G (recognition sequence obtained from Barr et al., 2000): <br></br>5′-GACCACCCCAAAAAUGAAGGGGACUAAAACCACCGAGAUUGAGGAACUCCAGAACUCAAAGUAA-3′ <br></br>This sequence was used to create a new BioBrick Part: <a href="http://parts.igem.org/Part:BBa_K3843005" target="_blank">BBa_K3843007</a></p>
+                    </div>
                 </Collapsible>
 
                 <Collapsible open title="Build">
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Vector Selection</span>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>Vector and Chassis Selection</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>We decided to use the pET28a plasmid vector, which is a general-purpose expression vector with a strong promoter (T7), making it appropriate for expression of our fusion protein. It contains a <em>lac</em> operon, allowing for induction of expression using ​​isopropyl beta-D-1-thiogalactopyranoside (IPTG), an allolactose analog.</p>
+                        <p>The Zhang Lab, based in Massachusetts, USA, is highly experienced with the use of CRISPR-Cas13a; they have developed an excellent <a href="https://zlab.bio/cas13" target="_blank">resource page</a> for CRISPR-Cas13 work.</p>
+
+                        <p>In this CRISPR-Cas13 guide, the Zhang Lab provides a pET-based plasmid vector for the expression of Cas13a from <em>Leptotrichia wadei</em>. In our case, for the expression of Cas13a from <em>Leptotrichia buccalis</em>, we would swap the insert with the sequence for LbuCas13a. The vector contains a 6-His tag at the N-terminus, suitable for affinity chromatography using an Ni-NTA resin column (Abudayyeh &amp; Gootenberg, n.d.).</p>
+
+                        <p>The Zhang Lab suggests the use of <em>E. coli Rosetta 2(DE3)pLysS Singles</em> for Cas13a expression. With that said, this strain is a BL21 derivative for expression of human proteins (though bacterial expression is reportedly fine using the plasmid above). For bacterial expression, simply using <em>E. coli BL21</em> would likely be sufficient (Abudayyeh &amp; Gootenberg, n.d.).</p>
+
+                        <p>The CRISPR guide RNA sequences would be ordered from a synthesis company, such as IDT, as the Zhang Lab reported better performance using synthesized guide RNAs (Abudayyeh & Gootenberg, n.d.).</p>
                     </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Chassis Selection</span>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>Cas13a Purification</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>For the expression chassis, we decided to use <em>E. coli BL21(DE3)</em>, which is a general-purpose strain for bacterial protein expression. BL21 lacks <em>lon</em> and <em>ompT</em> proteases involved in the cleavage of extraneous proteins and T7 RNA polymerase, respectively. The lack of these proteases ensure that protein expression is possible. As well, disulfide bond formation is possible, and is largely catalyzed by natively expressed thioredoxin reductase (trxB), glutathione reductase (gor) and oxidases DsbA/DsbC.</p>
-                    </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Protein Purification</span>
-                    </div>
-                    <div className={overallStyles.description}>
-                        <p>To enable purification of the desired fusion protein by affinity chromatography, a 6-His tag with a TEV linker was appended to the N-terminus of the fusion protein. The His-tag has a very high affinity for nickel ions, and is only outcompeted by imidazole. To purify the protein, the expression cell culture would be lysed, centrifuged to remove cell debris, then the supernatant poured into an affinity chromatography column with Ni-NTA resin. The TEV linker of the fusion protein, containing a TEV recognition site, could be cleaved by adding TEV protease. This would allow for elution of the fusion protein while simultaneously removing the 6-His tag and TEV linker. The Ni-NTA resin could then be eluted by the addition of imidazole, which would cause the bound 6-His tags and TEV linkers to elute.</p>
+                        <p>Since the Zhang Lab’s plasmid allows for expression of a 6-His tag along with Cas13a, the expressed protein can be purified by affinity chromatography, similarly to the purification of the PEA-binding fusion protein. An Ni-NTA resin would be used to capture the His-tagged Cas13a. Then, elution of Cas13a would occur through the addition of imidazole.</p>
                     </div>
                 </Collapsible>
 
                 <Collapsible open title="Test">
                     <div className={overallStyles.description} style={{marginTop: 5}}>
-                        <p>Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. As a result, we were unable to experimentally characterize the fusion protein. With that said, the following methodology outlines our plan of action to test our fusion protein construct if we had lab access.</p>
+                        <p>Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. As a result, we were unable to experimentally test the functionality of the CRISPR-Cas13a constructs. With that said, the following methodology outlines our plan of action to test our CRISPR-Cas13a constructs if we had lab access.</p>
                     </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading}>Experimental Demonstration of Fusion Protein Stability</span>
-                    </div>
-                    <div className={overallStyles.description}>
-                        <p>The beauty of working with a fusion protein with a chemiluminescent enzyme domain is that the activity (and by extension, stability) of the fusion protein can be assayed very easily. In the case of the 1UTM-HRP fusion, where Amplex Red is the chemiluminescent substrate of HRP, Amplex Red could be added to a sample of the purified fusion protein in a cuvette. The fusion protein solution would be expected to display chemiluminescence of wavelength 563-587 nm upon addition of Amplex Red; the chemiluminescence can be measured using a spectrophotometer. A negative control would involve adding Amplex Red to the protein’s buffer solution (but without the protein!) to ensure that chemiluminescence displayed by the protein solution is not due to some side reaction with the buffer solution components. A positive control would involve adding Amplex Red to a known pure solution of HRP (not in a fusion protein); this would ensure that Amplex Red is not degraded.</p>
-
-                        <p>To follow up on the previous stability experiment, simulation of urine conditions (including pH, salt, and major metabolites) would allow us to demonstrate the stability and functionality of the protein in urine. Roxe (1990) determined that urine typically had the following conditions:</p>
-
-                        <p>
-                        <ul className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>A pH range of 5-9, but usually slightly acidic. pH 6 is a reasonable generalization.</li>
-                            <li>A protein concentration of much less than 30 mg/dL; equal or above indicates disease. To simulate protein in urine, bovine serum albumin (BSA) would be an appropriate, inert choice.</li>
-                            <li>A glucose concentration of much less than 100 mg/dL; equal or above indicates disease.</li>
-                            <li>Approximately 4 mM urea.</li>
-                            <li>Approximately 20 mM salt (NaCl).</li>
-                        </ul>
-                        </p>
-
-                        <p>These components could be dissolved in DI water to simulate a urine sample. Then, the experimental method described in the previous paragraph could be done to demonstrate stability and functionality of the fusion protein in urine-like conditions.</p>
-
-                        <p>From here, it would be useful to obtain an experimental standard curve for the reaction between HRP and Amplex Red in urine-like conditions. To do this, a series of dilutions of the fusion protein would be made, then a known excess concentration of Amplex Red would be added to each fusion protein dilution. In measuring the chemiluminescence produced by each dilution, a standard curve of chemiluminescence vs. fusion protein concentration can be plotted. A multiplate and multiplate analyzer can be used for this. The same positive and negative controls from the stability experiment (above) should be implemented here as well. This would simulate the conditions of chemiluminescence in the microfluidic assay chip, since in the MCFA chip, the number of fusion protein molecules that bind at the test chamber would be variable, while the amount of Amplex Red that passes through the test chamber would be a known excess amount.</p>
-                    </div>
-                    <div className={styles.text_div}>
-                        <span className={overallStyles.text_heading} style={{paddingBottom: 0}}>Experimental Determination of PEA-Binding Affinity of the Fusion Protein</span>
+                    <div className={overallStyles.text_div}>
+                        <span className={overallStyles.text_heading}>Experimental Demonstration of CRISPR-Cas13a Success</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>Binding affinity between a protein and ligand can be expressed in terms of the protein’s dissociation constant, Kd. Mathematically, Kd is equivalent to the ratio of unbound protein to the ratio of bound protein. It follows that the lower the Kd, the more that protein is bound at any given time, and thus the higher the protein’s affinity for the ligand.</p>
+                        <div style={{margin: '20px 0 40px 0'}}>
+                            <span className={overallStyles.subheading}>Demonstration of CRISPR-Cas13a Stability in Urine-Like Conditions</span>
+                        </div>
 
-                        <p>To determine the Kd of the PEA-binding fusion protein, we would need to determine the ratio of unbound:bound protein after incubation with PEA. To do so, a titration method can be used, as follows:</p>
+                        <p>In a solution containing ssRNA-linked fluorophores/quenchers, the nonspecific RNase activity of CRISPR-Cas13 after target ssRNA detection allows for the rapid production of a fluorescent signal. The stability and functionality of CRISPR-Cas13 in urine-like conditions can be tested in a similar way as described for the PEA-binding fusion protein. Once again, the expected conditions of urine include pH ~6, a low protein concentration (that can be simulated using BSA), a low glucose concentration, around 4 mM urea, and around 20 mM NaCl (Roxe, 1990). After preparing a solution in DI water with these conditions and adding CRISPR-Cas13a, the fluorophores/quenchers, and the target mRNA sequence, the simulated urine solution would be expected to display fluorescence of wavelength 535 nm that could be measured using a spectrophotometer (Shinoda et al., 2021). A negative control would involve only the simulated urine.</p>
 
-                        <p>
-                        <ol className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>Incubate a known amount of protein with an equimolar amount of PEA dissolved in a known amount of milliQ water.</li>
-                            <ul className={overallStyles.description} style={{marginTop: 5, marginBottom: 5}}>
-                                <li>To prevent protein loss to pipette tips during transfer, prime any tipes used with a solution of bovine serum albumin (BSA), which will prevent protein “sticking” to the tip.</li>
-                            </ul>
-                            <li>Centrifuge the incubated sample to pellet all of the fusion protein, including the fusion protein molecules bound to PEA. Recover the supernatant only.</li>
-                            <li>Add hydrochloric acid to the supernatant until the pH is approximately 1.</li>
-                            <ul className={overallStyles.description} style={{marginTop: 5, marginBottom: 5}}>
-                                <li>PEA consists of a benzene ring and an amine group, the latter of which is titratable. Lowering the pH to 1 protonates the amine group. From here, every mole of strong base (i.e. NaOH) added will react with one mole of PEA until the equivalence point of the titration.</li>
-                            </ul>
-                            <li>Titrate the supernatant with 1 M NaOH until the equivalence point is reached.</li>
-                        </ol>
-                        </p>
+                        <div style={{margin: '20px 0 40px 0'}}>
+                            <span className={overallStyles.subheading}>Experimental Calibration Curve</span>
+                        </div>
 
-                        <p>The number of moles of NaOH added between the beginning of the titration and the equivalence point will be equal to the number of moles of PEA dissolved in the original known volume of milliQ water.</p>
+                        <p>Just like with the PEA-binding fusion protein, it would be useful to obtain an experimental standard curve for the fluorescence produced upon separation of the fluorophores and quenchers by CRISPR-Cas13a cleavage of the linker ssRNA. To do this, a series of dilutions of CRISPR-Cas13a would be made, then a known excess concentration of the ssRNA-linked fluorophores and quenchers would be added to each CRISPR-Cas13a dilution. In measuring the fluorescence produced by each dilution, a standard curve of fluorescence vs. CRISPR-Cas13a concentration can be plotted. A multiplate and multiplate analyzer can be used for this. This would simulate the conditions of fluorescence in the microfluidic assay chip, since in the MCFA chip, the number of CRISPR-Cas13a molecules that bind at the test chamber would be variable, while the amount of ssRNA-linked fluorophores and quenchers that pass through the test chamber would be a known excess amount.</p>
 
-                        <p>Any amount of PEA that was “missing” from the titration (relative to the original known amount of PEA) will have been bound by the fusion protein (in a 1:1 molar ratio). Therefore, <br></br> Kd = moles of unbound protein / moles of bound protein = moles of NaOH / (original moles of PEA - moles of NaOH)</p>
+                        <div style={{margin: '20px 0 40px 0'}}>
+                            <span className={overallStyles.subheading}>Experimental Calibration Curve</span>
+                        </div>
+
+                        <p>Proper identification of ADHD-associated gene markers by NeuroDetech relies on the ability of CRISPR-Cas13a to distinguish between two mRNA sequences differing only by a single nucleotide polymorphism (SNP). Shinoda et al. (2021) has demonstrated this to be possible and reliable; however, as a component of the proof of concept, we would need to test this for our specific mRNA sequences. To do so, mRNA sequences for the ‘normal’ allele as well as the ADHD-associated mutant allele would need to be obtained, likely by synthesis by a company like IDT. From here, the stability experiment described above should be repeated for the ‘normal’ and ADHD-associated sequences. It would be expected that the ‘normal’ mRNA sequences would not be recognized by CRISPR-Cas13a; thus, its nonspecific RNase activity would not be activated, and no fluorescence would be produced. For the ADHD-associated sequences, fluorescence should be expected, since these mutant sequences are the desired targets of the designed CRISPR-Cas13a guide RNAs.</p>
                     </div>
                 </Collapsible>
                 <Collapsible open title="Learn">
                     <div className={overallStyles.description} style={{marginTop: 5}}>
-                        <p>Without lab access (as explained in the Test section), we were not able to perform the experiments outlined in the Test section. However, if we were to have performed those experiments, the standard curve experiment relating chemiluminescence to fusion protein concentration would have been valuable for quantification purposes. Specifically, it would have further informed the development of the optical detector and app (described below in the Optical Detector and Application Development engineering cycle), as the standard curve would allow for more accurate interpretation of the signal at the test chamber under simulated urine conditions, which would be most representative of true urine samples analyzed by NeuroDetech.</p>
+                        <p>Without lab access (as explained in the Test section), we were not able to perform the experiments outlined in the Test section. However, similarly to the PEA-binding protein engineering cycle, if we were to have performed those experiments, the standard curve experiment relating fluorescence to CRISPR-Cas13a concentration would have been valuable for quantification purposes. Specifically, it would have further informed the development of the optical detector and app (described below in the Optical Detector and Application Development engineering cycle), as the standard curve would allow for more accurate interpretation of the signal at the test chamber under simulated urine conditions, which would be most representative of true urine samples analyzed by NeuroDetech.</p>
                     </div>
                 </Collapsible>
             </div>
