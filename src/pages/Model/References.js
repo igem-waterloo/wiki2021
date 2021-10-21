@@ -27,10 +27,10 @@ class References extends Component {
                             Huang, PS., Boyken, S. &amp; Baker, D. The coming of age of de novo protein design. Nature 537, 320–327 (2016). https://doi.org/10.1038/nature19946
                         </li>
                         <li>
-                            Kaufmann, K. W., Lemmon, G. H., DeLuca, S. L., Sheehan, J. H., &amp; Meiler, J. (2010). Practically Useful: What the Rosetta Protein Modeling Suite Can Do for You. Biochemistry (Easton), 49(14), 2987–2998. https://doi.org/10.1021/bi902153g 
+                            Kaufmann, K. W., Lemmon, G. H., DeLuca, S. L., Sheehan, J. H., & Meiler, J. (2010). Practically Useful: What the Rosetta Protein Modeling Suite Can Do for You. Biochemistry (Easton), 49(14), 2987–2998. https://doi.org/10.1021/bi902153g 
                         </li>
                         <li>
-                            Leiros, H.-K. S., Brandsdal, B. O., Andersen, O. A., Os, V., I Leiros, Helland, R., Otlewski, J., Willassen, N. P., &amp; Smalas, A. O. (2003). Trypsin specificity as elucidated by LIE calculations, X-ray structures and association constant measurements. Doi: 10.2210/pdb1UTM/pdb
+                            Leiros, H.-K. S., Brandsdal, B. O., Andersen, O. A., Os, V., I Leiros, Helland, R., Otlewski, J., Willassen, N. P., & Smalas, A. O. (2003). Trypsin specificity as elucidated by LIE calculations, X-ray structures and association constant measurements. Doi: 10.2210/pdb1UTM/pdb
                         </li>
                         <li>
                             Merck KGaA. (2021). Amino acids reference chart. MilliporeSigma. Retrieved October 8, 2021, from https://www.sigmaaldrich.com/CA/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart.

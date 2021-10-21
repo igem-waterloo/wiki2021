@@ -1,14 +1,9 @@
 
 import React, { useState } from 'react';
-import Microfluidic from '../Model/Microfludic';
 import overallStyles from '../overall.module.scss';
-import OpticalDetector from './OpticalDetector';
-import "./proofofconcept.module.scss";
-import References from './References';
-import WetLab from './WetLab';
 
 const tabs = ["Optical Detector and Visualization Application", "Microfluidic Chip", "Wet Lab Experiments", "References"];
-const icons = ["https://2021.igem.org/wiki/images/1/1e/T--Waterloo--IconChip.png", "https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png", "https://2021.igem.org/wiki/images/d/db/T--Waterloo--IconWetLab.jpeg", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["https://2021.igem.org/wiki/images/1/1e/T--Waterloo--IconChip.png", "https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png", "https://2021.igem.org/wiki/images/0/0a/T--Waterloo--IconProteinSingle.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 
 const ProofOfConcept = () => {
@@ -32,29 +27,24 @@ const ProofOfConcept = () => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                                <div className={overallStyles.section_img}>
-                                    <img id={`poc${index}`} src={icons[index]} alt= "Icon"/>
-                                </div>
-                                <div className={overallStyles.section_text}>
-                                    {tab}
-                                </div>
+                            <div id={index} className={overallStyles.section_img}></div>
+                            <div className={overallStyles.section_text}>
+                                {tab}
+                            </div>
                             </div>
                         </div>
                     ))}
                 </div>
                 <div>
-                    { active === tabs[0] && (
-                        <OpticalDetector/>
+                    {/* { active === tabs[0] && (
+                        <PotentialCost/>
                     )}
                     { active === tabs[1] && (
-                        <Microfluidic/>
+                        <ManufacturingAndLegal/>
                     )}
                     { active === tabs[2] && (
-                        <WetLab/>
-                    )}
-                    { active === tabs[3] && (
                         <References/>
-                    )}
+                    )} */}
                 </div>
             </div>
         )
