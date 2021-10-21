@@ -1,13 +1,16 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import "./humanpractices.module.scss";
 import ProjectValues from './ProjectValues';
 import CurrentDiagnosis from './CurrentDiagnosis';
 import DeterminingImplementation from './DeterminingImplementation';
 import References from './References';
 
+const tabs = ['Project Values', 'Understanding Current Diagnosis Process', 'Determining Implementation', 'References'];
+const icons = ["", "", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+
 const HumanPractices = (props) => {
-    const tabs = ['Project Values', 'Understanding Current Diagnosis Process', 'Determining Implementation', 'References'];
     const [active, setActive] = useState(tabs[0]);
 
     return (
@@ -31,10 +34,12 @@ const HumanPractices = (props) => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={overallStyles.section_img}>
+                                    <img id={`hp${index}`} src={icons[index]} alt= "Icon"/>
+                                </div>                            
+                                <div className={overallStyles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}

@@ -1,11 +1,13 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import "./finance.module.scss";
 import PotentialCost from './PotentialCost';
 import ManufacturingAndLegal from './ManufacturingAndLegal';
 import References from './References';
 
 const tabs = ['Potential Cost to Patients', 'Manufacturing and Legal Considerations', 'References'];
+const icons = ["", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 const Finance = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -28,10 +30,12 @@ const Finance = () => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={overallStyles.section_img}>
+                                    <img id={`finance${index}`} src={icons[index]} alt= "Icon"/>
+                                </div>                            
+                                <div className={overallStyles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}

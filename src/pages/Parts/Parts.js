@@ -7,6 +7,7 @@ import Improvement from './Improvement';
 import References from './References';
 
 const tabs = ['Improvement of an Existing Part (Gold #2)', 'References'];
+const icons = ["", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 const Parts = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -139,10 +140,12 @@ const Parts = () => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={overallStyles.section_img}>
+                                    <img id={`parts${index}`} src={icons[index]} alt= "Icon"/>
+                                </div>                            
+                                <div className={overallStyles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}
