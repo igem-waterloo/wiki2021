@@ -35,6 +35,7 @@
     color: var(--heading-color);
     border-bottom: 7px solid #E88A5F;
     padding-bottom: 10px;
+    max-width: max-content;
 }
 
 .description {
@@ -89,6 +90,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 80px;
+    flex-wrap: wrap;
 }
 
 .sections {
@@ -115,8 +117,8 @@
     font-weight: 400;
     color: white;
     text-align: center;
-    max-width: 70%;
-    margin: 0 auto;
+    // max-width: 70%;
+    // margin: 0 auto;
     margin-top: 20px;
 }
 

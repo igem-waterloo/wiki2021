@@ -16,19 +16,46 @@ const Attributions = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
+                        The completion of NeuroDetech would not have been possible without guidance from our staff advisors, stakeholder feedback, and devoted team members. We would like to take thank the following people for their contributions:
                     </div>
-                    <div className={overallStyles.description}>
-                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                    <div className={overallStyles.subheading}>
+                        Advisors                    
                     </div>
+                    <div className={overallStyles.description} style={{marginBottom: "-3%"}}>
+                        Professor Brian Ingalls, PhD | Department of Applied Mathematics 
+                    </div>
+                    <ul className={overallStyles.description}>
+                        <li>
+                            Assessed feasibility in project selection process
+                        </li>
+                        <li>
+                            Aided in administrative and financial upkeep
+                        </li>
+                        <li>
+                            Provided feedback for Jamboree presentation
+                        </li>
+                    </ul>
+                    <div className={overallStyles.description} style={{marginBottom: "-3%"}}>
+                        Professor Trevor Charles, PhD | Department of Biology
+                    </div>
+                    <ul className={overallStyles.description}>
+                        <li>
+                            Specializes in bacterial genetics and functional metagenomics
+                        </li>
+                        <li>
+                            Provided insight on project direction and development
+                        </li>
+                        <li>
+                            Acted as liaison with external organizations
+                        </li>
+                    </ul>
                 </div>
                 <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
+                    {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div className={overallStyles.section_img}></div>
+                            <div id={index} className={overallStyles.section_img}></div>
                             <div className={overallStyles.section_text}>
                                 {tab}
                             </div>

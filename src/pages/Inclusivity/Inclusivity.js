@@ -1,8 +1,10 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import References from './References';
+import WikiDesign from './WikiDesign';
 
-const tabs = ['Tab 1', 'Tab 2', 'References'];
+const tabs = ["Wiki Design", "References"];
 
 const Improvement = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -11,24 +13,30 @@ const Improvement = () => {
                 <div className={overallStyles.heading_div}>
                     <div className={overallStyles.title}>
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
-                        <div className={overallStyles.page_heading_colored}>Improvement.</div>
+                        <div className={overallStyles.page_heading_colored}>Inclusivity.</div>
                     </div>
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
+                        iGEM Waterloo takes pride in furthering inclusion through a holistic approach, starting with our annual hiring process, community outreach, and wiki design. Rather than materializing a targeted project, accessibility is deeply integrated in each and every aspect of the team, as a foundational pillar.
                     </div>
                     <div className={overallStyles.description}>
-                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                        The recruitment process is completed in partnership with UW BASE (Black Association for Student Expression), WiSTEM (Women in STEM), QTPOC-KW (Queer, Trans, People of Colour), in an effort to maximize accessibility to underrepresented groups. Additionally, we strive for transparency in our evaluation process by making qualities and information readily available on both social media platforms and our website. Finally, the interview selection process is conducted ‘blind’—i.e. an individual’s responses are separated from identifying information to reduce subconscious bias.
+                    </div>
+                    <div className={overallStyles.description}>
+                        Outreach events are designed to highlight people of various experiences—whether it be through the conferences we host or opportunities with local partners. It is important to have guest speakers of different backgrounds for youth in the audience to self-identify with.
+                    </div>
+                    <div className={overallStyles.description}>
+                        Finally, the previous years’ work of wiki design accessibility has been improved upon with additional considerations in response to our project problem space. Font, text sizing, colour, and layout were selected to improve contrast, ease of use, and the overall experience for users with ADHD. Building off last year’s design, different language options, text-to-speech, and other features are redesigned to improve accessibility.
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
+                    {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div className={overallStyles.section_img}></div>
+                            <div id={index} className={overallStyles.section_img}></div>
                             <div className={overallStyles.section_text}>
                                 {tab}
                             </div>
@@ -37,15 +45,12 @@ const Improvement = () => {
                     ))}
                 </div>
                 <div>
-                    {/* { active === tabs[0] && (
-                        <PotentialCost/>
+                     { active === tabs[0] && (
+                        <WikiDesign/>
                     )}
                     { active === tabs[1] && (
-                        <ManufacturingAndLegal/>
-                    )}
-                    { active === tabs[2] && (
                         <References/>
-                    )} */}
+                    )}
                 </div>
             </div>
         )

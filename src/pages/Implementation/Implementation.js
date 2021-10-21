@@ -27,10 +27,10 @@ const Implementation = () => {
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
+                    {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div className={overallStyles.section_img}></div>
+                            <div id={index} className={overallStyles.section_img}></div>
                             <div className={overallStyles.section_text}>
                                 {tab}
                             </div>
