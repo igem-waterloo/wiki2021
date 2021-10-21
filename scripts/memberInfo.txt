@@ -1,0 +1,226 @@
+Amy Wohlgemuth    
+•	Determined electronic analyzation of chemiluminescent to be appropriate method of data visualisation
+•	Selected photo-diode as the appropriate tool for magnification of light while limiting transmission of noise
+•	Analyzed fluid mechanics within microstructures and properties of urine optimizing chip function 
+•	Modelled loading chamber, drying chamber, delay valves, and assembled NeuroDetech chip components using ONshape
+•	Analyzed alternative geometric approaches for possible future iterations    
+Ana Fernandez
+•	Co-managed Human Practices subteam
+•	Evaluated project direction and development, along with other subteam leads 
+•	Contributed to outreach events such as WiSTEM collaboration, high school outreach talks & Waterloo design team showcases 
+•	Participated in Calgary's JulyGEM conference and the 2021 cGEM conference     
+•	Authored, edited, and organized wiki pages relating to Human Practices
+Ananya Muralidharan 
+•	Researched various conjugation methods for molecules within the assay and identified the most suitable method based on optimal assay stability
+•	Collaborated with HP to create safety procedures dealing with the use and dispensing of the assay based on literature
+•	Researched the ELISA mechanism to identify the best protein candidates for the assay reaction
+•	Edited Wiki sections
+Angad Singh
+•	Researched analyte candidates
+•	Researched symptoms and bio pathways of analyte and quantity of analyte within blood/urine/etc.
+•	Researched urine characteristics and urinalysis and chemiluminescence methods
+•	Researched aptamer design process
+•	Researched SATORI method for analysis and diagnostics  
+•	Researched chip materials and microfluidics techniques
+•	Researched lyophilization techniques and pathways
+Anthony Dang
+•	Co-managed the Lab and Design subteam
+•	Evaluated overall project direction and design alongside other team leads
+•	Researched ADHD-associated genes, RNA stability, CRISPR-Cas13 for diagnostic applications
+•	Taught fusion protein design and structural protein modelling principles
+•	Represented Waterloo iGEM at outreach events and conferences
+•	Authored, edited, and organized wiki pages relating to Lab and Design
+•	Created and added documentation to BioBrick part pages
+Ashish Kumar
+•	Researched CRISPR Cas13 and if we are able to apply it to mRNA detection in urine (SATORI Method w/ Angad and SHERLOCK)
+•	Cas13a mRNA region on Chimera
+•	In-silico (ie. SELEX) aptamer design methods
+•	Looked into PEA binding protein candidates (ie. TynA)
+•	Helped WIKI writing (why we switched from biomolecules to DNA detection methods part) and editing the WIKI (LFA and BMW)
+•	Analyte candidates
+•	ADHD associated genes (DRD4)
+•	Contributed to Cas13a sequence (from UniProt) and Benchling modelling
+•	in vivo culture biosensors
+Ayesha Asif
+•	Assisted the stakeholders HP subteam 
+•	Worked on iGEM social media page along with social media wiki outreach write up    
+Braeden MacDougall
+•	Researched types and limitations of lateral flow assays
+•	Researched and compared various Ligand/Molecular Docking Softwares
+•	Researched uses and properties of Horseradish peroxidase
+•	Researched PEA-binding proteins, removal of catalytic activity from 1-UTM
+•	Assisted in the writing and editing processes of Lab subteam wiki contributions
+Chelsea Huang
+•	Researched capillary pump designs for chip geometry design
+•	Built CAD model of capillary pump as well as 2 additional geometries to allow for testing and comparison
+•	Verified the integrity of CAD assembly connections
+Chimdindu Ohaegbu                    
+•	Researched different docking software (AutoDock 4 and AutoDock Vina)
+•	Identified binding pocket residues of 1UTM using Chimera
+•	Used rational protein design principles to suggest double mutations for 1UTM and assisted in proposing multiple mutations
+Clare Wei
+•	Evaluated and designed structure of initial project selection with leads team    
+•	Co-directed Facilitated human practices subteam responsibilities     
+•	Represented Waterloo iGEM at outreach events and conferences such as BioTEC Create, high school workshops, and student design showcases    
+•	Authored and edited wiki pages relating to human practices, education, collaboration, implementation, inclusion, and attributions    
+Daniel Matlin
+•	Created understandable summary of primary literature basis for NeuroDetech for team's reference
+•	Contributed to initial work on microcontroller hardware design and software development
+•	Contributed to development of desktop app
+•	Edited, formatted, and contributed to the Engineering wiki page
+Dorothy Lin
+•	Contacted stakeholders regarding questions about implementation and general inquiries    
+•	Help create the pride month post for instagram
+•	Wrote and edited respective wiki pages              
+Emily Dong
+•	Assisted in creating diagnosis pipeline visuals    
+•	Part of original project brainstorming team    
+•	Authored and edited wiki pages for career outreach event and diagnosis pipeline    
+•	Planned and executed careers in synbio outreach event
+Emma Catalan
+•	Researched ADHD diagnosis pipeline and some diagnosis biases        
+Fatima Anwar
+•	Was involved in project selection
+•	Researched different types of lateral flow assays for consideration. worked mainly on creating a design for the biotin filter which would be effective, reusable, inexpensive, and efficient, while mitigating issues that would arrive with the various proposed filter methods
+•	Helped math with relaying information from lab and design regarding structure and modelling        
+Gen Belford
+•	Researched analyte candidates    
+Gerald Lee
+•	Major contributions to the design and construction desktop app
+•	Testing and improving the desktop end of the app
+•	Research into libraries to use for packaging and display of data
+Harshit Manchanda
+•	Developed the wiki website
+Jacquelyn Easson
+•	Helped in creating the ADHD pipeline visulas     
+•	Was a part of the social media outreach team, creating posts based on the Olympics     
+•	Helped in contacting potential stakeholders
+James Phan 
+•	Designed wiki layout and associated graphics/logos
+•	Edited and conceptualized project description video
+James Stapleton
+•	Oversaw and guided work being done by finance microteam
+•	Obtained funding from school endowment funds to finance team participation and research
+Janie Ong
+•	Determined the importance of having a urinalysis as a pre-test control
+•	Wrote the urinalysis procedure section of the Wiki
+•	Researched assay types and various ADHD analyte candidates
+•	Contributed to researching the test chamber and substrate pathway of the microfluidic flow assay
+•	Collaborated with Human Practices to define our project's environmental, social, and moral values
+Jessica Zhang
+•	Researched aptamers and their design process, including softwares involved in the modelling of aptamers
+•	Examined machine learning with computer vision as a viable option for quantifying LFA results
+•	Researched potential streptavidin linker sequences for fusion protein construction
+•	Studied biotinylation process to be used in fusion protein construction
+•	Determined optimal vector and E. coli strain for synthesizing fusion protein
+•	Created tutorial for docking software (Chimera with Autodock Vina)
+•	Authored, edited and formatted wiki pages for lab team
+Jessy Song
+•	Co-managed the math and modelling subteam 
+•	Evaluated overall project direction and design alongside other team leads
+•	Researched protein design, microfluidic chip CAD design, optical detector and application development to guide math team's research and development
+•	Managed wiki development and design
+•	Authored, edited and organized wiki pages related to Math and Modelling
+•	Represented Waterloo iGEM at outreach events and conferences
+Jimin Lee
+•	Collaborated with team members to produce the lyophilization procedure 
+•	Analyzed chemiluminescence reagents for clear results 
+•	Calculated the amount of binding molecules necessary in each assay 
+•	Worked with other subteams to add perspective; gave insight as lab team member to human practices team to execute knowledge translation 
+•	Independently researched to present analyte candidates and LFA design candidates 
+Joshua Hanneson
+•	Researched analyte candidates and ADHD-related neurological pathways 
+•	Researched methodologies for designing/selecting aptamers
+•	Determined potential streptavidin linker sequences for usage in a fusion protein
+•	Researched the CRISPR CAS-13 SHERLOCK method as a diagnostic technique
+•	Modeled fusion constructs in UCSF Chimera
+Julie Li
+•	Communicated with stakeholders involved in the ADHD diagnosis process    
+•	Collaborated in creating the ADHD diagnosis procedure visuals    
+•	Authored and edited wiki pages relating to human practices    
+•	Planned and co-hosted the Careers in SynBio event    
+Kellie Chong
+•	Researched ligand docking, protein mutation, and energy scoring protocols in Rosetta
+•	Rational protein design to enhance the binding affinity in UCSF Chimera
+•	Developed Python script to automate the ligand docking and energy minimization processes via Chimera and AutoDock Vina for the binding kinetics analysis
+Kevin Kim
+•	Researched analyte quantification metrics and unit conversions
+•	Led the hardware design of a chemiluminescence detector
+•	Took on prototyping tasks ranging from hardware selection and sensor interfacing, to circuit design, schematic capture, and PCB layout
+•	Microcontroller programming in C++ to interface with hardware using serial communication protocols
+•	Contributed to the testing and development of a Python-based desktop application by implementing a serial communication interface
+Lorenzo Pérez
+•	Researched analyte candidates
+•	Researched multiple chip materials and then focused on PDMS
+Michael Lam
+-	Researched PEA & PEA-binding proteins
+•	Collaborated with Math to assess 3D homology model with Rosetta
+•	Collaborated with HP to answer "How did the team close the loop between what was designed and what was desired?"
+•	Wrote PEA-binding protein selection Wiki section
+•	Edited Wiki sections
+Rajosree Paul
+•	Researched PEA-Binding proteins, pre-treatments for LFA design, and how PEA levels vary in individuals with and without ADHD.    
+•	Looked into how to filter urine and urinalysis pre-cursor conditions                
+•	Reached out to stakeholders to ask for feedback on our project.     
+•	Edited wiki
+Rene Lam
+•	Researched protein mutation, energy scoring and algorithm behind Rosetta point mutation protocol 
+•	Used high performance computer (graham) to generate single, double and multiple mutations for 1UTM and streptavidin and generate energy scores
+Renessa Gomes
+•	Researched analyte candidates
+•	Researched PEA-binding proteins
+•	Evaluated RNA stability in urine from literature
+•	Researched potential LFA design layouts from literature
+•	Compared methods of detection 
+•	Studied immobilization strategies
+•	Prepared lyophilization protocol for detection reagents
+•	Evaluated different enzyme-substrate complexes for chemiluminescent detection
+•	Wrote and edited wiki sections (horseradish peroxidase, selection of PEA as protein analyte, selection of 1-UTM as PEA-binding protein, RNA stability in urine)
+Sarah Hardy
+•	Co-managed the Lab and Design subteam
+•	Evaluated overall project direction and design alongside other team leads
+•	Coordinated Women in STEM collaboration and high school outreach
+•	Represented Waterloo iGEM at  multiple student design showcases and outreach events
+•	Authored, edited, and organized wiki pages relating to Lab and Design
+Serena Hacker
+•	Performed molecular dynamics simulations using GROMACS to evaluate candidate proteins’ relative binding affinities to PEA
+•	Created CAD model for the spiral reaction chambers using Onshape
+•	Modelled fluid flow through the NeuroDetech chip using microfluidics simulations in COMSOL Multiphysics
+Siranjit Kaur
+•	Reached out and contacted stakeholders in the medical, laboratory and psychological field about ADHD     
+•	Analyzed and researched the financial impact of the project    
+•	Designed a science outreach colouring book with the incorporation of synbio    
+Sophia Tan
+•	Researched potential analyte candidates indicative of ADHD, lateral flow assay types, chemiluminescence and urinalysis procedure
+•	Contacted stakeholders to garner professional perspective and feedback about our project design
+•	Collaborated with Math & Modelling to provide insight into analyte quantification
+•	Edited Wiki sections
+Sutej Dayal
+•	Researched into methods and materials for use in the microfluidic chip and narrowed down to PDMS 
+•	Helped research analyte candidates. 
+•	Researched into the methods to produce the microfluidic chip, the most effective designs for the microfluidic chip as well as costs associated. 
+•	Researched into the pretreatment options to reduce hydrophobicity in the PDMS and narrowed it down to one treatment options
+•	Researched into specific PEA binding proteins 
+Taylor Roth
+•	Researched microfluidic chip geometry design
+•	Built CAD model of loading chamber, drying chamber, and delay valves using Onshape
+•	Assembled complete chip model using Onshape
+Temitope Lekuti
+•	Reached out and contacted stakeholders in the psychological field about ADHD    
+•	Designed science outreach colouring book describing biological concepts relating to synbio to high school student audience     
+•	Authored and edited wiki pages relating to human practices (in vivo implementation)    
+Teodora Vujovic
+•	Co-managed the Math and Modelling subteam
+•	Led the quantification and process design microteams and guided the Math and Modelling team’s research alongside Jessy Song
+•	Evaluated overall project direction and design alongside other team leads
+•	Co-coordinated MUBO, high school, and Renison student showcase outreach
+•	Represented Waterloo iGEM at multiple student design showcases and outreach events
+•	Authored, edited, and organized wiki pages relating to Math and Modelling
+Tsz Yan Au
+•	Developed the wiki website and populated content
+•	Worked on the accessibility toolbar
+Wendy Lu
+•	Researched and analyzed methods to quantify LFA results
+•	Assisted with microcontroller programming
+•	Formulated processes to convert voltage values to biomarker concentrations
+•	Co-authored and edited wiki sections related to Math and Modelling

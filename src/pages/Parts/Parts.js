@@ -7,6 +7,7 @@ import Improvement from './Improvement';
 import References from './References';
 
 const tabs = ['Improvement of an Existing Part (Gold #2)', 'References'];
+const icons = ["", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 const Parts = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -20,7 +21,7 @@ const Parts = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         This year, our team added six new parts, contributed new documentation to two parts, and improved an existing part on the Registry. Below are links to the Registry pages of each of these parts.
                     </div>
@@ -136,13 +137,15 @@ const Parts = () => {
                     </Table>
                 </div>
                 <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
+                    {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={overallStyles.section_img}>
+                                    <img id={`parts${index}`} src={icons[index]} alt= "Icon"/>
+                                </div>                            
+                                <div className={overallStyles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}

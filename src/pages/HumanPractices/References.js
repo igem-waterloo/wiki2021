@@ -6,8 +6,8 @@ class References extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>References</span>
-                    <ol className={overallStyles.description}>
+                    <div className={overallStyles.text_heading}>References</div>
+                    <ul className={overallStyles.description}>
                         <li>
                             Ford-Jones, P. C. (2015, May). Misdiagnosis of attention deficit hyperactivity disorder: 'normal behaviour' and relative maturity. Paediatrics & child health. Retrieved September 17, 2021, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4443828/.
                         </li>
@@ -38,7 +38,7 @@ class References extends Component {
                         <li>
                             NfERnOv2 (2011). In vitro vs in vivo. [Digital Artwork]. DeviantArt. https://www.deviantart.com/nfernov2/art/In-vitro-versus-in-vivo-271424868  
                         </li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
         )

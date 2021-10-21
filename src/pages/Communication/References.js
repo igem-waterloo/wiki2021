@@ -6,9 +6,9 @@ class References extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>References</span>
+                    <div className={overallStyles.text_heading}>References</div>
                 </div>
-                <ol className={overallStyles.description}>
+                <ul className={overallStyles.description}>
                     <li>
                         Loe, I. M., &amp; Feldman, H. M. (2007, June 14). Academic and Educational Outcomes of Children With ADHD. Retrieved September 17, 2021 from https://academic.oup.com/jpepsy/article/32/6/643/1021192?login=true                     
                     </li>
@@ -21,7 +21,7 @@ class References extends Component {
                     <li>
                         Rorrer, J. (2018). Free PDF Vol.1. Retrieved September 17, 2021 from https://www.colormephd.org/coloring-pages/free-pdf-vol-1 
                     </li>
-                </ol>
+                </ul>
             </div>
         )
     }

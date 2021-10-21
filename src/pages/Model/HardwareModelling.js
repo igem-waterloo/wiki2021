@@ -7,9 +7,9 @@ class HardwareModelling extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Hardware Design Modelling
-                    </span>
+                    </div>
                     <div className={overallStyles.subheading}>
                         Simulation
                     </div>
@@ -20,7 +20,7 @@ class HardwareModelling extends Component {
                 <div className={overallStyles.figure_div}>
                     <img src="https://2021.igem.org/wiki/images/3/38/T--Waterloo--TinkerCADLabelled.png" alt="TinkerCAD Labelled" className={styles.tinkercad_img}/>
                     <div className={overallStyles.figure_text}>
-                        Figure 1. Labelled TinkerCAD circuit simulation.
+                        Labelled TinkerCAD circuit simulation.
                     </div>
                 </div>
                 <div className={overallStyles.text_div}>

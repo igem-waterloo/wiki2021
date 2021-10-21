@@ -7,9 +7,9 @@ class CurrentDiagnosis extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Understanding the Current ADHD Diagnosis Process in Canada
-                    </span>
+                    </div>
                     {/* <div className={overallStyles.illustration}></div>
                     <img></img>
                     </div> */}
@@ -17,13 +17,13 @@ class CurrentDiagnosis extends Component {
                         The initial goal for our project was to create a device that would aid in the diagnosis of ADHD. During project development, we realized we needed to have an understanding of the current diagnosis procedures for ADHD in Canada, so that we could successfully develop a product that would have the potential for real-life implementation.
                     </div>
                     <div className={overallStyles.description}>
-                        Our Human Practices subteam began by conducting research into ADHD diagnosis procedures and established a diagnosis pipeline, which allowed us to visualize the process in a sequential and organized way. From the research conducted, the team established a diagnosis pipeline using research collected from various online sources, such as research articles, ADHD centre websites, and clinical centre resources. From the literature, we established that the diagnosis 'pipeline' consisted of a combination of seven steps as seen in Figure 1. After the original pipeline was created, the next step was contacting various stakeholders (psychologists, psychiatrists, general practitioners, etc.) about their experience with the diagnosis process to confirm its accuracy. Stakeholders include but are not limited to ADHD assessors such as psychologists, psychiatrists and general practitioners. Stakeholder testimonials allowed us to determine that the diagnosis process varied vastly between different medical professions and even among those working in the same discipline. 
+                        Our Human Practices subteam began by conducting research into ADHD diagnosis procedures and established a diagnosis pipeline, which allowed us to visualize the process in a sequential and organized way. From the research conducted, the team established a diagnosis pipeline using research collected from various online sources, such as research articles, ADHD centre websites, and clinical centre resources. From the literature, we established that the diagnosis 'pipeline' consisted of a combination of seven steps as seen in the figure below. After the original pipeline was created, the next step was contacting various stakeholders (psychologists, psychiatrists, general practitioners, etc.) about their experience with the diagnosis process to confirm its accuracy. Stakeholders include but are not limited to ADHD assessors such as psychologists, psychiatrists and general practitioners. Stakeholder testimonials allowed us to determine that the diagnosis process varied vastly between different medical professions and even among those working in the same discipline. 
                     </div>
                 </div>
                 <div className={overallStyles.figure_div}>
                     <img src="https://2021.igem.org/wiki/images/2/24/T--Waterloo--CurrentPipeline.png" alt="Current Pipeline" className={styles.pipeline_img}/>
                     <div className={overallStyles.figure_text}>
-                        Figure 1. The current ADHD diagnosis procedure in Canada.
+                        The current ADHD diagnosis procedure in Canada.
                     </div>
                 </div>
                 <div className={overallStyles.text_div}>
@@ -46,19 +46,19 @@ class CurrentDiagnosis extends Component {
                         Given some of the weaknesses with current diagnostic practices, our goal was to implement NeuroDetech within the existing diagnostic pipeline as a supporting tool to aid the process and mitigate the effects of these biases. The quantitative nature of NeuroDetech allows an unbiased metric to be used for diagnosis, allowing individuals affected by ADHD in under-diagnosed populations to get a less biased diagnosis.  
                     </div>
                     <div className={overallStyles.description}>
-                        With all this determined, the next step of our project was to determine the best implementation of NeuroDetech within the established diagnosis pipeline. Based on our research, the preliminary ideas for implementation were 1) as a pre-screening test before official ADHD assessment, or 2) conducted along with the lab tests that screen for other disorders. Diagnosis visuals were created to showcase the two options of implementation location as seen in Figure 2 and Figure 3.
+                        With all this determined, the next step of our project was to determine the best implementation of NeuroDetech within the established diagnosis pipeline. Based on our research, the preliminary ideas for implementation were 1) as a pre-screening test before official ADHD assessment, or 2) conducted along with the lab tests that screen for other disorders. Diagnosis visuals were created to showcase the two options of implementation location as seen in the figures below.
                     </div>
                 </div>
                 <div className={overallStyles.figure_div}>
                     <img src="https://2021.igem.org/wiki/images/d/d9/T--Waterloo--PrescreenPipeline.png" alt="Prescreen Pipeline" className={styles.pipeline_img}/>
                     <div className={overallStyles.figure_text}>
-                        Figure 2. The proposed ADHD diagnosis procedure with NeuroDetech as a pre-screen test.
+                        The proposed ADHD diagnosis procedure with NeuroDetech as a pre-screen test.
                     </div>
                 </div>
                 <div className={overallStyles.figure_div}>
                     <img src="https://2021.igem.org/wiki/images/6/6d/T--Waterloo--LabTestingPipeline.png" alt="Lab Testing Pipeline" className={styles.pipeline_img}/>
                     <div className={overallStyles.figure_text}>
-                        Figure 3. The proposed ADHD diagnosis procedure with the NeuroDetech test implemented with the other lab tests. 
+                        The proposed ADHD diagnosis procedure with the NeuroDetech test implemented with the other lab tests. 
                     </div>
                 </div>
             </div>

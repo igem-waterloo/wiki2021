@@ -8,9 +8,12 @@ class PotentialCost extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Potential Cost to Patients
-                    </span>
+                    </div>
+                    <div className={overallStyles.description}>
+                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                    </div>
                     <div className={overallStyles.description}>
                         Individuals currently undergoing an assessment for ADHD in Ontario, Canada must pay for all expenses themselves,unless they have private insurance, for any psychological tests done (Government of Ontario, n.d). All out of pocket costs paid by the patient include clinical assessment, and further possible standardized assessments such as a neurocognitive or psychodiagnostic testing (Government of Ontario, n.d). The only tests covered by OHIP for patients undergoing the ADHD assessment are the laboratory blood tests ordered for inpatients at hospitals to rule out any additional physiological conditions (Government of Ontario, n.d).                 
                     </div>
@@ -50,7 +53,7 @@ class PotentialCost extends Component {
                     <img src="https://2021.igem.org/wiki/images/4/41/T--Waterloo--Finance.png" alt="Cost Factors" className={styles.cost_img}/>
                     </div>
                     <div className={overallStyles.figure_text}>
-                        Figure 1: Cost factors of ADHD diagnosis (Created in BioRender)
+                        Cost factors of ADHD diagnosis (Created in BioRender)
                     </div>
                 </div>
                 <div className={overallStyles.text_div}>

@@ -38,6 +38,12 @@ const Contribution = () => {
                         &nbsp;is monoamine oxidase A, which was one of the initial ADHD biomarkers that we considered (and later decided to rule out). With that said, the literature research used to inform this decision included information on the structure, function, and stability of monoamine oxidase A. Thus, in contributing to this part, we aimed to utilize this literature research to characterize the structure, function, and stability of this part more thoroughly.
                     </div>
                 </div>
+                <div className={overallStyles.figure_div}>
+                    <img src="https://2021.igem.org/wiki/images/d/d1/T--Waterloo--maoA.png" alt="maoA"/>
+                    <div className={overallStyles.figure_text}>
+                        3D structure of monoamine oxidase A, as visualized in UCSF Chimera
+                    </div>
+                </div>
             </div>
         )
 }

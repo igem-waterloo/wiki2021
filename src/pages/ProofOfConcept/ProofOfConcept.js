@@ -16,7 +16,7 @@ const ProofOfConcept = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
                     </div>
@@ -25,10 +25,10 @@ const ProofOfConcept = () => {
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
+                    {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div className={overallStyles.section_img}></div>
+                            <div id={index} className={overallStyles.section_img}></div>
                             <div className={overallStyles.section_text}>
                                 {tab}
                             </div>
