@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import overallStyles from '../pages/overall.module.scss';
 import styles from './collapsible.module.scss';
 import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,7 +28,8 @@ const Collapsible = ({ open, children, title }) => {
             <div className={styles.inner_div}>
                 {isOpen && 
                     <div style={{display: "flex", flexDirection: "column"}}>
-                        {children}</div>
+                        {children}
+                    </div>
                 }
             </div>
         </div>
