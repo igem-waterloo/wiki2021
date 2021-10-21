@@ -9,7 +9,7 @@ class ProteinOptimization extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Protein Optimization Modelling</span>
+                    <div className={overallStyles.text_heading}>Protein Optimization Modelling</div>
                 <div className={overallStyles.description}>
                     The selected proteins to be optimized, trypsin and monomeric streptavidin, are modelled and analyzed using software such as Rosetta, Chimera and Autodock. In the end, proteins with improved stability and affinity are designed. 
                 </div>

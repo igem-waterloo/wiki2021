@@ -20,7 +20,7 @@ const Communication = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         Fundamental to any advancement of synthetic biology as an emerging field is public engagement through education. Ideal circumstances would have permitted collaboration with targeted demographics through workshops, conferences, and studies, as has been done in previous years. Unfortunately, these events were not possible to facilitate  in the 2021 competition season, given jurisdictional health restrictions due to COVID-19. Despite these limitations, the need for community involvement cannot be compromised. As such, education and outreach was approached differently with the aid of digital communication platforms, with an emphasis on the following three categories: professional opportunities in synthetic biology, social media, and educational resource development.
                     </div>

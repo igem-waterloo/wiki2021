@@ -20,7 +20,7 @@ const Improvement = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         iGEM Waterloo takes pride in furthering inclusion through a holistic approach, starting with our annual hiring process, community outreach, and wiki design. Rather than materializing a targeted project, accessibility is deeply integrated in each and every aspect of the team, as a foundational pillar.
                     </div>

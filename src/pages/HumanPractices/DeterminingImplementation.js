@@ -7,7 +7,7 @@ class DeterminingImplementation extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Determining Implementation</span>
+                    <div className={overallStyles.text_heading}>Determining Implementation</div>
                     <div className={overallStyles.description}>
                         To aid in the diagnostic process of ADHD, NeuroDetech aimed to measure related biomarkers. In-vitro studies involved the use of live cell culture and the experimentation being executed outside an organism. This approach brought advantages such as lower costs and easier to control variables, thus resulting in highly reproducible outcomes (National Research Council, 1999),  which was an asset to NeuroDetech’s goal of testing for biomarkers of ADHD. Although using an in-vitro model improved the accessibility of this testing device to its intended audience, the results were not directly translatable to subjects (National Research Council, 1999).
                     </div>

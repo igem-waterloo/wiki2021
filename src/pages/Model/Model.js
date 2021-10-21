@@ -19,7 +19,7 @@ const Model = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         Various models have been built during the year. The following sections present the construction and analysis on various models including: microfluidic chip modelling, hardware design modelling, and protein optimization modelling. 
                     </div>

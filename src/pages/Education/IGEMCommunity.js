@@ -7,9 +7,9 @@ class IGEMCommunity extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Education Within iGEM Community 
-                    </span>
+                    </div>
                     <div className={overallStyles.description}>
                         This year, we wanted part of our educational efforts to be directed towards the iGEM community. We focused on contributing to efforts that will help other teams in the future, as well as providing individuals with information on how they can turn synthetic biology into a long-term career path, even after iGEM ends.
                     </div>

@@ -6,7 +6,7 @@ class References extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>References</span>
+                    <div className={overallStyles.text_heading}>References</div>
                 </div>
                 <ul className={overallStyles.description}>
                     <li>

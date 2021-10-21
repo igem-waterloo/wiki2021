@@ -12,15 +12,15 @@ class Description extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={styles.heading}>Project Description</span>
+                    <div className={styles.heading}>Project Description</div>
                 </div>
                 <div className={overallStyles.figure_div}>
                     <img src="https://2021.igem.org/wiki/images/f/f3/T--Waterloo--projectThumbnail.jpeg" alt="Banner" className={styles.banner_img}/>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Overview
-                    </span>
+                    </div>
                     <div className={overallStyles.description}>
                         Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder characterized by inattentiveness, an inability to focus, and restlessness. Current ADHD diagnosis procedures require a series of psychological assessments that are qualitative in nature and subject to potential clinician bias. 
                     </div>
@@ -52,9 +52,9 @@ class Description extends Component {
                         </video>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         References
-                    </span>
+                    </div>
                     <ul className={overallStyles.description}>
                         <li>
                             Skogli, E. W., Teicher, M. H., Andersen, P. N., Hovik, K. T., &amp; Øie, M. (2013). ADHD in girls and boys–gender differences in co-existing symptoms and executive function measures. BMC psychiatry, 13(1), 1-12.                     

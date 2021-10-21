@@ -24,7 +24,7 @@ const Implementation = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         Throughout the entirety of NeuroDetech’s development, we kept its implementation at the forefront of our minds. Continuous stakeholder feedback and thorough research from all 3 subteams allowed us to create a product that could realistically be manufactured and employed in laboratory settings. 
                     </div>

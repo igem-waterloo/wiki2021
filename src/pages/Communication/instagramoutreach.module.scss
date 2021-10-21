@@ -1,11 +1,13 @@
 .left_img {
-    display: inline;
-    margin-right: 5%;
-    margin-left: -5%;
+    width: 45%;
+    display: inline-block;
+    margin-right: 3%;
+    margin-left: 2%;
 }
 
 .right_img {
-    display: inline;
-    margin-right: -5%;
-    margin-left: 5%;
+    width: 45%;
+    display: inline-block;
+    margin-right: -3%;
+    margin-left: 3%;
 }

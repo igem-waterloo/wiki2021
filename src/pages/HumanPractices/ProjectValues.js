@@ -6,9 +6,9 @@ class CurrentDiagnosis extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Project Values
-                    </span>
+                    </div>
                     <div className={overallStyles.description}>
                         ​​While designing our project, the values we kept in mind supported the 17 Sustainable Development Goals implemented by the United Nations. These goals aim to end poverty, protect the planet, and ensure that people enjoy peace and prosperity (Department of Social &amp; Economic Affairs, n.d.). NeuroDetech focuses more on ensuring that people enjoy peace and prosperity by addressing four values identified to be the most relevant to our project: Good Health and Well-Being, Quality Education, Reduced Inequalities, and Partnerships for the Goals.                 
                     </div>

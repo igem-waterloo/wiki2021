@@ -6,7 +6,7 @@ class References extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>References</span>
+                    <div className={overallStyles.text_heading}>References</div>
                     <ul className={overallStyles.description}>
                         <li>
                             ​​Chivers, C. E., Koner, A. L., Lowe, E. D., &amp; Howarth, M. (2011). How the biotin–streptavidin interaction was made even stronger: Investigation via crystallography and a chimaeric tetramer. *Biochemical Journal, 435*(1), 55–63. https://doi.org/10.1042/bj20101593.

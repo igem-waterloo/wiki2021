@@ -23,9 +23,9 @@ const HumanPractices = (props) => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Overview
-                    </span>
+                    </div>
                     <div className={overallStyles.description}>
                         The development of NeuroDetech is a synthetic biology and scientific endeavour, which is deeply interwoven with societal, economic, and regulatory implications. To truly assess optimal user experiences, biomarker detection and hardware configuration, what is now coined “integrated human practices” is essential. From initial project selection to various implementation options, current frameworks and legislative precedents were characterized and evaluated. Stakeholder consultations from medical professionals and diagnostic equipment manufacturers shaped project direction along each and every stage. The following page dives deep into the impact of human practices on this year's project, which allows Neurodetech to extend beyond a synthetic biology proof of concept. 
                     </div>

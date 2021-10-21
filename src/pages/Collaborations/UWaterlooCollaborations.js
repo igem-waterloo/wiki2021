@@ -6,9 +6,9 @@ class UWaterlooCollaborations extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         University of Waterloo Collaborations
-                    </span>
+                    </div>
                     <div className={overallStyles.description}>
                         Over the course of the year, the team partnered with the university to showcase synthetic biology opportunities, past accomplishments, and future recruitment events. Due to the unique interdisciplinarity of iGEM, such collaborations were accomplished across departments and faculties:
                     </div>

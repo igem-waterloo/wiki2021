@@ -19,7 +19,7 @@ const Safety = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. Although we were unable to perform any experiments, we still considered safety when writing our suggested procedures. We also state our lab’s safety equipment and the university and national guidelines we must follow while working in it.
                     </div>

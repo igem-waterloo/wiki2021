@@ -7,7 +7,7 @@ class InstagramOutreach extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Instagram Outreach</span>
+                    <div className={overallStyles.text_heading}>Instagram Outreach</div>
                     <div className={overallStyles.description} style={{marginBottom: "-2%"}}>
                         May:                
                     </div>

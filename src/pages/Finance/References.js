@@ -6,7 +6,7 @@ class References extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>References</span>
+                    <div className={overallStyles.text_heading}>References</div>
                     <ul className={overallStyles.description}>
                         <li>
                             Centre for ADHD Awareness Canada. (2013, October, 14).  Paying Attention to the Cost of ADHD… The Price Paid by Canadian Families, Governments and Society. https://caddac.ca/wp-content/uploads/2017/01/Socioeconomic-Policy-Paper-1.pdf 
