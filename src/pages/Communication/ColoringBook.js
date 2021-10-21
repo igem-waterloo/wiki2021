@@ -16,7 +16,11 @@ class ColoringBook extends Component {
                     As we set out to create our colouring book, we further researched design considerations to ensure our coloring book served its intended purpose (McKnight, 2011). The first consideration we made was to ensure that the layout of both our colouring pages and information pages were neat and uncluttered (McKnight, 2011). This limits confusion as well as the search time required to find pertinent information, aiding students with shorter attention spans (McKnight, 2011). The second consideration we made was ensuring that our colouring book was free of any distractions or bright colours that may disrupt a student’s attention while participating in the activity (McKnight, 2011). The third design consideration we made was to organize our colouring pages in an ordered and easy to understand layout in hopes of once again  limiting confusion and reducing the time it takes to find information (McKnight, 2011). Finally we used large print text and easy to read fonts as well as bolding/italicizing to highlight important information (McKnight, 2011). 
                 </div>
                 <div className={overallStyles.description}>
-                    With this project, we hope to create an outreach tool that would make synbio information and resources easily accessible to students and educators. Designed to help students grasp fundamental biology concepts and better understand our iGEM project, this coloring book will help to educate, engage, and inform. If you would like to use this resource, click here to download the file.
+                    With this project, we hope to create an outreach tool that would make synbio information and resources easily accessible to students and educators. Designed to help students grasp fundamental biology concepts and better understand our iGEM project, this coloring book will help to educate, engage, and inform. If you would like to use this resource,&nbsp; 
+                    <a href="https://2021.igem.org/wiki/images/b/bf/T--Waterloo--coloringPages.zip" download>
+                    click here
+                    </a>
+                    &nbsp;to download the file.
                 </div>
             </div>
         )
