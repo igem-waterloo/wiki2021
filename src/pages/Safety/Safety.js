@@ -1,8 +1,11 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import Laboratory from './Laboratory';
+import ProjectSafety from './ProjectSafety';
+import SafetyGuidelines from './SafetyGuidelines';
 
-const tabs = ['Tab 1', 'Tab 2', 'References'];
+const tabs = ["Project Safety Considerations", "Laboratory", "Safety Guidelines"];
 
 const Safety = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -18,10 +21,7 @@ const Safety = () => {
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
-                    </div>
-                    <div className={overallStyles.description}>
-                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                        Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. Although we were unable to perform any experiments, we still considered safety when writing our suggested procedures. We also state our lab’s safety equipment and the university and national guidelines we must follow while working in it.
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
@@ -37,15 +37,15 @@ const Safety = () => {
                     ))}
                 </div>
                 <div>
-                    {/* { active === tabs[0] && (
-                        <PotentialCost/>
+                    { active === tabs[0] && (
+                        <ProjectSafety/>
                     )}
                     { active === tabs[1] && (
-                        <ManufacturingAndLegal/>
+                        <Laboratory/>
                     )}
                     { active === tabs[2] && (
-                        <References/>
-                    )} */}
+                        <SafetyGuidelines/>
+                    )}
                 </div>
             </div>
         )

@@ -51,6 +51,12 @@ class Footer extends Component {
                     <Link to="/Team:Waterloo/Finance" className={styles.link}>
                         <span className={styles.link_text}>Finance</span>
                     </Link>
+                    <Link to="/Team:Waterloo/Inclusivity" className={styles.link}>
+                        <span className={styles.url_text}>Inclusivity</span>
+                    </Link>
+                </div>
+                <div className={styles.projects_div}>
+                    <span className={styles.heading_text}>Safety</span>
                     <Link to="/Team:Waterloo/Safety" className={styles.link}>
                         <span className={styles.url_text}>Safety</span>
                     </Link>
