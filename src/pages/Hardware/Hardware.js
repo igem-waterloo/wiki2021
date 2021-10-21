@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import styles from "./hardware.module.scss";
 
 const tabs = ['Tab 1', 'Tab 2', 'References'];
 
@@ -13,7 +14,9 @@ const Hardware = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Hardware.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png" alt="Hardware Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>
