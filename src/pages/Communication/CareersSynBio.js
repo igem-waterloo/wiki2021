@@ -7,10 +7,15 @@ class CareersSynBio extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Careers in Synthetic Biology</span>
+                    <div className={overallStyles.text_heading}>Careers in Synthetic Biology</div>
                     <div className={overallStyles.description}>
                         As part of Waterloo iGEM's outreach strategy this year, we wanted to create an educational event focusing on professional development and diversity in synthetic biology, as well as a discussion on how participation in iGEM can aid in preparation for a future career in the synthetic biology industry. The Human Practices team recognized that post-secondary students participate in extracurricular activities to develop skills and gain opportunities to advance their careers. We wanted to leverage this shared interest and iGEM’s strong connection to the synthetic biology industry in our outreach efforts this year through the execution of a speaker panel and networking event. 
                     </div>
+                </div>
+                <div className={overallStyles.figure_div}>
+                    <img src="https://2021.igem.org/wiki/images/6/6b/T--Waterloo--CareersSpeakers.png" alt="Career Speakers" className={styles.speakers_img}/>
+                </div>
+                <div className={overallStyles.text_div}>
                     <div className={overallStyles.description} style={{marginBottom: "-2%"}}>
                         Our goals for this event were three-fold:
                     </div>
@@ -19,7 +24,8 @@ class CareersSynBio extends Component {
                             To showcase various career paths available to life science students. 
                         </li>
                         <li> 
-                            To demonstrate how iGEM can be a beneficial way to build a relevant network and experience.                     </li>
+                            To demonstrate how iGEM can be a beneficial way to build a relevant network and experience.                     
+                        </li>
                         <li> 
                             To share stories from underrepresented groups in STEM.
                         </li>

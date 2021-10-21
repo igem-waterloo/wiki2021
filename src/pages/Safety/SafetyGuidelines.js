@@ -6,9 +6,9 @@ class SafetyGuidelines extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Safety Guidelines
-                    </span>
+                    </div>
                     <div className={overallStyles.subheading} style={{marginLeft: "5%"}}>
                         Canadian Guidelines
                     </div>

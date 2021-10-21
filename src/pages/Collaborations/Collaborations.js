@@ -19,7 +19,7 @@ const Collaborations = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                     This year, collaborations included a large array of organizations both within and outside of the iGEM community. Although in-person events could not be completed, the team takes pride in the impactful work through online platforms in order to foster opportunities in synthetic biology. The collaborations are documented and described in the following categories: iGEM collaborations, internal university collaborations and collaborations with the greater community.
                     </div>

@@ -6,7 +6,7 @@ class References extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>References</span>
+                    <div className={overallStyles.text_heading}>References</div>
                     <ul className={overallStyles.description}>
                         <li>
                             5 tips on designing colorblind-friendly visualizations. Tableau. (n.d.). Retrieved October 21, 2021, from https://www.tableau.com/about/blog/examining-data-viz-rules-dont-use-red-green-together. 

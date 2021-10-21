@@ -7,9 +7,9 @@ class CurrentDiagnosis extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Understanding the Current ADHD Diagnosis Process in Canada
-                    </span>
+                    </div>
                     {/* <div className={overallStyles.illustration}></div>
                     <img></img>
                     </div> */}

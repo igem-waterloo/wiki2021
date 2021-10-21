@@ -7,9 +7,9 @@ class Microfluidic extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Microfluidic Chip Modelling
-                    </span>
+                    </div>
                     <div className={overallStyles.subheading}>
                         Computer-aided Chip Assembly Design
                     </div>

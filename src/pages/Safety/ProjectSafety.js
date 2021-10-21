@@ -7,9 +7,9 @@ class ProjectSafety extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Project Safety Considerations
-                    </span>
+                    </div>
                     <div className={overallStyles.description} style={{marginBottom: "-2%"}}>
                         The following safety considerations were accounted for during the design of our project:
                     </div>

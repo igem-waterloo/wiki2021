@@ -6,9 +6,9 @@ class UWaterlooCommunity extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         Education Within University of Waterloo Community 
-                    </span>
+                    </div>
                     <div className={overallStyles.description}>
                         The iGEM community at Waterloo is strong, but synthetic biology is still an area that not many individuals know about. For this reason, we collaborated with multiple clubs within the University of Waterloo community, to bring further awareness to the field of synthetic biology.
                     </div>

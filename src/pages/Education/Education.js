@@ -19,7 +19,7 @@ const Education = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         Due to the effects of the global COVID-19 pandemic, many of the ways in which iGEM teams educate the community at large have been hindered. However, we decided to take the continuing pandemic restrictions in stride and to shift our focus to the use of virtual tools to successfully hit our Education goals. As has been outlined in our Communication and Collaborations pages, we took part in a variety of initiatives that aimed to further education within the iGEM community, within our university community and within our greater community as well. 
                     </div>

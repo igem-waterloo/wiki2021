@@ -21,7 +21,7 @@ const Parts = () => {
                     <div className={overallStyles.illustration}></div>
                 </div>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>Overview</span>
+                    <div className={overallStyles.text_heading}>Overview</div>
                     <div className={overallStyles.description}>
                         This year, our team added six new parts, contributed new documentation to two parts, and improved an existing part on the Registry. Below are links to the Registry pages of each of these parts.
                     </div>

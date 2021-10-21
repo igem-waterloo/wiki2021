@@ -6,7 +6,7 @@ class References extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>References</span>
+                    <div className={overallStyles.text_heading}>References</div>
                     <ul className={overallStyles.description}>
                         <li>
                             AMPLEX™ Red reagent. Thermo Fisher Scientific - US. (2019). Retrieved October 8, 2021, from https://www.thermofisher.com/order/catalog/product/A12222#/A12222. 

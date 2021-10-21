@@ -7,9 +7,9 @@ class MentorshipAndCollaborations extends Component {
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
-                    <span className={overallStyles.text_heading}>
+                    <div className={overallStyles.text_heading}>
                         iGEM Mentorship &amp; Collaborations                    
-                    </span>
+                    </div>
                     <div className={overallStyles.subheading}>
                         iGEM Bolivia            
                     </div>
