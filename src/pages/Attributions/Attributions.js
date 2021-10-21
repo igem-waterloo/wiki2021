@@ -940,13 +940,16 @@ const Attributions = () => {
                         </div>
                         <ul className={overallStyles.description}>
                             <li>
-                                Quantification method research
+                                Researched and analyzed methods to quantify LFA results
                             </li>
                             <li>
-                                Microcontroller programming
+                                Assisted with microcontroller programming
                             </li>
                             <li>
-                                Voltage to illuminance conversion research
+                                Formulated processes to convert voltage values to biomarker concentrations
+                            </li>
+                            <li>
+                                Co-authored and edited wiki sections related to Math and Modelling
                             </li>
                         </ul> 
 
