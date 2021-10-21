@@ -7,7 +7,7 @@ class References extends Component {
             <div className={overallStyles.container}>
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>References</span>
-                    <ol className={overallStyles.description}>
+                    <ul className={overallStyles.description}>
                         <li>
                             Centre for ADHD Awareness Canada. (2013, October, 14).  Paying Attention to the Cost of ADHD… The Price Paid by Canadian Families, Governments and Society. https://caddac.ca/wp-content/uploads/2017/01/Socioeconomic-Policy-Paper-1.pdf 
                         </li>
@@ -19,7 +19,7 @@ class References extends Component {
                         </li>
                         <li>
                             LabOnTheCheap. (2018, July 10). Technical Tuesday: Protein purification on a budget: Lab on the cheap. Lab On The Cheap |. Retrieved October 7, 2021, from https://www.labonthecheap.com/protein-purification-on-a-budget/.                    </li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
         )
