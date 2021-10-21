@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import "./implementation.module.scss";
 import CurrentChallenges from './CurrentChallenges';
 import GeneralSafetyConsiderations from './GeneralSafetyConsiderations';
 import ImplementationLabSettings from './ImplementationLabSettings';
@@ -8,6 +9,8 @@ import ProperUsage from './ProperUsage';
 import References from './References';
 
 const tabs = ["NeuroDetech Implementation in Lab Settings", "Proper Usage of NeuroDetech", "General Safety Considerations for NeuroDetech Usage", "Current Challenges and Future Improvements", "References"];
+const icons = ["", "", "", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+
 
 const Implementation = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -30,10 +33,12 @@ const Implementation = () => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={overallStyles.section_img}>
+                                    <img id={`implementation${index}`} src={icons[index]} alt= "Icon"/>
+                                </div>                            
+                                <div className={overallStyles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}

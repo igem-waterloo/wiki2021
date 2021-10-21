@@ -1,13 +1,15 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import "./inclusivity.module.scss";
 import References from './References';
 import WikiDesign from './WikiDesign';
 
 const tabs = ["Wiki Design", "References"];
-
+const icons = ["", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 const Improvement = () => {
         const [active, setActive] = useState(tabs[0]);
+        
         return (
             <div className={overallStyles.container}>
                 <div className={overallStyles.heading_div}>
@@ -36,10 +38,12 @@ const Improvement = () => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={overallStyles.section_img}>
+                                    <img id={`inclusivity${index}`} src={icons[index]} alt= "Icon"/>
+                                </div>
+                                <div className={overallStyles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}
