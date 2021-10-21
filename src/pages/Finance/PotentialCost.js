@@ -53,7 +53,7 @@ class PotentialCost extends Component {
                     <img src="https://2021.igem.org/wiki/images/4/41/T--Waterloo--Finance.png" alt="Cost Factors" className={styles.cost_img}/>
                     </div>
                     <div className={overallStyles.figure_text}>
-                        Figure 1: Cost factors of ADHD diagnosis (Created in BioRender)
+                        Cost factors of ADHD diagnosis (Created in BioRender)
                     </div>
                 </div>
                 <div className={overallStyles.text_div}>

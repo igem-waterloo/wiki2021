@@ -220,7 +220,7 @@ Tsz Yan Au
 •	Developed the wiki website and populated content
 •	Worked on the accessibility toolbar
 Wendy Lu
-•	Quantification method research
-•	Microcontroller programming
-•	Voltage to illuminance conversion research
-
+•	Researched and analyzed methods to quantify LFA results
+•	Assisted with microcontroller programming
+•	Formulated processes to convert voltage values to biomarker concentrations
+•	Co-authored and edited wiki sections related to Math and Modelling
