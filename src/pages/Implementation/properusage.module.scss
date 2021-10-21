@@ -1,0 +1,17 @@
+.procedure_text {
+    font-size: var(--description-size);
+    font-weight: 500;
+    color: var(--font-color);
+    margin: 0 auto;
+    margin-top: 1%;
+    max-width: 90%;
+    line-height: 170%;
+}
+
+.table, td, th {
+    font-size: var(--description-size);
+    font-weight: 500;
+    color: var(--font-color);
+    margin: 0 auto;
+    line-height: 170%;
+}

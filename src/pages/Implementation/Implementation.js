@@ -1,8 +1,13 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import CurrentChallenges from './CurrentChallenges';
+import GeneralSafetyConsiderations from './GeneralSafetyConsiderations';
+import ImplementationLabSettings from './ImplementationLabSettings';
+import ProperUsage from './ProperUsage';
+import References from './References';
 
-const tabs = ['Tab 1', 'Tab 2', 'References'];
+const tabs = ["NeuroDetech Implementation in Lab Settings", "Proper Usage of NeuroDetech", "General Safety Considerations for NeuroDetech Usage", "Current Challenges and Future Improvements", "References"];
 
 const Implementation = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -18,10 +23,7 @@ const Implementation = () => {
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>Overview</span>
                     <div className={overallStyles.description}>
-                        For many people, having an extra $2,000 dollars in their pocket could mean paying for school tuition, 2 months worth of rent, a laptop,or a flight to Asia. To an individual with possible underlying ADHD symptoms, this could mean covering the cost of an initial clinical assessment, as a first step towards receiving an official diagnosis.
-                    </div>
-                    <div className={overallStyles.description}>
-                        To a working individual earning minimum wage in Ontario, this is equivalent to 140 hours of time at work before tax. Unfortunately, the cost of an ADHD assessment may lead to some individuals having no option but to opt out of the assessment due to affordability issues and financial strain(Centre for ADHD Awareness Canada [CADDAC], 2013). This potential financial hurdle can result in further under-diagnoses of both children and adults with ADHD, preventing them from receiving the treatment they need (CADDAC, 2013). As such, the design process of neuroDetech required us to consider and assess factors such as the financial impact on patients, lab manufacturing, and governmental assistance.
+                        Throughout the entirety of NeuroDetech’s development, we kept its implementation at the forefront of our minds. Continuous stakeholder feedback and thorough research from all 3 subteams allowed us to create a product that could realistically be manufactured and employed in laboratory settings. 
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
@@ -37,15 +39,22 @@ const Implementation = () => {
                     ))}
                 </div>
                 <div>
-                    {/* { active === tabs[0] && (
-                        <PotentialCost/>
+                   { active === tabs[0] && (
+                        <ImplementationLabSettings/>
                     )}
+                    
                     { active === tabs[1] && (
-                        <ManufacturingAndLegal/>
+                        <ProperUsage/>
                     )}
                     { active === tabs[2] && (
+                        <GeneralSafetyConsiderations/>
+                    )}
+                    { active === tabs[3] && (
+                        <CurrentChallenges/>
+                    )}
+                    { active === tabs[4] && (
                         <References/>
-                    )} */}
+                    )}
                 </div>
             </div>
         )
