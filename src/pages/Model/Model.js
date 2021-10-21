@@ -9,6 +9,7 @@ import References from './References';
 
 const tabs = ['Microfluidic Chip Modelling', 'Hardware Design Modelling', 'Protein Optimization Modelling', "References"];
 const icons = ["https://2021.igem.org/wiki/images/1/1e/T--Waterloo--IconChip.png", "https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png", "https://2021.igem.org/wiki/images/0/0a/T--Waterloo--IconProteinSingle.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+
 const Model = () => {
         const [active, setActive] = useState(tabs[0]);
         return (
