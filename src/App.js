@@ -1,61 +1,103 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
-import TeamPage from "./pages/TeamPage/TeamPage";
-import ProjectDescription from "./pages/ProjectDescription/ProjectDescription"
+// pages
+import Attributions from "./pages/Attributions/Attributions";
+import Collaborations from "./pages/Collaborations/Collaborations";
+import Communication from "./pages/Communication/Communication";
+import Contribution from "./pages/Contribution/Contribution";
+import Education from "./pages/Education/Education";
 import Engineering from './pages/Engineering/Engineering';
+import Finance from "./pages/Finance/Finance";
+import Hardware from "./pages/Hardware/Hardware";
+import HomePage from "./pages/HomePage/HomePage";
 import HumanPractices from "./pages/HumanPractices/HumanPractices";
+import Implementation from "./pages/Implementation/Implementation";
+import Inclusivity from "./pages/Inclusivity/Inclusivity";
+import Model from "./pages/Model/Model";
+import Parts from "./pages/Parts/Parts";
+import Description from "./pages/Description/Description"
+import ProofOfConcept from "./pages/ProofOfConcept/ProofOfConcept";
+import Safety from "./pages/Safety/Safety";
+import TeamPage from "./pages/TeamPage/TeamPage";
+// utils
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Sticky from 'react-stickynode';
 import StickyBox from "react-sticky-box";
-import styles from './App.css';
 import Accessibility from './toolbar/Accessibility';
-import ScrollToTop from "./scrollToTop/scrollToTop";
 import { keepTheme, keepSize } from "./utils/themes.js";
+import RedirectScrollToTop from "./utils/RedirectScrollToTop";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-    const [fontSizeMult, setFontSizeMult] = useState(1);
-
     useEffect(() => {
         keepTheme();
         keepSize();
     });
 
-    const changeFontSizeMult = (newMult) => {
-        console.log(fontSizeMult);
-        if (fontSizeMult > 0.5 && fontSizeMult < 1.5) {
-            setFontSizeMult(fontSizeMult + newMult);
-        }
-    }
-
     return (
         <div className="App">
             <Router>
+                <RedirectScrollToTop />
                 <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
-                    <StickyBox style={{zIndex: "5", position: "relative"}}>
-                        <Header />
-                    </StickyBox>
-                    <div style={{borderLeft: '2px solid #E5E5E5'}}>
-                        <Switch>
-                            <Route exact path="/Team:Waterloo">
-                                <HomePage style={{borderLeft: '2px solid #E5E5E5'}} />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Team">
-                                <TeamPage />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Description">
-                                <ProjectDescription />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Engineering">
-                                <Engineering />
-                            </Route>
-                            <Route exact path="/Team:Waterloo/Human_Practices">
-                                <HumanPractices />
-                            </Route>
-                        </Switch>
-                    </div>
+                <StickyBox style={{zIndex: "5", position: "relative"}}>
+                    <Header />
+                </StickyBox>
+                <Switch>
+                    <Route exact path="/Team:Waterloo">
+                        <HomePage/>
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Attributions">
+                        <Attributions />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Collaborations">
+                        <Collaborations />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Communication">
+                        <Communication />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Contribution">
+                        <Contribution />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Description">
+                        <Description />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Education">
+                        <Education />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Engineering">
+                        <Engineering />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Finance">
+                        <Finance />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Hardware">
+                        <Hardware />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Human_Practices">
+                        <HumanPractices />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Implementation">
+                        <Implementation />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Inclusivity">
+                        <Inclusivity />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Model">
+                        <Model />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Parts">
+                        <Parts />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Proof_Of_Concept">
+                        <ProofOfConcept />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Safety">
+                        <Safety />
+                    </Route>
+                    <Route exact path="/Team:Waterloo/Team">
+                        <TeamPage />
+                    </Route>
+                </Switch>
                 </div>
                 <div>
                     <Footer />

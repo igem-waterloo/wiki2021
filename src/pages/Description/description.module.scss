@@ -1,0 +1,32 @@
+.banner_img {
+    margin: 0 auto;
+    border-radius: 60px;
+}
+
+.heading {
+    font-size: var(--page-heading-size);
+    font-weight: 600;
+    color: var(--font-color);
+    border-bottom: 0.1em solid #E88A5F;
+    line-height: 200%;
+    margin-left: 1%;
+    height: auto;
+    max-width: max-content;
+}
+
+.video_text {
+    font-size: var(--text-heading-size);
+    font-weight: 500;
+    color: var(--heading-color);
+    border-bottom: 0.2em solid #E88A5F;
+    padding-bottom: 0.5%;
+    max-width: max-content;
+    margin: 0 3.5%;
+}
+
+.video {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+}

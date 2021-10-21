@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import { Link } from 'react-router-dom';
 import styles from './references.module.scss';
-import Collapsible from './Collapsible';
+import Collapsible from '../../utils/Collapsible';
 
 class References extends Component {
     render() {

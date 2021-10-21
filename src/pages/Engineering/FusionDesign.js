@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 // import { Link } from 'react-router-dom';
 import styles from './fusiondesign.module.scss';
-import Collapsible from './Collapsible';
+import Collapsible from '../../utils/Collapsible';
 
 class FusionDesign extends Component {
     render() {

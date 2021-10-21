@@ -1,0 +1,26 @@
+.table, td, th {
+    font-size: var(--description-size);
+    font-weight: 500;
+    color: var(--font-color);
+    margin: 0 auto;
+    line-height: 170%;
+    width: max-content !important;
+    
+}
+
+.mutation_img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.crop {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.heatmap_img {
+    width: 150%;
+    margin-left: -40%;
+}

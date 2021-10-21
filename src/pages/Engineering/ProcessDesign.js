@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styles from './processdesign.module.scss';
-import Collapsible from './Collapsible';
+import Collapsible from '../../utils/Collapsible';
 
 class ProcessDesign extends Component {
     render() {
