@@ -21,12 +21,12 @@ function Header() {
 
         const urls_list = [
             {
-                main_url: "Project",
-                sub_urls: ["Description", "Engineering", "Model", "Implementation", "Proof_Of_Concept"]
-            },
-            {
                 main_url: "Home",
                 sub_urls: [""]
+            },
+            {
+                main_url: "Project",
+                sub_urls: ["Description", "Engineering", "Hardware", "Model", "Implementation", "Proof_Of_Concept"]
             },
             {
                 main_url: "Parts",
@@ -34,7 +34,7 @@ function Header() {
             },
             {
                 main_url: "Human_Practices",
-                sub_urls: ["Human_Practices", "Communication", "Education", "Finance", "Inclusivity", "Hardware"]
+                sub_urls: ["Human_Practices", "Communication", "Education", "Finance", "Inclusivity"]
             },
             {
                 main_url: "Team",
@@ -43,10 +43,6 @@ function Header() {
             {
                 main_url: "Safety",
                 sub_urls: ["Safety"]
-            },
-            {
-                main_url: "Finance",
-                sub_urls: ["Finance"]
             }
         ];
 
