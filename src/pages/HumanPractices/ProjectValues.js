@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import overallStyles from "../overall.module.scss";
+import styles from "./projectvalues.module.scss";
 
 class CurrentDiagnosis extends Component {
     render() {
@@ -14,7 +15,7 @@ class CurrentDiagnosis extends Component {
                     </div>
                 </div>
                 <div className={overallStyles.figure_div}>
-                    <img src="https://2021.igem.org/wiki/images/8/86/T--Waterloo--Values.png" alt="Relevant Values"/>
+                    <img src="https://2021.igem.org/wiki/images/8/86/T--Waterloo--Values.png" alt="Relevant Values" className={styles.values_img} />
                     <div className={overallStyles.figure_text}>(Logos courtesy of the United Nations Department of Social &amp; Economic Affairs 17 Goals, n.d.)</div>
                 </div>
                 <div className={overallStyles.text_div}>
