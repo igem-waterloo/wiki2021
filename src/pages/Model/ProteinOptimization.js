@@ -14,7 +14,7 @@ class ProteinOptimization extends Component {
                     The selected proteins to be optimized, trypsin and monomeric streptavidin, are modelled and analyzed using software such as Rosetta, Chimera and Autodock. In the end, proteins with improved stability and affinity are designed. 
                 </div>
                 <Collapsible open title="Rosetta: Protein Mutations">
-                    <div className={styles.text_div}>
+                    <div className={overallStyles.text_div}>
                         <div className={overallStyles.description}>
                             Rosetta is a software tool that was primarily designed to predict structures of proteins. It now has many other applications such as determining macromolecular interactions, molecular docking and protein design (Kaufmann et. al., 2010).
                         </div>

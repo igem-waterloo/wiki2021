@@ -28,10 +28,10 @@ const HumanPractices = (props) => {
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
+                    {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div className={overallStyles.section_img}></div>
+                            <div id={index} className={overallStyles.section_img}></div>
                             <div className={overallStyles.section_text}>
                                 {tab}
                             </div>
@@ -39,7 +39,7 @@ const HumanPractices = (props) => {
                         </div>
                     ))}
                 </div>
-                    <div>
+                <div>
                     { active === tabs[0] && (
                         <ProjectValues/>
                     )}
@@ -52,7 +52,7 @@ const HumanPractices = (props) => {
                     { active === tabs[3] && (
                         <References/>
                     )}
-                    </div>
+                </div>
             </div>
         )
 }
