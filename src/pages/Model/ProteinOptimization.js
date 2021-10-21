@@ -49,7 +49,7 @@ class ProteinOptimization extends Component {
                     </div>
                 </Collapsible>
                 <Collapsible open title="Improvement of Trypsin Protein">
-                <div className={styles.text_div}>
+                    <div className={styles.text_div}>
                         <div className={overallStyles.subheading} style={{marginLeft: "5%"}}>
                             Results: Trypsin Single Mutation
                         </div>
@@ -63,62 +63,64 @@ class ProteinOptimization extends Component {
                             </a>
                             . For this and all following score tables, the mutations are written in the format “Original Amino Acid|Residue Number|New Amino Acid”.
                         </div>
-                        <div className={overallStyles.figure_div} style={{width: "100%"}}>
-                            <Table bordered className={styles.table}>
-                                <thead>
-                                    <tr>
-                                        <th>Score (REU)</th>
-                                        <th>Mutation</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>-322.402</td>
-                                        <td>Original</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-344.859</td>
-                                        <td>A205T</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-344.706</td>
-                                        <td>I81N</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-344.222</td>
-                                        <td>I81H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-343.811</td>
-                                        <td>I81W</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-343.794</td>
-                                        <td>I81R</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-343.771</td>
-                                        <td>I81K</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-343.657</td>
-                                        <td>I81Y</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-343.647</td>
-                                        <td>A205C</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-343.253</td>
-                                        <td>I81F</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-343.191</td>
-                                        <td>I81Q</td>
-                                    </tr>
-                                </tbody>
-                            </Table>
-                        </div>
+                    </div>
+                    <div className={overallStyles.figure_div}>
+                        <Table bordered className={overallStyles.table}>
+                            <thead>
+                                <tr>
+                                <th>Score (REU)</th>
+                                <th>Mutation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>-322.402</td>
+                                <td>Original</td>
+                                </tr>
+                                <tr>
+                                <td>-344.859</td>
+                                <td>A205T</td>
+                                </tr>
+                                <tr>
+                                <td>-344.706</td>
+                                <td>I81N</td>
+                                </tr>
+                                <tr>
+                                <td>-344.222</td>
+                                <td>I81H</td>
+                                </tr>
+                                <tr>
+                                <td>-343.811</td>
+                                <td>I81W</td>
+                                </tr>
+                                <tr>
+                                <td>-343.794</td>
+                                <td>I81R</td>
+                                </tr>
+                                <tr>
+                                <td>-343.771</td>
+                                <td>I81K</td>
+                                </tr>
+                                <tr>
+                                <td>-343.657</td>
+                                <td>I81Y</td>
+                                </tr>
+                                <tr>
+                                <td>-343.647</td>
+                                <td>A205C</td>
+                                </tr>
+                                <tr>
+                                <td>-343.253</td>
+                                <td>I81F</td>
+                                </tr>
+                                <tr>
+                                <td>-343.191</td>
+                                <td>I81Q</td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </div>
+                    <div className={styles.text_div}>
                         <div className={overallStyles.description}>
                             However, our main goal for our newly designed protein is to increase its ability to bind to the analyte which is PEA. Therefore we must look at the mutations made near the binding pocket residues. Those residues are 169, 170, 171, 172, 175, 189, 190, 191,192,194, 195, 202, 203, and 204. These mutations should have a stronger impact on 1UTM’s binding affinity with PEA, thus being analyzed in more detail. The mutations that are considered for each residue are listed in the spreadsheet&nbsp; 
                             <a className={overallStyles.text_link} href="https://docs.google.com/spreadsheets/u/1/d/1r_Wf-dGtYojBKM7i1tRiwdZFUIioxGey/edit" target="_blank" rel="noreferrer">
@@ -201,126 +203,126 @@ class ProteinOptimization extends Component {
                             </a>
                             .
                         </div>
-                        <div className={overallStyles.figure_div} style={{width: "100%"}}>
-                            <Table bordered className={styles.table}>
-                                <thead>
-                                    <tr>
-                                        <th>Score (REU)</th>
-                                        <th>Mutation 1</th>
-                                        <th>Mutation 2</th>
-                                        <th>Mutation 3</th>
-                                        <th>Mutation 4</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>-368.553</td>
-                                        <td>Y204F</td>
-                                        <td>C195D</td>
-                                        <td>S190T</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-368.553</td>
-                                        <td>Y204F</td>
-                                        <td>C195E</td>
-                                        <td>S190T</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-368.553</td>
-                                        <td>Y204F</td>
-                                        <td>C195F</td>
-                                        <td>S190T</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-368.553</td>
-                                        <td>Y204F</td>
-                                        <td>C195Y</td>
-                                        <td>S190T</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.779</td>
-                                        <td>S190A</td>
-                                        <td>C195D</td>
-                                        <td>C171D</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.779</td>
-                                        <td>S190A</td>
-                                        <td>C195E</td>
-                                        <td>C171E</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.779</td>
-                                        <td>S190A</td>
-                                        <td>C195F</td>
-                                        <td>C171F</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.779</td>
-                                        <td>S190A</td>
-                                        <td>C195Y</td>
-                                        <td>C171Y</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.616</td>
-                                        <td>S190T</td>
-                                        <td>C195E</td>
-                                        <td>C171E</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.616</td>
-                                        <td>S190T</td>
-                                        <td>C195F</td>
-                                        <td>C171F</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.616</td>
-                                        <td>S190T</td>
-                                        <td>C195Y</td>
-                                        <td>C171Y</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.616</td>
-                                        <td>S190T</td>
-                                        <td>C195D</td>
-                                        <td>C171D</td>
-                                        <td>Y204H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.421</td>
-                                        <td>S190A</td>
-                                        <td>C195D</td>
-                                        <td>Y204H</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.421</td>
-                                        <td>S190A</td>
-                                        <td>C195E</td>
-                                        <td>Y204H</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-366.421</td>
-                                        <td>S190A</td>
-                                        <td>C195F</td>
-                                        <td>Y204H</td>
-                                        <td>-</td>
-                                    </tr>
-                                </tbody>
-                            </Table>
-                        </div>
+                    </div>
+                    <div className={overallStyles.figure_div}>
+                        <Table bordered className={overallStyles.table}>
+                            <thead>
+                                <tr>
+                                <th>Score (REU)</th>
+                                <th>Mutation 1</th>
+                                <th>Mutation 2</th>
+                                <th>Mutation 3</th>
+                                <th>Mutation 4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>-368.553</td>
+                                <td>Y204F</td>
+                                <td>C195D</td>
+                                <td>S190T</td>
+                                <td>-</td>
+                                </tr>
+                                <tr>
+                                <td>-368.553</td>
+                                <td>Y204F</td>
+                                <td>C195E</td>
+                                <td>S190T</td>
+                                <td>-</td>
+                                </tr>
+                                <tr>
+                                <td>-368.553</td>
+                                <td>Y204F</td>
+                                <td>C195F</td>
+                                <td>S190T</td>
+                                <td>-</td>
+                                </tr>
+                                <tr>
+                                <td>-368.553</td>
+                                <td>Y204F</td>
+                                <td>C195Y</td>
+                                <td>S190T</td>
+                                <td>-</td>
+                                </tr>
+                                <tr>
+                                <td>-366.779</td>
+                                <td>S190A</td>
+                                <td>C195D</td>
+                                <td>C171D</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.779</td>
+                                <td>S190A</td>
+                                <td>C195E</td>
+                                <td>C171E</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.779</td>
+                                <td>S190A</td>
+                                <td>C195F</td>
+                                <td>C171F</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.779</td>
+                                <td>S190A</td>
+                                <td>C195Y</td>
+                                <td>C171Y</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.616</td>
+                                <td>S190T</td>
+                                <td>C195E</td>
+                                <td>C171E</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.616</td>
+                                <td>S190T</td>
+                                <td>C195F</td>
+                                <td>C171F</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.616</td>
+                                <td>S190T</td>
+                                <td>C195Y</td>
+                                <td>C171Y</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.616</td>
+                                <td>S190T</td>
+                                <td>C195D</td>
+                                <td>C171D</td>
+                                <td>Y204H</td>
+                                </tr>
+                                <tr>
+                                <td>-366.421</td>
+                                <td>S190A</td>
+                                <td>C195D</td>
+                                <td>Y204H</td>
+                                <td>-</td>
+                                </tr>
+                                <tr>
+                                <td>-366.421</td>
+                                <td>S190A</td>
+                                <td>C195E</td>
+                                <td>Y204H</td>
+                                <td>-</td>
+                                </tr>
+                                <tr>
+                                <td>-366.421</td>
+                                <td>S190A</td>
+                                <td>C195F</td>
+                                <td>Y204H</td>
+                                <td>-</td>
+                                </tr>
+                            </tbody>
+                        </Table>
                     </div>
                 </Collapsible>
                 <Collapsible open title="Improvement of Monomeric Streptavidin">
@@ -338,62 +340,64 @@ class ProteinOptimization extends Component {
                             </a>
                             .
                         </div>
-                        <div className={overallStyles.figure_div} style={{width: "100%"}}>
-                            <Table bordered className={styles.table}>
-                                <thead>
-                                    <tr>
-                                        <th>Score (REU)</th>
-                                        <th>Mutation</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>-104.826</td>
-                                        <td>Original</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-141.239</td>
-                                        <td>Y52F</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.972</td>
-                                        <td>L57M</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41D</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41E</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41F</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41G</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41H</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41I</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-139.911</td>
-                                        <td>C41K</td>
-                                    </tr>
-                                </tbody>
-                            </Table>
-                        </div>
+                    </div>
+                    <div className={overallStyles.figure_div}>
+                        <Table bordered className={overallStyles.table}>
+                            <thead>
+                                <tr>
+                                <th>Score (REU)</th>
+                                <th>Mutation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>-104.826</td>
+                                <td>Original</td>
+                                </tr>
+                                <tr>
+                                <td>-141.239</td>
+                                <td>Y52F</td>
+                                </tr>
+                                <tr>
+                                <td>-139.972</td>
+                                <td>L57M</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41A</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41D</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41E</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41F</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41G</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41H</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41I</td>
+                                </tr>
+                                <tr>
+                                <td>-139.911</td>
+                                <td>C41K</td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </div>
+                    <div className={styles.text_div}>
                         <div className={overallStyles.description}>
                             We also took a closer look at the binding pocket residues for streptavidin which are residues 12, 16, 32, 34, 36, 72, 74 and 92. The mutations that scored higher than the original protein for each binding pocket residue are further analyzed and recorded&nbsp;
                             <a className={overallStyles.text_link} href="https://docs.google.com/spreadsheets/u/1/d/1SgsB72_eUh2hm3cXvlslBUDv0N5JtfM7/edit" target="_blank" rel="noreferrer">
@@ -404,135 +408,131 @@ class ProteinOptimization extends Component {
                         <div className={overallStyles.description}>
                             Then double mutations were chosen based on the Rosetta scores similar to the process used for 1UTM. Those double mutations were passed into Rosetta and a heat map was generated for Streptavidin as well.
                         </div>
-                        <div className={overallStyles.figure_div} style={{width: "100%"}}>
+                    </div>
+                        <div className={overallStyles.figure_div}>
                             <img src="https://2021.igem.org/wiki/images/4/40/T--Waterloo--strep-heatmap.png" alt="Strep Heatmap" className={styles.mutation_img}/>
                             <div className={overallStyles.figure_text}>
                                 Heat Map of Monomeric Streptavidin Double Mutations                            
                             </div>
                         </div>
+                    <div className={styles.text_div}>
                         <div className={overallStyles.description}>
                             From the heat map, the strongest double mutations were chosen and then combined with other less strong mutations as well as a few of the top 50 single mutations to generate triple and quadruple mutations. This list was also passed into Rosetta to generate the PDB files and scores. The scores for the 12 suggested triple, quadruple, quintuple and sixtuple mutations for streptavidin are listed below.
                         </div>
-                        <div className={overallStyles.figure_div} style={{width: "100%"}}>
-                            <Table bordered className={styles.table}>
-                                <thead>
-                                    <tr>
-                                        <th>Score (REU)</th>
-                                        <th>Mutation</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>-167.751</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>Y52F</td>
-                                        <td>Y52F</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-166.862</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>L57M</td>
-                                        <td>L57M</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-157.12</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>T49K</td>
-                                        <td>T49K</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-154.14</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>N64S</td>
-                                        <td>N64S</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-153.232</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>R60T</td>
-                                        <td>R60T</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-133.52</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>A36C</td>
-                                        <td>A36C</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-132.144</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>N34A</td>
-                                        <td>A36C</td>
-                                        <td>A36C</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-132.051</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>N34A</td>
-                                        <td>N34A</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-131.989</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>A36C</td>
-                                        <td>Y32A</td>
-                                        <td>Y32A</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-130.956</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>Y32C</td>
-                                        <td>Y32C</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-129.267</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>N34A</td>
-                                        <td>A36C</td>
-                                        <td>Y32A</td>
-                                        <td>Y32A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-128.766</td>
-                                        <td>T74C</td>
-                                        <td>N12A</td>
-                                        <td>N34A</td>
-                                        <td>Y32A</td>
-                                        <td>Y32A</td>
-                                        <td>-</td>
-                                    </tr>
-                                </tbody>
-                            </Table>
-                        </div>
+                    </div>
+                    <div className={overallStyles.figure_div}>
+                        <Table bordered className={overallStyles.table}>
+                            <thead>
+                                <tr>
+                                <th>Score (REU)</th>
+                                <th>Mutation</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>-167.751</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>Y52F</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-166.862</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>L57M</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-157.12</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>T49K</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-154.14</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>N64S</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-153.232</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>R60T</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-133.52</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>A36C</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-132.144</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>N34A</td>
+                                <td>A36C</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-132.051</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>N34A</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-131.989</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>A36C</td>
+                                <td>Y32A</td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-130.956</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>Y32C</td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <td>-129.267</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>N34A</td>
+                                <td>A36C</td>
+                                <td>Y32A</td>
+                                </tr>
+                                <tr>
+                                <td>-128.766</td>
+                                <td>T74C</td>
+                                <td>N12A</td>
+                                <td>N34A</td>
+                                <td>Y32A</td>
+                                <td></td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </div>
+                    <div className={styles.text_div}>
                         <div className={overallStyles.description}>
                             Based on Rosetta scores, the best designed protein consisted of the 4 mutations, T74C, N12A, Y52F, Y52F.
                         </div>
@@ -546,158 +546,264 @@ class ProteinOptimization extends Component {
                         <div className={overallStyles.description}>
                             The Python script serves several purposes including, opening the mutated protein output from Rosetta, deleting the ligand from the complex, adding the native ligand file to the environment, and performing ligand docking, saving only the docking coordinate of the highest scoring conformer. These scores were then copied and written to a master energy score text file automatically and saved. Both singly- and doubly- mutated proteins generated by Rosetta were used for docking. The doubly mutated proteins combined mutations from both the binding pocket and a non-binding region in efforts to decrease the energy score of the overall structure for enhanced stability. Implementation of this process revealed that singly mutated trypsin-PEA complexed proteins outperformed doubly-mutated trypsin-PEA protein complexes on average. To illustrate this, the following distributions were observed for singly- vs doubly- mutated trypsin proteins. As you can see, the maximum energy score for doubly mutated proteins was -4.8 kcal/mole, while an energy score of -4.9 kcal/mole was frequently seen in singly-mutated proteins. From these preliminary energy score results we can deduce that double mutations on the complex did not have any effect on decreasing its energy score, and thus stability was not affected. To further confirm this a secondary energy analysis should be performed using the score_jd2 protocol in Rosetta or structure scoring in GROMACS.
                         </div>
-                        <div className={overallStyles.figure_div} style={{width: "100%"}}>
-                            <div className={overallStyles.figure_text}>
-                                1UTM-PEA Docking Scores
-                            </div>
-                            <Table bordered className={styles.table}>
+                    </div>
+                    <div className={overallStyles.figure_div}>
+                        <div className={overallStyles.figure_text}>
+                            1UTM-PEA Docking Scores
+                        </div>
+                        <Table bordered className={overallStyles.table}>
+                            <thead>
+                                <tr>
+                                <th>Mutation 1</th>
+                                <th>Mutation 2</th>
+                                <th>Mutation 3</th>
+                                <th>Mutation 4</th>
+                                <th>Interaction Energy (kcal/mole)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>Native</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>-4.6</td>
+                                </tr>
+                                <tr>
+                                <td>S190A</td>
+                                <td>C195E</td>
+                                <td>C171E</td>
+                                <td>Y204H</td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190T</td>
+                                <td>C195F</td>
+                                <td>C171F</td>
+                                <td>Y204H</td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190A</td>
+                                <td>C195E</td>
+                                <td>Y204H</td>
+                                <td></td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>Y204F</td>
+                                <td>C195E</td>
+                                <td>S190</td>
+                                <td></td>
+                                <td>-4.7</td>
+                                </tr>
+                                <tr>
+                                <td>S190A</td>
+                                <td>C195D</td>
+                                <td>Y204H</td>
+                                <td></td>
+                                <td>-4.7</td>
+                                </tr>
+                                <tr>
+                                <td>S190T</td>
+                                <td>C195Y</td>
+                                <td>C171Y</td>
+                                <td>Y204H</td>
+                                <td>-4.9</td>
+                                </tr>
+                                <tr>
+                                <td>Y204F</td>
+                                <td>C195D</td>
+                                <td>S190T</td>
+                                <td></td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190T</td>
+                                <td>C195D</td>
+                                <td>C171D</td>
+                                <td>Y204H</td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190A</td>
+                                <td>C195Y</td>
+                                <td>C171Y</td>
+                                <td>Y204H</td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>Y204F</td>
+                                <td>C195Y</td>
+                                <td>S190T</td>
+                                <td></td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190A</td>
+                                <td>C195D</td>
+                                <td>C171D</td>
+                                <td>Y204H</td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190T</td>
+                                <td>C195E</td>
+                                <td>C171E</td>
+                                <td>Y204H</td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190A</td>
+                                <td>C195F</td>
+                                <td>C171F</td>
+                                <td>Y204H</td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>Y204F</td>
+                                <td>C195F</td>
+                                <td>S190T</td>
+                                <td></td>
+                                <td>-4.8</td>
+                                </tr>
+                                <tr>
+                                <td>S190A</td>
+                                <td>C195F</td>
+                                <td>Y204H</td>
+                                <td></td>
+                                <td>-4.8</td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </div>
+                    <div className={styles.text_div}>
+                        <div className={overallStyles.description}>
+                            <p>A similar energy conformer analysis using the above-mentioned automated approach using a Python script was implemented for mutation candidates generated by Rosetta on the monomeric streptavidin-biotin complex. The lowest scoring multi-mutant streptavidin proteins yielded an energy score of -7.4 kcal/mole.</p>
+                        </div>
+                    </div>
+                        <div className={overallStyles.figure_div}>
+                            <div className={overallStyles.figure_text}>Streptavidin-Biotin Docking Scores</div> 
+                            <Table bordered className={overallStyles.table}>
                                 <thead>
                                     <tr>
-                                        <th>Mutation 1</th>
-                                        <th>Mutation 2</th>
-                                        <th>Mutation 3</th>
-                                        <th>Mutation 4</th>
-                                        <th>Mutation 5</th>
-                                        <th>Interaction Energy (kcal/mole)</th>
+                                    <th>Mutation 1</th>
+                                    <th>Mutation 2</th>
+                                    <th>Mutation 3</th>
+                                    <th>Mutation 4</th>
+                                    <th>Mutation 5</th>
+                                    <th>Interaction Energy (kcal/mole)</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Native</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-</td>
-                                        <td>-4.6</td>
+                                    <td>T74C</td>
+                                    <td>N12A</td>
+                                    <td>L57M</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-5.8</td>
                                     </tr>
                                     <tr>
-                                        <td>S190A</td>
-                                        <td>A-C195E</td>
-                                        <td>A-C171E</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>N12A</td>
+                                    <td>T49K</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-5.9</td>
                                     </tr>
                                     <tr>
-                                        <td>S190T</td>
-                                        <td>A-C195F</td>
-                                        <td>A-C171F</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>N12A</td>
+                                    <td>Y52F</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-7.4</td>
                                     </tr>
                                     <tr>
-                                        <td>S190A</td>
-                                        <td>A-C195E</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>N12A</td>
+                                    <td>A36C</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-7.1</td>
                                     </tr>
                                     <tr>
-                                        <td>Y204F</td>
-                                        <td>A-C195E</td>
-                                        <td>A-S190T</td>
-                                        <td>A-S190T</td>
-                                        <td>-</td>
-                                        <td>-4.7</td>
+                                    <td>T74C</td>
+                                    <td>N12A</td>
+                                    <td>R60T</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-5.8</td>
                                     </tr>
                                     <tr>
-                                        <td>S190A</td>
-                                        <td>A-C195D</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-</td>
-                                        <td>-4.7</td>
+                                    <td>T74C</td>
+                                    <td>N12A</td>
+                                    <td>N64S</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-5.8</td>
                                     </tr>
                                     <tr>
-                                        <td>S190T</td>
-                                        <td>A-C195Y</td>
-                                        <td>A-C171Y</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-4.9</td>
+                                    <td>Native</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-5.6</td>
                                     </tr>
                                     <tr>
-                                        <td>Y204F</td>
-                                        <td>A-C195D</td>
-                                        <td>A-S190T</td>
-                                        <td>A-S190T</td>
-                                        <td>-</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>A-N12A</td>
+                                    <td>N34A</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-7.1</td>
                                     </tr>
                                     <tr>
-                                        <td>S190T</td>
-                                        <td>|A-C195D</td>
-                                        <td>A-C171D</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>A-N12A</td>
+                                    <td>A-N34A</td>
+                                    <td>A36C</td>
+                                    <td>Y32A</td>
+                                    <td>-5.8</td>
                                     </tr>
                                     <tr>
-                                        <td>S190A</td>
-                                        <td>A-C195Y</td>
-                                        <td>A-C171Y</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>A-N12A</td>
+                                    <td>A-Y32C</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>-7.2</td>
                                     </tr>
                                     <tr>
-                                        <td>Y204F</td>
-                                        <td>A-C195Y</td>
-                                        <td>A-S190T</td>
-                                        <td>A-S190T</td>
-                                        <td>-</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>A-N12A</td>
+                                    <td>A-N34A</td>
+                                    <td>A-Y32A</td>
+                                    <td></td>
+                                    <td>-5.8</td>
                                     </tr>
                                     <tr>
-                                        <td>S190A</td>
-                                        <td>A-C195D</td>
-                                        <td>A-C171D</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>A-N12A</td>
+                                    <td>A-A36C</td>
+                                    <td>A-Y32A</td>
+                                    <td></td>
+                                    <td>-5.7</td>
                                     </tr>
                                     <tr>
-                                        <td>S190T</td>
-                                        <td>A-C195E</td>
-                                        <td>A-C171E</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-4.8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>S190A</td>
-                                        <td>A-C195F</td>
-                                        <td>AC-171E</td>
-                                        <td>AY-204H</td>
-                                        <td>AY-204H</td>
-                                        <td>-4.8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Y204F</td>
-                                        <td>A-C195F</td>
-                                        <td>A-S190T</td>
-                                        <td>A-S190T</td>
-                                        <td>-</td>
-                                        <td>-4.8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>S190A</td>
-                                        <td>A-C195F</td>
-                                        <td>A-Y204H</td>
-                                        <td>A-Y204H</td>
-                                        <td>-</td>
-                                        <td>-4.8</td>
+                                    <td>T74C</td>
+                                    <td>A-N12A</td>
+                                    <td>A-N34A</td>
+                                    <td>A-A36C</td>
+                                    <td></td>
+                                    <td>-7.4</td>
                                     </tr>
                                 </tbody>
                             </Table>
                         </div>
-                        <div className={overallStyles.description}>
-                        A similar energy conformer analysis using the above-mentioned automated approach using a Python script was implemented for mutation candidates generated by Rosetta on the monomeric streptavidin-biotin complex. The lowest scoring multi-mutant streptavidin proteins yielded an energy score of -7.4 kcal/mole.
-                        </div>
-                    </div>
-                </Collapsible>
+                    </Collapsible>
                 </div>
             </div>
         )
