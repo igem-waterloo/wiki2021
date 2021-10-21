@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import CareersSynBio from './CareersSynBio';
 import InstagramOutreach from './InstagramOutreach';
