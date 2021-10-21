@@ -1,12 +1,13 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import "./model.module.scss";
 import HardwareModelling from './HardwareModelling';
 import Microfluidic from './Microfludic';
 import ProteinOptimization from './ProteinOptimization';
 
 const tabs = ['Microfluidic Chip Modelling', 'Hardware Design Modelling', 'Protein Optimization Modelling', "References"];
-
+const icons = ["https://2021.igem.org/wiki/images/1/1e/T--Waterloo--IconChip.png", "https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png", "https://2021.igem.org/wiki/images/0/0a/T--Waterloo--IconProteinSingle.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 const Model = () => {
         const [active, setActive] = useState(tabs[0]);
         return (
@@ -26,15 +27,17 @@ const Model = () => {
                 </div>
                 <div className={overallStyles.sections_div}>
                     {tabs.map((tab, index) => (
-                        <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
-                            <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
+                            <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
+                                <div className={overallStyles.sections}>
+                                    <div className={overallStyles.section_img}>
+                                        <img id={`model${index}`} src={icons[index]} alt= "Icon"/>
+                                    </div>
+                                    <div className={overallStyles.section_text}>
+                                        {tab}
+                                    </div>
+                                </div>
                             </div>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
                 </div>
                 <div>
                     { active === tabs[0] && (
