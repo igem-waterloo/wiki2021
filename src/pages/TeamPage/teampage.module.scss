@@ -13,9 +13,9 @@
 }
 
 .carousel {
-    background: #34394B;
+    background: var(--team-button-color);
     border-radius: 60px;
-    width: 100%;
+    width: 95%;
     height: 570px;
     vertical-align: middle;
 }
@@ -23,15 +23,16 @@
 .carousel_slide {
     align-items: center;
     vertical-align: middle;
-    margin: 50px 0px;
+    height: 570px;
 }
 
 .img_div {
     // width: 80%;
     display: flex;
-    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
-    margin: 20px 50px;
+    margin: 0 50px;
+    height: 50%;
 }
 
 .team_label {
@@ -46,10 +47,10 @@
     height: 150px;
     width: 350px;
     vertical-align: center;
-    background: #34394B;
-    font-size: var(--description-size);
+    background: var(--team-button-color);
+    font-size: var(--main-page-description-size);
     font-weight: 500;
-    color: white;
+    color: var(--font-color);
     border: none;
     border-radius: 40px;
     margin-right: 20px;
@@ -60,3 +61,7 @@
     }
 }
 
+.arrow_buttons {
+    color: var(--font-color);
+    font-size: 40px;
+}

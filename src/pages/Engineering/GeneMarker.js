@@ -15,7 +15,7 @@ class GeneMarker extends Component {
                         <span className={overallStyles.text_heading}>Rationale for Switching to Detection of Genetic Markers</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>Attention deficit hyperactivity disorder (ADHD) is a common yet complex neurological disorder, and while PEA was (serendipitously) a suitable biomarker for a diagnostic application, continuing on the path of biomarkers was not feasible. First of all, there is much conflicting and limited recent evidence of urinary biomarker variances within ADHD patients, and furthermore, genetic markers are generally better candidates for diagnostics given the genetic nature of ADHD (Faraone et al., 2014). Firstly, biomarkers such as 5-HIAA, MHPG, NPY, DBH, and HVA are indeed relevant to ADHD (Faraone et al., 2014), but conflicting evidence and limited case studies makes it difficult to use for diagnostics. As an example, a paper from <em>Biology Psychiatry</em> observed a decrease in urinary MHPG in patients with ADHD, but a more recent paper from <em>Molecular Chemistry</em> <em>Neuropathology</em> observed no such variances (Shekim et al., 1983 & Baker et al., 1993). Due to much conflicting evidence, diagnostics using biomarkers became a recurring issue. Secondly, genetic markers are strong candidates for detecting ADHD (Faraone et al., 2014). Genes of the dopaminergic and serotonergic systems (particularly <em>DAT1, DRD4, DBH, SNAP25, CHRNA4</em>, and <em>TPH-2</em>) make for good candidates, and there is recent evidence linking their genetic behaviour to ADHD (Zhang et al., 2012). Alongside this, CRISPR-Cas13 methods of quantifying RNA, particularly the SATORI method, makes diagnostics possible without the need for prior amplification (Shinoda et al., 2021). With the literature pointing us away from biomarkers and towards genetic markers, we decided to adapt our microfluidic assay for the quantification of genetic markers - specifically, the detection of ADHD-associated mutations present in mRNA.</p>
+                        <p>Attention deficit hyperactivity disorder (ADHD) is a common yet complex neurological disorder, and while PEA was (serendipitously) a suitable biomarker for a diagnostic application, continuing on the path of biomarkers was not feasible. First of all, there is much conflicting and limited recent evidence of urinary biomarker variances within ADHD patients, and furthermore, genetic markers are generally better candidates for diagnostics given the genetic nature of ADHD (Faraone et al., 2014). Firstly, biomarkers such as 5-HIAA, MHPG, NPY, DBH, and HVA are indeed relevant to ADHD (Faraone et al., 2014), but conflicting evidence and limited case studies makes it difficult to use for diagnostics. As an example, a paper from <em>Biology Psychiatry</em> observed a decrease in urinary MHPG in patients with ADHD, but a more recent paper from <em>Molecular Chemistry</em> <em>Neuropathology</em> observed no such variances (Shekim et al., 1983 &amp; Baker et al., 1993). Due to much conflicting evidence, diagnostics using biomarkers became a recurring issue. Secondly, genetic markers are strong candidates for detecting ADHD (Faraone et al., 2014). Genes of the dopaminergic and serotonergic systems (particularly <em>DAT1, DRD4, DBH, SNAP25, CHRNA4</em>, and <em>TPH-2</em>) make for good candidates, and there is recent evidence linking their genetic behaviour to ADHD (Zhang et al., 2012). Alongside this, CRISPR-Cas13 methods of quantifying RNA, particularly the SATORI method, makes diagnostics possible without the need for prior amplification (Shinoda et al., 2021). With the literature pointing us away from biomarkers and towards genetic markers, we decided to adapt our microfluidic assay for the quantification of genetic markers - specifically, the detection of ADHD-associated mutations present in mRNA.</p>
                     </div>
                     <div className={overallStyles.text_div}>
                         <span className={overallStyles.text_heading}>Review of RNA Stability in a Diagnostic Context</span>
@@ -32,7 +32,7 @@ class GeneMarker extends Component {
 
                         <p>In this section, we will review our findings from the literature, and also discuss the experience of one of our lab members with mRNA quantification using a lateral flow assay.</p>
 
-                        <p>Ribonucleases (RNases) belong to a large class of enzymes, ubiquitous across both bacterial and eukaryotic organisms (Eun, 1996). Found in nearly all mammalian tissues and fluids, they are critical to a number of processes such as digestion, RNA metabolism, RNA processing and serve an integral role in protection against infection (Eun, 1996; Gotte & Menegazzi, 2019). Most human secretary RNases serve vital to anti-inflammatory, antibacterial and antiviral actions, catalysing the degradation of foreign intracellular RNA, DNA:RNA hybrids and dsRNA as indicators of infection (Gotte & Menegazzi, 2019). For this reason, an initial concern of using urinary RNA as a source to detect ADHD-associated mutations was the risk of RNase activity compromising RNA integrity (Becknell et al., 2019).</p>
+                        <p>Ribonucleases (RNases) belong to a large class of enzymes, ubiquitous across both bacterial and eukaryotic organisms (Eun, 1996). Found in nearly all mammalian tissues and fluids, they are critical to a number of processes such as digestion, RNA metabolism, RNA processing and serve an integral role in protection against infection (Eun, 1996; Gotte &amp; Menegazzi, 2019). Most human secretary RNases serve vital to anti-inflammatory, antibacterial and antiviral actions, catalysing the degradation of foreign intracellular RNA, DNA:RNA hybrids and dsRNA as indicators of infection (Gotte &amp; Menegazzi, 2019). For this reason, an initial concern of using urinary RNA as a source to detect ADHD-associated mutations was the risk of RNase activity compromising RNA integrity (Becknell et al., 2019).</p>
 
                         <p>The functionality of our device in the detection of ADHD-associated mutations is contingent on RNA being stable in a biological sample from the point of collection to the point at which the sample reaches the test chamber. While literature on use of urine as a source of RNA suggests that proper sample storage conditions circumvent these concerns, we did not have the opportunity to test this given our lack of lab access. One of our lab members, however, has had extensive experience working with RNA in the context of COVID-19 diagnostics from saliva.</p>
 
@@ -84,7 +84,7 @@ class GeneMarker extends Component {
                         <p>In the following sections, our considerations and answers to these “big picture questions” will be discussed.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Selection of ADHD-associated genes to be quantified by mRNA transcript detection</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Selection of ADHD-associated genes to be quantified by mRNA transcript detection</span>
                         </div>
 
                         <p>ADHD is often comorbid with other psychological disorders, such as schizophrenia, depression, anxiety, and bipolar disorder, to name a few. In a similar sense, biomarkers and gene markers associated with ADHD can often be associated with other psychological disorders as well. In order to reduce the likelihood that our microfluidic assay system produces false positive results associated with other psychological disorders, we aimed to detect multiple ADHD-associated gene markers. In selecting the most viable gene candidates, we conducted literature research into the following ADHD-associated genes. We favoured genes whose ADHD-associated mutations would also be present in their corresponding mRNA transcripts; that is, mutations in the promoter region or introns were ruled out. We also favoured genes whose ADHD-associated mutations were well-characterized and had known sequences. As well, variable number of tandem repeat mutations (VNTRs) were ruled out, as these would not be easily detected by hybridization.</p>
@@ -141,16 +141,16 @@ class GeneMarker extends Component {
                         <p>To detect the ADHD-associated genes selected above, we decided to utilize a CRISPR-Cas-based system. CRISPR-Cas would allow for sensitive detection of mRNA, with enough specificity to distinguish single nucleotide polymorphisms (SNPs) (Shinoda et al., 2021). As a result, mutations associated with ADHD could be quantified, even SNP mutations. The following describes the design considerations of employing a CRISPR-based system in a microfluidic assay.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Selection of Cas protein</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Selection of Cas protein</span>
                         </div>
 
                         <p>CRISPR Cas systems involve a Cas protein and a CRISPR guide RNA (gRNA); the Cas protein exhibits endonuclease activity when bound to its guide RNA. In selecting the appropriate Cas protein for detection of urinary mRNA, it is important to consider the distinctions between the Cas proteins - specifically, their targets:</p>
 
                         <p>
                         <ul className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>CRISPR-Cas9 cleaves double-stranded DNA (dsDNA), creating blunt ends. It cleaves a single, specific target (Koonin & Makarova, 2019).</li>
-                            <li>CRISPR-Cas12 cleaves double-stranded DNA (dsDNA), creating sticky (staggered) ends. It cleaves and remains bound to its target. When bound, it also exhibits nonspecific nuclease activity, indiscriminately cleaving DNA other than the target (Koonin & Makarova, 2019).</li>
-                            <li>CRISPR-Cas13 cleaves single-stranded RNA (ssRNA). Similarly to Cas12, it cleaves its target and remains bound, and will also exhibit nonspecific nuclease activity, indiscriminately cleaving ssRNA other than the target (Koonin & Makarova, 2019).</li>
+                            <li>CRISPR-Cas9 cleaves double-stranded DNA (dsDNA), creating blunt ends. It cleaves a single, specific target (Koonin &amp; Makarova, 2019).</li>
+                            <li>CRISPR-Cas12 cleaves double-stranded DNA (dsDNA), creating sticky (staggered) ends. It cleaves and remains bound to its target. When bound, it also exhibits nonspecific nuclease activity, indiscriminately cleaving DNA other than the target (Koonin &amp; Makarova, 2019).</li>
+                            <li>CRISPR-Cas13 cleaves single-stranded RNA (ssRNA). Similarly to Cas12, it cleaves its target and remains bound, and will also exhibit nonspecific nuclease activity, indiscriminately cleaving ssRNA other than the target (Koonin &amp; Makarova, 2019).</li>
                         </ul>
                         </p>
 
@@ -161,7 +161,7 @@ class GeneMarker extends Component {
                         <p>Overall, Cas13a from <em>L. buccalis</em> was chosen for the detection of ADHD-associated mRNA.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Adaptation of LbuCas13a for use in a microfluidic assay</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Adaptation of LbuCas13a for use in a microfluidic assay</span>
                         </div>
 
                         <p>Recall that the microfluidic assay consists of a test chamber and control chamber. The analyte of interest (in this case, the target ADHD-associated mutant mRNA transcript) is covalently conjugated to the test chamber. This would allow LbuCas13a to bind to these conjugated target mRNA transcripts, thereby activating LbuCas13a’s nonspecific RNAse activity.</p>
@@ -171,7 +171,7 @@ class GeneMarker extends Component {
                         <p>The control chamber contains covalently conjugated streptavidin. In order to allow Cas13 to bind at the control chamber, LbuCas13a must be biotinylated, which would facilitate a strong biotin-streptavidin interaction at the control chamber. Biotinylation of LbuCas13a would be facilitated in the same manner as biotinylation of 1UTM, the PEA-binding protein.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Design of CRISPR guide RNA sequences</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Design of CRISPR guide RNA sequences</span>
                         </div>
 
                         <p>CRISPR guide RNA consists of a stem sequence that forms a hairpin loop and is recognized by the Cas protein. In the case of LbuCas13a, Fozouni et al. (2020) suggests that the following 30-nucleotide sequence is appropriate as a stem sequence for the CRISPR guide RNA (Fozouni et al., 2020): <br></br>5′-GACCACCCCAAAAAUGAAGGGGACUAAAAC-3′</p>
@@ -208,7 +208,7 @@ class GeneMarker extends Component {
 
                         <p>The Zhang Lab suggests the use of <em>E. coli Rosetta 2(DE3)pLysS Singles</em> for Cas13a expression. With that said, this strain is a BL21 derivative for expression of human proteins (though bacterial expression is reportedly fine using the plasmid above). For bacterial expression, simply using <em>E. coli BL21</em> would likely be sufficient (Abudayyeh &amp; Gootenberg, n.d.).</p>
 
-                        <p>The CRISPR guide RNA sequences would be ordered from a synthesis company, such as IDT, as the Zhang Lab reported better performance using synthesized guide RNAs (Abudayyeh & Gootenberg, n.d.).</p>
+                        <p>The CRISPR guide RNA sequences would be ordered from a synthesis company, such as IDT, as the Zhang Lab reported better performance using synthesized guide RNAs (Abudayyeh &amp; Gootenberg, n.d.).</p>
                     </div>
                     <div className={overallStyles.text_div}>
                         <span className={overallStyles.text_heading}>Cas13a Purification</span>
@@ -219,7 +219,7 @@ class GeneMarker extends Component {
                 </Collapsible>
 
                 <Collapsible open title="Test">
-                    <div className={overallStyles.description} style={{marginTop: 5}}>
+                    <div className={overallStyles.description} style={{marginTop: 30}}>
                         <p>Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. As a result, we were unable to experimentally test the functionality of the CRISPR-Cas13a constructs. With that said, the following methodology outlines our plan of action to test our CRISPR-Cas13a constructs if we had lab access.</p>
                     </div>
                     <div className={overallStyles.text_div}>
@@ -227,26 +227,26 @@ class GeneMarker extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Demonstration of CRISPR-Cas13a Stability in Urine-Like Conditions</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Demonstration of CRISPR-Cas13a Stability in Urine-Like Conditions</span>
                         </div>
 
                         <p>In a solution containing ssRNA-linked fluorophores/quenchers, the nonspecific RNase activity of CRISPR-Cas13 after target ssRNA detection allows for the rapid production of a fluorescent signal. The stability and functionality of CRISPR-Cas13 in urine-like conditions can be tested in a similar way as described for the PEA-binding fusion protein. Once again, the expected conditions of urine include pH ~6, a low protein concentration (that can be simulated using BSA), a low glucose concentration, around 4 mM urea, and around 20 mM NaCl (Roxe, 1990). After preparing a solution in DI water with these conditions and adding CRISPR-Cas13a, the fluorophores/quenchers, and the target mRNA sequence, the simulated urine solution would be expected to display fluorescence of wavelength 535 nm that could be measured using a spectrophotometer (Shinoda et al., 2021). A negative control would involve only the simulated urine.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Experimental Calibration Curve</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Experimental Calibration Curve</span>
                         </div>
 
                         <p>Just like with the PEA-binding fusion protein, it would be useful to obtain an experimental standard curve for the fluorescence produced upon separation of the fluorophores and quenchers by CRISPR-Cas13a cleavage of the linker ssRNA. To do this, a series of dilutions of CRISPR-Cas13a would be made, then a known excess concentration of the ssRNA-linked fluorophores and quenchers would be added to each CRISPR-Cas13a dilution. In measuring the fluorescence produced by each dilution, a standard curve of fluorescence vs. CRISPR-Cas13a concentration can be plotted. A multiplate and multiplate analyzer can be used for this. This would simulate the conditions of fluorescence in the microfluidic assay chip, since in the MCFA chip, the number of CRISPR-Cas13a molecules that bind at the test chamber would be variable, while the amount of ssRNA-linked fluorophores and quenchers that pass through the test chamber would be a known excess amount.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Experimental Calibration Curve</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Experimental Calibration Curve</span>
                         </div>
 
                         <p>Proper identification of ADHD-associated gene markers by NeuroDetech relies on the ability of CRISPR-Cas13a to distinguish between two mRNA sequences differing only by a single nucleotide polymorphism (SNP). Shinoda et al. (2021) has demonstrated this to be possible and reliable; however, as a component of the proof of concept, we would need to test this for our specific mRNA sequences. To do so, mRNA sequences for the ‘normal’ allele as well as the ADHD-associated mutant allele would need to be obtained, likely by synthesis by a company like IDT. From here, the stability experiment described above should be repeated for the ‘normal’ and ADHD-associated sequences. It would be expected that the ‘normal’ mRNA sequences would not be recognized by CRISPR-Cas13a; thus, its nonspecific RNase activity would not be activated, and no fluorescence would be produced. For the ADHD-associated sequences, fluorescence should be expected, since these mutant sequences are the desired targets of the designed CRISPR-Cas13a guide RNAs.</p>
                     </div>
                 </Collapsible>
                 <Collapsible open title="Learn">
-                    <div className={overallStyles.description} style={{marginTop: 5}}>
+                    <div className={overallStyles.description} style={{marginTop: 30}}>
                         <p>Without lab access (as explained in the Test section), we were not able to perform the experiments outlined in the Test section. However, similarly to the PEA-binding protein engineering cycle, if we were to have performed those experiments, the standard curve experiment relating fluorescence to CRISPR-Cas13a concentration would have been valuable for quantification purposes. Specifically, it would have further informed the development of the optical detector and app (described below in the Optical Detector and Application Development engineering cycle), as the standard curve would allow for more accurate interpretation of the signal at the test chamber under simulated urine conditions, which would be most representative of true urine samples analyzed by NeuroDetech.</p>
                     </div>
                 </Collapsible>

@@ -88,7 +88,7 @@ class ProteinOptimization extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Results: Trypsin Single Mutation</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Results: Trypsin Single Mutation</span>
                         </div>
                         <p>There were a total of 4143 single mutations made from using Rosetta’s Point Mutant Scan protocol. Listed below are the top 50 lowest scoring single mutations. The original score for the un-mutated 1UTM with PEA was -322.402 REU.</p>
                         
@@ -154,7 +154,7 @@ class ProteinOptimization extends Component {
                         <p>However, our main goal for our newly designed protein is to increase its ability to bind to the analyte which is PEA. Therefore we must look at the mutations made near the binding pocket residues. Those residues are 169, 170, 171, 172, 175, 189, 190, 191,192,194, 195, 202, 203, and 204. These mutations should have a stronger impact on 1UTM’s binding affinity with PEA, thus are analyzed in more detail. The mutations that are considered for each residue are listed in the spreadsheet <a href='https://docs.google.com/spreadsheets/u/1/d/1r_Wf-dGtYojBKM7i1tRiwdZFUIioxGey/edit' target="_blank">here</a>.</p>
                     
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Single Mutation Result Interpretation</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Single Mutation Result Interpretation</span>
                         </div>
 
                         <p>Double mutations for the binding residues were proposed using a combination of rational design and simply evaluating the Rosetta scores of the single mutations for stability. The characteristics of PEA were considered with those of an individual residue in order to make suggestions.</p>
@@ -173,7 +173,7 @@ class ProteinOptimization extends Component {
                         <p>Next, we checked the Rosetta scores for these biochemically chosen single mutations to ensure they were reasonably stable. If a mutation received a score of -300 or lower it was considered for double mutations, otherwise, it was discarded. A maximum of four mutations per residue was passed to Rosetta to synthesize double mutations. When four candidates were passed on, the top two Rosetta scores and two best-scoring rational design candidates were selected, if all four were distinct from each other. If there were less than two suitable rational design candidates, the top three Rosetta-scoring mutations were submitted for double mutations. These groups of top three scorers were accompanied by a rational design candidate if a suitable one was present.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Results: Double Mutations with Rosetta</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Results: Double Mutations with Rosetta</span>
                         </div>
 
                         <p>In order to generate the double mutations, we used the same Rosetta protocol, however this time we defined a list of all the double mutations that we want to make. The outcome of this is a PDB file for each double mutation that was passed into the protocol.</p>
@@ -188,7 +188,7 @@ class ProteinOptimization extends Component {
                         <p>From the heat map above, we picked out the strongest (lowest scoring) double mutations and combined them with other double mutations that also performed well but not the strongest. This led to a total of 56 triple and quadruple mutations that were made on 1UTM, using the same Point Mutant Scan protocol used for the single and double mutations. We again defined the triple and quadruple mutations that were selected and the output is a PDB file for each mutation made.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Results: Trypsin Multiple Mutations</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Results: Trypsin Multiple Mutations</span>
                         </div>
 
                         <p>The top 15 1UTM multi-mutations will be further considered and analyzed using other tools like Auto-dock Vina and Gromacs. However, the best scoring designed protein based on Rosetta scores is a tie between four triple mutations, which are</p>
@@ -333,7 +333,7 @@ class ProteinOptimization extends Component {
                         <p>Monomeric streptavidin, conjugated to the control chamber, binds to biotin on the binding molecule when it reaches the control chamber. For streptavidin, the same workflow as 1UTM was used to design this protein. First we auto-generated a list of all possible single mutations using Rosetta.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Results: Monomeric Streptavidin Single Mutation</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Results: Monomeric Streptavidin Single Mutation</span>
                         </div>
 
                         <p>The top 10 lowest scoring proteins are given in the following table. The original score for un-mutated streptavidin with biotin was -104.826 REU. Full top 50 mutations are recorded <a href='https://docs.google.com/spreadsheets/u/1/d/1SgsB72_eUh2hm3cXvlslBUDv0N5JtfM7/edit' target="_blank">here</a>.</p>

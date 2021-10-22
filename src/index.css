@@ -20,6 +20,7 @@ html {
     --colored-heading-color: var(--heading-color);
     --main-page-numbers-color: #5258F0;
     --links-color: #0d6efd;
+    --team-button-color: #F3F4F5;
     --main-page-title-background: url(https://2021.igem.org/wiki/images/6/65/T--Waterloo--mainTitleBackgroundLight.png);
     --main-page-engineering-icon: url(https://2021.igem.org/wiki/images/2/21/T--Waterloo--engineeringIconLight.png);
     --main-page-human-practices-icon: url(https://2021.igem.org/wiki/images/1/1c/T--Waterloo--humanPracticesIconLight.png);
@@ -40,6 +41,7 @@ html {
     --colored-heading-color: linear-gradient(91.19deg, #F9E3AB 3.66%, #F5C592 25.2%, #EF928C 54.71%, #9293F7 93.59%);
     --main-page-numbers-color: #5FDFE8;
     --links-color: #A3C0FF;
+    --team-button-color: #34394B;
     --main-page-title-background: url(https://2021.igem.org/wiki/images/1/1a/T--Waterloo--mainTitleBackground.png);
     --main-page-engineering-icon: url(https://2021.igem.org/wiki/images/6/6e/T--Waterloo--engineeringIconDark.png);
     --main-page-human-practices-icon: url(https://2021.igem.org/wiki/images/1/11/T--Waterloo--humanPracticesIconDark.png);
