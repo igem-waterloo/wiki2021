@@ -20,14 +20,14 @@ class WikiDesign extends Component {
                     <Collapsible open title="Accessibility Toolbar">
                         <div className={overallStyles.text_div}>
                             <div className={overallStyles.description}>
-                                Although it is very difficult to make our iGEM wikis and projects perfectly accessible to everyone due to certain limitations, there are many ways we can make it more accessible, and more inclusive. In this year's wiki, we have developed and completed our accessibility toolbar with an additional feature - the day and night mode. The accessibility toolbar can be enabled by mouse clicks or keyboard shortcuts which are visibly displayed under each label. 
+                                Although perfect accessibility is unrealistic, there are many opportunities for improvement in the areas of inclusion. In this year's wiki, we have developed and completed our accessibility toolbar with an additional feature - the day and night mode. The accessibility toolbar can be enabled by mouse clicks or keyboard shortcuts which are visibly displayed under each label. 
                             </div>
                         </div>
                     </Collapsible>
                     <Collapsible open title="The Benefits of Dark Mode">
                         <div className={overallStyles.text_div}>
                             <div className={overallStyles.description}>
-                                We introduce the switch mode options, a simple toggle that lets users change the theme of the website into a darker colour. Exposure to light for a long period of time can suppress the secretion of melatonin, especially with blue light which is more strong at night, can do so even more effectively (Harvard Health Publishing, 2020). Moreover, the symptoms of digital eye strain can be caused through bright screens (Fottrell, 2018). Therefore, we want to implement the option of dark mode to help protect our users’ vision when browsing our wiki.
+                                We introduce the switch mode options, a simple toggle that lets users change the theme of the website into a darker colour. Exposure to light for a long period of time can suppress the secretion of melatonin–in particular, the effects of blue light are stronger at night (Harvard Health Publishing, 2020). Moreover, the symptoms of digital eye strain can be caused through bright screens (Fottrell, 2018). Therefore, we want to implement the option of dark mode to help protect our users’ vision when browsing our wiki.
                             </div>
                             <div className={overallStyles.description} style={{marginBottom: "-2%"}}>
                                 Our previous year version of the Accessibility Toolbar features:
@@ -65,7 +65,7 @@ class WikiDesign extends Component {
                                     Active voice search and search bar by keywords
                                 </li>
                                 <li>
-                                    Customizable colour palettes( for various types of colour-blindness)
+                                    Customizable colour palettes(for various types of colour-blindness)
                                 </li>
                             </ul>
                         </div>
@@ -73,7 +73,7 @@ class WikiDesign extends Component {
                     <Collapsible open title="Navigability">
                         <div className={overallStyles.text_div}>
                             <div className={overallStyles.description}>
-                                Easy navigation around a website is of the most important when it comes to designing a website. The cornerstone of web usability is navigation, and users can better navigate the website and discover information more quickly if it is well-designed. 
+                                Easy navigation around a website is one of the most important considerations when it comes to designing a website. The cornerstone of web usability is navigation, and users can better navigate the website and discover information more quickly if it is well-designed. 
                             </div>
                             <div className={overallStyles.description}>
                                 We added the "up to the top" arrow options so that when the information gets too lengthy, users have the option to scroll up to the top of the page faster instead of manually scrolling up. 
@@ -109,7 +109,7 @@ class WikiDesign extends Component {
                                 Chatbot Personality
                             </div>
                             <div className={overallStyles.description}>
-                                Incorporating the human-like characteristics of the bot through programming. The chatbot's personality is built on its ability to keep a consistent tone of voice throughout the conversation. This entails carefully selecting the phrases used in a chatbot. It involves directing how our chatbot maintains interactions and responds to irrelevant or perplexing questions. The Chatbot personality helps define the user experience and is key to the way users interact and learn about our information. 
+                                Incorporating the human-like characteristics of the bot through programming, the chatbot's personality is built on its ability to keep a consistent tone of voice throughout the conversation. This entails carefully selecting the phrases used in a chatbot. It involves directing how our chatbot maintains interactions and responds to irrelevant or perplexing questions. The Chatbot personality helps define the user experience and is key to the way users interact and learn about our information. 
                             </div>
                             <div className={overallStyles.subheading}>
                                 Chatbot Future Development

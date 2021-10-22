@@ -1,10 +1,11 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
-import "./model.module.scss";
+import styles from "./model.module.scss";
 import HardwareModelling from './HardwareModelling';
 import Microfluidic from './Microfludic';
 import ProteinOptimization from './ProteinOptimization';
+import References from './References';
 
 const tabs = ['Microfluidic Chip Modelling', 'Hardware Design Modelling', 'Protein Optimization Modelling', "References"];
 const icons = ["https://2021.igem.org/wiki/images/1/1e/T--Waterloo--IconChip.png", "https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png", "https://2021.igem.org/wiki/images/0/0a/T--Waterloo--IconProteinSingle.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
@@ -17,7 +18,9 @@ const Model = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Model.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/b/be/T--Waterloo--IconProteinOptimization.png" alt="Model Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>
@@ -46,9 +49,11 @@ const Model = () => {
                     { active === tabs[1] && (
                         <HardwareModelling/>
                     )}
-                    
                     { active === tabs[2] && (
                         <ProteinOptimization/>
+                    )}
+                    { active === tabs[3] && (
+                        <References/>
                     )}
                 </div>
             </div>

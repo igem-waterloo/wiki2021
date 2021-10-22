@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import overallStyles from '../pages/overall.module.scss';
 import styles from './collapsible.module.scss';
 import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 

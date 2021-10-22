@@ -17,15 +17,12 @@ class OpticalDetector extends Component {
                 <Collapsible open title="Design">
                     <div className={overallStyles.text_div}>
                         <span className={overallStyles.text_heading}>Biomarkers and Lateral Flow Assays</span>
-                    </div>
                     <div className={overallStyles.description}>
                         <p>A biomarker is an objective indicator of a patient’s medical state. Some examples include pulse, blood pressure, and concentrations of molecules associated with various health conditions. Biomarkers are widely used in basic and clinical research to help predict relevant clinical outcomes (Strimbu &amp; Tavel, 2010). Similarly, our project applies the concept of biomarkers to validate clinical diagnoses. To do this, we need to detect the presence of and quantify specific biomarkers. One of the most prevalent ways to do this is with a lateral flow assay.</p>
 
                         <p>Lateral flow assays (LFAs) are tools widely used to detect and quantify analytes in samples. The tester applies a liquid sample to the sample pad located at the end of the LFA strip. It flows to the detection zone, where biological components bind to the target analyte in the sample. After, it flows to the test and control lines. Visualization of the detection result is typically done by conjugating the binding molecules to coloured nanoparticles. The intensity of the test line corresponds to the analyte’s concentration and can be read by eye or reader equipment. Typically paper-based, the device displays results within 5 to 30 minutes. Portability, simplicity, and low manufacturing costs are some of the many reasons why LFAs are popular in several fields where rapid testing is needed. A pregnancy test is a well-known example of an LFA (Koczula &amp; Gallotta, 2016).</p>
                     </div>
-                    <div className={overallStyles.text_div}>
                         <span className={overallStyles.text_heading}>Biomarker Quantification Methods</span>
-                    </div>
                     <div className={overallStyles.description}>
                         <p>Our project required a quantitative result. Our original approach was to design an assay in the form of a traditional LFA and develop an image processing software to quantify the test result based on the test line intensity. After some research, we discovered several other ways to quantify LFA results, so we analyzed the different methods and tried to pick the best one for our purposes. Some of the qualities we examined included:</p>
                         
@@ -41,7 +38,7 @@ class OpticalDetector extends Component {
                         </p>
 
                         <p>We researched a total of five methods and compared their advantages and disadvantages. Note that all quantification methods vary from paper to paper, so some points may be specific to one paper. The following gives a general look at each method’s properties and its potential for improvement.</p>
-
+                        </div>
                         <div style={{margin: '20px 0 20px 0'}}>
                             <span className={overallStyles.subheading} style={{marginLeft: 0}}>Method 1: Traditional LFA and colorimetric analysis</span>
                         </div>
@@ -49,7 +46,7 @@ class OpticalDetector extends Component {
                         <div style={{margin: '20px 0 20px 0'}}>
                             <span className={styles.sub_sub_heading}>Description</span>
                         </div>
-
+                        <div className={overallStyles.description}>
                         <p>Image processing software quantifies the analyte based on the colour intensity of the LFA test line in a photo.</p>
 
                         <div style={{margin: '20px 0 20px 0'}}>
@@ -250,11 +247,9 @@ class OpticalDetector extends Component {
                         </div>
 
                         <p>The total time takes about 20 to 25 minutes. While the chemiluminescent reaction takes about 1 minute to begin and the signal remains for 20 to 25 minutes, our sources recorded results towards the end of that period (Ghosh et al., 2020; Hemmig et al., 2020). It is worth noting that with real-time detection, it is possible to get results within a shorter period.</p>
-                    </div>
-                    <div className={overallStyles.text_div}>
+                    </div>=
                         <span className={overallStyles.text_heading}>Deciding on a Quantification Method</span>
-                    </div>
-                    <div className={overallStyles.description}>
+=                    <div className={overallStyles.description}>
                         <p>Since Method 1 was our original plan, it became the standard to which we compared all the other methods. Methods 3 and 4 are similar to Method 1. All three methods use the format of a traditional LFA, with little to no modifications made to the strip. The only difference between Methods 1 and 3 is the reader. All methods require some external reader, but Method 1 is the most accessible and user-friendly since it can be done with a phone.</p>
 
                         <p>The main benefit that Methods 3 and 4 had over Method 1 was the ability to quantify nanoparticles throughout the entire thickness of the LFA strip. This likely results in an improved limit of detection. We planned on designing a competitive LFA, meaning a fainter signal would correspond to a higher concentration. In our case, an improvement in the limit of detection would mean that our design would be able to test samples with greater analyte concentrations. Our plan at the time involved testing if a patient had lower levels of a specific biomarker, which would correspond to a more intense signal. Thus we decided that an improved limit of detection was not a priority. Since Method 4 quantifies the nanoparticles indirectly, it is not as sensitive as visual detection. We agreed that sensitivity is a priority, so we eliminated Method 4.</p>
@@ -264,26 +259,23 @@ class OpticalDetector extends Component {
                         <p>We also decided to eliminate Method 2. The quantification time is longer than the quantification times in the other methods, making its total readout time on the longer side. Methods 1 and 5 use equipment to quantify the test results, likely yielding more consistent and precise readings from test to test. Meanwhile, Method 2 relies on measurements by eye, which limits precision and may increase error.</p>
 
                         <p>Finally, we needed to decide between Method 1 and Method 5. The advantages of Method 5 were clear since it was developed as a solution to address the limitations of Method 1, specifically their lack of sensitivity and quantitative accuracy. The assay in Method 5 is still a one-step process, with the only added complication being having to measure out a specific sample volume. We thought that Method 5 might require analytes of smaller size due to the size of its microchannels. However, articles showed that microfluidics-based approaches work with analytes comparable in size to our target analyte, so we decided that that would not be an issue. In the end, we chose Method 5 because we thought the significant improvement in sensitivity justified the additional research needed to understand this method and its complicated design.</p>
-                    </div>
-                    <div className={overallStyles.text_div}>
+                    </div>=
                         <span className={overallStyles.text_heading}>Introduction to Microfluidic Assay</span>
-                    </div>
-                    <div className={overallStyles.description}>
+=                    <div className={overallStyles.description}>
                         <p>Our primary reference for a chemiluminescent microfluidic capillary flow assay (referred to in the source as a microchannel capillary flow assay, or MCFA) describes a design in which a microfluidic chip emits light through chemiluminescence on the addition of a sample that is negative for a malaria biomarker. Custom hardware measures the produced light and sends the resulting data to a smartphone through its USB port for analysis and display to the user (Ghosh et al., 2020). This model served as a basis for our project design.</p>
 
                         <p>The microfluidic chip consists of a sample loading chamber, two parallel chambers, one of which holds lyophilized (freeze-dried) fusion protein and the other a chemiluminescent substrate, a reaction chamber from which the light is emitted, and a capillary pump that passively moves the sample through the system. Our design is a competitive lateral flow assay. The reaction chamber initially contains only immobile analyte molecules. When the sample is added to the loading chamber, it is split and passes separately through the two parallel chambers, in one chamber mixing with fusion protein and in the other mixing with a chemiluminescent substrate. Next, the sample-fusion protein mix reaches the reaction chamber. The substrate-sample mix moves through a longer delaying path and only reaches the reaction chamber after binding molecules with biomarkers (path 1 sample fluid) fill the chamber. Finally, the substrate binds to the fusion proteins present in the reaction chamber, which causes chemiluminescence. This design results in a dimmer output indicating a higher concentration of analyte in the sample, and a brighter output indicating a lower concentration of the analyte.</p>
 
                         <p>Our fusion protein consists of a domain that binds to the target analyte in sample, and a horseradish peroxidase (HRP) domain, which acts as the enzyme that binds the chemiluminescent substrate. The substrate we chose is Amplex Red. For more info about the design of the fusion protein, please refer to the <strong>Biomarker Detection: PEA-Binding Fusion Protein Design</strong> section on the Engineering page.</p>
-                    </div>
-                    <div className={overallStyles.text_div}>
+                    </div>=
                         <span className={overallStyles.text_heading}>Hardware Design</span>
-                    </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
                             <span className={overallStyles.subheading} style={{marginLeft: 0}}>Simulation</span>
                         </div>
 
                         <p>We started off by creating a circuit simulation in TinkerCAD. We adapted some microcontroller code and a simple photodiode circuit taken from various sources. The purpose of this was to get a general idea of how the circuit and microcontroller will work and which parts to order.</p>
+                    </div>
                     </div>
                     <div className={overallStyles.figure_div}>
                         <img src="https://2021.igem.org/wiki/images/3/38/T--Waterloo--TinkerCADLabelled.png" className={styles.design_img} style={{borderRadius: 10, width: '80%', height: '80%', marginLeft: '10%'}}></img>

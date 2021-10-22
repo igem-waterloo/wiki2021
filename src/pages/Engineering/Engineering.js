@@ -1,5 +1,5 @@
 
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import styles from './engineering.module.scss';
 import Microfluidic from './Microfluidic';
@@ -10,6 +10,7 @@ import OpticalDetector from './OpticalDetector';
 import References from './References';
 
 const tabs = ['Microfluidic Chip Design', 'Biomarker Detection: Fusion Protein Design', 'Protein Optimization', 'Gene Marker Detection: Design of mRNA-Binding CRISPR-Cas System', 'Optical Detector and Application Development', 'References'];
+const icons = ["https://2021.igem.org/wiki/images/thumb/1/1e/T--Waterloo--IconChip.png/600px-T--Waterloo--IconChip.png", "https://2021.igem.org/wiki/images/a/a3/T--Waterloo--IconBiomarkerDetection.png", "https://2021.igem.org/wiki/images/b/be/T--Waterloo--IconProteinOptimization.png", "https://2021.igem.org/wiki/images/thumb/a/af/T--Waterloo--IconGeneMarkerDetection.png/600px-T--Waterloo--IconGeneMarkerDetection.png", "https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 const Engineering = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -21,7 +22,9 @@ const Engineering = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Engineering.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/4/4f/T--Waterloo--engineeringTopMainIcon.jpeg" alt="Engineering Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <span className={overallStyles.text_heading}>Overview</span>
@@ -30,16 +33,18 @@ const Engineering = () => {
                     </div>
                 </div>
                 <div className={overallStyles.sections_div}>
-                    {tabs.map(tab => (
-                        <div key={tab} active={active === tab} onClick={() => setActive(tab)} className={styles.section_block}>
-                            <div className={overallStyles.sections}>
-                                <div className={overallStyles.section_img}></div>
-                                <div className={overallStyles.section_text}>
-                                    {tab}
+                    {tabs.map((tab, index) => (
+                            <div key={tab} active={active === tab} onClick={() => setActive(tab)} className={styles.section_block}>
+                                <div className={overallStyles.sections}>
+                                    <div className={overallStyles.section_img}>
+                                        <img id={`engineering${index}`} src={icons[index]} alt= "Icon"/>
+                                    </div>
+                                    <div className={overallStyles.section_text}>
+                                        {tab}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
                 </div>
                 <div>
                 { active === 'Microfluidic Chip Design' && (

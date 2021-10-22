@@ -1,11 +1,12 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
+import styles from "./collaborations.module.scss";
 import CommunityCollaborations from './CommunityCollaborations';
 import MentorshipAndCollaborations from './MentorshipAndCollaborations';
 import UWaterlooCollaborations from './UWaterlooCollaborations';
-
 const tabs = ["iGEM Mentorship & Collaborations", "University of Waterloo Collaborations", "Community Collaborations"];
+const icons = ["https://2021.igem.org/wiki/images/thumb/c/c0/T--Waterloo--IconEducationWithiniGEM.png/600px-T--Waterloo--IconEducationWithiniGEM.png", "https://2021.igem.org/wiki/images/3/33/T--Waterloo--ResearchTalkSeries.png", "https://2021.igem.org/wiki/images/thumb/a/a6/T--Waterloo--IconEducationWithinWaterloo.png/599px-T--Waterloo--IconEducationWithinWaterloo.png"]
 
 const Collaborations = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -16,7 +17,9 @@ const Collaborations = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Collaborations.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/0/0b/T--Waterloo--IconCollaborationMainTop.jpeg" alt="Collaborations Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>
@@ -28,10 +31,12 @@ const Collaborations = () => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
-                            <div className={overallStyles.section_text}>
-                                {tab}
-                            </div>
+                                <div className={overallStyles.section_img}>
+                                    <img id={`collaborations${index}`} src={icons[index]} alt= "Icon"/>
+                                </div>
+                                <div className={overallStyles.section_text}>
+                                    {tab}
+                                </div>
                             </div>
                         </div>
                     ))}

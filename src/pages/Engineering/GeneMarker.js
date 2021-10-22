@@ -64,7 +64,7 @@ class GeneMarker extends Component {
                         <p>With the above in mind, the design of the microfluidic assay for the detection of gene markers would be as follows:</p>
                     </div>
                     <div className={overallStyles.figure_div} style={{marginBottom: 30}}>
-                        <img src="https://2021.igem.org/wiki/images/0/02/T--Waterloo--MCFAoverviewCRISPR.png" className={styles.design_img} style={{borderRadius: 20}}></img>
+                        <img src="https://2021.igem.org/wiki/images/0/02/T--Waterloo--MCFAoverviewCRISPR.png" alt="MCFA overview CRISPR" className={styles.design_img} style={{borderRadius: 20}}></img>
                         <div className={overallStyles.figure_text}>Diagram of the microfluidic assay designed to detect gene markers (ADHD-associated mRNA mutations).</div>
                     </div>
                     <div className={overallStyles.text_div}>
