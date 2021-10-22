@@ -20,19 +20,19 @@ const TeamPage = () => {
                     <span className={overallStyles.page_heading}>Who We Are</span>
                 </div>
                 <div>
-                    { team === "Lab & Design" && (
+                    { team === teams[0] && (
                         <LabDesign/>
                     )}
                     
-                    { team === "Human Practices" && (
+                    { team === teams[1] && (
                         <HumanPractices/>
                     )}
                     
-                    { team === "Wiki" && (
+                    { team === teams[2] && (
                         <Wiki/>
                     )}
 
-                    { team === "Math & Modelling" && (
+                    { team === teams[3] && (
                         <MathModelling/>
                     )}
                 </div>
@@ -40,16 +40,16 @@ const TeamPage = () => {
                     <span className={overallStyles.text_heading}>Team</span>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap'}}>
-                    <div style={{padding: '20px 0'}} onClick={() => setTeam("Lab & Design")}>
+                    <div style={{padding: '20px 0'}} onClick={() => setTeam(teams[0])}>
                         <button className={styles.button_lbl}>Lab &amp; Design</button>
                     </div>
-                    <div to="/Team:Waterloo/Human_Practices" style={{padding: '20px 0'}} onClick={() => setTeam("Human Practices")}>
+                    <div to="/Team:Waterloo/Human_Practices" style={{padding: '20px 0'}} onClick={() => setTeam(teams[1])}>
                         <button className={styles.button_lbl}>Human Practices</button>
                     </div>
-                    <div to="/Team:Waterloo" style={{padding: '20px 0'}} onClick={() => setTeam("Wiki")}>
+                    <div to="/Team:Waterloo" style={{padding: '20px 0'}} onClick={() => setTeam(teams[2])}>
                         <button className={styles.button_lbl}>Wiki</button>
                     </div>
-                    <div to="/Team:Waterloo/Model" style={{padding: '20px 0'}} onClick={() => setTeam("Math & Modelling")}>
+                    <div to="/Team:Waterloo/Model" style={{padding: '20px 0'}} onClick={() => setTeam(teams[3])}>
                         <button className={styles.button_lbl}>Math &amp; Modelling</button>
                     </div>
                 </div>

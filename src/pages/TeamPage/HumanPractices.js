@@ -3,11 +3,13 @@ import Carousel from 'react-bootstrap/Carousel';
 import ImageModal from './ImageModal';
 import overallStyles from '../overall.module.scss';
 import styles from './teampage.module.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const HumanPractices = () => {
         return (
             <div>
-            <Carousel className={styles.carousel} indicators={false} interval={null}>
+            <Carousel className={styles.carousel} indicators={false} interval={null} nextIcon={<FontAwesomeIcon className={styles.arrow_buttons} icon={faAngleRight} />} prevIcon={<FontAwesomeIcon className={styles.arrow_buttons} icon={faAngleLeft} />}>
                 <Carousel.Item className={styles.carousel_slide}>
                     <div className={styles.img_div}>
                         <ImageModal source='https://2021.igem.org/wiki/images/7/77/T--Waterloo--MembersAlishaD%27souzaHP.jpeg' name="Alisha D'Souza" team='Human Practices' program='Psychology Science' term='3A' place='to school please and thank you' song="I Don't Want to Miss a Thing" />

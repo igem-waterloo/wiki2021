@@ -2,10 +2,12 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ImageModal from './ImageModal';
 import styles from './teampage.module.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Wiki = () => {
         return (
-            <Carousel className={styles.carousel} indicators={false} interval={null} controls={false} >
+            <Carousel className={styles.carousel} indicators={false} interval={null} controls={false} nextIcon={<FontAwesomeIcon className={styles.arrow_buttons} icon={faAngleRight} />} prevIcon={<FontAwesomeIcon className={styles.arrow_buttons} icon={faAngleLeft} />}>
                 <Carousel.Item className={styles.carousel_slide}>
                     <div className={styles.img_div}>
                         <ImageModal source='https://2021.igem.org/wiki/images/4/4c/T--Waterloo--MembersHarshit_ManchandaWiki.jpeg' name='Harshit Manchanda' team='Wiki' program='Computer Engineering' term='3B' place='I would really like to go to Japan.' song='A Sky Full of Stars by Coldplay' />

@@ -3,10 +3,12 @@ import Carousel from 'react-bootstrap/Carousel';
 import ImageModal from './ImageModal';
 import overallStyles from '../overall.module.scss';
 import styles from './teampage.module.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const MathModelling = () => {
         return (
-            <Carousel className={styles.carousel} indicators={false} interval={null}>
+            <Carousel className={styles.carousel} indicators={false} interval={null} nextIcon={<FontAwesomeIcon className={styles.arrow_buttons} icon={faAngleRight} />} prevIcon={<FontAwesomeIcon className={styles.arrow_buttons} icon={faAngleLeft} />}>
                 <Carousel.Item className={styles.carousel_slide}>
                     <div className={styles.img_div}>
                         <ImageModal source='https://2021.igem.org/wiki/images/9/91/T--Waterloo--MembersAmyWohlgemuthMath.jpeg' name='Amy Wohlgemuth' team='Math &amp;amp; Modelling' program='Chemical Engineering' term='2B' place='Greece' song='Anything ABBA' />
