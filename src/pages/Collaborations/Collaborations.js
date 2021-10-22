@@ -6,7 +6,7 @@ import CommunityCollaborations from './CommunityCollaborations';
 import MentorshipAndCollaborations from './MentorshipAndCollaborations';
 import UWaterlooCollaborations from './UWaterlooCollaborations';
 const tabs = ["iGEM Mentorship & Collaborations", "University of Waterloo Collaborations", "Community Collaborations"];
-const icons = ["", "https://2021.igem.org/wiki/images/3/33/T--Waterloo--ResearchTalkSeries.png", ""]
+const icons = ["https://2021.igem.org/wiki/images/thumb/c/c0/T--Waterloo--IconEducationWithiniGEM.png/600px-T--Waterloo--IconEducationWithiniGEM.png", "https://2021.igem.org/wiki/images/3/33/T--Waterloo--ResearchTalkSeries.png", "https://2021.igem.org/wiki/images/thumb/a/a6/T--Waterloo--IconEducationWithinWaterloo.png/599px-T--Waterloo--IconEducationWithinWaterloo.png"]
 
 const Collaborations = () => {
         const [active, setActive] = useState(tabs[0]);

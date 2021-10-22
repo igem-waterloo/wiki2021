@@ -4,8 +4,10 @@ import overallStyles from '../overall.module.scss';
 import GreaterWaterlooCommunity from './GreaterWaterlooCommunity';
 import IGEMCommunity from './IGEMCommunity';
 import UWaterlooCommunity from './UWaterlooCommunity';
+import styles from "./education.module.scss"
 
 const tabs = ["Education Within iGEM Community", "Education Within University of Waterloo Community", "Education Within Greater Waterloo Community"];
+const icons = ["https://2021.igem.org/wiki/images/thumb/c/c0/T--Waterloo--IconEducationWithiniGEM.png/600px-T--Waterloo--IconEducationWithiniGEM.png", "https://2021.igem.org/wiki/images/thumb/c/c0/T--Waterloo--IconEducationWithinUW.png/599px-T--Waterloo--IconEducationWithinUW.png", "https://2021.igem.org/wiki/images/thumb/a/a6/T--Waterloo--IconEducationWithinWaterloo.png/599px-T--Waterloo--IconEducationWithinWaterloo.png"]
 
 const Education = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -16,7 +18,9 @@ const Education = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Education.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                    <img src="https://2021.igem.org/wiki/images/thumb/5/55/T--Waterloo--IconEducationTopMain.png/599px-T--Waterloo--IconEducationTopMain.png" alt="Education Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>
@@ -28,7 +32,9 @@ const Education = () => {
                     {tabs.map((tab, index) => (
                         <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
                             <div className={overallStyles.sections}>
-                            <div id={index} className={overallStyles.section_img}></div>
+                            <div id={index} className={overallStyles.section_img}>
+                                <img id={`education${index}`} src={icons[index]} alt= "Icon"/>
+                            </div>
                             <div className={overallStyles.section_text}>
                                 {tab}
                             </div>

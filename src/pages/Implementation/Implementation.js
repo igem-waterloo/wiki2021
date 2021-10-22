@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
-import "./implementation.module.scss";
+import styles from "./implementation.module.scss";
 import CurrentChallenges from './CurrentChallenges';
 import GeneralSafetyConsiderations from './GeneralSafetyConsiderations';
 import ImplementationLabSettings from './ImplementationLabSettings';
@@ -9,7 +9,7 @@ import ProperUsage from './ProperUsage';
 import References from './References';
 
 const tabs = ["NeuroDetech Implementation in Lab Settings", "Proper Usage of NeuroDetech", "General Safety Considerations for NeuroDetech Usage", "Current Challenges and Future Improvements", "References"];
-const icons = ["https://2021.igem.org/wiki/images/thumb/4/4d/T--Waterloo--IconLab.jpeg/600px-T--Waterloo--IconLab.jpeg", "", "", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["https://2021.igem.org/wiki/images/thumb/4/4d/T--Waterloo--IconLab.jpeg/600px-T--Waterloo--IconLab.jpeg", "https://2021.igem.org/wiki/images/6/62/T--Waterloo--IconProperUsage.png", "https://2021.igem.org/wiki/images/6/6b/T--Waterloo--IconSafetyGuidelines.png", "https://2021.igem.org/wiki/images/7/76/T--Waterloo--IconCurrentChallenges.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 
 const Implementation = () => {
@@ -21,7 +21,9 @@ const Implementation = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Implementation.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/b/bb/T--Waterloo--IconImplementationMain.png" alt="Implementation Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>

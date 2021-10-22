@@ -102,7 +102,7 @@ class Biomarker extends Component {
                         <p>With the above in mind, the design of the microfluidic assay for the detection of biomarkers (such as PEA) would be as follows:</p>
                     </div>
                     <div className={overallStyles.figure_div}>
-                        <img src="https://2021.igem.org/wiki/images/5/52/T--Waterloo--MCFAoverviewPEA.png" className={styles.design_img} style={{borderRadius: 20, marginLeft: '5%'}}></img>
+                        <img src="https://2021.igem.org/wiki/images/5/52/T--Waterloo--MCFAoverviewPEA.png" alt="MCFA overview PEA" className={styles.design_img} style={{borderRadius: 20, marginLeft: '5%'}}></img>
                         <div className={overallStyles.figure_text}>Diagram of the microfluidic assay designed to detect urinary biomarkers (i.e. PEA).</div>
                     </div>
                     <div className={overallStyles.description}>
@@ -136,7 +136,7 @@ class Biomarker extends Component {
                         <p>From this assessment of the protein candidates, the most optimal PEA-binding protein for use in our microfluidic assay was selected as 1UTM, a monomeric trypsin derived from <em>Salmo salar</em>, with a dissociation constant (Kd) of 0.000972 (RCSB PDB, n.d.).</p>
                     </div>
                     <div className={overallStyles.figure_div}>
-                        <img src="https://2021.igem.org/wiki/images/f/fe/T--Waterloo--1UTM.png" className={styles.design_img} style={{borderRadius: 20, marginLeft: '5%'}}></img>
+                        <img src="https://2021.igem.org/wiki/images/f/fe/T--Waterloo--1UTM.png" alt="3D structure of 1UTM" className={styles.design_img} style={{borderRadius: 20, marginLeft: '5%'}}></img>
                         <div className={overallStyles.figure_text}>The 3D structure of 1UTM, as visualized using UCSF Chimera, is as follows, where 1UTM is orange and PEA is green.</div>
                     </div>
                     <div className={overallStyles.description}>
@@ -182,7 +182,7 @@ The lack of rigidity of flexible linkers, however, can sometimes result in poor 
                         <p>With all of the above design considerations in mind, we utilized multiple-domain homology modelling in UCSF Chimera to obtain a 3D model of our fusion protein, as pictured below, with 1UTM on the left and HRP on the right.</p>
                    </div>
                    <div className={overallStyles.figure_div}>
-                        <img src="https://2021.igem.org/wiki/images/0/0e/T--Waterloo--1UTM-HRP.png" className={styles.design_img} style={{borderRadius: 20}}></img>
+                        <img src="https://2021.igem.org/wiki/images/0/0e/T--Waterloo--1UTM-HRP.png" alt="3D structure of 1UTM HRP" className={styles.design_img} style={{borderRadius: 20}}></img>
                         {/* <div className={overallStyles.figure_text}>The 3D structure of 1UTM, as visualized using UCSF Chimera, is as follows, where 1UTM is orange and PEA is green.</div> */}
                     </div>
                 </Collapsible>
