@@ -23,15 +23,16 @@
 .carousel_slide {
     align-items: center;
     vertical-align: middle;
-    margin: 50px 0px;
+    height: 570px;
 }
 
 .img_div {
     // width: 80%;
     display: flex;
-    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
-    margin: 20px 50px;
+    margin: 0 50px;
+    height: 50%;
 }
 
 .team_label {

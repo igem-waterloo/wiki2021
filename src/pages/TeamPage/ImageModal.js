@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import overallStyles from '../overall.module.scss';
 import styles from './imagemodal.module.scss';
 
 const ImageModal = ({ source, name, team, program, term, place, song }) => {
@@ -11,8 +10,7 @@ const ImageModal = ({ source, name, team, program, term, place, song }) => {
 
     return (
         <>
-        <div className={styles.modal_img} style={{width: 200, height: 200, margin: 'auto', overflow: 'hidden'}}>
-            <img src={source} onClick={handleShow} style={{height: '100%', borderRadius: '100%'}}></img>
+        <div className={styles.modal_div} style={{backgroundImage: `url(${source})`}} onClick={handleShow}>
         </div>
 
         <Modal show={show} onHide={handleClose} size="lg" centered dialogClassName={styles.modal}>
@@ -20,9 +18,7 @@ const ImageModal = ({ source, name, team, program, term, place, song }) => {
             <Modal.Title><div className={styles.header_title}>{name}</div></Modal.Title>
             </Modal.Header>
             <Modal.Body className={styles.description}>
-                <div className={styles.img_div}>
-                    <img src={source} style={{height: '100%', borderRadius: '100%', margin: '0 auto', display: 'block'}}></img>
-                </div>
+                <div className={styles.img_div} style={{backgroundImage: `url(${source})`}}>                </div>
                 <div className={styles.info_div}>
                     <div className={styles.team_name}>{team}</div>
                     <div className={styles.member_info}>Program: {program}</div>
