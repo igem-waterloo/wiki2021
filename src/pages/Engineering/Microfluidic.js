@@ -174,7 +174,7 @@ class Microfluidic extends Component {
 
                 <Collapsible open title="Build">
                     <div className={overallStyles.text_div}>
-                        <span className={overallStyles.text_heading}>Rosetta: Protein Mutations</span>
+                        <span className={overallStyles.text_heading}>Computer-aided Chip Assembly Design</span>
                     </div>
                     <div className={overallStyles.description}>
                         <p>A complete assembly of the microfluidic chip is built and shown below. The specific dimensions are also labelled and presented. The team used OnShape to create the CAD model throughout the year.</p>
@@ -185,7 +185,7 @@ class Microfluidic extends Component {
                     </div>
 
                     <div className={overallStyles.figure_div}>
-                        <img src="https://2021.igem.org/wiki/images/9/90/T--Waterloo--Cornerview_assembly.png" className={styles.design_img} style={{borderRadius: 20}}></img>
+                        <img src="https://2021.igem.org/wiki/images/9/90/T--Waterloo--Cornerview_assembly.png" className={styles.design_img} style={{borderRadius: 20, marginLeft: '5%'}}></img>
                         <div className={overallStyles.figure_text}>Assembly of the microfluidic chip. Note that the top plane surfaces are transparent for easy visualization of the chip inner components.</div>
                     </div>
                     <div className={overallStyles.text_div}>
@@ -206,7 +206,7 @@ class Microfluidic extends Component {
 
                         <p>We used different methods to ensure optimal binding for each unique molecule conjugating to the test and control chambers. Specifically, methods for phenylethylamine (PEA) and mRNA were needed, as these were the ADHD-associated analytes of interest that we planned to quantify using the microfluidic chip. In addition, a method for protein conjugation was needed in order to conjugate streptavidin to the control chamber, as a biotin-streptavidin interaction to a biotinylated protein would be used to elicit a control signal. In all cases, covalent conjugation was used. This was to ensure that binding would occur between the chamber and the biotinylated binding molecule we engineered.</p>
 
-                        <p>Three main conjugation methods were identified in literature pertaining to microfluidic chip assays (Kim & Herr, 2013):</p>
+                        <p>Three main conjugation methods were identified in literature pertaining to microfluidic chip assays (Kim &amp; Herr, 2013):</p>
                         
                         <p>
                         <ol className={overallStyles.description} style={{marginTop: 0}}>

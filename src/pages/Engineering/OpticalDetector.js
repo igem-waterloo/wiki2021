@@ -19,9 +19,9 @@ class OpticalDetector extends Component {
                         <span className={overallStyles.text_heading}>Biomarkers and Lateral Flow Assays</span>
                     </div>
                     <div className={overallStyles.description}>
-                        <p>A biomarker is an objective indicator of a patient’s medical state. Some examples include pulse, blood pressure, and concentrations of molecules associated with various health conditions. Biomarkers are widely used in basic and clinical research to help predict relevant clinical outcomes (Strimbu & Tavel, 2010). Similarly, our project applies the concept of biomarkers to validate clinical diagnoses. To do this, we need to detect the presence of and quantify specific biomarkers. One of the most prevalent ways to do this is with a lateral flow assay.</p>
+                        <p>A biomarker is an objective indicator of a patient’s medical state. Some examples include pulse, blood pressure, and concentrations of molecules associated with various health conditions. Biomarkers are widely used in basic and clinical research to help predict relevant clinical outcomes (Strimbu &amp; Tavel, 2010). Similarly, our project applies the concept of biomarkers to validate clinical diagnoses. To do this, we need to detect the presence of and quantify specific biomarkers. One of the most prevalent ways to do this is with a lateral flow assay.</p>
 
-                        <p>Lateral flow assays (LFAs) are tools widely used to detect and quantify analytes in samples. The tester applies a liquid sample to the sample pad located at the end of the LFA strip. It flows to the detection zone, where biological components bind to the target analyte in the sample. After, it flows to the test and control lines. Visualization of the detection result is typically done by conjugating the binding molecules to coloured nanoparticles. The intensity of the test line corresponds to the analyte’s concentration and can be read by eye or reader equipment. Typically paper-based, the device displays results within 5 to 30 minutes. Portability, simplicity, and low manufacturing costs are some of the many reasons why LFAs are popular in several fields where rapid testing is needed. A pregnancy test is a well-known example of an LFA (Koczula & Gallotta, 2016).</p>
+                        <p>Lateral flow assays (LFAs) are tools widely used to detect and quantify analytes in samples. The tester applies a liquid sample to the sample pad located at the end of the LFA strip. It flows to the detection zone, where biological components bind to the target analyte in the sample. After, it flows to the test and control lines. Visualization of the detection result is typically done by conjugating the binding molecules to coloured nanoparticles. The intensity of the test line corresponds to the analyte’s concentration and can be read by eye or reader equipment. Typically paper-based, the device displays results within 5 to 30 minutes. Portability, simplicity, and low manufacturing costs are some of the many reasons why LFAs are popular in several fields where rapid testing is needed. A pregnancy test is a well-known example of an LFA (Koczula &amp; Gallotta, 2016).</p>
                     </div>
                     <div className={overallStyles.text_div}>
                         <span className={overallStyles.text_heading}>Biomarker Quantification Methods</span>
@@ -73,7 +73,7 @@ class OpticalDetector extends Component {
                         <ul className={overallStyles.description} style={{marginTop: 0}}>
                             <li>Ambient lighting affects accuracy (Foysal et al., 2019)</li>
                             <li>Can only quantify nanoparticles on the surface of the test line (Qu et al., 2020)</li>
-                            <li>Common LFA labels such as gold nanoparticle labels are not very sensitive (Ghosh & Ahn, 2019)</li>
+                            <li>Common LFA labels such as gold nanoparticle labels are not very sensitive (Ghosh &amp; Ahn, 2019)</li>
                         </ul>
                         </p>
 
@@ -225,12 +225,12 @@ class OpticalDetector extends Component {
 
                         <p>
                         <ul className={overallStyles.description} style={{marginTop: 0}}>
-                            <li>Higher sensitivity and improved limit of detection compared to traditional LFA and visual detection (Ghosh & Ahn, 2019; Bhattacharyya & Klapperich, 2007)</li>
+                            <li>Higher sensitivity and improved limit of detection compared to traditional LFA and visual detection (Ghosh &amp; Ahn, 2019; Bhattacharyya &amp; Klapperich, 2007)</li>
                             <li>Low cost (Ghosh et al., 2020)</li>
                             <li>Portable, due to small device and reader size (Ghosh et al., 2020)</li>
                             <li>Longer shelf life due to lyophilization (freeze-drying) of reagents (Ramachandran et al., 2014)</li>
                             <li>Reduced sample volume required (Ghosh et al., 2020)</li>
-                            <li>Real-time detection, which can decrease response time (Do & Ahn, 2008)</li>
+                            <li>Real-time detection, which can decrease response time (Do &amp; Ahn, 2008)</li>
                         </ul>
                         </p>
 

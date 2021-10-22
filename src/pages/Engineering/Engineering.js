@@ -61,7 +61,6 @@ const Engineering = () => {
                     <References></References>
                 )}
                 </div>
-                {/* <p style={{color: 'white'}}> Your payment selection: {active} </p> */}
             </div>
         )
 }

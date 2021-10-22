@@ -13,9 +13,9 @@
 }
 
 .carousel {
-    background: #34394B;
+    background: var(--team-button-color);
     border-radius: 60px;
-    width: 100%;
+    width: 95%;
     height: 570px;
     vertical-align: middle;
 }
@@ -46,10 +46,10 @@
     height: 150px;
     width: 350px;
     vertical-align: center;
-    background: #34394B;
-    font-size: var(--description-size);
+    background: var(--team-button-color);
+    font-size: var(--main-page-description-size);
     font-weight: 500;
-    color: white;
+    color: var(--font-color);
     border: none;
     border-radius: 40px;
     margin-right: 20px;
@@ -60,3 +60,7 @@
     }
 }
 
+.arrow_buttons {
+    color: var(--font-color);
+    font-size: 40px;
+}
