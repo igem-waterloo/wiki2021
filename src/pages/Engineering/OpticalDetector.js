@@ -43,7 +43,7 @@ class OpticalDetector extends Component {
                         <p>We researched a total of five methods and compared their advantages and disadvantages. Note that all quantification methods vary from paper to paper, so some points may be specific to one paper. The following gives a general look at each method’s properties and its potential for improvement.</p>
 
                         <div style={{margin: '20px 0 20px 0'}}>
-                            <span className={overallStyles.subheading}>Method 1: Traditional LFA and colorimetric analysis</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Method 1: Traditional LFA and colorimetric analysis</span>
                         </div>
 
                         <div style={{margin: '20px 0 20px 0'}}>
@@ -84,7 +84,7 @@ class OpticalDetector extends Component {
                         <p>Since interpretation time is short, the total readout time depends on the LFA readout time.</p>
 
                         <div style={{margin: '20px 0 20px 0'}}>
-                            <span className={overallStyles.subheading}>Method 2: LFA ruler</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Method 2: LFA ruler</span>
                         </div>
 
                         <div style={{margin: '20px 0 20px 0'}}>
@@ -123,7 +123,7 @@ class OpticalDetector extends Component {
                         <p>Including the LFA readout time and the quantification time, the entire process takes approximately 20 to 30 minutes (Lin et al., 2018; Li et al., 2019).</p>
 
                         <div style={{margin: '20px 0 20px 0'}}>
-                            <span className={overallStyles.subheading}>Method 3: Magnetic LFA</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Method 3: Magnetic LFA</span>
                         </div>
 
                         <div style={{margin: '20px 0 20px 0'}}>
@@ -169,7 +169,7 @@ class OpticalDetector extends Component {
                         <p>External reader needed, which may or may not be portable (Moyano et al., 2020)</p>
 
                         <div style={{margin: '20px 0 20px 0'}}>
-                            <span className={overallStyles.subheading}>Method 4: Traditional LFA and thermal sensor</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Method 4: Traditional LFA and thermal sensor</span>
                         </div>
 
                         <div style={{margin: '20px 0 20px 0'}}>
@@ -210,7 +210,7 @@ class OpticalDetector extends Component {
                         <p>The total time is equal to the readout time of a traditional LFA plus 120 seconds for detection.</p>
 
                         <div style={{margin: '20px 0 20px 0'}}>
-                            <span className={overallStyles.subheading}>Method 5: Chemiluminescent Microfluidic Capillary Flow Assay</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Method 5: Chemiluminescent Microfluidic Capillary Flow Assay</span>
                         </div>
 
                         <div style={{margin: '20px 0 20px 0'}}>
@@ -280,7 +280,7 @@ class OpticalDetector extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Simulation</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Simulation</span>
                         </div>
 
                         <p>We started off by creating a circuit simulation in TinkerCAD. We adapted some microcontroller code and a simple photodiode circuit taken from various sources. The purpose of this was to get a general idea of how the circuit and microcontroller will work and which parts to order.</p>
@@ -297,7 +297,7 @@ class OpticalDetector extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Circuit Part Selection</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Circuit Part Selection</span>
                         </div>
 
                         <div style={{margin: '20px 0 40px 0'}}>
@@ -540,7 +540,7 @@ class OpticalDetector extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Desktop vs. Mobile</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Desktop vs. Mobile</span>
                         </div>
 
                         <p>The first thing we had to decide was the platform our software would be on. A mobile application would be excellent for portability, but as previously mentioned, the Human Practices team decided that our project fits best in a clinic lab, so there was no main reason to make the software portable. Labs typically use desktop computers rather than mobile devices for test processing, so it would make sense that our project supports existing lab infrastructure. Doing the data processing on a desktop would make it easier for users to integrate the test results directly into the clinic’s database. Since our plan involved graphing the concentration as the reaction occurred, a bigger screen would allow users to more easily examine graph details.</p>
@@ -548,13 +548,13 @@ class OpticalDetector extends Component {
                         <p>From the build perspective, developing a desktop application was simpler than developing a mobile one. We already had a general framework and class structure for a desktop application that could easily be adapted to suit our purposes.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Tech Stack and Libraries</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Tech Stack and Libraries</span>
                         </div>
 
                         <p>We used Python 3 to handle the graphics and user interaction, the <a href="https://matplotlib.org/" target='_blank' >matplotlib</a> and <a href="https://numpy.org/" target='_blank' >numpy</a> libraries to handle data processing and graphing, <a href='https://pythonhosted.org/pyserial/' target='_blank'>pyserial</a> to read data from the microcontroller, and <a href='https://www.pyinstaller.org/' target='_blank'>pyinstaller</a> to bundle the entire app into an executable file. We wrote the entire application in pure Python to prioritize compactness and ease of development. Due to this design choice, our app is no longer than 500 lines of code, and can be easily read, understood, and extended.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Features</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Features</span>
                         </div>
 
                         <p>Our app supports graphing multiple analyte concentrations simultaneously, and provides the option to toggle which analytes are displayed, allowing a user to choose any combination of analyte concentrations to view at a time. All analytes present are automatically detected, and a toggle option is automatically created to handle them. The displayed graph supports scrolling, and will pause updates if clicked. The app will calculate and display the maximum concentration of each analyte over the entire test, and can export the raw data, the maxima, and an image of the graphs. A legend and color-coding is used to distinguish the analytes being graphed, and will dynamically change and reassign colors based on user needs and preference, or as new analytes are detected or added.</p>
@@ -1102,7 +1102,7 @@ class OpticalDetector extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Hardware</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Hardware</span>
                         </div>
 
                         <p>Vishay stated that the values on the photodiode data sheet are for a CIE​​ Illuminant A, which is a typical tungsten-filament light (S. Ahmed, personal communication, October 11, 2021; International Commision on Illumination, n.d.). Although we were not able to test the full set-up which would include the microfluidic assay, hardware, and software, it is safe to say that this photodiode was not designed with the purpose of detecting chemiluminescence. In future versions of our project, it would be best to replace this photodiode with a photomultiplier tube that is designed to detect chemiluminescence. If other photodiodes do not exist for this purpose, we could do more research on circuits designed specifically to detect chemiluminescence to better adapt our current circuit for our purposes. The emission spectra for luminescent reagents provided with the reagents may be helpful information in designing a better circuit.</p>
@@ -1118,7 +1118,7 @@ class OpticalDetector extends Component {
                         <p>In the current system, all components are being supplied from the +5V pin of the Arduino Micro, which acquires power from its USB port. This source can involve lots of noise that will directly affect the accuracy of the ADC as it uses this supply as its reference voltage. Therefore, considerations for an external, non-USB power supply and voltage regulation will provide a steady and clean supply for the circuit components and improve the signal-to-noise ratio. With now two lines of supplies in +5V and +10V in the system, implementing boost/buck converters and regulating the respective voltages will be necessary.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Software</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Software</span>
                         </div>
 
                         <p>While the desktop app can be extended as needed if a usage requires it, some new features which would be generally useful are supporting a togglable per-analyte function to map from voltage to concentration and more robust data analytics tools (such as the ability to easily plot moving averages).</p>
@@ -1126,7 +1126,7 @@ class OpticalDetector extends Component {
                         <p>We could do more to reduce noise in the data. Most, if not all, of the noise reduction is done by the circuit parts. We could optimize this by getting parts with better noise-reducing qualities, but we could also look into noise-reduction algorithms. Implementing an existing algorithm or designing and implementing our own would provide the tester with more refined and readable data.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Calibration</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Calibration</span>
                         </div>
 
                         <p>As mentioned in the calibration section, the calculation depends on the assumption that all proteins either bind to analyte in the sample or analyte in the reaction chamber. It is possible that a protein does not bind to any analyte. To decrease the chance of this, the microfluidic chip should maximize mixing so most, if not all, analyte molecules in the sample are binded to. In addition, the reaction chamber should also contain an equal, if not greater, amount of analyte to maximize the chance that free-floating proteins bind to an analyte molecule.</p>

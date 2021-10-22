@@ -51,7 +51,7 @@ class Biomarker extends Component {
                         <p>Given the consistent literature support of PEA as a viable marker linked to ADHD, readily available data and quantifiable numbers, and its presence in a relatively non-invasive biological sample, it was determined to be the strongest candidate to use as a biomarker in our detection device.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Human Physiology of PEA</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Human Physiology of PEA</span>
                         </div>
 
                         <p>PEA is a small molecule most known for its role as a neurotransmitter implicated in psychological disorders such as ADHD, depression, and schizophrenia (Irsfeld, Spadafore &amp; Pruess, 2014). PEA is most commonly found as a trace amine in the brain of mammals, justified by its high solubility within plasma and permeability across the blood-brain barrier. In this context, it mainly functions as an inhibitor of dopamine and serotonin transporters by binding to the TAAR1 protein. As a result, PEA supplements are commonly administered as antidepressants (Sabelli, Fink, Fawcett &amp; Tom, 1996).</p>
@@ -61,7 +61,7 @@ class Biomarker extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Consideration of Aptamers for PEA-Binding</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Consideration of Aptamers for PEA-Binding</span>
                         </div>
 
                         <p>Aptamers are single-stranded oligonucleotides or oligopeptides that bind to target molecules, and are generally between 20 and 60 units in length (Keefe et al., 2010). For aptamers consisting of nucleotides, both DNA and RNA sequences can be used. RNA aptamers offer greater structural diversity and thus more flexibility in terms of potential targets, but simultaneously suffer from lower stability, especially under high temperatures and alkaline conditions (Thiel &amp; Giangrande, 2009). Aptamers can be found naturally in the form of riboswitches, but are more commonly engineered for a specific target. The relatively simple design and engineering process geared towards a wide range of analytes, including proteins, antibiotics, organophosphates and various low molecular weight compounds (Ilgu &amp; Nilsen-Hamilton, 2016), has made aptamers a popular choice for molecular biologists.</p>
@@ -75,7 +75,7 @@ class Biomarker extends Component {
                         <p>Despite how well-developed and widely-applied the SELEX method is, it depends rather heavily on lab work. The outlined <em>in silico</em> selection of aptamers cannot act as a full replacement for the <em>in vitro</em> process, given that computational methods only provide theoretical structures and binding affinities that may not approximate the true values even remotely. Any mathematical model has its exceptions and inaccuracies, and thus in general, <em>in silico</em> work is done to narrow down the possible sequences for the SELEX method from a large starting pool. For instance, Chushak and Stone proposed a method that takes around 2.5 x 10<sup>8</sup> sequences and selects 10<sup>3</sup> to 10<sup>4</sup> of them with potentially high binding affinity to the target molecule, and these selected sequences are then passed along for further screening in the lab (Chushak &amp; Stone, 2009).</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Decision to Pursue a Protein-Based Detection Method</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Decision to Pursue a Protein-Based Detection Method</span>
                         </div>
 
                         <p>Unfortunately, given our complete lack of lab access due to the COVID-19 situation, in addition to our aversion for proposing an aptamer part based on purely computational structure modelling and binding affinity evaluations, we ultimately decided against aptamer design in favour of engineering existing proteins. Even so, we have documented our aptamer research in summary here in the hopes that it may be of use to any future projects considering aptamers as a potential solution.</p>
@@ -107,7 +107,7 @@ class Biomarker extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Selection of a PEA-Binding Protein Domain</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Selection of a PEA-Binding Protein Domain</span>
                         </div>
 
                         <div style={{margin: '20px 0 40px 0'}}>
@@ -141,13 +141,13 @@ class Biomarker extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Selection of a Chemiluminescent Enzyme Domain</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Selection of a Chemiluminescent Enzyme Domain</span>
                         </div>
 
                         <p>The method of detection selected for quantification of the marker analyte PEA in urine was based on the chemiluminescence produced by the interaction of horseradish peroxidase (HRP) and Amplex Red. HRP is a commonly used enzyme to catalyze chemiluminescent reactions, with multiple candidate substrates such as Luminol, Acridan or Amplex Red (Ghosh et al., 2020; Heo et al., 2021; Osman et al., 2000). Compared to other prevalent enzymes utilized in chemiluminescence detection, such as alkaline phosphatase, horseradish peroxidase was a smaller protein candidate (44 kDa), reported to be stable in neutral pH, and when directly evaluated against alkaline phosphatase, exhibited greater detection sensitivity (Beyzavi et al., 19987; Chattopadhyay et al., 2000). There are multiple examples of HRP specifically being used for measuring analyte concentrations in urine samples, suggesting this to be a reliable method of detection for our purposes (Chang et al., 2017; Eamudomkarn et al., 2018).</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Selection of a Chemiluminescent Substrate for HRP</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Selection of a Chemiluminescent Substrate for HRP</span>
                         </div>
 
                         <p>Several chemiluminescent substrates for HRP were considered, including Acridan, a compound that emits light when oxidized in the presence of HRP (Roda, 2011). Unfortunately, there was insufficient data on the chemiluminescent properties of pure Acridan, particularly an expected value for a ratio of concentration to chemiluminescence. Without this knowledge, and without lab access to determine the relationship between concentration and chemiluminescence, we would not be able to confidently interpret the resulting chemiluminescent signal.</p>
@@ -155,7 +155,7 @@ class Biomarker extends Component {
                         <p>Instead, a compound known as Amplex Red was explored as an option. Amplex Red has definitive values for excitation and emission maxima provided by ThermoFisher Scientific, and has been found to oxidize in the presence of HRP, forming a red-fluorescent product known as resorufin (ThermoFisher Scientific, n.d.).</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Protein Biotinylation</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Protein Biotinylation</span>
                         </div>
 
                         <p>The biotin-streptavidin complex system has one of the highest specificities and affinities for non-covalent binding observed in nature (Wilchek et al., 2006), and is exploited in our design for the detection of proteins. In particular, this requires biotinylation, which is the process of attaching biotin (a small molecule) to some target protein or other macromolecule, so that the biotinylated analyte may be recognized and bound to streptavidin (a protein) (Kay et al., 2009). Recall that in our microfluidic assay, our fusion protein is biotinylated to allow streptavidin (conjugated to the control chamber) to bind, thereby eliciting a signal at the control chamber.</p>
@@ -209,7 +209,7 @@ The lack of rigidity of flexible linkers, however, can sometimes result in poor 
                 </Collapsible>
 
                 <Collapsible open title="Test">
-                    <div className={overallStyles.description} style={{marginTop: 5}}>
+                    <div className={overallStyles.description} style={{marginTop: 30}}>
                         <p>Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. As a result, we were unable to experimentally characterize the fusion protein. With that said, the following methodology outlines our plan of action to test our fusion protein construct if we had lab access.</p>
                     </div>
                     <div className={overallStyles.text_div}>
@@ -271,7 +271,7 @@ The lack of rigidity of flexible linkers, however, can sometimes result in poor 
                     </div>
                 </Collapsible>
                 <Collapsible open title="Learn">
-                    <div className={overallStyles.description} style={{marginTop: 5}}>
+                    <div className={overallStyles.description} style={{marginTop: 30}}>
                         <p>Without lab access (as explained in the Test section), we were not able to perform the experiments outlined in the Test section. However, if we were to have performed those experiments, the standard curve experiment relating chemiluminescence to fusion protein concentration would have been valuable for quantification purposes. Specifically, it would have further informed the development of the optical detector and app (described below in the Optical Detector and Application Development engineering cycle), as the standard curve would allow for more accurate interpretation of the signal at the test chamber under simulated urine conditions, which would be most representative of true urine samples analyzed by NeuroDetech.</p>
                     </div>
                 </Collapsible>

@@ -84,7 +84,7 @@ class GeneMarker extends Component {
                         <p>In the following sections, our considerations and answers to these “big picture questions” will be discussed.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Selection of ADHD-associated genes to be quantified by mRNA transcript detection</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Selection of ADHD-associated genes to be quantified by mRNA transcript detection</span>
                         </div>
 
                         <p>ADHD is often comorbid with other psychological disorders, such as schizophrenia, depression, anxiety, and bipolar disorder, to name a few. In a similar sense, biomarkers and gene markers associated with ADHD can often be associated with other psychological disorders as well. In order to reduce the likelihood that our microfluidic assay system produces false positive results associated with other psychological disorders, we aimed to detect multiple ADHD-associated gene markers. In selecting the most viable gene candidates, we conducted literature research into the following ADHD-associated genes. We favoured genes whose ADHD-associated mutations would also be present in their corresponding mRNA transcripts; that is, mutations in the promoter region or introns were ruled out. We also favoured genes whose ADHD-associated mutations were well-characterized and had known sequences. As well, variable number of tandem repeat mutations (VNTRs) were ruled out, as these would not be easily detected by hybridization.</p>
@@ -141,7 +141,7 @@ class GeneMarker extends Component {
                         <p>To detect the ADHD-associated genes selected above, we decided to utilize a CRISPR-Cas-based system. CRISPR-Cas would allow for sensitive detection of mRNA, with enough specificity to distinguish single nucleotide polymorphisms (SNPs) (Shinoda et al., 2021). As a result, mutations associated with ADHD could be quantified, even SNP mutations. The following describes the design considerations of employing a CRISPR-based system in a microfluidic assay.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Selection of Cas protein</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Selection of Cas protein</span>
                         </div>
 
                         <p>CRISPR Cas systems involve a Cas protein and a CRISPR guide RNA (gRNA); the Cas protein exhibits endonuclease activity when bound to its guide RNA. In selecting the appropriate Cas protein for detection of urinary mRNA, it is important to consider the distinctions between the Cas proteins - specifically, their targets:</p>
@@ -161,7 +161,7 @@ class GeneMarker extends Component {
                         <p>Overall, Cas13a from <em>L. buccalis</em> was chosen for the detection of ADHD-associated mRNA.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Adaptation of LbuCas13a for use in a microfluidic assay</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Adaptation of LbuCas13a for use in a microfluidic assay</span>
                         </div>
 
                         <p>Recall that the microfluidic assay consists of a test chamber and control chamber. The analyte of interest (in this case, the target ADHD-associated mutant mRNA transcript) is covalently conjugated to the test chamber. This would allow LbuCas13a to bind to these conjugated target mRNA transcripts, thereby activating LbuCas13a’s nonspecific RNAse activity.</p>
@@ -171,7 +171,7 @@ class GeneMarker extends Component {
                         <p>The control chamber contains covalently conjugated streptavidin. In order to allow Cas13 to bind at the control chamber, LbuCas13a must be biotinylated, which would facilitate a strong biotin-streptavidin interaction at the control chamber. Biotinylation of LbuCas13a would be facilitated in the same manner as biotinylation of 1UTM, the PEA-binding protein.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Design of CRISPR guide RNA sequences</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Design of CRISPR guide RNA sequences</span>
                         </div>
 
                         <p>CRISPR guide RNA consists of a stem sequence that forms a hairpin loop and is recognized by the Cas protein. In the case of LbuCas13a, Fozouni et al. (2020) suggests that the following 30-nucleotide sequence is appropriate as a stem sequence for the CRISPR guide RNA (Fozouni et al., 2020): <br></br>5′-GACCACCCCAAAAAUGAAGGGGACUAAAAC-3′</p>
@@ -219,7 +219,7 @@ class GeneMarker extends Component {
                 </Collapsible>
 
                 <Collapsible open title="Test">
-                    <div className={overallStyles.description} style={{marginTop: 5}}>
+                    <div className={overallStyles.description} style={{marginTop: 30}}>
                         <p>Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. As a result, we were unable to experimentally test the functionality of the CRISPR-Cas13a constructs. With that said, the following methodology outlines our plan of action to test our CRISPR-Cas13a constructs if we had lab access.</p>
                     </div>
                     <div className={overallStyles.text_div}>
@@ -227,26 +227,26 @@ class GeneMarker extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Demonstration of CRISPR-Cas13a Stability in Urine-Like Conditions</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Demonstration of CRISPR-Cas13a Stability in Urine-Like Conditions</span>
                         </div>
 
                         <p>In a solution containing ssRNA-linked fluorophores/quenchers, the nonspecific RNase activity of CRISPR-Cas13 after target ssRNA detection allows for the rapid production of a fluorescent signal. The stability and functionality of CRISPR-Cas13 in urine-like conditions can be tested in a similar way as described for the PEA-binding fusion protein. Once again, the expected conditions of urine include pH ~6, a low protein concentration (that can be simulated using BSA), a low glucose concentration, around 4 mM urea, and around 20 mM NaCl (Roxe, 1990). After preparing a solution in DI water with these conditions and adding CRISPR-Cas13a, the fluorophores/quenchers, and the target mRNA sequence, the simulated urine solution would be expected to display fluorescence of wavelength 535 nm that could be measured using a spectrophotometer (Shinoda et al., 2021). A negative control would involve only the simulated urine.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Experimental Calibration Curve</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Experimental Calibration Curve</span>
                         </div>
 
                         <p>Just like with the PEA-binding fusion protein, it would be useful to obtain an experimental standard curve for the fluorescence produced upon separation of the fluorophores and quenchers by CRISPR-Cas13a cleavage of the linker ssRNA. To do this, a series of dilutions of CRISPR-Cas13a would be made, then a known excess concentration of the ssRNA-linked fluorophores and quenchers would be added to each CRISPR-Cas13a dilution. In measuring the fluorescence produced by each dilution, a standard curve of fluorescence vs. CRISPR-Cas13a concentration can be plotted. A multiplate and multiplate analyzer can be used for this. This would simulate the conditions of fluorescence in the microfluidic assay chip, since in the MCFA chip, the number of CRISPR-Cas13a molecules that bind at the test chamber would be variable, while the amount of ssRNA-linked fluorophores and quenchers that pass through the test chamber would be a known excess amount.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Experimental Calibration Curve</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Experimental Calibration Curve</span>
                         </div>
 
                         <p>Proper identification of ADHD-associated gene markers by NeuroDetech relies on the ability of CRISPR-Cas13a to distinguish between two mRNA sequences differing only by a single nucleotide polymorphism (SNP). Shinoda et al. (2021) has demonstrated this to be possible and reliable; however, as a component of the proof of concept, we would need to test this for our specific mRNA sequences. To do so, mRNA sequences for the ‘normal’ allele as well as the ADHD-associated mutant allele would need to be obtained, likely by synthesis by a company like IDT. From here, the stability experiment described above should be repeated for the ‘normal’ and ADHD-associated sequences. It would be expected that the ‘normal’ mRNA sequences would not be recognized by CRISPR-Cas13a; thus, its nonspecific RNase activity would not be activated, and no fluorescence would be produced. For the ADHD-associated sequences, fluorescence should be expected, since these mutant sequences are the desired targets of the designed CRISPR-Cas13a guide RNAs.</p>
                     </div>
                 </Collapsible>
                 <Collapsible open title="Learn">
-                    <div className={overallStyles.description} style={{marginTop: 5}}>
+                    <div className={overallStyles.description} style={{marginTop: 30}}>
                         <p>Without lab access (as explained in the Test section), we were not able to perform the experiments outlined in the Test section. However, similarly to the PEA-binding protein engineering cycle, if we were to have performed those experiments, the standard curve experiment relating fluorescence to CRISPR-Cas13a concentration would have been valuable for quantification purposes. Specifically, it would have further informed the development of the optical detector and app (described below in the Optical Detector and Application Development engineering cycle), as the standard curve would allow for more accurate interpretation of the signal at the test chamber under simulated urine conditions, which would be most representative of true urine samples analyzed by NeuroDetech.</p>
                     </div>
                 </Collapsible>

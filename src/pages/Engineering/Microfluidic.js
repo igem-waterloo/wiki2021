@@ -57,7 +57,7 @@ class Microfluidic extends Component {
                         <p>While designing the device, multiple factors were taken into account, including flow and reaction rate. The concentration of PEA in the sample is low, which can be difficult to detect. In the design of the chip, both capillary and surface tension forces contribute to the generation of transient flow within the microstructures due to the pressure gradient. The high surface-to-volume ratio increases antigen binding, ensuring more precise and accurate results. In summary, this microfluidic device utilizes many principles of fundamental fluid dynamics. The model of the NeuroDetech lab chip is shown below.</p>
                     </div>
                     <div className={overallStyles.figure_div}>
-                        <img src="https://2021.igem.org/wiki/images/9/90/T--Waterloo--Cornerview_assembly.png" className={styles.design_img} style={{borderRadius: 20, width: '80%', height: '80%', marginLeft: '5%'}}></img>
+                        <img src="https://2021.igem.org/wiki/images/9/90/T--Waterloo--Cornerview_assembly.png" className={styles.design_img} style={{borderRadius: 20, width: '80%', height: '80%', marginLeft: '10%'}}></img>
                         <div className={overallStyles.figure_text}>Assembly of the microfluidic chip. Note that the top plane surfaces are transparent for easy visualization of the chip inner components.</div>
                     </div>
                     <div className={overallStyles.figure_div}>
@@ -66,7 +66,7 @@ class Microfluidic extends Component {
                     </div>
                     <div className={overallStyles.description}>   
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Sample Loading Chamber and Drying Chamber Design</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Sample Loading Chamber and Drying Chamber Design</span>
                         </div>
 
                         <p>The geometry of the NeuroDetech lab chip is critical to the chip’s function. The test begins when the sample is deposited into the loading chamber through a sample loading port located at the top of the chip. A hydrophobic spot in the middle of the loading chamber splits the sample into two equal parts (Ghosh et al., 2020). Separate pathways move the samples toward a series of small tubes then into the drying chambers.</p>
@@ -83,7 +83,7 @@ class Microfluidic extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Capillary Pump Design</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Capillary Pump Design</span>
                         </div>
                         
                         <p>Based on our previous research and referenced studies, few considerations were determined to be particularly important for fluid flow in the capillary pump. Through background research, we identified factors that affect fluid flow in a capillary pump. These include wettability, frequency of microstructures in the flow chamber, and the geometry of the microstructures used to increase flow resistance. These factors are the foundation for determining flow rates due to capillary flow (Olanrewaju et al., 2018).</p>
@@ -223,7 +223,7 @@ class Microfluidic extends Component {
                         <p>To implement covalent conjugation, a treatment containing APTES is first used to coat the surface of the chambers. APTES binds to the hydroxyl groups on the surface of the PDSM. Then a GA treatment is used, binding GA to APTES. Finally, the system is treated with our chosen molecule, which will bind to GA covalently at its free amine residues (Pal et al., 2013). Thus, this method is appropriate for conjugation of PEA and proteins (at their lysine residues or N-termini).</p>
                         
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Protocol for Covalent Conjugation of Biomolecules Containing Free Amine Groups:</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Protocol for Covalent Conjugation of Biomolecules Containing Free Amine Groups:</span>
                         </div>
 
                         <p>The procedure as outlined below was used for the covalent conjugation of both PEA in the test chamber and streptavidin in the control chamber (Thomsen et al., 2007):</p>
@@ -239,7 +239,7 @@ class Microfluidic extends Component {
                         </p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Covalent Conjugation of RNA:</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Covalent Conjugation of RNA:</span>
                         </div>
 
                         <p>In the case of conjugation of RNA, a slight modification is necessary, as RNA does not contain free amine groups. Prior to adding the glutaraldehyde, an aqueous solution of pyridinium chlorochromate (PCC/H<sub>2</sub>O) is circulated around the pad. Following this step, SOCl is also circulated around the pad, and finally, an mRNA solution is circulated in order to achieve conjugation (during which mRNA is conjugated at its 3′ OH group).</p>
@@ -251,7 +251,7 @@ class Microfluidic extends Component {
                         <p>Lyophilization, or freeze-drying, is the process of removing ice or frozen solvents via sublimation as a means of preserving heat-sensitive materials such as proteins (Barley, n.d.). Lyophilization is necessary to preserve the contents of the microfluidic assay, as the assay contains proteins, small biomolecules, and potentially RNA, all of which are biomolecules that must be kept viable for storage until the time of use.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Lyophilization of Small Biomolecules</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Lyophilization of Small Biomolecules</span>
                         </div>
 
                         <p>The following procedure for lyophilization of small biomolecules, such as PEA or chemiluminescence substrates, was adapted from Ghosh and Ahn (2019):</p>
@@ -264,7 +264,7 @@ class Microfluidic extends Component {
                         </p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Protein Lyophilization</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Protein Lyophilization</span>
                         </div>
 
                         <p>The following procedure for protein lyophilization was adapted from a previous study which tested four formulations for lyophilization of 15 different proteins over a range of molecular weights and structural properties (Roughton et al., 2013). This study used sucrose, glycine, urea, and guanidine hydrochloride as additives in the lyophilization formulation. The proteins were dialyzed to remove any extraneous additives.</p>
@@ -301,7 +301,7 @@ class Microfluidic extends Component {
                 </Collapsible>
 
                 <Collapsible open title="Test">
-                    <div className={overallStyles.description} style={{marginTop: 0}}>
+                    <div className={overallStyles.description} style={{marginTop: 30}}>
                         <p>Due to unforeseen circumstances (one of which was a global pandemic, and the other of which was unforeseen maintenance and construction of our lab space by the University), we unfortunately did not have lab access this year. As a result, we were unable to experimentally test the microfluidic assay with all of its components. With that said, the following methodology outlines how we have used computational modelling to gain insight into the physical dynamics within the microfluidic chip, as well as our plan of action to test our microfluidic assay chip if we had lab access.</p>
                     </div>
                     <div className={overallStyles.text_div}>
@@ -337,7 +337,7 @@ class Microfluidic extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Preliminary Assessment: Assessment of PDMS Alone</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Preliminary Assessment: Assessment of PDMS Alone</span>
                         </div>
 
                         <p>The success of our microfluidic assay is contingent on the ability of molecules to remain covalently conjugated to PDMS when desired. Thus, it would need to be verified that PDMS would be successfully derivatizated by PVA treatment, that the conjugation method would be successful, and that the lyophilization and resuspension steps would not impede the functionality of the lyophilized molecules. A way to test the success of all of these steps would involve an experiment testing the ability of streptavidin in the control chamber to bind biotin. Without successful derivatization of the PDMS surface, conjugation of streptavidin to the control chamber would not be successful. As well, assessment of binding after lyophilization by running a biotin solution would give insight into whether lyophilization is somehow damaging the effectiveness of the lyophilized molecules (in this case, streptavidin).</p>
@@ -382,7 +382,7 @@ class Microfluidic extends Component {
                         <p>Since the fluorescent biotin and streptavidin were in equimolar amounts, and since the binding affinity of streptavidin to biotin is so strong, it is expected that there should be little to no fluorescence in the residual solution, since most or all of the fluorescent biotin should have been bound to the streptavidin on the PDMS film.</p>
 
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Assessment in Microfluidic Assay Chip Conditions</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: 0}}>Assessment in Microfluidic Assay Chip Conditions</span>
                         </div>
 
                         <p>After construction of the chip, the general method for the preliminary assessment (described above) would need to be repeated to ensure that the success of derivatization, conjugation, and lyophilization for the PDMS film could also be replicated in the actual microfluidic assay chip.</p>
