@@ -34,7 +34,7 @@ const Engineering = () => {
                 </div>
                 <div className={overallStyles.sections_div}>
                     {tabs.map((tab, index) => (
-                            <div key={tab} active={active === tab} onClick={() => setActive(tab)} className={styles.section_block}>
+                            <div key={tab} active={active === tab} onClick={() => setActive(tab)} className={overallStyles.section_block}>
                                 <div className={overallStyles.sections}>
                                     <div className={overallStyles.section_img}>
                                         <img id={`engineering${index}`} src={icons[index]} alt= "Icon"/>

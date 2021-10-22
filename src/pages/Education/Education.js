@@ -30,7 +30,7 @@ const Education = () => {
                 </div>
                 <div className={overallStyles.sections_div}>
                     {tabs.map((tab, index) => (
-                        <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
+                        <div key={tab} active={active === tab} onClick={() => setActive(tab)} className={overallStyles.section_block}>
                             <div className={overallStyles.sections}>
                             <div id={index} className={overallStyles.section_img}>
                                 <img id={`education${index}`} src={icons[index]} alt= "Icon"/>

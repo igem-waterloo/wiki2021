@@ -140,7 +140,7 @@ const Parts = () => {
                 </div>
                 <div className={overallStyles.sections_div}>
                     {tabs.map((tab, index) => (
-                        <div key={tab} active={active === tab} onClick={() => setActive(tab)}>
+                        <div key={tab} active={active === tab} onClick={() => setActive(tab)} className={overallStyles.section_block}>
                             <div className={overallStyles.sections}>
                                 <div className={overallStyles.section_img}>
                                     <img id={`parts${index}`} src={icons[index]} alt= "Icon"/>
