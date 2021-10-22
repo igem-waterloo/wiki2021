@@ -15,10 +15,7 @@ class References extends Component {
                             Araz, M. K., Tentori, A. M., &amp; Herr, A. E. (2013). Microfluidic Multiplexing in Bioanalyses. Journal of Laboratory Automation, 18(5), 350–366. https://doi.org/10.1177/2211068213491408 
                         </li>
                         <li>
-                            Chivers, C. E., Koner, A. L., Lowe, E. D., &amp; Howarth, M. (2011). How the biotin–streptavidin interaction was made even stronger: Investigation via crystallography and a chimaeric tetramer. *Biochemical Journal, 435*(1), 55–63. https://doi.org/10.1042/bj20101593.
-                        </li>
-                        <li>
-                            Cui, P., &amp; Wang, S. (2019). Application of microfluidic chip technology in pharmaceutical analysis: A review. Journal of pharmaceutical analysis, 9(4), 238–247. https://doi.org/10.1016/j.jpha.2018.12.001                        
+                            Chivers, C. E., Koner, A. L., Lowe, E. D., &amp; Howarth, M. (2011). How the biotin–streptavidin interaction was made even stronger: Investigation via crystallography and a chimaeric tetramer. <i>Biochemical Journal, 435</i>(1), 55–63. https://doi.org/10.1042/bj20101593.
                         </li>
                         <li>
                             Cui, P., &amp; Wang, S. (2019). Application of microfluidic chip technology in pharmaceutical analysis: A review. Journal of pharmaceutical analysis, 9(4), 238–247. https://doi.org/10.1016/j.jpha.2018.12.001                        
@@ -45,9 +42,6 @@ class References extends Component {
                         </li>
                         <li>
                             ThermoFisher Scientific. (n.d.). <i>Pierce® Monomeric Avidin Kit</i>. Retrieved July 1, 2021, from https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0011221_Pierce_Monomeric_Avidin_UG.pdf.
-                        </li>
-                        <li>
-                            ThermoFisher Scientific. (n.d.). <i>RNAlater Solutions for RNA Stabilization and Storage</i>. Retrieved October 20, 2021, from https://www.thermofisher.com/ca/en/home/brands/product-brand/rnalater.html?s_kwcid=AL!3652!3!461772325393!p!!g!!rna%20later&amp;ef_id=CjwKCAjw_L6LBhBbEiwA4c46up8OAHR3ryuOZt2aHtNFNkk2diWq5R7HWhTlpPFwKrl5omBJmj9fwhoCu5kQAvD_BwE:G:s&amp;s_kwcid=AL!3652!3!461772325393!p!!g!!rna%20later&amp;cid=bid_sap_nap_r02_co_cp1362_pjt2155_bid00000_0se_gaw_bt_pur_con&amp;gclid=CjwKCAjw_L6LBhBbEiwA4c46up8OAHR3ryuOZt2aHtNFNkk2diWq5R7HWhTlpPFwKrl5omBJmj9fwhoCu5kQAvD_BwE
                         </li>
                         <li>
                             TWinFM. “Lateral Flow Testing for Workplaces - Are They Safe?” TWinFM, www.twinfm.com/article/lateral-flow-testing-for-workplaces-are-they-safe.

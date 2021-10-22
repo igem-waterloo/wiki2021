@@ -6,7 +6,7 @@ import References from './References';
 import WikiDesign from './WikiDesign';
 
 const tabs = ["Wiki Design", "References"];
-const icons = ["", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["https://2021.igem.org/wiki/images/1/1d/T--Waterloo--IconWikiDesign.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 const Improvement = () => {
         const [active, setActive] = useState(tabs[0]);
         

@@ -534,7 +534,7 @@ class ProteinOptimization extends Component {
                     </div>
                     <div className={styles.text_div}>
                         <div className={overallStyles.description}>
-                            Based on Rosetta scores, the best designed protein consisted of the 4 mutations, T74C, N12A, Y52F, Y52F.
+                            Based on Rosetta scores, the best designed protein consisted of the mutations, T74C, N12A, Y52F.
                         </div>
                     </div>
                 </Collapsible>

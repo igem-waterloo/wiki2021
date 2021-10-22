@@ -18,7 +18,7 @@ const Hardware = () => {
                         <div className={overallStyles.page_heading_colored}>Hardware.</div>
                     </div>
                     <div className={overallStyles.illustration}>
-                        <img src="https://2021.igem.org/wiki/images/f/fc/T--Waterloo--IconHardware.png" alt="Hardware Icon" className={styles.icon_img}/>
+                        <img src="https://2021.igem.org/wiki/images/f/fd/T--Waterloo--hardwareTopMainIcon.png" alt="Hardware Icon" className={styles.icon_img}/>
                     </div>
                 </div>
                 <div className={overallStyles.text_div}>

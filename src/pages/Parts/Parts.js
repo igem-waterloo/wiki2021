@@ -7,7 +7,7 @@ import Improvement from './Improvement';
 import References from './References';
 
 const tabs = ['Improvement of an Existing Part (Gold #2)', 'References'];
-const icons = ["", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["https://2021.igem.org/wiki/images/3/39/T--Waterloo--IconImprovementOfAnotherPart.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 const Parts = () => {
         const [active, setActive] = useState(tabs[0]);

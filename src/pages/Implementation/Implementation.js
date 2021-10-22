@@ -9,7 +9,7 @@ import ProperUsage from './ProperUsage';
 import References from './References';
 
 const tabs = ["NeuroDetech Implementation in Lab Settings", "Proper Usage of NeuroDetech", "General Safety Considerations for NeuroDetech Usage", "Current Challenges and Future Improvements", "References"];
-const icons = ["", "", "", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["https://2021.igem.org/wiki/images/thumb/4/4d/T--Waterloo--IconLab.jpeg/600px-T--Waterloo--IconLab.jpeg", "", "", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 
 const Implementation = () => {

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import overallStyles from '../overall.module.scss';
+import styles from "./contribution.module.scss";
 
 const Contribution = () => {
         return (
@@ -10,7 +11,9 @@ const Contribution = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Contribution.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/6/6b/T--Waterloo--IconContributionIcon.png" alt="Contribution Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.description}>
@@ -28,7 +31,7 @@ const Contribution = () => {
                         <a className={overallStyles.text_link} href="http://parts.igem.org/Part:BBa_K2926001" target="_blank" rel="noreferrer">
                             BBa_K2926001 
                         </a>
-                        &nbsp;is Cas13a from *Leptotrichia buccalis*. In contributing to this part, we added our findings from the literature regarding the usage of Cas13a, with a focus on its nonspecific RNase activity that is crucial for sensitive RNA detection methods such as SATORI. On that note, we also added documentation regarding the use of Cas13a in diagnostic and quantification contexts (such as detection of SARS-CoV-2 RNA and our project, NeuroDetech), which is another important application of CRISPR-Cas systems.
+                        &nbsp;is Cas13a from <i>Leptotrichia buccalis</i>. In contributing to this part, we added our findings from the literature regarding the usage of Cas13a, with a focus on its nonspecific RNase activity that is crucial for sensitive RNA detection methods such as SATORI. On that note, we also added documentation regarding the use of Cas13a in diagnostic and quantification contexts (such as detection of SARS-CoV-2 RNA and our project, NeuroDetech), which is another important application of CRISPR-Cas systems.
                     </div>
                     <div className={overallStyles.description}>
                         Part&nbsp;

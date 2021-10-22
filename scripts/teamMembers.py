@@ -29,7 +29,7 @@ for line in info:
         if closeList:
             html.write("</ul> \n")
             closeList = False
-        html.write("<div className={overallStyles.description} style={{marginBottom: \"-3%\"}}> \n")
+        html.write("<div className={overallStyles.subsubheading} style={{marginBottom: \"-3%\"}}> \n")
         html.write("\t" + line)
         html.write("</div>\n")
         html.write("<ul className={overallStyles.description}>\n")
