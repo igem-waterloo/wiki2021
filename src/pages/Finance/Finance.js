@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
-import "./finance.module.scss";
+import styles from "./finance.module.scss";
 import PotentialCost from './PotentialCost';
 import ManufacturingAndLegal from './ManufacturingAndLegal';
 import References from './References';
 
 const tabs = ['Potential Cost to Patients', 'Manufacturing and Legal Considerations', 'References'];
-const icons = ["", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["https://2021.igem.org/wiki/images/thumb/f/fd/T--Waterloo--IconFinancePotentialCoststoPatients.png/600px-T--Waterloo--IconFinancePotentialCoststoPatients.png", "https://2021.igem.org/wiki/images/thumb/0/03/T--Waterloo--IconFinanceManufacturingandLegalConsiderations.png/600px-T--Waterloo--IconFinanceManufacturingandLegalConsiderations.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 const Finance = () => {
         const [active, setActive] = useState(tabs[0]);
@@ -18,7 +18,9 @@ const Finance = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Finance.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/thumb/f/f0/T--Waterloo--IconFinanceTopMain.png/600px-T--Waterloo--IconFinanceTopMain.png" alt="Finance Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>

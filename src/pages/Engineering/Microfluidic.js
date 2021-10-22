@@ -174,7 +174,7 @@ class Microfluidic extends Component {
 
                 <Collapsible open title="Build">
                     <div className={overallStyles.text_div}>
-                        <span className={overallStyles.text_heading}>Rosetta: Protein Mutations</span>
+                        <span className={overallStyles.text_heading}>Computer-aided Chip Assembly Design</span>
                     </div>
                     <div className={overallStyles.description}>
                         <p>A complete assembly of the microfluidic chip is built and shown below. The specific dimensions are also labelled and presented. The team used OnShape to create the CAD model throughout the year.</p>

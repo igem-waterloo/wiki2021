@@ -53,7 +53,6 @@ function Accessibility() {
                         {arrow}
                     </button>
                     <div className={styles.toolbar_title}>Accessibility</div>
-                    <div className={styles.shortcut}>Ctrl/Cmd + Shift + A</div>
                 </div>
                 <Collapse in={visibility}>
                     <div>
@@ -61,7 +60,6 @@ function Accessibility() {
                             <Row>
                                 <Col xs="7">
                                     <div className={styles.words}>Font Size</div>
-                                    <p className={styles.shortcut}>Ctrl/Cmd + Alt + [ Ctrl/Cmd + Alt + ]</p>
                                 </Col>
                                 <Col xs="3">
                                     <ButtonGroup style={{marginRight: "5px"}}>
@@ -79,7 +77,6 @@ function Accessibility() {
                             <Row>
                                 <Col xs="7">
                                     <div className={styles.words}>Change Mode</div>
-                                    <p className={styles.shortcut}>Ctrl/Cmd + Alt + L Ctrl/Cmd + Alt + ]</p>
                                 </Col>
                                 <Col xs="3">
                                     <ButtonGroup style={{marginRight: "5px"}}>
@@ -90,35 +87,6 @@ function Accessibility() {
                                             <MoonFill size={13}/>
                                         </Button>
                                     </ButtonGroup>
-                                </Col>
-                            </Row>
-                        </Container>
-                        <Container className={styles.toolbar_options}>
-                            <Row>
-                                <Col xs="7">
-                                <div className={styles.words}>Read Aloud</div>
-                                    <p className={styles.shortcut}>Ctrl/Cmd+Shift+P</p>
-                                </Col>
-                                <Col xs="3">
-                                    <ButtonGroup style={{marginRight: "5px"}}>
-                                        <Button size="sm" variant="light" onClick={() => {}}>
-                                            <Pause size={13}/>
-                                        </Button>
-                                        <Button size="sm" variant="light">
-                                            <Play size={13}/>
-                                        </Button>
-                                    </ButtonGroup>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col xs="7">
-                                <div className={styles.words}>Restart</div>
-                                    <p className={styles.shortcut}>Ctrl/Cmd+Shift+R</p>
-                                </Col>
-                                <Col xs="3">
-                                        <Button variant="light">
-                                            <ArrowCounterclockwise size={13}/>
-                                        </Button>
                                 </Col>
                             </Row>
                         </Container>

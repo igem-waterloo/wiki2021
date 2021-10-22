@@ -78,7 +78,7 @@
 }
 
 .illustration {
-    width: 600px;
+    width: 450px;
     height: 450px;
     background: #C4C4C4;
     border-radius: 60px;
@@ -134,6 +134,15 @@
     width: max-content;
     padding-top: 2%;
     margin-left: 2%;
+}
+
+.subsubheading {
+    font-size: var(--subsub-heading-size);
+    font-weight: 500;
+    color: var(--heading-color);
+    border-bottom: 0.2em solid #E88A5F;
+    width: max-content;
+    padding-top: 2%;
 }
 
 .figure_div {
