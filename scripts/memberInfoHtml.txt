@@ -60,25 +60,16 @@
 </div>
 <ul className={overallStyles.description}>
 	<li>
-		Researched analyte candidates
+		Researched assay types and various ADHD analyte candidates
 	</li>
 	<li>
-		Researched symptoms and bio pathways of analyte and quantity of analyte within blood/urine/etc.
+		Contributed to researching the test chamber and substrate pathway of the microfluidic flow assay
 	</li>
 	<li>
-		Researched urine characteristics and urinalysis and chemiluminescence methods
-	</li>
-	<li>
-		Researched aptamer design process
+		Researched urine characteristics and composition
 	</li>
 	<li>
 		Researched SATORI method for analysis and diagnostics  
-	</li>
-	<li>
-		Researched chip materials and microfluidics techniques
-	</li>
-	<li>
-		Researched lyophilization techniques and pathways
 	</li>
 </ul> 
 <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
@@ -112,31 +103,25 @@
 </div>
 <ul className={overallStyles.description}>
 	<li>
-		Researched CRISPR Cas13 and if we are able to apply it to mRNA detection in urine (SATORI Method w/ Angad and SHERLOCK)
+		Researched SATORI and SHERLOCK methods of mRNA detection using CRISPR Cas13 
 	</li>
 	<li>
-		Cas13a mRNA region on Chimera
+		Edited DNA/Protein sequences in Benchling and modelled PEA-binding fusion protein in Chimera
 	</li>
 	<li>
-		In-silico (ie. SELEX) aptamer design methods
+		Researched in-silico (ie. computational SELEX) aptamer design methods
 	</li>
 	<li>
-		Looked into PEA binding protein candidates (ie. TynA)
+		Looked into PEA-binding protein candidates (ie. TynA)
 	</li>
 	<li>
-		Helped WIKI writing (why we switched from biomolecules to DNA detection methods part) and editing the WIKI (LFA and BMW)
+		Wrote and edited wiki pages related to Lab and Design 
 	</li>
 	<li>
-		Analyte candidates
+		Researched ADHD-associated genes (DRD4)
 	</li>
 	<li>
-		ADHD associated genes (DRD4)
-	</li>
-	<li>
-		Contributed to Cas13a sequence (from UniProt) and Benchling modelling
-	</li>
-	<li>
-		in vivo culture biosensors
+		Researched in vivo cell culture biosensors
 	</li>
 </ul> 
 <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
@@ -526,11 +511,9 @@
 	Michael Lam
 </div>
 <ul className={overallStyles.description}>
-</ul> 
-<div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
-	-	Researched PEA &amp; PEA-binding proteins
-</div>
-<ul className={overallStyles.description}>
+	<li>
+		Researched PEA &amp; PEA-binding proteins
+	</li>
 	<li>
 		Collaborated with Math to assess 3D homology model with Rosetta
 	</li>
@@ -538,10 +521,7 @@
 		Collaborated with HP to answer "How did the team close the loop between what was designed and what was desired?"
 	</li>
 	<li>
-		Wrote PEA-binding protein selection Wiki section
-	</li>
-	<li>
-		Edited Wiki sections
+		Wrote and edited section of the wiki
 	</li>
 </ul> 
 <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
@@ -555,10 +535,10 @@
 		Looked into how to filter urine and urinalysis pre-cursor conditions                
 	</li>
 	<li>
-		Reached out to stakeholders to ask for feedback on our project.     
+		Reached out to stakeholders to ask for feedback on our project     
 	</li>
 	<li>
-		Edited wiki
+		Wrote and edited wiki
 	</li>
 </ul> 
 <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
@@ -612,13 +592,19 @@
 		Co-managed the Lab and Design subteam
 	</li>
 	<li>
-		Evaluated overall project direction and design alongside other team leads
+		Evaluated project direction and development, along with other subteam leads
 	</li>
 	<li>
 		Coordinated Women in STEM collaboration and high school outreach
 	</li>
 	<li>
 		Represented Waterloo iGEM at  multiple student design showcases and outreach events
+	</li>
+	<li>
+		Taught molecular biology principles and assay components
+	</li>
+	<li>
+		Mentored other iGEM teams including Washington and Northern BC
 	</li>
 	<li>
 		Authored, edited, and organized wiki pages relating to Lab and Design
@@ -756,15 +742,12 @@
 </div>
 <ul className={overallStyles.description}>
 	<li>
-		Researched and analyzed methods to quantify LFA results
+		Quantification method research
 	</li>
 	<li>
-		Assisted with microcontroller programming
+		Microcontroller programming
 	</li>
 	<li>
-		Formulated processes to convert voltage values to biomarker concentrations
-	</li>
-	<li>
-		Co-authored and edited wiki sections related to Math and Modelling
+		Voltage to illuminance conversion research
 	</li>
 </ul> 

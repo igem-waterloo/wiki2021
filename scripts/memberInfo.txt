@@ -16,13 +16,10 @@ Ananya Muralidharan
 •	Researched the ELISA mechanism to identify the best protein candidates for the assay reaction
 •	Edited Wiki sections
 Angad Singh
-•	Researched analyte candidates
-•	Researched symptoms and bio pathways of analyte and quantity of analyte within blood/urine/etc.
-•	Researched urine characteristics and urinalysis and chemiluminescence methods
-•	Researched aptamer design process
+•	Researched assay types and various ADHD analyte candidates
+•	Contributed to researching the test chamber and substrate pathway of the microfluidic flow assay
+•	Researched urine characteristics and composition
 •	Researched SATORI method for analysis and diagnostics  
-•	Researched chip materials and microfluidics techniques
-•	Researched lyophilization techniques and pathways
 Anthony Dang
 •	Co-managed the Lab and Design subteam
 •	Evaluated overall project direction and design alongside other team leads
@@ -32,15 +29,13 @@ Anthony Dang
 •	Authored, edited, and organized wiki pages relating to Lab and Design
 •	Created and added documentation to BioBrick part pages
 Ashish Kumar
-•	Researched CRISPR Cas13 and if we are able to apply it to mRNA detection in urine (SATORI Method w/ Angad and SHERLOCK)
-•	Cas13a mRNA region on Chimera
-•	In-silico (ie. SELEX) aptamer design methods
-•	Looked into PEA binding protein candidates (ie. TynA)
-•	Helped WIKI writing (why we switched from biomolecules to DNA detection methods part) and editing the WIKI (LFA and BMW)
-•	Analyte candidates
-•	ADHD associated genes (DRD4)
-•	Contributed to Cas13a sequence (from UniProt) and Benchling modelling
-•	in vivo culture biosensors
+•	Researched SATORI and SHERLOCK methods of mRNA detection using CRISPR Cas13 
+•	Edited DNA/Protein sequences in Benchling and modelled PEA-binding fusion protein in Chimera
+•	Researched in-silico (ie. computational SELEX) aptamer design methods
+•	Looked into PEA-binding protein candidates (ie. TynA)
+•	Wrote and edited wiki pages related to Lab and Design 
+•	Researched ADHD-associated genes (DRD4)
+•	Researched in vivo cell culture biosensors
 Ayesha Asif
 •	Assisted the stakeholders HP subteam 
 •	Worked on iGEM social media page along with social media wiki outreach write up    
@@ -153,16 +148,15 @@ Lorenzo Pérez
 •	Researched analyte candidates
 •	Researched multiple chip materials and then focused on PDMS
 Michael Lam
--	Researched PEA & PEA-binding proteins
+•	Researched PEA & PEA-binding proteins
 •	Collaborated with Math to assess 3D homology model with Rosetta
 •	Collaborated with HP to answer "How did the team close the loop between what was designed and what was desired?"
-•	Wrote PEA-binding protein selection Wiki section
-•	Edited Wiki sections
+•	Wrote and edited section of the wiki
 Rajosree Paul
 •	Researched PEA-Binding proteins, pre-treatments for LFA design, and how PEA levels vary in individuals with and without ADHD.    
 •	Looked into how to filter urine and urinalysis pre-cursor conditions                
-•	Reached out to stakeholders to ask for feedback on our project.     
-•	Edited wiki
+•	Reached out to stakeholders to ask for feedback on our project     
+•	Wrote and edited wiki
 Rene Lam
 •	Researched protein mutation, energy scoring and algorithm behind Rosetta point mutation protocol 
 •	Used high performance computer (graham) to generate single, double and multiple mutations for 1UTM and streptavidin and generate energy scores
@@ -178,9 +172,11 @@ Renessa Gomes
 •	Wrote and edited wiki sections (horseradish peroxidase, selection of PEA as protein analyte, selection of 1-UTM as PEA-binding protein, RNA stability in urine)
 Sarah Hardy
 •	Co-managed the Lab and Design subteam
-•	Evaluated overall project direction and design alongside other team leads
+•	Evaluated project direction and development, along with other subteam leads
 •	Coordinated Women in STEM collaboration and high school outreach
 •	Represented Waterloo iGEM at  multiple student design showcases and outreach events
+•	Taught molecular biology principles and assay components
+•	Mentored other iGEM teams including Washington and Northern BC
 •	Authored, edited, and organized wiki pages relating to Lab and Design
 Serena Hacker
 •	Performed molecular dynamics simulations using GROMACS to evaluate candidate proteins’ relative binding affinities to PEA
@@ -220,7 +216,7 @@ Tsz Yan Au
 •	Developed the wiki website and populated content
 •	Worked on the accessibility toolbar
 Wendy Lu
-•	Researched and analyzed methods to quantify LFA results
-•	Assisted with microcontroller programming
-•	Formulated processes to convert voltage values to biomarker concentrations
-•	Co-authored and edited wiki sections related to Math and Modelling
+•	Quantification method research
+•	Microcontroller programming
+•	Voltage to illuminance conversion research
+

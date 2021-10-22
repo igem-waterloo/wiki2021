@@ -183,8 +183,7 @@ const Attributions = () => {
                         </div>
                     </Collapsible>
                     <Collapsible open title="Team Members">
-                    <div className={overallStyles.text_div}>
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Amy Wohlgemuth    
                         </div>
                         <ul className={overallStyles.description}>
@@ -204,7 +203,7 @@ const Attributions = () => {
                                 Analyzed alternative geometric approaches for possible future iterations    
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Ana Fernandez
                         </div>
                         <ul className={overallStyles.description}>
@@ -224,7 +223,7 @@ const Attributions = () => {
                                 Authored, edited, and organized wiki pages relating to Human Practices
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Ananya Muralidharan 
                         </div>
                         <ul className={overallStyles.description}>
@@ -241,33 +240,24 @@ const Attributions = () => {
                                 Edited Wiki sections
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Angad Singh
                         </div>
                         <ul className={overallStyles.description}>
                             <li>
-                                Researched analyte candidates
+                                Researched assay types and various ADHD analyte candidates
                             </li>
                             <li>
-                                Researched symptoms and bio pathways of analyte and quantity of analyte within blood/urine/etc.
+                                Contributed to researching the test chamber and substrate pathway of the microfluidic flow assay
                             </li>
                             <li>
-                                Researched urine characteristics and urinalysis and chemiluminescence methods
-                            </li>
-                            <li>
-                                Researched aptamer design process
+                                Researched urine characteristics and composition
                             </li>
                             <li>
                                 Researched SATORI method for analysis and diagnostics  
                             </li>
-                            <li>
-                                Researched chip materials and microfluidics techniques
-                            </li>
-                            <li>
-                                Researched lyophilization techniques and pathways
-                            </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Anthony Dang
                         </div>
                         <ul className={overallStyles.description}>
@@ -293,39 +283,33 @@ const Attributions = () => {
                                 Created and added documentation to BioBrick part pages
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Ashish Kumar
                         </div>
                         <ul className={overallStyles.description}>
                             <li>
-                                Researched CRISPR Cas13 and if we are able to apply it to mRNA detection in urine (SATORI Method w/ Angad and SHERLOCK)
+                                Researched SATORI and SHERLOCK methods of mRNA detection using CRISPR Cas13 
                             </li>
                             <li>
-                                Cas13a mRNA region on Chimera
+                                Edited DNA/Protein sequences in Benchling and modelled PEA-binding fusion protein in Chimera
                             </li>
                             <li>
-                                In-silico (ie. SELEX) aptamer design methods
+                                Researched in-silico (ie. computational SELEX) aptamer design methods
                             </li>
                             <li>
-                                Looked into PEA binding protein candidates (ie. TynA)
+                                Looked into PEA-binding protein candidates (ie. TynA)
                             </li>
                             <li>
-                                Helped WIKI writing (why we switched from biomolecules to DNA detection methods part) and editing the WIKI (LFA and BMW)
+                                Wrote and edited wiki pages related to Lab and Design 
                             </li>
                             <li>
-                                Analyte candidates
+                                Researched ADHD-associated genes (DRD4)
                             </li>
                             <li>
-                                ADHD associated genes (DRD4)
-                            </li>
-                            <li>
-                                Contributed to Cas13a sequence (from UniProt) and Benchling modelling
-                            </li>
-                            <li>
-                                in vivo culture biosensors
+                                Researched in vivo cell culture biosensors
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Ayesha Asif
                         </div>
                         <ul className={overallStyles.description}>
@@ -336,7 +320,7 @@ const Attributions = () => {
                                 Worked on iGEM social media page along with social media wiki outreach write up    
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Braeden MacDougall
                         </div>
                         <ul className={overallStyles.description}>
@@ -356,7 +340,7 @@ const Attributions = () => {
                                 Assisted in the writing and editing processes of Lab subteam wiki contributions
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Chelsea Huang
                         </div>
                         <ul className={overallStyles.description}>
@@ -370,7 +354,7 @@ const Attributions = () => {
                                 Verified the integrity of CAD assembly connections
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Chimdindu Ohaegbu                    
                         </div>
                         <ul className={overallStyles.description}>
@@ -384,7 +368,7 @@ const Attributions = () => {
                                 Used rational protein design principles to suggest double mutations for 1UTM and assisted in proposing multiple mutations
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Clare Wei
                         </div>
                         <ul className={overallStyles.description}>
@@ -401,7 +385,7 @@ const Attributions = () => {
                                 Authored and edited wiki pages relating to human practices, education, collaboration, implementation, inclusion, and attributions    
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Daniel Matlin
                         </div>
                         <ul className={overallStyles.description}>
@@ -418,7 +402,7 @@ const Attributions = () => {
                                 Edited, formatted, and contributed to the Engineering wiki page
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Dorothy Lin
                         </div>
                         <ul className={overallStyles.description}>
@@ -432,7 +416,7 @@ const Attributions = () => {
                                 Wrote and edited respective wiki pages              
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Emily Dong
                         </div>
                         <ul className={overallStyles.description}>
@@ -449,7 +433,7 @@ const Attributions = () => {
                                 Planned and executed careers in synbio outreach event
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Emma Catalan
                         </div>
                         <ul className={overallStyles.description}>
@@ -457,7 +441,7 @@ const Attributions = () => {
                                 Researched ADHD diagnosis pipeline and some diagnosis biases        
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Fatima Anwar
                         </div>
                         <ul className={overallStyles.description}>
@@ -471,7 +455,7 @@ const Attributions = () => {
                                 Helped math with relaying information from lab and design regarding structure and modelling        
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Gen Belford
                         </div>
                         <ul className={overallStyles.description}>
@@ -479,7 +463,7 @@ const Attributions = () => {
                                 Researched analyte candidates    
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Gerald Lee
                         </div>
                         <ul className={overallStyles.description}>
@@ -493,7 +477,7 @@ const Attributions = () => {
                                 Research into libraries to use for packaging and display of data
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Harshit Manchanda
                         </div>
                         <ul className={overallStyles.description}>
@@ -501,7 +485,7 @@ const Attributions = () => {
                                 Developed the wiki website
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Jacquelyn Easson
                         </div>
                         <ul className={overallStyles.description}>
@@ -515,7 +499,7 @@ const Attributions = () => {
                                 Helped in contacting potential stakeholders
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             James Phan 
                         </div>
                         <ul className={overallStyles.description}>
@@ -526,7 +510,7 @@ const Attributions = () => {
                                 Edited and conceptualized project description video
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             James Stapleton
                         </div>
                         <ul className={overallStyles.description}>
@@ -537,7 +521,7 @@ const Attributions = () => {
                                 Obtained funding from school endowment funds to finance team participation and research
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Janie Ong
                         </div>
                         <ul className={overallStyles.description}>
@@ -557,7 +541,7 @@ const Attributions = () => {
                                 Collaborated with Human Practices to define our project's environmental, social, and moral values
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Jessica Zhang
                         </div>
                         <ul className={overallStyles.description}>
@@ -583,7 +567,7 @@ const Attributions = () => {
                                 Authored, edited and formatted wiki pages for lab team
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Jessy Song
                         </div>
                         <ul className={overallStyles.description}>
@@ -606,7 +590,7 @@ const Attributions = () => {
                                 Represented Waterloo iGEM at outreach events and conferences
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Jimin Lee
                         </div>
                         <ul className={overallStyles.description}>
@@ -626,7 +610,7 @@ const Attributions = () => {
                                 Independently researched to present analyte candidates and LFA design candidates 
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Joshua Hanneson
                         </div>
                         <ul className={overallStyles.description}>
@@ -646,7 +630,7 @@ const Attributions = () => {
                                 Modeled fusion constructs in UCSF Chimera
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Julie Li
                         </div>
                         <ul className={overallStyles.description}>
@@ -663,7 +647,7 @@ const Attributions = () => {
                                 Planned and co-hosted the Careers in SynBio event    
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Kellie Chong
                         </div>
                         <ul className={overallStyles.description}>
@@ -677,7 +661,7 @@ const Attributions = () => {
                                 Developed Python script to automate the ligand docking and energy minimization processes via Chimera and AutoDock Vina for the binding kinetics analysis
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Kevin Kim
                         </div>
                         <ul className={overallStyles.description}>
@@ -697,7 +681,7 @@ const Attributions = () => {
                                 Contributed to the testing and development of a Python-based desktop application by implementing a serial communication interface
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Lorenzo Pérez
                         </div>
                         <ul className={overallStyles.description}>
@@ -708,15 +692,13 @@ const Attributions = () => {
                                 Researched multiple chip materials and then focused on PDMS
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Michael Lam
                         </div>
                         <ul className={overallStyles.description}>
-                        </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
-                            -	Researched PEA &amp; PEA-binding proteins
-                        </div>
-                        <ul className={overallStyles.description}>
+                            <li>
+                                Researched PEA &amp; PEA-binding proteins
+                            </li>
                             <li>
                                 Collaborated with Math to assess 3D homology model with Rosetta
                             </li>
@@ -724,13 +706,10 @@ const Attributions = () => {
                                 Collaborated with HP to answer "How did the team close the loop between what was designed and what was desired?"
                             </li>
                             <li>
-                                Wrote PEA-binding protein selection Wiki section
-                            </li>
-                            <li>
-                                Edited Wiki sections
+                                Wrote and edited section of the wiki
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Rajosree Paul
                         </div>
                         <ul className={overallStyles.description}>
@@ -741,13 +720,13 @@ const Attributions = () => {
                                 Looked into how to filter urine and urinalysis pre-cursor conditions                
                             </li>
                             <li>
-                                Reached out to stakeholders to ask for feedback on our project.     
+                                Reached out to stakeholders to ask for feedback on our project     
                             </li>
                             <li>
-                                Edited wiki
+                                Wrote and edited wiki
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Rene Lam
                         </div>
                         <ul className={overallStyles.description}>
@@ -758,7 +737,7 @@ const Attributions = () => {
                                 Used high performance computer (graham) to generate single, double and multiple mutations for 1UTM and streptavidin and generate energy scores
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Renessa Gomes
                         </div>
                         <ul className={overallStyles.description}>
@@ -790,7 +769,7 @@ const Attributions = () => {
                                 Wrote and edited wiki sections (horseradish peroxidase, selection of PEA as protein analyte, selection of 1-UTM as PEA-binding protein, RNA stability in urine)
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Sarah Hardy
                         </div>
                         <ul className={overallStyles.description}>
@@ -798,7 +777,7 @@ const Attributions = () => {
                                 Co-managed the Lab and Design subteam
                             </li>
                             <li>
-                                Evaluated overall project direction and design alongside other team leads
+                                Evaluated project direction and development, along with other subteam leads
                             </li>
                             <li>
                                 Coordinated Women in STEM collaboration and high school outreach
@@ -807,10 +786,16 @@ const Attributions = () => {
                                 Represented Waterloo iGEM at  multiple student design showcases and outreach events
                             </li>
                             <li>
+                                Taught molecular biology principles and assay components
+                            </li>
+                            <li>
+                                Mentored other iGEM teams including Washington and Northern BC
+                            </li>
+                            <li>
                                 Authored, edited, and organized wiki pages relating to Lab and Design
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Serena Hacker
                         </div>
                         <ul className={overallStyles.description}>
@@ -824,7 +809,7 @@ const Attributions = () => {
                                 Modelled fluid flow through the NeuroDetech chip using microfluidics simulations in COMSOL Multiphysics
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Siranjit Kaur
                         </div>
                         <ul className={overallStyles.description}>
@@ -838,7 +823,7 @@ const Attributions = () => {
                                 Designed a science outreach colouring book with the incorporation of synbio    
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Sophia Tan
                         </div>
                         <ul className={overallStyles.description}>
@@ -855,7 +840,7 @@ const Attributions = () => {
                                 Edited Wiki sections
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Sutej Dayal
                         </div>
                         <ul className={overallStyles.description}>
@@ -875,7 +860,7 @@ const Attributions = () => {
                                 Researched into specific PEA binding proteins 
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Taylor Roth
                         </div>
                         <ul className={overallStyles.description}>
@@ -889,7 +874,7 @@ const Attributions = () => {
                                 Assembled complete chip model using Onshape
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Temitope Lekuti
                         </div>
                         <ul className={overallStyles.description}>
@@ -903,7 +888,7 @@ const Attributions = () => {
                                 Authored and edited wiki pages relating to human practices (in vivo implementation)    
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Teodora Vujovic
                         </div>
                         <ul className={overallStyles.description}>
@@ -926,7 +911,7 @@ const Attributions = () => {
                                 Authored, edited, and organized wiki pages relating to Math and Modelling
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Tsz Yan Au
                         </div>
                         <ul className={overallStyles.description}>
@@ -937,25 +922,20 @@ const Attributions = () => {
                                 Worked on the accessibility toolbar
                             </li>
                         </ul> 
-                        <div className={overallStyles.description} style={{marginBottom: "-3%"}}> 
+                        <div className={overallStyles.subsubheading} style={{marginBottom: "-3%"}}> 
                             Wendy Lu
                         </div>
                         <ul className={overallStyles.description}>
                             <li>
-                                Researched and analyzed methods to quantify LFA results
+                                Quantification method research
                             </li>
                             <li>
-                                Assisted with microcontroller programming
+                                Microcontroller programming
                             </li>
                             <li>
-                                Formulated processes to convert voltage values to biomarker concentrations
-                            </li>
-                            <li>
-                                Co-authored and edited wiki sections related to Math and Modelling
+                                Voltage to illuminance conversion research
                             </li>
                         </ul> 
-
-                    </div>
                     </Collapsible>
                 </div>
             </div>
