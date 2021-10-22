@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
 import Microfluidic from './Microfluidic';
 import OpticalDetector from './OpticalDetector';
-import "./proofofconcept.module.scss";
+import styles from "./proofofconcept.module.scss";
 import References from './References';
 import WetLab from './WetLab';
 
@@ -19,7 +19,9 @@ const ProofOfConcept = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Proof Of Concept.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/1/1e/T--Waterloo--IconChip.png" alt="PoC Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>

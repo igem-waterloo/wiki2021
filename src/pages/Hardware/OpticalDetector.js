@@ -15,7 +15,7 @@ class OpticalDetector extends Component {
                 </div>
                 <Collapsible open title="Hardware Design">
                     <div className={overallStyles.text_div}>
-                        <span className={overallStyles.subheading}>Simulation</span>
+                        <span className={overallStyles.subheading} style={{marginLeft: "0"}}>Simulation</span>
                     </div>
                     <div className={overallStyles.description}>
                         <p>We started off by creating a circuit simulation in TinkerCAD. We adapted some microcontroller code and a simple photodiode circuit taken from various sources. The purpose of this was to get a general idea of how the circuit and microcontroller will work and which parts to order.</p>
@@ -32,7 +32,7 @@ class OpticalDetector extends Component {
                     </div>
                     <div className={overallStyles.description}>
                         <div style={{margin: '20px 0 40px 0'}}>
-                            <span className={overallStyles.subheading}>Circuit Part Selection</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: "0"}}>Circuit Part Selection</span>
                         </div>
 
                         <div style={{margin: '20px 0 40px 0'}}>

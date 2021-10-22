@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
-import "./model.module.scss";
+import styles from "./model.module.scss";
 import HardwareModelling from './HardwareModelling';
 import Microfluidic from './Microfludic';
 import ProteinOptimization from './ProteinOptimization';
@@ -18,7 +18,9 @@ const Model = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Model.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/b/be/T--Waterloo--IconProteinOptimization.png" alt="Model Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>

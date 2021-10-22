@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import overallStyles from "../overall.module.scss";
+import styles from "./uwaterloocommunity.module.scss";
 
 class UWaterlooCommunity extends Component {
     render() {
@@ -20,7 +21,7 @@ class UWaterlooCommunity extends Component {
                     </div>
                 </div>
                 <div className={overallStyles.figure_div}>
-                    <img src="https://2021.igem.org/wiki/images/6/60/T--Waterloo--WiSTEMGoldenRice.png" alt="Golden Rice"/>
+                    <img src="https://2021.igem.org/wiki/images/6/60/T--Waterloo--WiSTEMGoldenRice.png" alt="Golden Rice" className={styles.rice_img}/>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.subheading}>

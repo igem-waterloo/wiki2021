@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
-import "./inclusivity.module.scss";
+import styles from "./inclusivity.module.scss";
 import References from './References';
 import WikiDesign from './WikiDesign';
 
@@ -17,7 +17,9 @@ const Improvement = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Inclusivity.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/thumb/5/54/T--Waterloo--iconInclusivityMainTop.png/653px-T--Waterloo--iconInclusivityMainTop.png" alt="Inclusivity Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>Overview</div>

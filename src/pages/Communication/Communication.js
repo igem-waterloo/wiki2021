@@ -7,7 +7,7 @@ import overallStyles from '../overall.module.scss';
 import "./communication.module.scss";
 
 const tabs = ["Careers in Synthetic Biology", "Instagram Outreach ", "Biology Concepts Colouring Book", "References"];
-const icons = ["", "", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["", "", "https://2021.igem.org/wiki/images/0/07/T--Waterloo--IconColouringBook.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 const Communication = () => {
         const [active, setActive] = useState(tabs[0]);
         return (

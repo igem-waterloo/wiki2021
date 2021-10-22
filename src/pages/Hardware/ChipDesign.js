@@ -16,7 +16,7 @@ class ChipDesign extends Component {
                     </div>
                     <Collapsible open title="Overall Chip Mechanical Design">
                         <div className={overallStyles.text_div}>
-                            <span className={overallStyles.subheading}>Microfluidic Chip Mechanical Design</span>
+                            <span className={overallStyles.subheading} style={{marginLeft: "0"}}>Microfluidic Chip Mechanical Design</span>
                         </div>
                         <div className={overallStyles.description}>
                             <p>The main inspiration for the design of the NeuroDetech lab chip is a similar point-of-care diagnostic device for infectious diseases created by Ghosh et al. (2020). The testing device designed by Ghosh et al. (2020) prioritized functions such as accessibility and speed which are applicable to NeuroDetech. Hence many concepts from this paper, like the device dimensions and parts sequence, are incorporated into our work. Overall, the objective of our work is to create a user-friendly tool for quantitative biomolecular detection. (Ghosh et al., 2020)</p>

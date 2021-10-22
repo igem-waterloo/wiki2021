@@ -1,5 +1,5 @@
-
-import React, { useState } from 'react';
+import React from 'react';
+import styles from "./attributions.module.scss";
 import overallStyles from '../overall.module.scss';
 import Collapsible from "../../utils/Collapsible";
 
@@ -11,7 +11,9 @@ const Attributions = () => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Attributions.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/b/b2/T--Waterloo--iconAttributionTopMain.jpeg" alt="Attributions Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.description}>

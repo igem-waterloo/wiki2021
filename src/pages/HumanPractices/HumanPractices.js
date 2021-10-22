@@ -1,14 +1,14 @@
 
 import React, { useState } from 'react';
 import overallStyles from '../overall.module.scss';
-import "./humanpractices.module.scss";
+import styles from "./humanpractices.module.scss";
 import ProjectValues from './ProjectValues';
 import CurrentDiagnosis from './CurrentDiagnosis';
 import DeterminingImplementation from './DeterminingImplementation';
 import References from './References';
 
 const tabs = ['Project Values', 'Understanding Current Diagnosis Process', 'Determining Implementation', 'References'];
-const icons = ["", "", "", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
+const icons = ["https://2021.igem.org/wiki/images/thumb/8/8b/T--Waterloo--IconProjectValues.png/600px-T--Waterloo--IconProjectValues.png", "https://2021.igem.org/wiki/images/thumb/0/0f/T--Waterloo--IconUnderstandingCurrentDiagnosis.png/600px-T--Waterloo--IconUnderstandingCurrentDiagnosis.png", "https://2021.igem.org/wiki/images/thumb/1/16/T--Waterloo--IconDeterminingImplementation.png/600px-T--Waterloo--IconDeterminingImplementation.png", "https://2021.igem.org/wiki/images/c/c5/T--Waterloo--IconReference.png"]
 
 const HumanPractices = (props) => {
     const [active, setActive] = useState(tabs[0]);
@@ -20,7 +20,9 @@ const HumanPractices = (props) => {
                         <div className={overallStyles.page_heading}>NeuroDetech</div>
                         <div className={overallStyles.page_heading_colored}>Human Practices.</div>
                     </div>
-                    <div className={overallStyles.illustration}></div>
+                    <div className={overallStyles.illustration}>
+                        <img src="https://2021.igem.org/wiki/images/thumb/0/05/T--Waterloo--IconDHPTopMain.png/600px-T--Waterloo--IconDHPTopMain.png" alt="Human Practices Icon" className={styles.icon_img}/>
+                    </div>
                 </div>
                 <div className={overallStyles.text_div}>
                     <div className={overallStyles.text_heading}>

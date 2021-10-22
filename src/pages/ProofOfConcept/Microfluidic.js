@@ -30,7 +30,7 @@ class Microfluidic extends Component {
                         <div className={overallStyles.text_div}>        
                             <div className={overallStyles.description}>   
                                 <div style={{margin: '20px 0 40px 0'}}>
-                                    <span className={overallStyles.subheading}>Sample Loading Chamber and Drying Chamber Design</span>
+                                    <span className={overallStyles.subheading} style={{marginLeft: "0"}}>Sample Loading Chamber and Drying Chamber Design</span>
                                 </div>
 
                                 <p>The geometry of the NeuroDetech lab chip is critical to the chip’s function. The test begins when the sample is deposited into the loading chamber through a sample loading port located at the top of the chip. A hydrophobic spot in the middle of the loading chamber splits the sample into two equal parts (Ghosh et al., 2020). Separate pathways move the samples toward a series of small tubes then into the drying chambers.</p>
@@ -49,7 +49,7 @@ class Microfluidic extends Component {
                         <div className={overallStyles.text_div}>
                             <div className={overallStyles.description}>
                                 <div style={{margin: '20px 0 40px 0'}}>
-                                    <span className={overallStyles.subheading}>Capillary Pump Design</span>
+                                    <span className={overallStyles.subheading} style={{marginLeft: "0"}}>Capillary Pump Design</span>
                                 </div>
                                 
                                 <p>Based on our previous research and referenced studies, few considerations were determined to be particularly important for fluid flow in the capillary pump. Through background research, we identified factors that affect fluid flow in a capillary pump. These include wettability, frequency of microstructures in the flow chamber, and the geometry of the microstructures used to increase flow resistance. These factors are the foundation for determining flow rates due to capillary flow (Olanrewaju et al., 2018).</p>

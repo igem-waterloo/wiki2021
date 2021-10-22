@@ -12,7 +12,7 @@ class OpticalDetector extends Component {
                     <div className={overallStyles.text_heading}>
                         Optical Detector and Visualization Application
                     </div>
-                    <div className={overallStyles.subheading}>
+                    <div className={overallStyles.subheading} style={{marginLeft: "0"}}>
                         Hardware Development
                     </div>
                     <div className={overallStyles.description}>
