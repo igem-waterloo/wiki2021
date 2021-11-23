@@ -8,7 +8,7 @@ const MathModelling = () => {
             <Collapsible open title="Math &amp; Modelling">
                 <div className={styles.carousel_slide}>
                     <div className={styles.img_div}>
-                        <ImageModal source='https://2021.igem.org/wiki/images/9/91/T--Waterloo--MembersAmyWohlgemuthMath.jpeg' name='Amy Wohlgemuth' team='Math &amp;amp; Modelling' program='Chemical Engineering' term='2B' place='Greece' song='Anything ABBA' />
+                        <ImageModal source='https://2021.igem.org/wiki/images/9/91/T--Waterloo--MembersAmyWohlgemuthMath.jpeg' name='Amy Wohlgemuth' team='Math &amp; Modelling' program='Chemical Engineering' term='2B' place='Greece' song='Anything ABBA' />
                         <ImageModal source='https://2021.igem.org/wiki/images/6/67/T--Waterloo--MembersChelseaHuangMath.jpeg' name='Chelsea Huang' team='Math &amp; Modelling' program='Biomedical Engineering' term='2B' place='Hangzhou' song='Butterfly by J.UNA' />
                         <ImageModal source='https://2021.igem.org/wiki/images/1/1a/T--Waterloo--MembersChimdinduOhaegbuMath.jpeg' name='Chimdindu Ohaegbu' team='Math &amp; Modelling' program='Chemical Engineering' term='2B' place='Invermere, British Columbia' song="I'm Still Waiting by Diana Ross" />
                     </div>
