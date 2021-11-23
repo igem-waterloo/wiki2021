@@ -219,4 +219,3 @@ Wendy Lu
 •	Quantification method research
 •	Microcontroller programming
 •	Voltage to illuminance conversion research
-

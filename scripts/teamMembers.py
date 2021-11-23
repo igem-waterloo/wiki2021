@@ -13,11 +13,13 @@
         Played key role in the development of the diagnosis pipeline for different age groups
     </li>
 </ul>
+45
 """
 
 info = open("memberInfo.txt", "r")
 html = open("memberInfoHtml.txt", "w")
 closeList = False
+count = 0
 for line in info:
     line = line.replace("&", "&amp;")
     if line[0] == "•":
@@ -29,10 +31,12 @@ for line in info:
         if closeList:
             html.write("</ul> \n")
             closeList = False
-        html.write("<div className={overallStyles.subsubheading} style={{marginBottom: \"-3%\"}}> \n")
+        html.write("<div className={overallStyles.description} style={{marginBottom: \"-3%\"}}> \n")
         html.write("\t" + line)
+        count += 1
         html.write("</div>\n")
         html.write("<ul className={overallStyles.description}>\n")
         closeList = True
 html.write("</ul> \n")
+print(count)
 info.close()

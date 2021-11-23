@@ -13,12 +13,12 @@ import HomePage from "./pages/HomePage/HomePage";
 import HumanPractices from "./pages/HumanPractices/HumanPractices";
 import Implementation from "./pages/Implementation/Implementation";
 import Inclusivity from "./pages/Inclusivity/Inclusivity";
+import Members from "./pages/TeamPage/Members";
 import Model from "./pages/Model/Model";
 import Parts from "./pages/Parts/Parts";
 import Description from "./pages/Description/Description"
 import ProofOfConcept from "./pages/ProofOfConcept/ProofOfConcept";
 import Safety from "./pages/Safety/Safety";
-import TeamPage from "./pages/TeamPage/TeamPage";
 // utils
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -96,7 +96,7 @@ function App() {
                                 <Safety />
                             </Route>
                             <Route exact path="/Team:Waterloo/Team">
-                                <TeamPage />
+                                <Members />
                             </Route>
                         </Switch>
                     </div>
