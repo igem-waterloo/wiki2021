@@ -1,7 +1,5 @@
 import React from 'react';
-import styles from "./teampage.module.scss";
 import overallStyles from '../overall.module.scss';
-import Collapsible from "../../utils/Collapsible";
 import HumanPractices from './HumanPractices';
 import LabDesign from './LabDesign';
 import MathModelling from './MathModelling';
